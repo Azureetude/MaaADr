@@ -1,8 +1,8 @@
 {
     "task": [
         {
-            "name": "刷素材(开发中)",
-            "entry": "obtainmaterials",
+            "name": "素材周回",
+            "entry": "findmap",
             "option": [
                 "道具",
                 "是否跳过战斗"
@@ -150,12 +150,26 @@
         "稀有度-礼盒": {
             "type": "select",
             "cases": [
-            { "name": "绿色"
-},
-            { "name": "蓝色"
+            { "name": "绿色",
+             "pipeline_override": {
+                        "findmap": {
+                            "next": "find_MR"  // 控制跳转到对应活动地图
+                        }
+                    }
             },
-            { "name": "紫色"
-            }
+            { "name": "蓝色",
+             "pipeline_override": {
+                        "findmap": {
+                            "next": "find_MR"  // 控制跳转到对应活动地图
+                        }
+                    }
+            },
+            { "name": "紫色",
+             "pipeline_override": {
+                        "findmap": {
+                            "next": "find_MR"  // 控制跳转到对应活动地图
+                        }
+                    }
              ]
         },
         "稀有度-素材": {

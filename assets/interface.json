@@ -41,8 +41,8 @@
     //     ]
     // },
      "import": [
-//        "./tasks/preset/Daily.json",
        "./resource/tasks/opengame.json",
+       "./resource/tasks/dailyexchange.json",
        "./resource/tasks/homepagess.json",
        "./resource/tasks/getitem.json",
        "./resource/tasks/mainstory.json"
