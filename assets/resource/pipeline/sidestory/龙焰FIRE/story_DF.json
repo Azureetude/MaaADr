@@ -1,26 +1,26 @@
 {
-    "$__mpe_config_story_JV": {
+    "$__mpe_config_story_DF": {
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1784883918944,
+            "lastSyncTime": 1784884776164,
             "isModifiedExternally": false,
-            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\sidestory\\监狱迷宫瓦尔哈拉\\story_JV.json",
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\sidestory\\龙焰FIRE\\story_DF.json",
             "savedViewport": {
-                "x": -102,
-                "y": 693,
-                "zoom": 0.8
+                "x": -45,
+                "y": 565,
+                "zoom": 0.75
             },
-            "filename": "story_JV",
+            "filename": "story_DF",
             "version": "v1.7.4"
         }
     },
-    "JV_6": {
+    "JV_1": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "sidestory/JV/JV_6.png"
+                    "sidestory/DF/DF_1.png"
                 ]
             }
         },
@@ -28,15 +28,15 @@
             "type": "Click",
             "param": {
                 "target": [
-                    1067,
-                    362,
+                    167,
+                    319,
                     1,
                     1
                 ]
             }
         },
         "next": [
-            "JV_6_33_1"
+            "DF_1_1"
         ],
         "$__mpe_code": {
             "position": {
@@ -45,20 +45,20 @@
             }
         }
     },
-    "JV_6_33_1": {
+    "DF_1_1": {
         "action": {
             "type": "Swipe",
             "param": {
                 "begin": [
-                    947,
-                    258,
+                    944,
+                    221,
                     1,
                     1
                 ],
                 "end": [
                     [
-                        941,
-                        588,
+                        950,
+                        586,
                         1,
                         1
                     ]
@@ -248,12 +248,12 @@
             }
         }
     },
-    "find_JV": {
+    "find_DF": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "sidestory/JV/JV_BANNER.png"
+                    "sidestory/DF/DF_BANNER.png"
                 ]
             }
         },
@@ -261,15 +261,15 @@
             "type": "Click",
             "param": {
                 "target": [
-                    1099,
-                    400,
+                    1112,
+                    284,
                     1,
                     1
                 ]
             }
         },
         "next": [
-            "JV_6"
+            "JV_1"
         ],
         "$__mpe_code": {
             "position": {

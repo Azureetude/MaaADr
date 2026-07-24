@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1784647267514,
+            "lastSyncTime": 1784883890737,
             "isModifiedExternally": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\sidestory\\哞特儿牧场\\story_MR.json",
             "savedViewport": {
-                "x": 245,
-                "y": 510,
-                "zoom": 0.33
+                "x": 28,
+                "y": 721,
+                "zoom": 0.8
             },
             "filename": "story_MR",
             "version": "v1.7.4"
@@ -103,6 +103,33 @@
             "position": {
                 "x": 1511,
                 "y": -66
+            }
+        }
+    },
+    "MR_BACK_HOME": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    139,
+                    48,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3649,
+                "y": -461
             }
         }
     },
@@ -233,8 +260,8 @@
             "type": "Click",
             "param": {
                 "target": [
-                    1091,
-                    400,
+                    1106,
+                    533,
                     1,
                     1
                 ]
@@ -247,33 +274,6 @@
             "position": {
                 "x": 479,
                 "y": -629
-            }
-        }
-    },
-    "MR_BACK_HOME": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/backhome.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    139,
-                    48,
-                    1,
-                    1
-                ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 3649,
-                "y": -461
             }
         }
     }
