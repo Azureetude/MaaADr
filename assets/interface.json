@@ -41,11 +41,12 @@
     //     ]
     // },
      "import": [
-//        "./tasks/preset/Daily.json",
        "./resource/tasks/opengame.json",
+       "./resource/tasks/dailyexchange.json",
        "./resource/tasks/homepagess.json",
        "./resource/tasks/getitem.json",
-       "./resource/tasks/mainstory.json"
-//        "./tasks/Closegame.json"
+       "./resource/tasks/RestoreStamina.json",
+    //   "./resource/tasks/mainstory.json",
+       "./resource/tasks/Closegame.json"
      ]
 }

@@ -36,9 +36,20 @@
             "type": "select",
             "cases": [
                 {
+                    "name": "龙焰FIRE!",
+                    "option": [  // 嵌套的子选项
+                       "关卡_DF"
+                   ],
+                    "pipeline_override": {
+                        "findmap": {
+                            "next": "find_DF"  // 控制跳转到对应活动地图
+                        }
+                    }
+                },
+                {
                     "name": "监狱迷宫瓦尔拉哈",
                     "option": [  // 嵌套的子选项
-                       "JV_33"
+                       "关卡_JV"
                    ],
                     "pipeline_override": {
                         "findmap": {
@@ -49,7 +60,7 @@
                 {
                     "name": "哞特儿牧场",
                     "option": [  // 嵌套的子选项
-                       "MR_37"
+                       "关卡_MR"
                    ],
                     "pipeline_override": {
                         "findmap": {
@@ -59,16 +70,22 @@
                 }
             ]
         },
-        "MR_37": {
+        "关卡_MR": {
             "type": "select",
             "cases": [
             { "name": "MR_37" }
              ]
         },
-        "JV_33": {
+        "关卡_JV": {
             "type": "select",
             "cases": [
             { "name": "JV_33" }
+             ]
+        },
+        "关卡_DF": {
+            "type": "select",
+            "cases": [
+            { "name": "DF_6" }
              ]
         }
      }

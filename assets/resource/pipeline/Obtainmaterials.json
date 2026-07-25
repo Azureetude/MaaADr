@@ -2,58 +2,36 @@
     "$__mpe_config_Obtainmaterials": {
         "$__mpe_code": {
             "prefix": "",
-            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\tasks\\Obtainmaterials.json",
-            "lastSyncTime": 1784554804013,
-            "isModifiedExternally": false,
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1784955553853,
+            "isModifiedExternally": false,
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\Obtainmaterials.json",
             "savedViewport": {
-                "x": -2757,
-                "y": 918,
-                "zoom": 1.14
+                "x": -51,
+                "y": 588,
+                "zoom": 0.28
             },
             "filename": "Obtainmaterials",
             "version": "v1.7.4"
         }
     },
-    "RS-D-3": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "template_1784385122119.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "新建节点39_副本9"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1718,
-                "y": -528
-            }
-        }
-    },
     "obtainmaterials": {
         "next": [
-            "新建节点33_副本5"
+            "homepage_ob"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 262,
-                "y": -510
+                "x": -3,
+                "y": -556
             }
         }
     },
-    "新建节点33_副本5": {
+    "homepage_ob": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "template_1784342420064.png"
+                    "basic/homepage.png"
                 ]
             }
         },
@@ -61,29 +39,29 @@
             "type": "Click",
             "param": {
                 "target": [
-                    256,
-                    644,
+                    1103,
+                    147,
                     1,
                     1
                 ]
             }
         },
         "next": [
-            "新建节点35_副本6"
+            "banner_ob"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 765,
-                "y": -546
+                "x": 322,
+                "y": -601
             }
         }
     },
-    "新建节点35_副本6": {
+    "banner_ob": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "template_1784385443385.png"
+                    "obtainmaterials/banner.png"
                 ]
             }
         },
@@ -91,61 +69,147 @@
             "type": "Click",
             "param": {
                 "target": [
-                    683,
-                    392,
+                    267,
+                    641,
                     1,
                     1
                 ]
             }
         },
-        "post_wait_freezes": 500,
-        "next": [
-            "新建节点37_副本7"
-        ],
         "$__mpe_code": {
             "position": {
-                "x": 1106,
-                "y": -571
+                "x": 659,
+                "y": -586
             }
         }
     },
-    "新建节点37_副本7": {
-        "action": {
-            "type": "Swipe",
+    "endob": {
+        "recognition": {
+            "type": "TemplateMatch",
             "param": {
-                "begin": [
-                    981,
-                    598,
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    137,
+                    45,
                     1,
                     1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 216,
+                "y": 417
+            }
+        }
+    },
+    "探索5_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/探索5.png"
                 ],
-                "end": [
-                    [
-                        983,
-                        346,
-                        1,
-                        1
-                    ]
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1101,
+                    399,
+                    1,
+                    1
                 ]
             }
         },
-        "post_wait_freezes": 5000,
-        "next": [
-            "RS-D-3"
-        ],
         "$__mpe_code": {
             "position": {
-                "x": 1416,
-                "y": -530
+                "x": 1105,
+                "y": 846
             }
         }
     },
-    "新建节点39_副本9": {
+    "RS_C_5-1": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    975,
+                    188,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2502,
+                "y": 1815
+            }
+        }
+    },
+    "探索4_1": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "template_1784385162296.png"
+                    "obtainmaterials/探索4.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    887,
+                    281,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1094,
+                "y": 435
+            }
+        }
+    },
+    "RS_C_4-1": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    975,
+                    188,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2079,
+                "y": 1806
+            }
+        }
+    },
+    "ob_skip1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/SKIP_START.png"
                 ]
             }
         },
@@ -153,7 +217,7 @@
             "type": "Click",
             "param": {
                 "target": [
-                    522,
+                    516,
                     628,
                     1,
                     1
@@ -161,21 +225,21 @@
             }
         },
         "next": [
-            "新建节点40_副本10"
+            "ob_skip2"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2029,
-                "y": -529
+                "x": -368,
+                "y": -160
             }
         }
     },
-    "新建节点40_副本10": {
+    "ob_skip2": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "template_1784385268554.png"
+                    "basic/SKIP_NUMBER.png"
                 ]
             }
         },
@@ -183,29 +247,57 @@
             "type": "Click",
             "param": {
                 "target": [
-                    813,
-                    228,
+                    812,
+                    231,
                     1,
                     1
                 ]
             }
         },
         "next": [
-            "新建节点41_副本11"
+            "ob_skip3"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2337,
-                "y": -533
+                "x": -20,
+                "y": -147
             }
         }
     },
-    "新建节点41_副本11": {
+    "ob_skip5": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "template_1784385298173.png"
+                    "basic/3star.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    621,
+                    365,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 677,
+                "y": -139
+            }
+        }
+    },
+    "ob_skip3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/SKIP_OK.png"
                 ]
             }
         },
@@ -213,29 +305,170 @@
             "type": "Click",
             "param": {
                 "target": [
-                    808,
-                    533,
+                    791,
+                    532,
                     1,
                     1
                 ]
             }
         },
+        "post_delay": 2000,
         "next": [
-            "新建节点42_副本12"
+            "ob_skip5"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2686,
-                "y": -553
+                "x": 315,
+                "y": -145
             }
         }
     },
-    "新建节点42_副本12": {
+    "探索3_1": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "template_1784385345702.png"
+                    "obtainmaterials/探索3.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    673,
+                    400,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1102,
+                "y": -47
+            }
+        }
+    },
+    "探索2_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/探索2.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    466,
+                    278,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1101,
+                "y": -463
+            }
+        }
+    },
+    "探索1_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/探索1.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    263,
+                    389,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1108,
+                "y": -861
+            }
+        }
+    },
+    "RS_3_UP": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    960,
+                    273,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        976,
+                        566,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "$__mpe_code": {
+            "position": {
+                "x": 1562,
+                "y": -381
+            }
+        }
+    },
+    "RS_3_DOWN": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    961,
+                    519,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        983,
+                        231,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "$__mpe_code": {
+            "position": {
+                "x": 1561,
+                "y": -34
+            }
+        }
+    },
+    "RS_H_3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/3/RS_H_3.png"
                 ]
             }
         },
@@ -243,29 +476,549 @@
             "type": "Click",
             "param": {
                 "target": [
-                    635,
-                    374,
+                    964,
+                    198,
                     1,
                     1
                 ]
             }
         },
+        "$__mpe_code": {
+            "position": {
+                "x": 2315,
+                "y": -110
+            }
+        }
+    },
+    "RS_G_3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/3/RS_G_3.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    922,
+                    352,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2596,
+                "y": -111
+            }
+        }
+    },
+    "RS_F_3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/3/RS_F_3.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    955,
+                    491,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2867,
+                "y": -107
+            }
+        }
+    },
+    "RS_E_3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/3/RS_E_3.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    952,
+                    627,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3133,
+                "y": -105
+            }
+        }
+    },
+    "RS_A_3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/3/RS_A_3.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    952,
+                    569,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3136,
+                "y": 188
+            }
+        }
+    },
+    "RS_C_3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/3/RS_C_3.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    955,
+                    283,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2584,
+                "y": 183
+            }
+        }
+    },
+    "RS_D_3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/3/RS_D-3.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    978,
+                    156,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2304,
+                "y": 177
+            }
+        }
+    },
+    "RS_B_3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/3/RS_B_3.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    978,
+                    428,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2850,
+                "y": 184
+            }
+        }
+    },
+    "RS_H_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/2/RS_H_2.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    964,
+                    198,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2329,
+                "y": -671
+            }
+        }
+    },
+    "RS_G_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/2/RS_G_2.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    922,
+                    352,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2610,
+                "y": -672
+            }
+        }
+    },
+    "RS_F_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/2/RS_F_2.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    955,
+                    491,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2881,
+                "y": -668
+            }
+        }
+    },
+    "RS_E_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/2/RS_E_2.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    952,
+                    627,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3147,
+                "y": -666
+            }
+        }
+    },
+    "RS_A_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/2/RS_A_2.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    952,
+                    569,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3150,
+                "y": -373
+            }
+        }
+    },
+    "RS_C_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/2/RS_C_2.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    955,
+                    283,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2598,
+                "y": -378
+            }
+        }
+    },
+    "RS_D_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/2/RS_D_2.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    978,
+                    156,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2318,
+                "y": -384
+            }
+        }
+    },
+    "RS_B_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/2/RS_B_2.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    978,
+                    428,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2864,
+                "y": -377
+            }
+        }
+    },
+    "RS_1_UP": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    960,
+                    273,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        976,
+                        566,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 4,
+        "post_delay": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 1589,
+                "y": -1616
+            }
+        }
+    },
+    "RS_1_DOWN": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    974,
+                    564,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        974,
+                        136,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 4,
+        "post_delay": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 1565,
+                "y": -819
+            }
+        }
+    },
+    "RS_1_MID_1": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    974,
+                    564,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        974,
+                        136,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 4,
+        "post_delay": 1000,
         "next": [
-            "新建节点44_副本13"
+            "RS_1_MID_2"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3013,
-                "y": -493
+                "x": 1377,
+                "y": -1246
             }
         }
     },
-    "新建节点44_副本13": {
+    "RS_1_MID_2": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    963,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        987,
+                        486,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 1761,
+                "y": -1213
+            }
+        }
+    },
+    "RS_H_1": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "template_1784381769316.png"
+                    "obtainmaterials/1/RS_H_1.png"
                 ]
             }
         },
@@ -273,18 +1026,314 @@
             "type": "Click",
             "param": {
                 "target": [
-                    135,
-                    48,
+                    918,
+                    158,
                     1,
                     1
                 ]
             }
         },
-        "timeout": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 3332,
-                "y": -534
+                "x": 2344,
+                "y": -1321
+            }
+        }
+    },
+    "RS_G_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/1/RS_G_1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    952,
+                    298,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2625,
+                "y": -1322
+            }
+        }
+    },
+    "RS_F_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/1/RS_F_1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    948,
+                    445,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2896,
+                "y": -1318
+            }
+        }
+    },
+    "RS_E_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/1/RS_E_1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    959,
+                    590,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3162,
+                "y": -1316
+            }
+        }
+    },
+    "RS_A_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/1/RS_A_1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    952,
+                    569,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3165,
+                "y": -1023
+            }
+        }
+    },
+    "RS_C_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/1/RS_C_1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    955,
+                    283,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2613,
+                "y": -1028
+            }
+        }
+    },
+    "RS_D_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/1/RS_D_1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    978,
+                    156,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2333,
+                "y": -1034
+            }
+        }
+    },
+    "RS_B_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/1/RS_B_1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    978,
+                    428,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2888,
+                "y": -1021
+            }
+        }
+    },
+    "RS_L_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/1/RS_L_1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    964,
+                    198,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2349,
+                "y": -1583
+            }
+        }
+    },
+    "RS_K_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/1/RS_K_1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    922,
+                    352,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2629,
+                "y": -1583
+            }
+        }
+    },
+    "RS_J_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/1/RS_J_1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    955,
+                    491,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2901,
+                "y": -1580
+            }
+        }
+    },
+    "RS_I_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "obtainmaterials/1/RS_I_1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    952,
+                    627,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3166,
+                "y": -1578
             }
         }
     }

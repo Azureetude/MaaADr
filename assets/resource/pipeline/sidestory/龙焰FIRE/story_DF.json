@@ -1,26 +1,26 @@
 {
-    "$__mpe_config_story_JV": {
+    "$__mpe_config_story_DF": {
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1784947948351,
+            "lastSyncTime": 1784947967370,
             "isModifiedExternally": false,
-            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\sidestory\\监狱迷宫瓦尔哈拉\\story_JV.json",
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\sidestory\\龙焰FIRE\\story_DF.json",
             "savedViewport": {
-                "x": -1167,
-                "y": 408,
+                "x": -1383,
+                "y": 391,
                 "zoom": 0.57
             },
-            "filename": "story_JV",
+            "filename": "story_DF",
             "version": "v1.7.4"
         }
     },
-    "JV_6": {
+    "DF_1": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "sidestory/JV/JV_6.png"
+                    "sidestory/DF/DF_1.png"
                 ]
             }
         },
@@ -28,15 +28,15 @@
             "type": "Click",
             "param": {
                 "target": [
-                    1067,
-                    362,
+                    167,
+                    319,
                     1,
                     1
                 ]
             }
         },
         "next": [
-            "JV_6_33_1"
+            "DF_1_1"
         ],
         "$__mpe_code": {
             "position": {
@@ -45,20 +45,20 @@
             }
         }
     },
-    "JV_6_33_1": {
+    "DF_1_1": {
         "action": {
             "type": "Swipe",
             "param": {
                 "begin": [
-                    947,
-                    258,
+                    944,
+                    221,
                     1,
                     1
                 ],
                 "end": [
                     [
-                        941,
-                        588,
+                        950,
+                        586,
                         1,
                         1
                     ]
@@ -67,7 +67,7 @@
         },
         "repeat": 3,
         "next": [
-            "JV_6_33_2"
+            "DF_1_2"
         ],
         "$__mpe_code": {
             "position": {
@@ -76,7 +76,7 @@
             }
         }
     },
-    "JV_6_33_2": {
+    "DF_1_2": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -98,7 +98,7 @@
         },
         "post_delay": 1000,
         "next": [
-            "JV_SKIP_1"
+            "DF_SKIP_1"
         ],
         "$__mpe_code": {
             "position": {
@@ -107,7 +107,7 @@
             }
         }
     },
-    "JV_BACK_HOME": {
+    "DF_BACK_HOME": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -134,7 +134,7 @@
             }
         }
     },
-    "JV_SKIP_1": {
+    "DF_SKIP_1": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -155,7 +155,7 @@
             }
         },
         "next": [
-            "JV_SKIP_2"
+            "DF_SKIP_2"
         ],
         "$__mpe_code": {
             "position": {
@@ -164,7 +164,7 @@
             }
         }
     },
-    "JV_SKIP_2": {
+    "DF_SKIP_2": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -185,7 +185,7 @@
             }
         },
         "next": [
-            "JV_SKIP_3"
+            "DF_SKIP_3"
         ],
         "$__mpe_code": {
             "position": {
@@ -194,7 +194,7 @@
             }
         }
     },
-    "JV_SKIP_3": {
+    "DF_SKIP_3": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -216,7 +216,7 @@
         },
         "post_wait_freezes": 500,
         "next": [
-            "JV_SKIP_4"
+            "DF_SKIP_4"
         ],
         "$__mpe_code": {
             "position": {
@@ -225,7 +225,7 @@
             }
         }
     },
-    "JV_SKIP_4": {
+    "DF_SKIP_4": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -239,7 +239,7 @@
             "type": "Click"
         },
         "next": [
-            "JV_BACK_HOME"
+            "DF_BACK_HOME"
         ],
         "$__mpe_code": {
             "position": {
@@ -248,12 +248,12 @@
             }
         }
     },
-    "find_JV": {
+    "find_DF": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "sidestory/JV/JV_BANNER.png"
+                    "sidestory/DF/DF_BANNER.png"
                 ]
             }
         },
@@ -261,15 +261,15 @@
             "type": "Click",
             "param": {
                 "target": [
-                    1099,
-                    400,
+                    1112,
+                    284,
                     1,
                     1
                 ]
             }
         },
         "next": [
-            "JV_6"
+            "DF_1"
         ],
         "$__mpe_code": {
             "position": {
