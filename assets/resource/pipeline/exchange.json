@@ -2,60 +2,17 @@
     "$__mpe_config_exchange": {
         "$__mpe_code": {
             "prefix": "",
-            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\exchange.json",
-            "lastSyncTime": 1784943930201,
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1784960144582,
+            "isModifiedExternally": false,
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\exchange.json",
             "savedViewport": {
-                "x": 930,
-                "y": 913,
-                "zoom": 0.5
+                "x": 1107,
+                "y": 1087,
+                "zoom": 1.52
             },
             "filename": "exchange",
             "version": "v1.7.4"
-        }
-    },
-    "if_精力饮": {
-        "next": [
-            "精力饮_1"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -1289,
-                "y": -490
-            }
-        }
-    },
-    "if_紫色礼盒": {
-        "next": [
-            "紫色礼盒_1"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -1256,
-                "y": -908
-            }
-        }
-    },
-    "if_战斗记录": {
-        "next": [
-            "战斗记录_1"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -1257,
-                "y": -1285
-            }
-        }
-    },
-    "if_龙币": {
-        "next": [
-            "龙币_1"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -1234,
-                "y": -1651
-            }
         }
     },
     "checkhomepage_exchange": {
@@ -74,6 +31,63 @@
             "position": {
                 "x": -2243,
                 "y": -1222
+            }
+        }
+    },
+    "copperymana": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/copperymana.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    616,
+                    132,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "if_精力饮"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1634,
+                "y": -1196
+            }
+        }
+    },
+    "endexchange": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/endexchange.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    144,
+                    51,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 282,
+                "y": -1018
             }
         }
     },
@@ -108,112 +122,47 @@
             }
         }
     },
-    "copperymana": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/copperymana.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    616,
-                    132,
-                    1,
-                    1
-                ]
-            }
-        },
+    "if_战斗记录": {
         "next": [
-            "if_精力饮"
+            "战斗记录_1"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1634,
-                "y": -1196
+                "x": -1257,
+                "y": -1285
             }
         }
     },
-    "龙币_1": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/龙币daily.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
+    "if_精力饮": {
         "next": [
-            "龙币_2"
+            "精力饮_1"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -833,
-                "y": -1681
+                "x": -1289,
+                "y": -490
             }
         }
     },
-    "龙币_2": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/龙币_2.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    798,
-                    608,
-                    1,
-                    1
-                ]
-            }
-        },
+    "if_紫色礼盒": {
         "next": [
-            "龙币_3"
+            "紫色礼盒_1"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -487,
-                "y": -1681
+                "x": -1256,
+                "y": -908
             }
         }
     },
-    "龙币_3": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/dailyreward.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    634,
-                    610,
-                    1,
-                    1
-                ]
-            }
-        },
+    "if_龙币": {
+        "next": [
+            "龙币_1"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": -112,
-                "y": -1682
+                "x": -1234,
+                "y": -1651
             }
         }
     },
@@ -279,91 +228,20 @@
             }
         },
         "action": {
-            "type": "Click"
+            "type": "Click",
+            "param": {
+                "target": [
+                    638,
+                    601,
+                    1,
+                    1
+                ]
+            }
         },
         "$__mpe_code": {
             "position": {
                 "x": -156,
                 "y": -1303
-            }
-        }
-    },
-    "紫色礼盒_1": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/紫色礼盒s.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "紫色礼盒_2"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -861,
-                "y": -937
-            }
-        }
-    },
-    "紫色礼盒_2": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/紫色礼盒2.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    798,
-                    608,
-                    1,
-                    1
-                ]
-            }
-        },
-        "next": [
-            "紫色礼盒_3"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -516,
-                "y": -936
-            }
-        }
-    },
-    "紫色礼盒_3": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/dailyreward.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    634,
-                    610,
-                    1,
-                    1
-                ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": -141,
-                "y": -937
             }
         }
     },
@@ -446,12 +324,34 @@
             }
         }
     },
-    "endexchange": {
+    "紫色礼盒_1": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "basic/endexchange.png"
+                    "basic/紫色礼盒s.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "紫色礼盒_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -861,
+                "y": -937
+            }
+        }
+    },
+    "紫色礼盒_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/紫色礼盒2.png"
                 ]
             }
         },
@@ -459,8 +359,38 @@
             "type": "Click",
             "param": {
                 "target": [
-                    144,
-                    51,
+                    798,
+                    608,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "紫色礼盒_3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -516,
+                "y": -936
+            }
+        }
+    },
+    "紫色礼盒_3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/dailyreward.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    634,
+                    610,
                     1,
                     1
                 ]
@@ -468,8 +398,87 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 282,
-                "y": -1018
+                "x": -141,
+                "y": -937
+            }
+        }
+    },
+    "龙币_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/龙币daily.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "龙币_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -833,
+                "y": -1681
+            }
+        }
+    },
+    "龙币_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/龙币_2.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    798,
+                    608,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "龙币_3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -487,
+                "y": -1681
+            }
+        }
+    },
+    "龙币_3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/dailyreward.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    634,
+                    610,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": -112,
+                "y": -1682
             }
         }
     }
