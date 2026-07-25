@@ -1,57 +1,107 @@
+
 {
     "task": [
         {
             "name": "以太交换所(每日刷新)",
-            "entry": "obtainmaterials",
+            "entry": "checkhomepage_exchange",
             "option": [
-                "交换道具"
+                "精力饮",  
+                "紫色礼盒",
+                "战斗记录 · IV",  
+                "龙币"
             ]
         }
     ],
-      "option": {
-        "交换道具": {  
-    "type": "checkbox",  
-    "description": "选择要兑换的每日刷新道具，可多选",  
-    "default_case": [  
-        "精力饮",  
-        "紫色礼盒",
-        "战斗记录 · IV",  
-        "龙币"
-    ],  
-    "cases": [  
-        {  
-            "name": "精力饮",  
-            "pipeline_override": {  
-                "NormalMatch": {  
-                    "enabled": true  
-                }  
-            }  
-        },  
-        {  
-            "name": "紫色礼盒",  
-            "pipeline_override": {  
-                "ChargedMatch": {  
-                    "enabled": true  
-                }  
-            }  
-        },  
-        {  
-            "name": "战斗记录 · IV",  
-            "pipeline_override": {  
-                "ChargedMatch": {  
-                    "enabled": true  
-                }  
-            }  
-        },  
-        {  
-            "name": "龙币",  
-            "pipeline_override": {  
-                "ChargedMatch": {  
-                    "enabled": true  
-                }  
-            }  
-        }  
-    ]  
-}
+    "option": {
+       "精力饮": {
+            "type": "switch",
+            "cases": [
+                {
+                    "name": "Yes",
+                    "pipeline_override": {
+                        "copperymana": {
+                            "next": "if_精力饮"  // 控制跳转到返回主界面节点
+                     },
+                     "精力饮_3": {
+                            "next": "if_紫色礼盒"  // 控制跳转到返回主界面节点
+                     }
+                    }
+                },
+                {
+                    "name": "No",
+                    "pipeline_override": {
+                        "copperymana": {
+                            "next": "if_精力饮"  // 控制跳转到返回主界面节点
+                     },
+                     "if_精力饮": {
+                            "next": "if_紫色礼盒"  // 控制跳转到返回主界面节点
+                     }
+                    }
+                }
+            ]
+        },
+        "紫色礼盒": {
+            "type": "switch",
+            "cases": [
+                {
+                    "name": "Yes",
+                    "pipeline_override": {
+                     "紫色礼盒_3": {
+                            "next": "if_战斗记录"  // 控制跳转到返回主界面节点
+                     }
+                    }
+                },
+                {
+                    "name": "No",
+                    "pipeline_override": {
+                        "if_紫色礼盒": {
+                            "next": "if_战斗记录"  // 控制跳转到返回主界面节点
+                     }
+                    }
+                }
+            ]
+        },
+        "战斗记录 · IV": {
+            "type": "switch",
+            "cases": [
+                {
+                    "name": "Yes",
+                    "pipeline_override": {
+                     "战斗记录_3": {
+                            "next": "if_龙币"  // 控制跳转到返回主界面节点
+                     }
+                    }
+                },
+                {
+                    "name": "No",
+                    "pipeline_override": {
+                        "if_战斗记录": {
+                            "next": "if_龙币"  // 控制跳转到返回主界面节点
+                     }
+                    }
+                }
+            ]
+        },
+        "龙币": {
+            "type": "switch",
+            "cases": [
+                {
+                    "name": "Yes",
+                    "pipeline_override": {
+                        "龙币_3": {
+                            "next": "endexchange"  // 控制跳转到返回主界面节点
+                     }
+                    }
+                },
+                {
+                    "name": "No",
+                    "pipeline_override": {
+                        "if_龙币": {
+                            "next": "endexchange"  // 控制跳转到返回主界面节点
+                     }
+                    }
+                }
+            ]
+        }
      }
 }

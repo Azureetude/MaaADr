@@ -1,0 +1,34 @@
+{
+    "task": [
+        {
+            "name": "吃体力药",
+            "entry": "RestoreStamina",
+            "option": [
+                "体力药选择"
+            ]
+        }
+    ],
+      "option": {
+         "体力药选择": {
+            "type": "select",
+            "cases": [
+                {
+                    "name": "体力药—小",
+                    "pipeline_override": {
+                        "RestoreStamina": {
+                            "next": "RestoreStamina-1-1"  
+                        }
+                    }
+                },
+                               {
+                    "name": "体力药—大",
+                    "pipeline_override": {
+                        "RestoreStamina": {
+                            "next": "RestoreStamina-2-1"
+                        }
+                    }
+                }
+            ]
+        }
+      }   
+}

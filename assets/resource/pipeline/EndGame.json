@@ -1,25 +1,23 @@
 {
     "$__mpe_config_EndGame": {
         "$__mpe_code": {
-            "coordinateMode": "absolute-v1",
-            "filename": "EndGame",
             "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1784955668731,
+            "isModifiedExternally": false,
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\EndGame.json",
             "savedViewport": {
-                "x": -801,
-                "y": 756,
-                "zoom": 0.65
+                "x": -2391,
+                "y": 596,
+                "zoom": 0.75
             },
+            "filename": "EndGame",
             "version": "v1.7.4"
         }
     },
     "closegame_1": {
-        "$__mpe_code": {
-            "position": {
-                "x": 3096,
-                "y": -534
-            }
-        },
         "action": {
+            "type": "Swipe",
             "param": {
                 "begin": [
                     803,
@@ -35,48 +33,51 @@
                         1
                     ]
                 ]
-            },
-            "type": "Swipe"
+            }
         },
         "next": [
             "closegame_2"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3096,
+                "y": -534
+            }
+        }
     },
     "closegame_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/closegame.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    799,
+                    640,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "closegame_3"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 3425,
                 "y": -523
             }
-        },
-        "action": {
-            "param": {
-                "target": [
-                    797,
-                    640,
-                    1,
-                    1
-                ]
-            },
-            "type": "Click"
-        },
-        "recognition": {
-            "param": {
-                "template": [
-                    "basic/closegame.png"
-                ]
-            },
-            "type": "TemplateMatch"
         }
     },
     "endgame": {
-        "$__mpe_code": {
-            "position": {
-                "x": 2170,
-                "y": -574
-            }
-        },
         "action": {
+            "type": "Click",
             "param": {
                 "target": [
                     133,
@@ -84,21 +85,29 @@
                     1,
                     1
                 ]
-            },
-            "type": "Click"
+            }
         },
         "next": [
             "setting"
-        ]
-    },
-    "setting": {
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 2479,
-                "y": -580
+                "x": 2170,
+                "y": -574
+            }
+        }
+    },
+    "setting": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage.png"
+                ]
             }
         },
         "action": {
+            "type": "Click",
             "param": {
                 "target": [
                     63,
@@ -106,29 +115,29 @@
                     1,
                     1
                 ]
-            },
-            "type": "Click"
+            }
         },
         "next": [
             "support"
         ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "basic/homepage.png"
-                ]
-            },
-            "type": "TemplateMatch"
+        "$__mpe_code": {
+            "position": {
+                "x": 2479,
+                "y": -580
+            }
         }
     },
     "support": {
-        "$__mpe_code": {
-            "position": {
-                "x": 2804,
-                "y": -552
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/setting.png"
+                ]
             }
         },
         "action": {
+            "type": "Click",
             "param": {
                 "target": [
                     894,
@@ -136,19 +145,43 @@
                     1,
                     1
                 ]
-            },
-            "type": "Click"
+            }
         },
         "next": [
             "closegame_1"
         ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2804,
+                "y": -552
+            }
+        }
+    },
+    "closegame_3": {
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "basic/setting.png"
+                    "basic/exit_ok.png"
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    797,
+                    528,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3791,
+                "y": -510
+            }
         }
     }
 }

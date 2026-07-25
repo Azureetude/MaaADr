@@ -2,7 +2,7 @@
     "task": [
         {
             "name": "素材周回",
-            "entry": "findmap",
+            "entry": "obtainmaterials",
             "option": [
                 "道具",
                 "是否跳过战斗"
@@ -19,8 +19,20 @@
 //                       "稀有度"
 //                   ],
                     "pipeline_override": {
-                        "findmap": {
-                            "next": "find_JV"  // 控制跳转到对应活动地图
+                        "banner_ob": {
+                            "next": "探索1_1"  
+                        },
+                        "探索1_1": {
+                            "next": "RS_1_UP"  
+                        },
+                        "RS_1_UP": {
+                            "next": "RS_L_1"  
+                        },
+                        "RS_L_1": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
                         }
                     }
                 },
@@ -30,8 +42,20 @@
 //                       "稀有度"
 //                   ],
                     "pipeline_override": {
-                        "findmap": {
-                            "next": "find_MR"  // 控制跳转到对应活动地图
+                        "banner_ob": {
+                            "next": "探索1_1"  
+                        },
+                        "探索1_1": {
+                            "next": "RS_1_UP"  
+                        },
+                        "RS_1_UP": {
+                            "next": "RS_K_1"  
+                        },
+                        "RS_K_1": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
                         }
                     }
                 },
@@ -41,8 +65,20 @@
 //                       "稀有度"
 //                   ],
                     "pipeline_override": {
-                        "findmap": {
-                            "next": "find_JV"  // 控制跳转到对应活动地图
+                        "banner_ob": {
+                            "next": "探索1_1"  
+                        },
+                        "探索1_1": {
+                            "next": "RS_1_UP"  
+                        },
+                        "RS_1_UP": {
+                            "next": "RS_L_1"  
+                        },
+                        "RS_L_1": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
                         }
                     }
                 },
@@ -52,98 +88,70 @@
 //                       "稀有度"
 //                   ],
                     "pipeline_override": {
-                        "findmap": {
-                            "next": "find_JV"  // 控制跳转到对应活动地图
+                        "banner_ob": {
+                            "next": "探索1_1"  
+                        },
+                        "探索1_1": {
+                            "next": "RS_1_UP"  
+                        },
+                        "RS_1_UP": {
+                            "next": "RS_I_1"  
+                        },
+                        "RS_I_1": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
                         }
                     }
                 },
                 {
                     "name": "枝条/爪子",
                     "option": [  // 嵌套的子选项
-                       "稀有度-素材"
-                   ],
-                    "pipeline_override": {
-                        "findmap": {
-                            "next": "find_MR"  // 控制跳转到对应活动地图
-                        }
-                    }
+                       "稀有度-枝条/爪子"
+                   ]
                 },
                                {
                     "name": "药瓶/竖琴",
                     "option": [  // 嵌套的子选项
-                       "稀有度-素材"
-                   ],
-                    "pipeline_override": {
-                        "findmap": {
-                            "next": "find_MR"  // 控制跳转到对应活动地图
-                        }
-                    }
+                       "稀有度-药瓶/竖琴"
+                   ]
                 },
                                {
                     "name": "刀刃/金属板材",
                     "option": [  // 嵌套的子选项
-                       "稀有度-素材"
-                   ],
-                    "pipeline_override": {
-                        "findmap": {
-                            "next": "find_MR"  // 控制跳转到对应活动地图
-                        }
-                    }
+                       "稀有度-刀刃/金属板材"
+                   ]
                 },
                                {
                     "name": "羽毛/箭筒",
                     "option": [  // 嵌套的子选项
-                       "稀有度-素材"
-                   ],
-                    "pipeline_override": {
-                        "findmap": {
-                            "next": "find_MR"  // 控制跳转到对应活动地图
-                        }
-                    }
+                       "稀有度-羽毛/箭筒"
+                   ]
                 },
                                {
                     "name": "礼盒",
                     "option": [  // 嵌套的子选项
                        "稀有度-礼盒"
-                   ],
-                    "pipeline_override": {
-                        "findmap": {
-                            "next": "find_MR"  // 控制跳转到对应活动地图
-                        }
-                    }
+                   ]
                 },
                                {
                     "name": "技能课本",
                     "option": [  // 嵌套的子选项
-                       "等级"
-                   ],
-                    "pipeline_override": {
-                        "findmap": {
-                            "next": "find_MR"  // 控制跳转到对应活动地图
-                        }
-                    }
+                       "选择课本关卡"
+                   ]
                 },
                                {
                     "name": "战斗记录",
                     "option": [  // 嵌套的子选项
-                       "等级"
-                   ],
-                    "pipeline_override": {
-                        "findmap": {
-                            "next": "find_MR"  // 控制跳转到对应活动地图
-                        }
-                    }
+                       "选择战斗记录关卡"
+                   ]
                 },
                 {
                     "name": "龙币",
-//                    "option": [  // 嵌套的子选项
-//                       "稀有度"
-//                   ],
-                    "pipeline_override": {
-                        "findmap": {
-                            "next": "find_MR"  // 控制跳转到对应活动地图
-                        }
-                    }
+                    "option": [  // 嵌套的子选项
+                       "选择龙币关卡"
+                   ]
                 }
             ]
         },
@@ -151,48 +159,528 @@
             "type": "select",
             "cases": [
             { "name": "绿色",
-             "pipeline_override": {
-                        "findmap": {
-                            "next": "find_MR"  // 控制跳转到对应活动地图
+                    "pipeline_override": {
+                        "banner_ob": {
+                            "next": "探索1_1"  
+                        },
+                        "探索1_1": {
+                            "next": "RS_1_DOWN"  
+                        },
+                        "RS_1_DOWN": {
+                            "next": "RS_D_1"  
+                        },
+                        "RS_D_1": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
                         }
                     }
             },
             { "name": "蓝色",
-             "pipeline_override": {
-                        "findmap": {
-                            "next": "find_MR"  // 控制跳转到对应活动地图
+                    "pipeline_override": {
+                        "banner_ob": {
+                            "next": "探索2_1"  
+                        },
+                        "探索2_1": {
+                            "next": "RS_3_DOWN"  
+                        },
+                        "RS_3_DOWN": {
+                            "next": "RS_D_2"  
+                        },
+                        "RS_D_2": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
                         }
                     }
             },
             { "name": "紫色",
-             "pipeline_override": {
-                        "findmap": {
-                            "next": "find_MR"  // 控制跳转到对应活动地图
+                    "pipeline_override": {
+                        "banner_ob": {
+                            "next": "探索3_1"  
+                        },
+                        "探索3_1": {
+                            "next": "RS_3_DOWN"  
+                        },
+                        "RS_3_DOWN": {
+                            "next": "RS_D_3"  
+                        },
+                        "RS_D_3": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
                         }
                     }
-                }
+            }
             ]
         },
-        "稀有度-素材": {
+        "稀有度-枝条/爪子": {
             "type": "select",
             "cases": [
-            { "name": "白色"
+            { "name": "白色",
+                    "pipeline_override": {
+                        "banner_ob": {
+                            "next": "探索1_1"  
+                        },
+                        "探索1_1": {
+                            "next": "RS_1_MID_1"  
+                        },
+                        "RS_1_MID_2": {
+                            "next": "RS_H_1"  
+                        },
+                        "RS_H_1": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
+                        }
+                    }
             },
-            { "name": "绿色"
+            { "name": "绿色",
+                    "pipeline_override": {
+                        "banner_ob": {
+                            "next": "探索2_1"  
+                        },
+                        "探索2_1": {
+                            "next": "RS_3_UP"  
+                        },
+                        "RS_3_UP": {
+                            "next": "RS_H_2"  
+                        },
+                        "RS_H_2": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
+                        }
+                    }
             },
-            { "name": "蓝色"
+            { "name": "蓝色",
+                    "pipeline_override": {
+                        "banner_ob": {
+                            "next": "探索3_1"  
+                        },
+                        "探索3_1": {
+                            "next": "RS_3_UP"  
+                        },
+                        "RS_3_UP": {
+                            "next": "RS_H_3"  
+                        },
+                        "RS_H_3": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
+                        }
+                    }
             }
              ]
         },
-        "等级": {
+        "稀有度-药瓶/竖琴": {
             "type": "select",
             "cases": [
-            { "name": "I" 
-           },
-            { "name": "II"
-              },
-            { "name": "III"
-              }
+            { "name": "白色",
+                    "pipeline_override": {
+                        "banner_ob": {
+                            "next": "探索1_1"  
+                        },
+                        "探索1_1": {
+                            "next": "RS_1_MID_1"  
+                        },
+                        "RS_1_MID_2": {
+                            "next": "RS_G_1"  
+                        },
+                        "RS_G_1": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
+                        }
+                    }
+            },
+            { "name": "绿色",
+                    "pipeline_override": {
+                        "banner_ob": {
+                            "next": "探索2_1"  
+                        },
+                        "探索2_1": {
+                            "next": "RS_3_UP"  
+                        },
+                        "RS_3_UP": {
+                            "next": "RS_G_2"  
+                        },
+                        "RS_G_2": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
+                        }
+                    }
+            },
+            { "name": "蓝色",
+                    "pipeline_override": {
+                        "banner_ob": {
+                            "next": "探索3_1"  
+                        },
+                        "探索3_1": {
+                            "next": "RS_3_UP"  
+                        },
+                        "RS_3_UP": {
+                            "next": "RS_G_3"  
+                        },
+                        "RS_G_3": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
+                        }
+                    }
+            }
+             ]
+        },
+        "稀有度-刀刃/金属板材": {
+            "type": "select",
+            "cases": [
+            { "name": "白色",
+                    "pipeline_override": {
+                        "banner_ob": {
+                            "next": "探索1_1"  
+                        },
+                        "探索1_1": {
+                            "next": "RS_1_MID_1"  
+                        },
+                        "RS_1_MID_2": {
+                            "next": "RS_F_1"  
+                        },
+                        "RS_F_1": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
+                        }
+                    }
+            },
+            { "name": "绿色",
+                    "pipeline_override": {
+                        "banner_ob": {
+                            "next": "探索2_1"  
+                        },
+                        "探索2_1": {
+                            "next": "RS_3_UP"  
+                        },
+                        "RS_3_UP": {
+                            "next": "RS_F_2"  
+                        },
+                        "RS_F_2": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
+                        }
+                    }
+            },
+            { "name": "蓝色",
+                    "pipeline_override": {
+                        "banner_ob": {
+                            "next": "探索3_1"  
+                        },
+                        "探索3_1": {
+                            "next": "RS_3_UP"  
+                        },
+                        "RS_3_UP": {
+                            "next": "RS_F_3"  
+                        },
+                        "RS_F_3": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
+                        }
+                    }
+            }
+             ]
+        },
+        "稀有度-羽毛/箭筒": {
+            "type": "select",
+            "cases": [
+            { "name": "白色",
+                    "pipeline_override": {
+                        "banner_ob": {
+                            "next": "探索1_1"  
+                        },
+                        "探索1_1": {
+                            "next": "RS_1_MID_1"  
+                        },
+                        "RS_1_MID_2": {
+                            "next": "RS_E_1"  
+                        },
+                        "RS_E_1": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
+                        }
+                    }
+            },
+            { "name": "绿色",
+                    "pipeline_override": {
+                        "banner_ob": {
+                            "next": "探索2_1"  
+                        },
+                        "探索2_1": {
+                            "next": "RS_3_UP"  
+                        },
+                        "RS_3_UP": {
+                            "next": "RS_E_2"  
+                        },
+                        "RS_E_2": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
+                        }
+                    }
+            },
+            { "name": "蓝色",
+                    "pipeline_override": {
+                        "banner_ob": {
+                            "next": "探索3_1"  
+                        },
+                        "探索3_1": {
+                            "next": "RS_3_UP"  
+                        },
+                        "RS_3_UP": {
+                            "next": "RS_E_3"  
+                        },
+                        "RS_E_3": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
+                        }
+                    }
+            }
+             ]
+        },
+        "选择龙币关卡": {
+            "type": "select",
+            "cases": [
+            { "name": "RS_A_1",
+                    "pipeline_override": {
+                        "banner_ob": {
+                            "next": "探索1_1"  
+                        },
+                        "探索1_1": {
+                            "next": "RS_1_DOWN"  
+                        },
+                        "RS_1_DOWN": {
+                            "next": "RS_A_1"  
+                        },
+                        "RS_A_1": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
+                        }
+                    }
+            },
+            { "name": "RS_A_2",
+                    "pipeline_override": {
+                        "banner_ob": {
+                            "next": "探索2_1"  
+                        },
+                        "探索2_1": {
+                            "next": "RS_3_DOWN"  
+                        },
+                        "RS_3_DOWN": {
+                            "next": "RS_A_2"  
+                        },
+                        "RS_A_2": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
+                        }
+                    }
+            },
+            { "name": "RS_A_3",
+                    "pipeline_override": {
+                        "banner_ob": {
+                            "next": "探索3_1"  
+                        },
+                        "探索3_1": {
+                            "next": "RS_3_DOWN"  
+                        },
+                        "RS_3_DOWN": {
+                            "next": "RS_A_3"  
+                        },
+                        "RS_A_3": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
+                        }
+                    }
+            }
+             ]
+        },
+        "选择课本关卡": {
+            "type": "select",
+            "cases": [
+            { "name": "1_蓝紫",
+                    "pipeline_override": {
+                        "banner_ob": {
+                            "next": "探索1_1"  
+                        },
+                        "探索1_1": {
+                            "next": "RS_1_DOWN"  
+                        },
+                        "RS_1_DOWN": {
+                            "next": "RS_C_1"  
+                        },
+                        "RS_C_1": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
+                        }
+                    }
+            },
+            { "name": "2_蓝紫",
+                    "pipeline_override": {
+                        "banner_ob": {
+                            "next": "探索2_1"  
+                        },
+                        "探索2_1": {
+                            "next": "RS_3_DOWN"  
+                        },
+                        "RS_3_DOWN": {
+                            "next": "RS_C_2"  
+                        },
+                        "RS_C_2": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
+                        }
+                    }
+            },
+            { "name": "3_蓝紫",
+                    "pipeline_override": {
+                        "banner_ob": {
+                            "next": "探索3_1"  
+                        },
+                        "探索3_1": {
+                            "next": "RS_3_DOWN"  
+                        },
+                        "RS_3_DOWN": {
+                            "next": "RS_C_3"  
+                        },
+                        "RS_C_3": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
+                        }
+                    }
+            },
+            { "name": "4_紫",
+                    "pipeline_override": {
+                        "banner_ob": {
+                            "next": "探索4_1"  
+                        },
+                        "探索4_1": {
+                            "next": "RS_C_4-1"  
+                        },
+                        "RS_C_4-1": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
+                        }
+                    }
+            },
+            { "name": "5_金",
+                    "pipeline_override": {
+                        "banner_ob": {
+                            "next": "探索5_1"  
+                        },
+                        "探索5_1": {
+                            "next": "RS_C_5-1"  
+                        },
+                        "RS_C_5-1": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
+                        }
+                    }
+            }
+             ]
+        },
+        "选择战斗记录关卡": {
+            "type": "select",
+            "cases": [
+            { "name": "RS_B_1",
+                    "pipeline_override": {
+                        "banner_ob": {
+                            "next": "探索1_1"  
+                        },
+                        "探索1_1": {
+                            "next": "RS_1_DOWN"  
+                        },
+                        "RS_1_DOWN": {
+                            "next": "RS_B_1"  
+                        },
+                        "RS_B_1": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
+                        }
+                    }
+            },
+            { "name": "RS_B_2",
+                    "pipeline_override": {
+                        "banner_ob": {
+                            "next": "探索2_1"  
+                        },
+                        "探索2_1": {
+                            "next": "RS_3_DOWN"  
+                        },
+                        "RS_3_DOWN": {
+                            "next": "RS_B_2"  
+                        },
+                        "RS_B_2": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
+                        }
+                    }
+            },
+            { "name": "RS_B_3",
+                    "pipeline_override": {
+                        "banner_ob": {
+                            "next": "探索3_1"  
+                        },
+                        "探索3_1": {
+                            "next": "RS_3_DOWN"  
+                        },
+                        "RS_3_DOWN": {
+                            "next": "RS_B_3"  
+                        },
+                        "RS_B_3": {
+                            "next": "ob_skip1"  
+                        },
+                        "ob_skip5": {
+                            "next": "endob"  
+                        }
+                    }
+            }
              ]
         }
      }

@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1784883890737,
+            "lastSyncTime": 1784947940811,
             "isModifiedExternally": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\sidestory\\哞特儿牧场\\story_MR.json",
             "savedViewport": {
-                "x": 28,
-                "y": 721,
-                "zoom": 0.8
+                "x": -1650,
+                "y": 353,
+                "zoom": 0.65
             },
             "filename": "story_MR",
             "version": "v1.7.4"
@@ -229,7 +229,7 @@
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "sidestory/MR/SKIP_MR_37.png"
+                    "basic/3star.png"
                 ],
                 "green_mask": true
             }

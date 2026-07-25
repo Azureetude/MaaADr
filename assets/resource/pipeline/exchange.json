@@ -1,0 +1,476 @@
+{
+    "$__mpe_config_exchange": {
+        "$__mpe_code": {
+            "prefix": "",
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\exchange.json",
+            "lastSyncTime": 1784943930201,
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": 930,
+                "y": 913,
+                "zoom": 0.5
+            },
+            "filename": "exchange",
+            "version": "v1.7.4"
+        }
+    },
+    "if_精力饮": {
+        "next": [
+            "精力饮_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1289,
+                "y": -490
+            }
+        }
+    },
+    "if_紫色礼盒": {
+        "next": [
+            "紫色礼盒_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1256,
+                "y": -908
+            }
+        }
+    },
+    "if_战斗记录": {
+        "next": [
+            "战斗记录_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1257,
+                "y": -1285
+            }
+        }
+    },
+    "if_龙币": {
+        "next": [
+            "龙币_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1234,
+                "y": -1651
+            }
+        }
+    },
+    "checkhomepage_exchange": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage.png"
+                ]
+            }
+        },
+        "next": [
+            "findexchange"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2243,
+                "y": -1222
+            }
+        }
+    },
+    "findexchange": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/exchange.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1201,
+                    663,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 500,
+        "next": [
+            "copperymana"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1934,
+                "y": -1220
+            }
+        }
+    },
+    "copperymana": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/copperymana.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    616,
+                    132,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "if_精力饮"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1634,
+                "y": -1196
+            }
+        }
+    },
+    "龙币_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/龙币daily.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "龙币_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -833,
+                "y": -1681
+            }
+        }
+    },
+    "龙币_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/龙币_2.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    798,
+                    608,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "龙币_3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -487,
+                "y": -1681
+            }
+        }
+    },
+    "龙币_3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/dailyreward.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    634,
+                    610,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": -112,
+                "y": -1682
+            }
+        }
+    },
+    "战斗记录_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/战斗记录s.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "战斗记录_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -842,
+                "y": -1304
+            }
+        }
+    },
+    "战斗记录_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/战斗记录2.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    785,
+                    615,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "战斗记录_3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -517,
+                "y": -1320
+            }
+        }
+    },
+    "战斗记录_3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/dailyreward.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": -156,
+                "y": -1303
+            }
+        }
+    },
+    "紫色礼盒_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/紫色礼盒s.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "紫色礼盒_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -861,
+                "y": -937
+            }
+        }
+    },
+    "紫色礼盒_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/紫色礼盒2.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    798,
+                    608,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "紫色礼盒_3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -516,
+                "y": -936
+            }
+        }
+    },
+    "紫色礼盒_3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/dailyreward.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    634,
+                    610,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": -141,
+                "y": -937
+            }
+        }
+    },
+    "精力饮_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/精力饮s.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "精力饮_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -874,
+                "y": -523
+            }
+        }
+    },
+    "精力饮_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/精力饮2.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    798,
+                    608,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "精力饮_3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -518,
+                "y": -524
+            }
+        }
+    },
+    "精力饮_3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/dailyreward.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    634,
+                    610,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": -153,
+                "y": -524
+            }
+        }
+    },
+    "endexchange": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/endexchange.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    144,
+                    51,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 282,
+                "y": -1018
+            }
+        }
+    }
+}
