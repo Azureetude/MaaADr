@@ -18,7 +18,7 @@
             "type": "Win32",
             "win32": {
                 "class_regex": ".*",
-                "window_regex": "龍脈|AnaDos",
+                "window_regex": "龍脈|Anados",
                 "screencap": "PrintWindow", // 截图方式
                 "mouse": "PostMessageWithCursorPos", // 鼠标控制方式
                 "keyboard": "PostMessageWithCursorPos" // 键盘控制方式
