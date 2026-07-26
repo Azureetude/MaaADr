@@ -10,7 +10,7 @@
           "action": "Custom",
           "custom_action": "CustomProgramAction",
           "custom_action_param": {
-            "program": "./resource/tasks/keymousego/Key.exe",
+            "program": "./resource/image/keymousego/Key.exe",
             "arguments": "",
             "wait_for_exit": false
           }

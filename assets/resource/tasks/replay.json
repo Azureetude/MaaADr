@@ -11,7 +11,7 @@
           "custom_action": "CustomProgramAction",
           "custom_action_param": {
             "program": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-            "arguments": "./resource/tasks/Key ./resource/tasks/scripts/1.json5",
+            "arguments": "./resource/image/keymousego/Key ./resource/image/keymousego/scripts/1.json5",
             "wait_for_exit": true
           }
         }

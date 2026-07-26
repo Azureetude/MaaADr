@@ -47,8 +47,8 @@
        "./resource/tasks/getitem.json",
        "./resource/tasks/RestoreStamina.json",
     //   "./resource/tasks/mainstory.json",
-       "./resource/tasks/Closegame.json"
-       "./resource/tasks/keymousego.json"
+       "./resource/tasks/Closegame.json",
+       "./resource/tasks/keymousego.json",
        "./resource/tasks/replay.json"
      ]
 }
