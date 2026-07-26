@@ -1,0 +1,21 @@
+{
+    "task": [
+         {
+      "name": "录视频",
+      "entry": "CustomProgramAction",
+      "default_check": false,
+      "description": "SpecialTask_CustomProgramDesc",
+      "pipeline_override": {
+        "CustomProgramAction": {
+          "action": "Custom",
+          "custom_action": "CustomProgramAction",
+          "custom_action_param": {
+            "program": "./resource/tasks/keymousego/Key.exe",
+            "arguments": "",
+            "wait_for_exit": false
+          }
+        }
+      }
+    }
+  ]
+}

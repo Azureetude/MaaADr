@@ -1,0 +1,21 @@
+{
+    "task": [
+        {
+      "name": "看录像",
+      "entry": "CustomProgramAction",
+      "default_check": true,
+      "description": "SpecialTask_CustomProgramDesc",
+      "pipeline_override": {
+        "CustomProgramAction": {
+          "action": "Custom",
+          "custom_action": "CustomProgramAction",
+          "custom_action_param": {
+            "program": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+            "arguments": "./resource/tasks/Key ./resource/tasks/scripts/1.json5",
+            "wait_for_exit": true
+          }
+        }
+      }
+    }
+  ]
+}
