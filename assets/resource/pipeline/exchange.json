@@ -3,19 +3,19 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1784960144582,
+            "lastSyncTime": 1785081738091,
             "isModifiedExternally": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\exchange.json",
             "savedViewport": {
-                "x": 1107,
-                "y": 1087,
-                "zoom": 1.52
+                "x": 862,
+                "y": 1338,
+                "zoom": 0.7
             },
             "filename": "exchange",
             "version": "v1.7.4"
         }
     },
-    "checkhomepage_exchange": {
+    "checkhomepage_exchange_2": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -29,8 +29,30 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -2243,
-                "y": -1222
+                "x": -2214,
+                "y": -1193
+            }
+        }
+    },
+    "checkhomepage_exchange": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    131,
+                    45,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "checkhomepage_exchange_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2535,
+                "y": -1201
             }
         }
     },
@@ -86,8 +108,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 282,
-                "y": -1018
+                "x": 279,
+                "y": -1015
             }
         }
     },
@@ -123,8 +145,12 @@
         }
     },
     "if_战斗记录": {
+        "timeout": 2000,
         "next": [
             "战斗记录_1"
+        ],
+        "on_error": [
+            "if_龙币"
         ],
         "$__mpe_code": {
             "position": {
@@ -134,8 +160,12 @@
         }
     },
     "if_精力饮": {
+        "timeout": 2000,
         "next": [
             "精力饮_1"
+        ],
+        "on_error": [
+            "if_紫色礼盒"
         ],
         "$__mpe_code": {
             "position": {
@@ -145,8 +175,12 @@
         }
     },
     "if_紫色礼盒": {
+        "timeout": 2000,
         "next": [
             "紫色礼盒_1"
+        ],
+        "on_error": [
+            "if_战斗记录"
         ],
         "$__mpe_code": {
             "position": {
@@ -156,8 +190,12 @@
         }
     },
     "if_龙币": {
+        "timeout": 2000,
         "next": [
             "龙币_1"
+        ],
+        "on_error": [
+            "endexchange"
         ],
         "$__mpe_code": {
             "position": {
@@ -238,10 +276,11 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "$__mpe_code": {
             "position": {
-                "x": -156,
-                "y": -1303
+                "x": -155,
+                "y": -1308
             }
         }
     },
@@ -317,6 +356,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "$__mpe_code": {
             "position": {
                 "x": -153,
@@ -396,6 +436,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "$__mpe_code": {
             "position": {
                 "x": -141,
@@ -408,7 +449,7 @@
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "basic/龙币daily.png"
+                    "basic/龙币s.png"
                 ]
             }
         },
@@ -475,6 +516,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "$__mpe_code": {
             "position": {
                 "x": -112,
