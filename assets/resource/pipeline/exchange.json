@@ -3,35 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1785081738091,
+            "lastSyncTime": 1785153037107,
             "isModifiedExternally": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\exchange.json",
             "savedViewport": {
-                "x": 862,
-                "y": 1338,
-                "zoom": 0.7
+                "x": 979,
+                "y": 1276,
+                "zoom": 0.75
             },
             "filename": "exchange",
             "version": "v1.7.4"
-        }
-    },
-    "checkhomepage_exchange_2": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/homepage.png"
-                ]
-            }
-        },
-        "next": [
-            "findexchange"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -2214,
-                "y": -1193
-            }
         }
     },
     "checkhomepage_exchange": {
@@ -53,6 +34,25 @@
             "position": {
                 "x": -2535,
                 "y": -1201
+            }
+        }
+    },
+    "checkhomepage_exchange_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage.png"
+                ]
+            }
+        },
+        "next": [
+            "findexchange"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2214,
+                "y": -1193
             }
         }
     },
@@ -276,7 +276,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "post_wait_freezes": 1500,
         "$__mpe_code": {
             "position": {
                 "x": -155,
@@ -356,7 +356,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "post_wait_freezes": 1500,
         "$__mpe_code": {
             "position": {
                 "x": -153,
@@ -436,7 +436,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "post_wait_freezes": 1500,
         "$__mpe_code": {
             "position": {
                 "x": -141,
@@ -516,7 +516,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "post_wait_freezes": 1500,
         "$__mpe_code": {
             "position": {
                 "x": -112,

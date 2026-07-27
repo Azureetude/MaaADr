@@ -1,9 +1,9 @@
 {
     "task": [
         {
-      "name": "看录像",
+      "name": "代理作战",
       "entry": "CustomProgramAction",
-      "default_check": true,
+      "default_check": false,
       "description": "SpecialTask_CustomProgramDesc",
       "pipeline_override": {
         "CustomProgramAction": {

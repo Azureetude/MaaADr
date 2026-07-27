@@ -1,7 +1,7 @@
 {
     "task": [
          {
-      "name": "录视频",
+      "name": "录制代理",
       "entry": "CustomProgramAction",
       "default_check": false,
       "description": "SpecialTask_CustomProgramDesc",

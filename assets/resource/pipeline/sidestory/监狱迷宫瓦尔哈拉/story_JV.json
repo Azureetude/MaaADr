@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1784947948351,
+            "lastSyncTime": 1785153285801,
             "isModifiedExternally": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\sidestory\\监狱迷宫瓦尔哈拉\\story_JV.json",
             "savedViewport": {
-                "x": -1167,
-                "y": 408,
-                "zoom": 0.57
+                "x": 160,
+                "y": 683,
+                "zoom": 0.76
             },
             "filename": "story_JV",
             "version": "v1.7.4"
@@ -252,21 +252,20 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    927,
+                    62,
+                    349,
+                    568
+                ],
                 "template": [
-                    "sidestory/JV/JV_BANNER.png"
-                ]
+                    "sidestory/JV/JV_banner_s.png"
+                ],
+                "green_mask": true
             }
         },
         "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    1099,
-                    400,
-                    1,
-                    1
-                ]
-            }
+            "type": "Click"
         },
         "next": [
             "JV_6"

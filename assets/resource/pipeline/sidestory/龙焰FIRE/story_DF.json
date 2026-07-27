@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1784947967370,
+            "lastSyncTime": 1785153386368,
             "isModifiedExternally": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\sidestory\\龙焰FIRE\\story_DF.json",
             "savedViewport": {
-                "x": -1383,
-                "y": 391,
-                "zoom": 0.57
+                "x": 51,
+                "y": 663,
+                "zoom": 0.76
             },
             "filename": "story_DF",
             "version": "v1.7.4"
@@ -252,21 +252,20 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    932,
+                    78,
+                    338,
+                    527
+                ],
                 "template": [
-                    "sidestory/DF/DF_BANNER.png"
-                ]
+                    "sidestory/DF/DF_BANNER_S.png"
+                ],
+                "green_mask": true
             }
         },
         "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    1112,
-                    284,
-                    1,
-                    1
-                ]
-            }
+            "type": "Click"
         },
         "next": [
             "DF_1"
