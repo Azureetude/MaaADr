@@ -3,16 +3,32 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1785153166106,
+            "lastSyncTime": 1785153316300,
             "isModifiedExternally": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\sidestory\\哞特儿牧场\\story_MR.json",
             "savedViewport": {
-                "x": -14,
-                "y": 753,
-                "zoom": 0.76
+                "x": -939,
+                "y": 475,
+                "zoom": 0.87
             },
             "filename": "story_MR",
             "version": "v1.7.4"
+        }
+    },
+    "MR_NOSKIP_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/SKIP_START.png"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2225,
+                "y": -68
+            }
         }
     },
     "MR_4": {

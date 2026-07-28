@@ -7,12 +7,28 @@
             "isModifiedExternally": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\sidestory\\龙焰FIRE\\story_DF.json",
             "savedViewport": {
-                "x": 51,
-                "y": 663,
+                "x": -887,
+                "y": 676,
                 "zoom": 0.76
             },
             "filename": "story_DF",
             "version": "v1.7.4"
+        }
+    },
+    "DF_NOSKIP_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/SKIP_START.png"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2227,
+                "y": -48
+            }
         }
     },
     "DF_1": {
@@ -265,7 +281,15 @@
             }
         },
         "action": {
-            "type": "Click"
+            "type": "Click",
+            "param": {
+                "target": [
+                    1112,
+                    284,
+                    1,
+                    1
+                ]
+            }
         },
         "next": [
             "DF_1"
