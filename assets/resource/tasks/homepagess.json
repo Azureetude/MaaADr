@@ -4,31 +4,58 @@
             "name": "当期活动",
             "entry": "findmap",
             "option": [
-                "活动",
+                "活动"
 //                "次数",
-                "是否跳过战斗"
+//                "是否跳过战斗"
             ]
         }
     ],
      "option": {
-        "是否跳过战斗": {
+        "是否跳过战斗_MR": {
             "type": "switch",
             "cases": [
                 {
                     "name": "Yes"
-//                    "pipeline_override": {
-//                        "startgame": {
-//                            "next": "checkdaily"  // 控制跳转到返回主界面节点
-//                     }
-//                    }
                 },
                 {
                     "name": "No",
-//                    "pipeline_override": {
-//                        "startgame": {
-//                            "next": "checkdaily_nomail"  // 控制跳转到返回主界面节点
-//                     }
-//                    }
+                    "pipeline_override": {
+                        "MR_4_37_2": {
+                            "next": "MR_NOSKIP_1"  
+                     }
+                    }
+                }
+            ]
+        },
+        "是否跳过战斗_JV": {
+            "type": "switch",
+            "cases": [
+                {
+                    "name": "Yes"
+                },
+                {
+                    "name": "No",
+                    "pipeline_override": {
+                        "JV_6_33_2": {
+                            "next": "JV_NOSKIP_1"  
+                     }
+                    }
+                }
+            ]
+        },
+        "是否跳过战斗_DF": {
+            "type": "switch",
+            "cases": [
+                {
+                    "name": "Yes"
+                },
+                {
+                    "name": "No",
+                    "pipeline_override": {
+                        "DF_1_2": {
+                            "next": "DF_NOSKIP_1"  
+                     }
+                    }
                 }
             ]
         },
@@ -38,7 +65,8 @@
                 {
                     "name": "龙焰FIRE!",
                     "option": [  // 嵌套的子选项
-                       "关卡_DF"
+                       "关卡_DF",
+                       "是否跳过战斗_DF"
                    ],
                     "pipeline_override": {
                         "findmap": {
@@ -49,7 +77,8 @@
                 {
                     "name": "监狱迷宫瓦尔拉哈",
                     "option": [  // 嵌套的子选项
-                       "关卡_JV"
+                       "关卡_JV",
+                       "是否跳过战斗_JV"
                    ],
                     "pipeline_override": {
                         "findmap": {
@@ -60,7 +89,8 @@
                 {
                     "name": "哞特儿牧场",
                     "option": [  // 嵌套的子选项
-                       "关卡_MR"
+                       "关卡_MR",
+                       "是否跳过战斗_MR"
                    ],
                     "pipeline_override": {
                         "findmap": {
