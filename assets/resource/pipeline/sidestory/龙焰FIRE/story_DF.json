@@ -3,32 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1785153386368,
+            "lastSyncTime": 1785565432522,
             "isModifiedExternally": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\sidestory\\龙焰FIRE\\story_DF.json",
             "savedViewport": {
-                "x": -887,
-                "y": 676,
-                "zoom": 0.76
+                "x": -15,
+                "y": 470,
+                "zoom": 0.87
             },
             "filename": "story_DF",
             "version": "v1.7.4"
-        }
-    },
-    "DF_NOSKIP_1": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/SKIP_START.png"
-                ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 2227,
-                "y": -48
-            }
         }
     },
     "DF_1": {
@@ -36,16 +20,17 @@
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "sidestory/DF/DF_1.png"
-                ]
+                    "sidestory/DF/DF_2.png"
+                ],
+                "green_mask": true
             }
         },
         "action": {
             "type": "Click",
             "param": {
                 "target": [
-                    167,
-                    319,
+                    431,
+                    316,
                     1,
                     1
                 ]
@@ -298,6 +283,22 @@
             "position": {
                 "x": 479,
                 "y": -629
+            }
+        }
+    },
+    "DF_NOSKIP_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/SKIP_START.png"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2227,
+                "y": -48
             }
         }
     }
