@@ -2,7 +2,8 @@
     "task": [
         {
             "name": "关闭游戏",
-            "entry": "endgame"
+            "entry": "endgame",
+            "controller": "桌面端"
         }
     ]
 }
