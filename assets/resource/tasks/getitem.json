@@ -4,8 +4,8 @@
             "name": "素材周回",
             "entry": "obtainmaterials",
             "option": [
-                "道具",
-                "是否跳过战斗"
+                "道具"
+//                "是否跳过战斗"
             ]
         }
     ],
