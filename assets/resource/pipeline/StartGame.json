@@ -3,16 +3,60 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1785151991174,
+            "lastSyncTime": 1785640448233,
             "isModifiedExternally": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\StartGame.json",
             "savedViewport": {
-                "x": 2185,
-                "y": 844,
-                "zoom": 0.75
+                "x": 4541,
+                "y": 1703,
+                "zoom": 1.5
             },
             "filename": "StartGame",
             "version": "v1.7.4"
+        }
+    },
+    "dailyreward-exit": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/daily.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "checkhomepage"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1831,
+                "y": -1219
+            }
+        }
+    },
+    "dailyreward-exit_nomail": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/daily.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "checkhomepage_nomail"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1739,
+                "y": -847
+            }
         }
     },
     "backhomepage": {
@@ -53,13 +97,13 @@
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    0,
-                    3,
-                    302,
-                    559
+                    261,
+                    565,
+                    777,
+                    152
                 ],
                 "template": [
-                    "basic/homepage-1.png"
+                    "basic/homepage_down.png"
                 ],
                 "green_mask": true
             }
@@ -114,26 +158,25 @@
         }
     },
     "dailyreward": {
-        "action": {
-            "type": "Click",
+        "recognition": {
+            "type": "TemplateMatch",
             "param": {
-                "target": [
-                    654,
-                    600,
-                    1,
-                    1
+                "template": [
+                    "basic/dailyreward-s.png"
                 ]
             }
         },
-        "repeat": 2,
-        "post_wait_freezes": 1000,
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 500,
         "next": [
-            "checkhomepage"
+            "dailyreward-exit"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -2020,
-                "y": -1226
+                "x": -2093,
+                "y": -1238
             }
         }
     },
@@ -163,6 +206,7 @@
                 ]
             }
         },
+        "post_delay": 500,
         "next": [
             "dailyreward"
         ],
@@ -174,26 +218,25 @@
         }
     },
     "dailyreward_nomail": {
-        "action": {
-            "type": "Click",
+        "recognition": {
+            "type": "TemplateMatch",
             "param": {
-                "target": [
-                    654,
-                    600,
-                    1,
-                    1
+                "template": [
+                    "basic/dailyreward-s.png"
                 ]
             }
         },
-        "repeat": 2,
-        "post_wait_freezes": 1000,
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 500,
         "next": [
-            "checkhomepage_nomail"
+            "dailyreward-exit_nomail"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1906,
-                "y": -791
+                "x": -2032,
+                "y": -823
             }
         }
     },
@@ -238,7 +281,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 500,
+        "post_wait_freezes": 1000,
         "next": [
             "backhomepage"
         ],
@@ -276,6 +319,7 @@
             }
         },
         "post_delay": 30000,
+        "timeout": -1,
         "$__mpe_code": {
             "position": {
                 "x": -3043,
@@ -288,13 +332,13 @@
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    0,
-                    3,
-                    302,
-                    559
+                    267,
+                    574,
+                    677,
+                    144
                 ],
                 "template": [
-                    "basic/homepage-1.png"
+                    "basic/homepage_down.png"
                 ],
                 "green_mask": true
             }
@@ -339,6 +383,7 @@
                 ]
             }
         },
+        "post_delay": 500,
         "next": [
             "dailyreward_nomail"
         ],

@@ -23,6 +23,12 @@
                 "mouse": "PostMessageWithCursorPos", // 鼠标控制方式
                 "keyboard": "PostMessageWithCursorPos" // 键盘控制方式
             }
+        },
+        {
+            "name": "ADB",
+            "label": "模拟器",
+            "type": "Adb",
+            "display_short_side": 720
         }
     ],
     "resource": [
