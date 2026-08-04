@@ -1,9 +1,9 @@
 {
     "task": [
         {
-            "name": "当期活动",
+            "name": "当期活动EX",
             "entry": "findmap",
-            "resource": ["offical"],
+            "resource": ["EX"],
             "option": [
                 "活动"
 //                "次数",

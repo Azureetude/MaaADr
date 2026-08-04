@@ -32,9 +32,19 @@
     ],
     "resource": [
         {
-            "name": "官服",
+            "name": "offical",
+            "label": "官服",
             "path": [
                 "./resource"
+            ]
+        },
+        {
+            "name": "EX",
+            "label": "龙の座",
+            "description": "使用该资源包视为已阅读免责声明与风险提示",
+            "path": [
+                "./resource",
+                "./resource/EX"
             ]
         }
     ],
