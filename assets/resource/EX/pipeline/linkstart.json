@@ -1,0 +1,68 @@
+{
+    "$__mpe_config_新建Pipeline3": {
+        "$__mpe_code": {
+            "coordinateMode": "absolute-v1",
+            "filename": "新建Pipeline3",
+            "prefix": "",
+            "savedViewport": {
+                "x": 2756,
+                "y": 1165,
+                "zoom": 0.87
+            },
+            "version": "v1.7.4"
+        }
+    },
+    "linkstart": {
+        "$__mpe_code": {
+            "position": {
+                "x": -2833,
+                "y": -1151
+            }
+        },
+        "next": [
+            "linkstart_1"
+        ],
+        "recognition": {
+            "param": {
+                "green_mask": true,
+                "roi": [
+                    261,
+                    565,
+                    777,
+                    152
+                ],
+                "template": [
+                    "basic/homepage_down.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        },
+        "timeout": 3000
+    },
+    "linkstart_1": {
+        "$__mpe_code": {
+            "position": {
+                "x": -2476,
+                "y": -1140
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "green_mask": true,
+                "roi": [
+                    586,
+                    2,
+                    102,
+                    94
+                ],
+                "template": [
+                    "basic/coin.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    }
+}
