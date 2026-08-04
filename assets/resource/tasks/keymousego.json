@@ -3,7 +3,7 @@
          {
       "name": "录制代理",
       "entry": "CustomProgramAction",
-      "controller": "桌面端",
+      "controller": ["Win32"],
       "default_check": false,
       "description": "SpecialTask_CustomProgramDesc",
       "pipeline_override": {
