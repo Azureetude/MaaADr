@@ -3,7 +3,6 @@
         {
       "name": "代理作战",
       "entry": "CustomProgramAction",
-      "controller": ["Win32"],
       "default_check": false,
       "description": "SpecialTask_CustomProgramDesc",
       "pipeline_override": {

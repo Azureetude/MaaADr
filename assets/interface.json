@@ -2,7 +2,7 @@
     "interface_version": 2,
     "name": "MaaADr",
     "icon": "./resource/logo.ico",
-    "description": "这是一个使用 MaaFramework 创建的新项目。",
+    "description": "基于全新架构的 龙脉R(AnaDos) 自动清体/兑换小助手",
     "contact": "QQ群: 1071729734",
     "license": "MIT",
     "welcome": "首次使用！欢迎使用 MaaADr!",
