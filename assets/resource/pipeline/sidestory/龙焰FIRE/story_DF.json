@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1785858601490,
+            "lastSyncTime": 1785895399307,
             "isModifiedExternally": false,
-            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\sidestory\\龙焰FIRE\\story_DF.json",
+            "filePath": "E:\\VSCode\\MaaADr\\assets\\resource\\pipeline\\sidestory\\龙焰FIRE\\story_DF.json",
             "savedViewport": {
-                "x": -83,
-                "y": -254,
-                "zoom": 0.75
+                "x": 122,
+                "y": 103,
+                "zoom": 0.5
             },
             "filename": "story_DF",
             "version": "v1.7.4"
@@ -223,8 +223,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 2572,
-                "y": 1103
+                "x": 2516,
+                "y": 739
             }
         }
     },
@@ -345,7 +345,7 @@
         },
         "timeout": 5000,
         "focus": {
-            "Node.Recognition.Failed": "任务结束"
+            "Node.Recognition.Succeeded": "战斗执行成功"
         },
         "next": [
             "[JumpBack]DF_1_EX"

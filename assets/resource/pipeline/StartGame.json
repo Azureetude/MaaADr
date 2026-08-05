@@ -3,60 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1785640448233,
+            "lastSyncTime": 1785895270314,
             "isModifiedExternally": false,
-            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\StartGame.json",
+            "filePath": "E:\\VSCode\\MaaADr\\assets\\resource\\pipeline\\StartGame.json",
             "savedViewport": {
-                "x": 4541,
-                "y": 1703,
-                "zoom": 1.5
+                "x": 360,
+                "y": 216,
+                "zoom": 0.5
             },
             "filename": "StartGame",
             "version": "v1.7.4"
-        }
-    },
-    "dailyreward-exit": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/daily.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "checkhomepage"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -1831,
-                "y": -1219
-            }
-        }
-    },
-    "dailyreward-exit_nomail": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/daily.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "checkhomepage_nomail"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -1739,
-                "y": -847
-            }
         }
     },
     "backhomepage": {
@@ -87,8 +43,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": -515,
-                "y": -1173
+                "x": 2252,
+                "y": 474
             }
         }
     },
@@ -110,15 +66,45 @@
         },
         "timeout": 3000,
         "next": [
-            "dailyreward_1"
+            "mail"
         ],
         "on_error": [
-            "checkhomepage"
+            "dailyreward_1"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -2721,
-                "y": -1238
+                "x": 12,
+                "y": 423
+            }
+        }
+    },
+    "checkdaily_nomail": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    267,
+                    574,
+                    677,
+                    144
+                ],
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "timeout": 3000,
+        "next": [
+            "checkhomepage_nomail"
+        ],
+        "on_error": [
+            "dailyreward_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 262,
+                "y": -85
             }
         }
     },
@@ -136,8 +122,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1572,
-                "y": -1213
+                "x": 1304,
+                "y": 588
             }
         }
     },
@@ -152,8 +138,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": -1442,
-                "y": -783
+                "x": 1577,
+                "y": -25
             }
         }
     },
@@ -175,8 +161,52 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -2093,
-                "y": -1238
+                "x": 661,
+                "y": 565
+            }
+        }
+    },
+    "dailyreward-exit": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/daily.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "checkhomepage"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 977,
+                "y": 589
+            }
+        }
+    },
+    "dailyreward-exit_nomail": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/daily.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "checkhomepage_nomail"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1235,
+                "y": 197
             }
         }
     },
@@ -212,148 +242,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -2375,
-                "y": -1239
-            }
-        }
-    },
-    "dailyreward_nomail": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/dailyreward-s.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 500,
-        "next": [
-            "dailyreward-exit_nomail"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -2032,
-                "y": -823
-            }
-        }
-    },
-    "mail": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    15,
-                    189,
-                    98,
-                    70
-                ],
-                "template": [
-                    "basic/mail.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_wait_freezes": 1000,
-        "next": [
-            "receive"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -1217,
-                "y": -1216
-            }
-        }
-    },
-    "receive": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    1127,
-                    657,
-                    1,
-                    1
-                ]
-            }
-        },
-        "post_wait_freezes": 1000,
-        "next": [
-            "backhomepage"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -896,
-                "y": -1184
-            }
-        }
-    },
-    "startgame": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    176,
-                    17,
-                    978,
-                    511
-                ],
-                "template": [
-                    "basic/logo.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    634,
-                    548,
-                    1,
-                    1
-                ]
-            }
-        },
-        "post_delay": 30000,
-        "timeout": -1,
-        "$__mpe_code": {
-            "position": {
-                "x": -3043,
-                "y": -980
-            }
-        }
-    },
-    "checkdaily_nomail": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    267,
-                    574,
-                    677,
-                    144
-                ],
-                "template": [
-                    "basic/homepage_down.png"
-                ],
-                "green_mask": true
-            }
-        },
-        "timeout": 3000,
-        "on_error": [
-            "checkhomepage_nomail"
-        ],
-        "next": [
-            "dailyreward_2"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -2704,
-                "y": -785
+                "x": 334,
+                "y": 565
             }
         }
     },
@@ -389,8 +279,118 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -2315,
-                "y": -789
+                "x": 588,
+                "y": 106
+            }
+        }
+    },
+    "dailyreward_nomail": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/dailyreward-s.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 500,
+        "next": [
+            "dailyreward-exit_nomail"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 916,
+                "y": 124
+            }
+        }
+    },
+    "mail": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    15,
+                    189,
+                    98,
+                    70
+                ],
+                "template": [
+                    "basic/mail.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "receive"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1612,
+                "y": 442
+            }
+        }
+    },
+    "receive": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1127,
+                    657,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "backhomepage"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1932,
+                "y": 484
+            }
+        }
+    },
+    "startgame": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    176,
+                    17,
+                    978,
+                    511
+                ],
+                "template": [
+                    "basic/logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    634,
+                    548,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_delay": 30000,
+        "timeout": -1,
+        "$__mpe_code": {
+            "position": {
+                "x": -372,
+                "y": 88
             }
         }
     }

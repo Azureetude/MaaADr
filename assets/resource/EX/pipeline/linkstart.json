@@ -1,30 +1,24 @@
 {
-    "$__mpe_config_新建Pipeline3": {
+    "$__mpe_config_linkstart": {
         "$__mpe_code": {
-            "coordinateMode": "absolute-v1",
-            "filename": "新建Pipeline3",
             "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1785894482410,
+            "isModifiedExternally": false,
+            "filePath": "E:\\VSCode\\MaaADr\\assets\\resource\\EX\\pipeline\\linkstart.json",
             "savedViewport": {
-                "x": 2756,
-                "y": 1165,
+                "x": 3065,
+                "y": 1275,
                 "zoom": 0.87
             },
+            "filename": "linkstart",
             "version": "v1.7.4"
         }
     },
     "linkstart": {
-        "$__mpe_code": {
-            "position": {
-                "x": -2833,
-                "y": -1151
-            }
-        },
-        "next": [
-            "linkstart_1"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
-                "green_mask": true,
                 "roi": [
                     261,
                     565,
@@ -33,25 +27,25 @@
                 ],
                 "template": [
                     "basic/homepage_down.png"
-                ]
-            },
-            "type": "TemplateMatch"
-        },
-        "timeout": 3000
-    },
-    "linkstart_1": {
-        "$__mpe_code": {
-            "position": {
-                "x": -2476,
-                "y": -1140
+                ],
+                "green_mask": true
             }
         },
-        "action": {
-            "type": "Click"
-        },
+        "timeout": 3000,
+        "next": [
+            "linkstart_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2833,
+                "y": -1151
+            }
+        }
+    },
+    "linkstart_1": {
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
-                "green_mask": true,
                 "roi": [
                     586,
                     2,
@@ -60,9 +54,19 @@
                 ],
                 "template": [
                     "basic/coin.png"
-                ]
-            },
-            "type": "TemplateMatch"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 5000,
+        "$__mpe_code": {
+            "position": {
+                "x": -2476,
+                "y": -1140
+            }
         }
     }
 }
