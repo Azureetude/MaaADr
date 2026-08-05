@@ -283,7 +283,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "体力不足"
+            "Node.Action.Succeeded": "<span style=\"color:crimson;\">体力不足</span>"
         },
         "next": [
             "DF_BACK_HOME"
@@ -373,7 +373,7 @@
         },
         "timeout": 5000,
         "focus": {
-            "Node.Recognition.Succeeded": "战斗执行成功"
+            "Node.Recognition.Succeeded": "<span style=\"color:green;\">战斗执行成功</span>"
         },
         "next": [
             "[JumpBack]DF_1_EX"
