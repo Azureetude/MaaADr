@@ -3,16 +3,76 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1785895270314,
+            "lastSyncTime": 1785977736310,
             "isModifiedExternally": false,
             "filePath": "E:\\VSCode\\MaaADr\\assets\\resource\\pipeline\\StartGame.json",
             "savedViewport": {
-                "x": 360,
-                "y": 216,
-                "zoom": 0.5
+                "x": 447,
+                "y": 135,
+                "zoom": 0.57
             },
             "filename": "StartGame",
             "version": "v1.7.4"
+        }
+    },
+    "checkdaily_nomail": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    264,
+                    557,
+                    672,
+                    160
+                ],
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "timeout": 3000,
+        "next": [
+            "checkdaily_nomail_1"
+        ],
+        "on_error": [
+            "dailyreward_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -62,
+                "y": 48
+            }
+        }
+    },
+    "checkdaily": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    260,
+                    548,
+                    682,
+                    168
+                ],
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "timeout": 3000,
+        "on_error": [
+            "dailyreward_1"
+        ],
+        "next": [
+            "checkdaily_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -357,
+                "y": 617
+            }
         }
     },
     "backhomepage": {
@@ -48,7 +108,7 @@
             }
         }
     },
-    "checkdaily": {
+    "checkdaily_1": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -64,21 +124,17 @@
                 "green_mask": true
             }
         },
-        "timeout": 3000,
         "next": [
             "mail"
         ],
-        "on_error": [
-            "dailyreward_1"
-        ],
         "$__mpe_code": {
             "position": {
-                "x": 12,
-                "y": 423
+                "x": 25,
+                "y": 466
             }
         }
     },
-    "checkdaily_nomail": {
+    "checkdaily_nomail_1": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -94,12 +150,8 @@
                 "green_mask": true
             }
         },
-        "timeout": 3000,
         "next": [
             "checkhomepage_nomail"
-        ],
-        "on_error": [
-            "dailyreward_2"
         ],
         "$__mpe_code": {
             "position": {
@@ -389,8 +441,8 @@
         "timeout": -1,
         "$__mpe_code": {
             "position": {
-                "x": -372,
-                "y": 88
+                "x": -683,
+                "y": 127
             }
         }
     }

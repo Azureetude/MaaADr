@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1785894482410,
+            "lastSyncTime": 1785977314355,
             "isModifiedExternally": false,
             "filePath": "E:\\VSCode\\MaaADr\\assets\\resource\\EX\\pipeline\\linkstart.json",
             "savedViewport": {
-                "x": 3065,
-                "y": 1275,
-                "zoom": 0.87
+                "x": 2122,
+                "y": 897,
+                "zoom": 0.5
             },
             "filename": "linkstart",
             "version": "v1.7.4"
@@ -31,6 +31,7 @@
                 "green_mask": true
             }
         },
+        "pre_delay": 300,
         "timeout": 3000,
         "next": [
             "linkstart_1"
@@ -59,7 +60,15 @@
             }
         },
         "action": {
-            "type": "Click"
+            "type": "Click",
+            "param": {
+                "target": [
+                    701,
+                    42,
+                    1,
+                    1
+                ]
+            }
         },
         "post_delay": 5000,
         "$__mpe_code": {
