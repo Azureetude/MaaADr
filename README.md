@@ -18,6 +18,7 @@
     <br/>
     <img alt="commit" src="https://img.shields.io/github/commit-activity/m/Azureetude/MAAADr?style=flat-square&color=darkgreen">
     <img src="https://img.shields.io/github/stars/Azureetude/MAAADr?style=flat-square&logo=github&color=darkgreen" alt="Stars" />
+       <a href="https://mirrorchyan.com/zh/projects?rid=MaaADr&os=win&arch=x64&channel=stable" target="_blank"><img alt="mirrorc" src="https://img.shields.io/badge/Mirror%E9%85%B1-%239af3f6?logo=countingworkspro&logoColor=4f46e5"></a>
   </p>
 
 基于全新架构的 龙脉R(AnaDos) 自动清体/兑换小助手。图像技术+模拟控制，解放双手！
@@ -32,22 +33,28 @@
 >
 > 如有问题及建议，欢迎在github的issue板块提出
 >
-> MaaADr交流QQ群：1071729734
+> 💬MaaADr交流QQ群：[1071729734](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=MJV7fd5huEugZClnAKoslskuPqRb2Xq9&authKey=p%2B4yQS2nFW8pB00oTCkpy%2Frh8X79sZwEUNR2BVpnvcfg44%2BMWImzM%2FP%2BrLDJ%2F04g&noverify=0&group_code=1071729734)  *使用问题🐛、功能建议💡、闲聊摸鱼🐟，欢迎加入~*
+
+## 下载
+
+前往 [GitHub Releases](https://github.com/Azureetude/MaaADr/releases) 下载全量包*MaaADr-win-x86_64-vx.x.x.zip*。
+
+如果你有 Mirror 酱 CDK，也可以通过 [Mirror 酱高速下载](https://mirrorchyan.com/zh/projects?rid=MaaADr&os=win&arch=x64&channel=stable) 获取最新版本。
 
 ## 功能列表
 
 - **开始游戏**：
-  - 自动启动游戏并领取每日奖励，收取邮件(可选)，进入主界面。
+  - ✅自动启动游戏并领取每日奖励，收取邮件(可选)，进入主界面。
 - **以太交换所(每日)**：
-  - 支持每日铜之以太商品兑换(精力饮,紫色礼盒,战斗记录·IV,龙币)
+  - ✅支持每日铜之以太商品兑换(精力饮,紫色礼盒,战斗记录·IV,龙币)
 - **刷素材**：
-  - 自动导航至对应材料关卡使用*跳过券*
+  - ✅自动导航至对应材料关卡使用*跳过券*
 - **当期活动**：
-  - 当期及复刻活动底关自动使用*跳过券*清体力
+  - ✅当期及复刻活动底关自动使用*跳过券*清体力
 - **兑换活动商店**：
-  - 锐意制作中
+  - 🛠️锐意制作中
 - **一键养成**:
-  - 锐意制作中
+  - 🛠️锐意制作中
 
 ## 使用说明
 
