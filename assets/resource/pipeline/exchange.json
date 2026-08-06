@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1785153037107,
+            "lastSyncTime": 1786001453766,
             "isModifiedExternally": false,
-            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\exchange.json",
+            "filePath": "E:\\VSCode\\MaaADr\\assets\\resource\\pipeline\\exchange.json",
             "savedViewport": {
-                "x": 979,
-                "y": 1276,
-                "zoom": 0.75
+                "x": 985,
+                "y": 788,
+                "zoom": 0.5
             },
             "filename": "exchange",
             "version": "v1.7.4"
@@ -277,6 +277,9 @@
             }
         },
         "post_wait_freezes": 1500,
+        "focus": {
+            "Node.Action.Succeeded": "<span style=\"color:blue;\">已兑换\"战斗记录 · IV\"</span>"
+        },
         "$__mpe_code": {
             "position": {
                 "x": -155,
@@ -357,6 +360,9 @@
             }
         },
         "post_wait_freezes": 1500,
+        "focus": {
+            "Node.Action.Succeeded": "<span style=\"color:blue;\">已兑换\"精力饮\"</span>"
+        },
         "$__mpe_code": {
             "position": {
                 "x": -153,
@@ -437,6 +443,9 @@
             }
         },
         "post_wait_freezes": 1500,
+        "focus": {
+            "Node.Action.Succeeded": "<span style=\"color:blue;\">已兑换\"紫色礼盒\"</span>"
+        },
         "$__mpe_code": {
             "position": {
                 "x": -141,
@@ -517,6 +526,9 @@
             }
         },
         "post_wait_freezes": 1500,
+        "focus": {
+            "Node.Action.Succeeded": "<span style=\"color:blue;\">已兑换\"龙币\"</span>"
+        },
         "$__mpe_code": {
             "position": {
                 "x": -112,

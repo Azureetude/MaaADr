@@ -3,7 +3,7 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1785977314355,
+            "lastSyncTime": 1785977376946,
             "isModifiedExternally": false,
             "filePath": "E:\\VSCode\\MaaADr\\assets\\resource\\EX\\pipeline\\linkstart.json",
             "savedViewport": {
@@ -71,6 +71,9 @@
             }
         },
         "post_delay": 5000,
+        "focus": {
+            "Node.Action.Succeeded": "龙王的力量充满了全身...!"
+        },
         "$__mpe_code": {
             "position": {
                 "x": -2476,
