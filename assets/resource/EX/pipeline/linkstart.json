@@ -1,0 +1,84 @@
+{
+    "$__mpe_config_linkstart": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1785977376946,
+            "isModifiedExternally": false,
+            "filePath": "E:\\VSCode\\MaaADr\\assets\\resource\\EX\\pipeline\\linkstart.json",
+            "savedViewport": {
+                "x": 2122,
+                "y": 897,
+                "zoom": 0.5
+            },
+            "filename": "linkstart",
+            "version": "v1.7.4"
+        }
+    },
+    "linkstart": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    261,
+                    565,
+                    777,
+                    152
+                ],
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_delay": 300,
+        "timeout": 3000,
+        "next": [
+            "linkstart_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2833,
+                "y": -1151
+            }
+        }
+    },
+    "linkstart_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    586,
+                    2,
+                    102,
+                    94
+                ],
+                "template": [
+                    "basic/coin.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    701,
+                    42,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_delay": 5000,
+        "focus": {
+            "Node.Action.Succeeded": "龙王的力量充满了全身...!"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": -2476,
+                "y": -1140
+            }
+        }
+    }
+}

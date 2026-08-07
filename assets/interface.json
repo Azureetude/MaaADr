@@ -32,9 +32,19 @@
     ],
     "resource": [
         {
-            "name": "官服",
+            "name": "official",
+            "label": "官服",
             "path": [
                 "./resource"
+            ]
+        },
+        {
+            "name": "EX",
+            "label": "龙の座",
+            "description": "使用该资源包视为已阅读免责声明与风险提示",
+            "path": [
+                "./resource",
+                "./resource/EX"
             ]
         }
     ],
@@ -47,13 +57,16 @@
     // },
      "import": [
        "./resource/tasks/opengame.json",
+       "./resource/tasks/linkstart.json",
        "./resource/tasks/dailyexchange.json",
        "./resource/tasks/homepagess.json",
+       "./resource/tasks/homepagess_EX.json",
        "./resource/tasks/getitem.json",
+       "./resource/tasks/getitem_EX.json",
        "./resource/tasks/RestoreStamina.json",
     //   "./resource/tasks/mainstory.json",
-       "./resource/tasks/Closegame.json",
-       "./resource/tasks/keymousego.json",
-       "./resource/tasks/replay.json"
+       "./resource/tasks/Closegame.json"
+    //   "./resource/tasks/keymousego.json",
+    //   "./resource/tasks/replay.json"
      ]
 }
