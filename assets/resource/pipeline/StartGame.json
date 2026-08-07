@@ -7,22 +7,14 @@
             "isModifiedExternally": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\StartGame.json",
             "savedViewport": {
-<<<<<<< HEAD
                 "x": 23,
                 "y": -70,
                 "zoom": 0.87
-=======
-                "x": 599,
-                "y": 126,
-                "zoom": 0.35
->>>>>>> c9032e5edbd749b0678a3747825b6bb58df8e2a0
             },
             "filename": "StartGame",
             "version": "v1.7.4"
         }
     },
-<<<<<<< HEAD
-=======
     "checkdaily_nomail_1": {
         "recognition": {
             "type": "TemplateMatch",
@@ -63,7 +55,6 @@
             }
         }
     },
->>>>>>> c9032e5edbd749b0678a3747825b6bb58df8e2a0
     "backhomepage": {
         "recognition": {
             "type": "TemplateMatch",
