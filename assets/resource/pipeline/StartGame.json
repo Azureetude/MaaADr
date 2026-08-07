@@ -3,18 +3,67 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1785977736310,
+            "lastSyncTime": 1786059843142,
             "isModifiedExternally": false,
-            "filePath": "E:\\VSCode\\MaaADr\\assets\\resource\\pipeline\\StartGame.json",
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\StartGame.json",
             "savedViewport": {
+<<<<<<< HEAD
                 "x": 23,
                 "y": -70,
                 "zoom": 0.87
+=======
+                "x": 599,
+                "y": 126,
+                "zoom": 0.35
+>>>>>>> c9032e5edbd749b0678a3747825b6bb58df8e2a0
             },
             "filename": "StartGame",
             "version": "v1.7.4"
         }
     },
+<<<<<<< HEAD
+=======
+    "checkdaily_nomail_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "next": [
+            "checkdaily_nomail_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -324,
+                "y": 71
+            }
+        }
+    },
+    "checkdaily_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "next": [
+            "checkdaily_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -400,
+                "y": 641
+            }
+        }
+    },
+>>>>>>> c9032e5edbd749b0678a3747825b6bb58df8e2a0
     "backhomepage": {
         "recognition": {
             "type": "TemplateMatch",
@@ -48,7 +97,32 @@
             }
         }
     },
-    "checkdaily_1": {
+    "checkdaily": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage-1.png",
+                    "basic/homepage_gray.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "timeout": 3000,
+        "next": [
+            "checkdaily_1"
+        ],
+        "on_error": [
+            "dailyreward_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -740,
+                "y": 617
+            }
+        }
+    },
+    "checkdaily_2": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -74,7 +148,32 @@
             }
         }
     },
-    "checkdaily_nomail_1": {
+    "checkdaily_nomail": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage-1.png",
+                    "basic/homepage_gray.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "timeout": 3000,
+        "next": [
+            "checkdaily_nomail_1"
+        ],
+        "on_error": [
+            "dailyreward_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -738,
+                "y": 62
+            }
+        }
+    },
+    "checkdaily_nomail_2": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -170,6 +269,9 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.Action.Succeeded": "每日奖励已领取"
+        },
         "next": [
             "checkhomepage"
         ],
@@ -191,6 +293,9 @@
         },
         "action": {
             "type": "Click"
+        },
+        "focus": {
+            "Node.Action.Succeeded": "每日奖励已领取"
         },
         "next": [
             "checkhomepage_nomail"
@@ -242,8 +347,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 334,
-                "y": 565
+                "x": 331,
+                "y": 738
             }
         }
     },
@@ -397,8 +502,8 @@
         "timeout": -1,
         "$__mpe_code": {
             "position": {
-                "x": -683,
-                "y": 127
+                "x": -1112,
+                "y": 226
             }
         }
     },
