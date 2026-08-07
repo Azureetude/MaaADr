@@ -32,7 +32,7 @@
     ],
     "resource": [
         {
-            "name": "offical",
+            "name": "official",
             "label": "官服",
             "path": [
                 "./resource"
@@ -66,7 +66,7 @@
        "./resource/tasks/RestoreStamina.json",
     //   "./resource/tasks/mainstory.json",
        "./resource/tasks/Closegame.json",
-       "./resource/tasks/keymousego.json",
-       "./resource/tasks/replay.json"
+    //    "./resource/tasks/keymousego.json",
+    //    "./resource/tasks/replay.json"
      ]
 }

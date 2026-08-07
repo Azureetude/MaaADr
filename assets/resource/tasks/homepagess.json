@@ -3,7 +3,7 @@
         {
             "name": "当期活动",
             "entry": "findmap",
-            "resource": ["offical"],
+            "resource": ["official"],
             "option": [
                 "活动"
 //                "次数",
@@ -74,30 +74,30 @@
                             "next": "find_DF"  // 控制跳转到对应活动地图
                         }
                     }
-                },
-                {
-                    "name": "监狱迷宫瓦尔拉哈",
-                    "option": [  // 嵌套的子选项
-                       "关卡_JV",
-                       "是否跳过战斗_JV"
-                   ],
-                    "pipeline_override": {
-                        "findmap": {
-                            "next": "find_JV"  // 控制跳转到对应活动地图
-                        }
-                    }
-                },
-                {
-                    "name": "哞特儿牧场",
-                    "option": [  // 嵌套的子选项
-                       "关卡_MR",
-                       "是否跳过战斗_MR"
-                   ],
-                    "pipeline_override": {
-                        "findmap": {
-                            "next": "find_MR"  // 控制跳转到对应活动地图
-                        }
-                    }
+                // },
+                // {
+                //     "name": "监狱迷宫瓦尔拉哈",
+                //     "option": [  // 嵌套的子选项
+                //        "关卡_JV",
+                //        "是否跳过战斗_JV"
+                //    ],
+                //     "pipeline_override": {
+                //         "findmap": {
+                //             "next": "find_JV"  // 控制跳转到对应活动地图
+                //         }
+                //     }
+                // },
+                // {
+                //     "name": "哞特儿牧场",
+                //     "option": [  // 嵌套的子选项
+                //        "关卡_MR",
+                //        "是否跳过战斗_MR"
+                //    ],
+                //     "pipeline_override": {
+                //         "findmap": {
+                //             "next": "find_MR"  // 控制跳转到对应活动地图
+                //         }
+                //     }
                 }
             ]
         },
@@ -116,7 +116,7 @@
         "关卡_DF": {
             "type": "select",
             "cases": [
-            { "name": "DF_13" }
+            { "name": "DF_22" }
              ]
         }
      }

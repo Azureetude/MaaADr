@@ -3,27 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1785901523527,
+            "lastSyncTime": 1786094108061,
             "isModifiedExternally": false,
             "filePath": "E:\\VSCode\\MaaADr\\assets\\resource\\pipeline\\sidestory\\龙焰FIRE\\story_DF.json",
             "savedViewport": {
-                "x": -871,
-                "y": -193,
+                "x": 337,
+                "y": -154,
                 "zoom": 0.66
             },
             "filename": "story_DF",
             "version": "v1.7.4"
-        }
-    },
-    "DF_END": {
-        "action": {
-            "type": "StopTask"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 2848,
-                "y": 748
-            }
         }
     },
     "DF_1": {
@@ -31,7 +20,7 @@
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "sidestory/DF/DF_2.png"
+                    "sidestory/DF/DF_3.png"
                 ],
                 "green_mask": true
             }
@@ -40,10 +29,10 @@
             "type": "Click",
             "param": {
                 "target": [
-                    431,
+                    706,
                     316,
-                    1,
-                    1
+                    0,
+                    2
                 ]
             }
         },
@@ -152,7 +141,7 @@
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "sidestory/JV/JV_33.png"
+                    "sidestory/DF/DF_22.png"
                 ]
             }
         },
@@ -182,8 +171,14 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
                 "template": [
-                    "sidestory/JV/JV_33.png"
+                    "sidestory/DF/DF_22.png"
                 ]
             }
         },
@@ -214,7 +209,7 @@
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "sidestory/DF/DF_2.png"
+                    "sidestory/DF/DF_3.png"
                 ],
                 "green_mask": true
             }
@@ -223,8 +218,8 @@
             "type": "Click",
             "param": {
                 "target": [
-                    431,
-                    316,
+                    700,
+                    326,
                     1,
                     1
                 ]
@@ -267,6 +262,17 @@
             "position": {
                 "x": 2516,
                 "y": 739
+            }
+        }
+    },
+    "DF_END": {
+        "action": {
+            "type": "StopTask"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2848,
+                "y": 748
             }
         }
     },

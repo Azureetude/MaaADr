@@ -25,47 +25,47 @@
                             "next": "find_DF_EX"  // 控制跳转到对应活动地图
                         }
                     }
-                },
-                {
-                    "name": "监狱迷宫瓦尔拉哈(EX)",
-                    "option": [  // 嵌套的子选项
-                       "关卡_JV(EX)"
-                   ],
-                    "pipeline_override": {
-                        "findmap": {
-                            "next": "find_JV"  // 控制跳转到对应活动地图
-                        }
-                    }
-                },
-                {
-                    "name": "哞特儿牧场(EX)",
-                    "option": [  // 嵌套的子选项
-                       "关卡_MR(EX)"
-                   ],
-                    "pipeline_override": {
-                        "findmap": {
-                            "next": "find_MR"  // 控制跳转到对应活动地图
-                        }
-                    }
                 }
+            //    {
+            //        "name": "监狱迷宫瓦尔拉哈(EX)",
+            //        "option": [  // 嵌套的子选项
+            //           "关卡_JV(EX)"
+            //       ],
+            //        "pipeline_override": {
+            //            "findmap": {
+            //               "next": "find_JV"  // 控制跳转到对应活动地图
+            //            }
+            //        }
+            //    },
+                // {
+                //     "name": "哞特儿牧场(EX)",
+                //     "option": [  // 嵌套的子选项
+                //        "关卡_MR(EX)"
+                //    ],
+                //     "pipeline_override": {
+                //         "findmap": {
+                //             "next": "find_MR"  // 控制跳转到对应活动地图
+                //         }
+                //     }
+                // }
             ]
         },
-        "关卡_MR(EX)": {
-            "type": "select",
-            "cases": [
-            { "name": "MR_37" }
-             ]
-        },
-        "关卡_JV(EX)": {
-            "type": "select",
-            "cases": [
-            { "name": "JV_33" }
-             ]
-        },
+        // "关卡_MR(EX)": {
+        //     "type": "select",
+        //     "cases": [
+        //     { "name": "MR_37" }
+        //      ]
+        // },
+        // "关卡_JV(EX)": {
+        //     "type": "select",
+        //     "cases": [
+        //     { "name": "JV_33" }
+        //      ]
+        // },
         "关卡_DF(EX)": {
             "type": "select",
             "cases": [
-            { "name": "DF_13" }
+            { "name": "DF_22" }
              ]
         }
      }

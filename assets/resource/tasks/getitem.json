@@ -3,7 +3,7 @@
         {
             "name": "素材周回",
             "entry": "obtainmaterials",
-            "resource": ["offical"],
+            "resource": ["official"],
             "option": [
                 "道具"
 //                "是否跳过战斗"

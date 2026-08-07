@@ -7,72 +7,12 @@
             "isModifiedExternally": false,
             "filePath": "E:\\VSCode\\MaaADr\\assets\\resource\\pipeline\\StartGame.json",
             "savedViewport": {
-                "x": 447,
-                "y": 135,
-                "zoom": 0.57
+                "x": 23,
+                "y": -70,
+                "zoom": 0.87
             },
             "filename": "StartGame",
             "version": "v1.7.4"
-        }
-    },
-    "checkdaily_nomail": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    264,
-                    557,
-                    672,
-                    160
-                ],
-                "template": [
-                    "basic/homepage_down.png"
-                ],
-                "green_mask": true
-            }
-        },
-        "timeout": 3000,
-        "next": [
-            "checkdaily_nomail_1"
-        ],
-        "on_error": [
-            "dailyreward_2"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -62,
-                "y": 48
-            }
-        }
-    },
-    "checkdaily": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    260,
-                    548,
-                    682,
-                    168
-                ],
-                "template": [
-                    "basic/homepage_down.png"
-                ],
-                "green_mask": true
-            }
-        },
-        "timeout": 3000,
-        "on_error": [
-            "dailyreward_1"
-        ],
-        "next": [
-            "checkdaily_1"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -357,
-                "y": 617
-            }
         }
     },
     "backhomepage": {
@@ -288,7 +228,15 @@
                 ]
             }
         },
-        "post_delay": 500,
+        "post_wait_freezes": {
+            "time": 3000,
+            "target": [
+                186,
+                94,
+                921,
+                442
+            ]
+        },
         "next": [
             "dailyreward"
         ],
@@ -325,7 +273,15 @@
                 ]
             }
         },
-        "post_delay": 500,
+        "post_wait_freezes": {
+            "time": 3000,
+            "target": [
+                183,
+                99,
+                917,
+                441
+            ]
+        },
         "next": [
             "dailyreward_nomail"
         ],
@@ -443,6 +399,66 @@
             "position": {
                 "x": -683,
                 "y": 127
+            }
+        }
+    },
+    "checkdaily_nomail": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    264,
+                    557,
+                    672,
+                    160
+                ],
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "timeout": 3000,
+        "next": [
+            "checkdaily_nomail_1"
+        ],
+        "on_error": [
+            "dailyreward_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -62,
+                "y": 48
+            }
+        }
+    },
+    "checkdaily": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    260,
+                    548,
+                    682,
+                    168
+                ],
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "timeout": 3000,
+        "on_error": [
+            "dailyreward_1"
+        ],
+        "next": [
+            "checkdaily_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -357,
+                "y": 617
             }
         }
     }
