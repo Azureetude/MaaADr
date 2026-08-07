@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786094108061,
+            "lastSyncTime": 1786099445666,
             "isModifiedExternally": false,
-            "filePath": "E:\\VSCode\\MaaADr\\assets\\resource\\pipeline\\sidestory\\龙焰FIRE\\story_DF.json",
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\sidestory\\龙焰FIRE\\story_DF.json",
             "savedViewport": {
-                "x": 337,
-                "y": -154,
-                "zoom": 0.66
+                "x": 275,
+                "y": -335,
+                "zoom": 0.8
             },
             "filename": "story_DF",
             "version": "v1.7.4"
@@ -29,13 +29,14 @@
             "type": "Click",
             "param": {
                 "target": [
-                    706,
-                    316,
-                    0,
-                    2
+                    700,
+                    331,
+                    1,
+                    1
                 ]
             }
         },
+        "post_delay": 1000,
         "next": [
             "DF_1_1"
         ],

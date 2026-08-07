@@ -12,38 +12,38 @@
         }
     ],
      "option": {
-        "是否跳过战斗_MR": {
-            "type": "switch",
-            "cases": [
-                {
-                    "name": "Yes"
-                },
-                {
-                    "name": "No",
-                    "pipeline_override": {
-                        "MR_4_37_2": {
-                            "next": "MR_NOSKIP_1"  
-                     }
-                    }
-                }
-            ]
-        },
-        "是否跳过战斗_JV": {
-            "type": "switch",
-            "cases": [
-                {
-                    "name": "Yes"
-                },
-                {
-                    "name": "No",
-                    "pipeline_override": {
-                        "JV_6_33_2": {
-                            "next": "JV_NOSKIP_1"  
-                     }
-                    }
-                }
-            ]
-        },
+        // "是否跳过战斗_MR": {
+        //     "type": "switch",
+        //     "cases": [
+        //         {
+        //             "name": "Yes"
+        //         },
+        //         {
+        //             "name": "No",
+        //             "pipeline_override": {
+        //                 "MR_4_37_2": {
+        //                     "next": "MR_NOSKIP_1"  
+        //              }
+        //             }
+        //         }
+        //     ]
+        // },
+        // "是否跳过战斗_JV": {
+        //     "type": "switch",
+        //     "cases": [
+        //         {
+        //             "name": "Yes"
+        //         },
+        //         {
+        //             "name": "No",
+        //             "pipeline_override": {
+        //                 "JV_6_33_2": {
+        //                     "next": "JV_NOSKIP_1"  
+        //              }
+        //             }
+        //         }
+        //     ]
+        // },
         "是否跳过战斗_DF": {
             "type": "switch",
             "cases": [

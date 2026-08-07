@@ -3,56 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786059843142,
+            "lastSyncTime": 1786100310581,
             "isModifiedExternally": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\StartGame.json",
             "savedViewport": {
-                "x": 23,
-                "y": -70,
-                "zoom": 0.87
+                "x": 757,
+                "y": 179,
+                "zoom": 0.37
             },
             "filename": "StartGame",
             "version": "v1.7.4"
-        }
-    },
-    "checkdaily_nomail_1": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/homepage_down.png"
-                ],
-                "green_mask": true
-            }
-        },
-        "next": [
-            "checkdaily_nomail_2"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -324,
-                "y": 71
-            }
-        }
-    },
-    "checkdaily_1": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/homepage_down.png"
-                ],
-                "green_mask": true
-            }
-        },
-        "next": [
-            "checkdaily_2"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -400,
-                "y": 641
-            }
         }
     },
     "backhomepage": {
@@ -92,9 +52,14 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    260,
+                    548,
+                    682,
+                    168
+                ],
                 "template": [
-                    "basic/homepage-1.png",
-                    "basic/homepage_gray.png"
+                    "basic/homepage_down.png"
                 ],
                 "green_mask": true
             }
@@ -108,8 +73,28 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -740,
-                "y": 617
+                "x": -884,
+                "y": 638
+            }
+        }
+    },
+    "checkdaily_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "next": [
+            "checkdaily_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -429,
+                "y": 502
             }
         }
     },
@@ -143,9 +128,14 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    264,
+                    557,
+                    672,
+                    160
+                ],
                 "template": [
-                    "basic/homepage-1.png",
-                    "basic/homepage_gray.png"
+                    "basic/homepage_down.png"
                 ],
                 "green_mask": true
             }
@@ -159,8 +149,28 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -738,
-                "y": 62
+                "x": -812,
+                "y": 91
+            }
+        }
+    },
+    "checkdaily_nomail_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "next": [
+            "checkdaily_nomail_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -281,
+                "y": -12
             }
         }
     },
@@ -324,15 +334,7 @@
                 ]
             }
         },
-        "post_wait_freezes": {
-            "time": 3000,
-            "target": [
-                186,
-                94,
-                921,
-                442
-            ]
-        },
+        "post_delay": 4000,
         "next": [
             "dailyreward"
         ],
@@ -369,15 +371,7 @@
                 ]
             }
         },
-        "post_wait_freezes": {
-            "time": 3000,
-            "target": [
-                183,
-                99,
-                917,
-                441
-            ]
-        },
+        "post_delay": 4000,
         "next": [
             "dailyreward_nomail"
         ],
@@ -495,66 +489,6 @@
             "position": {
                 "x": -1112,
                 "y": 226
-            }
-        }
-    },
-    "checkdaily_nomail": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    264,
-                    557,
-                    672,
-                    160
-                ],
-                "template": [
-                    "basic/homepage_down.png"
-                ],
-                "green_mask": true
-            }
-        },
-        "timeout": 3000,
-        "next": [
-            "checkdaily_nomail_1"
-        ],
-        "on_error": [
-            "dailyreward_2"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -62,
-                "y": 48
-            }
-        }
-    },
-    "checkdaily": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    260,
-                    548,
-                    682,
-                    168
-                ],
-                "template": [
-                    "basic/homepage_down.png"
-                ],
-                "green_mask": true
-            }
-        },
-        "timeout": 3000,
-        "on_error": [
-            "dailyreward_1"
-        ],
-        "next": [
-            "checkdaily_1"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -357,
-                "y": 617
             }
         }
     }
