@@ -3,16 +3,46 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786100310581,
+            "lastSyncTime": 1786234912484,
             "isModifiedExternally": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\StartGame.json",
             "savedViewport": {
-                "x": 757,
-                "y": 179,
-                "zoom": 0.37
+                "x": 313,
+                "y": 83,
+                "zoom": 0.25
             },
             "filename": "StartGame",
             "version": "v1.7.4"
+        }
+    },
+    "STARTGame_END": {
+        "action": {
+            "type": "StopTask"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3346,
+                "y": 1197
+            }
+        }
+    },
+    "checkhomepage_mail": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage.png"
+                ]
+            }
+        },
+        "next": [
+            "STARTGame_END"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2752,
+                "y": 1423
+            }
         }
     },
     "backhomepage": {
@@ -41,40 +71,13 @@
                 ]
             }
         },
-        "$__mpe_code": {
-            "position": {
-                "x": 2252,
-                "y": 474
-            }
-        }
-    },
-    "checkdaily": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    260,
-                    548,
-                    682,
-                    168
-                ],
-                "template": [
-                    "basic/homepage_down.png"
-                ],
-                "green_mask": true
-            }
-        },
-        "timeout": 3000,
         "next": [
-            "checkdaily_1"
-        ],
-        "on_error": [
-            "dailyreward_1"
+            "checkhomepage_mail"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -884,
-                "y": 638
+                "x": 2373,
+                "y": 1423
             }
         }
     },
@@ -93,8 +96,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -429,
-                "y": 502
+                "x": 652,
+                "y": 1787
             }
         }
     },
@@ -119,38 +122,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 25,
-                "y": 466
-            }
-        }
-    },
-    "checkdaily_nomail": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    264,
-                    557,
-                    672,
-                    160
-                ],
-                "template": [
-                    "basic/homepage_down.png"
-                ],
-                "green_mask": true
-            }
-        },
-        "timeout": 3000,
-        "next": [
-            "checkdaily_nomail_1"
-        ],
-        "on_error": [
-            "dailyreward_2"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -812,
-                "y": 91
+                "x": 1080,
+                "y": 1771
             }
         }
     },
@@ -169,8 +142,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -281,
-                "y": -12
+                "x": 572,
+                "y": 781
             }
         }
     },
@@ -195,8 +168,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 262,
-                "y": -85
+                "x": 1212,
+                "y": 765
             }
         }
     },
@@ -214,8 +187,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1304,
-                "y": 588
+                "x": 1312,
+                "y": 1466
             }
         }
     },
@@ -228,10 +201,13 @@
                 ]
             }
         },
+        "next": [
+            "STARTGame_END"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 1577,
-                "y": -25
+                "x": 1532,
+                "y": 436
             }
         }
     },
@@ -253,8 +229,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 661,
-                "y": 565
+                "x": 660,
+                "y": 1441
             }
         }
     },
@@ -278,8 +254,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 977,
-                "y": 589
+                "x": 983,
+                "y": 1441
             }
         }
     },
@@ -303,8 +279,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1235,
-                "y": 197
+                "x": 1212,
+                "y": 403
             }
         }
     },
@@ -340,8 +316,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 331,
-                "y": 738
+                "x": 345,
+                "y": 1423
             }
         }
     },
@@ -377,8 +353,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 588,
-                "y": 106
+                "x": 572,
+                "y": 378
             }
         }
     },
@@ -391,17 +367,25 @@
                 ]
             }
         },
+        "pre_wait_freezes": {
+            "time": 3000,
+            "target": [
+                254,
+                219,
+                1144,
+                550
+            ]
+        },
         "action": {
             "type": "Click"
         },
-        "post_delay": 500,
         "next": [
             "dailyreward-exit_nomail"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 916,
-                "y": 124
+                "x": 892,
+                "y": 401
             }
         }
     },
@@ -429,8 +413,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1612,
-                "y": 442
+                "x": 1652,
+                "y": 1441
             }
         }
     },
@@ -452,8 +436,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1932,
-                "y": 484
+                "x": 1990,
+                "y": 1466
             }
         }
     },
@@ -487,8 +471,139 @@
         "timeout": -1,
         "$__mpe_code": {
             "position": {
-                "x": -1112,
-                "y": 226
+                "x": -400,
+                "y": 853
+            }
+        }
+    },
+    "homepage_start_nomail": {
+        "next": [
+            "PassPort",
+            "checkdaily_nomail_1",
+            "dailyreward_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 252,
+                "y": 451
+            }
+        }
+    },
+    "PassPort": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/passport.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "next": [
+            "PassPort_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 572,
+                "y": 55
+            }
+        }
+    },
+    "PassPort_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/dailyreward-s.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": {
+            "time": 3000,
+            "target": [
+                295,
+                246,
+                1092,
+                451
+            ]
+        },
+        "action": {
+            "type": "Click"
+        },
+        "focus": "月卡奖励已领取",
+        "next": [
+            "checkhomepage_nomail",
+            "[JumpBack]homepage_start_nomail"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 892,
+                "y": 12
+            }
+        }
+    },
+    "homepage_start": {
+        "next": [
+            "checkdaily_1",
+            "dailyreward_1",
+            "PassPort_副本2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 1487
+            }
+        }
+    },
+    "PassPort_副本2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/passport.png"
+                ]
+            }
+        },
+        "next": [
+            "PassPort_1_副本3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 1084
+            }
+        }
+    },
+    "PassPort_1_副本3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/dailyreward-s.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": {
+            "time": 3000,
+            "target": [
+                250,
+                290,
+                1191,
+                389
+            ]
+        },
+        "action": {
+            "type": "Click"
+        },
+        "focus": "月卡奖励已领取",
+        "next": [
+            "mail",
+            "[JumpBack]homepage_start"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 992,
+                "y": 1050
             }
         }
     }
