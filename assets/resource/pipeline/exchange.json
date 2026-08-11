@@ -148,10 +148,9 @@
     "if_战斗记录": {
         "timeout": 2000,
         "next": [
-            "战斗记录_1"
-        ],
-        "on_error": [
-            "if_龙币"
+            "战斗记录_1",
+            "龙币_1",
+            "endexchange"
         ],
         "$__mpe_code": {
             "position": {
@@ -163,10 +162,11 @@
     "if_精力饮": {
         "timeout": 2000,
         "next": [
-            "精力饮_1"
-        ],
-        "on_error": [
-            "if_紫色礼盒"
+            "精力饮_1",
+            "紫色礼盒_1",
+            "战斗记录_1",
+            "龙币_1",
+            "endexchange"
         ],
         "$__mpe_code": {
             "position": {
@@ -178,10 +178,10 @@
     "if_紫色礼盒": {
         "timeout": 2000,
         "next": [
-            "紫色礼盒_1"
-        ],
-        "on_error": [
-            "if_战斗记录"
+            "紫色礼盒_1",
+            "战斗记录_1",
+            "龙币_1",
+            "endexchange"
         ],
         "$__mpe_code": {
             "position": {
@@ -193,9 +193,7 @@
     "if_龙币": {
         "timeout": 2000,
         "next": [
-            "龙币_1"
-        ],
-        "on_error": [
+            "龙币_1",
             "endexchange"
         ],
         "$__mpe_code": {

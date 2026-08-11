@@ -532,7 +532,6 @@
         },
         "focus": "月卡奖励已领取",
         "next": [
-            "checkhomepage_nomail",
             "[JumpBack]homepage_start_nomail"
         ],
         "$__mpe_code": {
@@ -597,7 +596,6 @@
         },
         "focus": "月卡奖励已领取",
         "next": [
-            "mail",
             "[JumpBack]homepage_start"
         ],
         "$__mpe_code": {
