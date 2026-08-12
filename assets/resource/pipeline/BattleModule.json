@@ -3,16 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786285700175,
+            "lastSyncTime": 1786447545614,
             "isModifiedExternally": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\BattleModule.json",
             "savedViewport": {
-                "x": 71,
-                "y": -94,
-                "zoom": 0.33
+                "x": -37,
+                "y": -108,
+                "zoom": 0.46
             },
             "filename": "BattleModule",
-            "version": "v1.7.4"
+            "version": "v1.7.6"
         }
     },
     "0/3_battle": {
@@ -42,7 +42,7 @@
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "fight/story_0_3.png"
+                    "EXimage/fight/story_0_3.png"
                 ]
             }
         },
@@ -61,7 +61,7 @@
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "fight/battle_0_4.png"
+                    "EXimage/fight/battle_0_4.png"
                 ]
             }
         },
@@ -149,7 +149,7 @@
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "fight/battle_2_4.png"
+                    "EXimage/fight/battle_2_4.png"
                 ]
             }
         },
@@ -193,7 +193,7 @@
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "fight/story_3_3.png"
+                    "EXimage/fight/story_3_3.png"
                 ],
                 "threshold": [
                     0.9
@@ -215,7 +215,7 @@
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "fight/battle_3_4.png"
+                    "EXimage/fight/battle_3_4.png"
                 ]
             }
         },
@@ -270,8 +270,14 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    694,
+                    147,
+                    102,
+                    100
+                ],
                 "template": [
-                    ""
+                    "basic/battle_logo.png"
                 ]
             }
         },
@@ -324,8 +330,14 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    697,
+                    149,
+                    100,
+                    95
+                ],
                 "template": [
-                    "fight/story_new.png"
+                    "basic/story_logo.png"
                 ]
             }
         },

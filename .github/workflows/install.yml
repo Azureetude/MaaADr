@@ -142,7 +142,8 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: MaaADr-${{ matrix.os }}-${{ matrix.arch }}
+          # Keep the unmodified upstream executable out of release assets.
+          name: install-${{ matrix.os }}-${{ matrix.arch }}
           path: "install"
 
   build-nsis:
@@ -157,22 +158,17 @@ jobs:
       - name: Download Windows x86_64 artifact
         uses: actions/download-artifact@v4
         with:
-          name: MaaADr-win-x86_64
+          name: install-win-x86_64
           path: install
 
-      - name: Rename MFAAvalonia to MaaADr
+      - name: Rename and brand application executable
         shell: pwsh
         run: |
           Rename-Item -Path "install\MFAAvalonia.exe" -NewName "MaaADr.exe"
-
-      - name: Extract icon from MaaADr
-        shell: pwsh
-        run: |
-          Add-Type -AssemblyName System.Drawing
-          $icon = [System.Drawing.Icon]::ExtractAssociatedIcon("$pwd\install\MaaADr.exe")
-          $fs = [System.IO.File]::OpenWrite("logo.ico")
-          $icon.Save($fs)
-          $fs.Close()
+          choco install rcedit -y --no-progress
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          rcedit "install\MaaADr.exe" --set-icon "assets\logo.ico"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
       - name: Install NSIS
         shell: pwsh
@@ -188,10 +184,16 @@ jobs:
             -DVERSION="$tag" `
             -DARCH="x64" `
             -DSOURCE_DIR="${{ github.workspace }}\install" `
-            -DICON_FILE="${{ github.workspace }}\logo.ico" `
+            -DICON_FILE="${{ github.workspace }}\assets\logo.ico" `
             -DOUTFILE="${{ github.workspace }}\MaaADr-win-x86_64-$tag-Setup.exe" `
             tools/ci/installer.nsi
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+      - name: Upload branded release artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: MaaADr-win-x86_64
+          path: "install"
 
       - name: Upload NSIS installer artifact
         uses: actions/upload-artifact@v4
@@ -232,6 +234,7 @@ jobs:
     steps:
       - uses: actions/download-artifact@v4
         with:
+          pattern: MaaADr-*
           path: assets
 
       - run: |

@@ -1,0 +1,366 @@
+{
+    "$__mpe_config_DF_Clean": {
+        "$__mpe_code": {
+            "prefix": "",
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\SS\\DF_Clean.json",
+            "lastSyncTime": 1786456058889,
+            "isModifiedExternally": false,
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": 265,
+                "y": 184,
+                "zoom": 0.53
+            },
+            "filename": "DF_Clean",
+            "version": "v1.7.6"
+        }
+    },
+    "DF_C_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "sidestory/DF/DF_1.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    173,
+                    316,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 326,
+                "y": 307
+            }
+        }
+    },
+    "DF_C_1_1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    140,
+                    66,
+                    31
+                ],
+                "expected": [
+                    "DF-1"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1059,
+                "y": -200
+            }
+        }
+    },
+    "DF_C_1_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "DF_C_1_7",
+            "DF_C_1_6",
+            "DF_C_1_5",
+            "DF_C_1_4",
+            "DF_C_1_3",
+            "DF_C_1_2",
+            "DF_C_1_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 692,
+                "y": -60
+            }
+        }
+    },
+    "DF_C_1_2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    140,
+                    66,
+                    31
+                ],
+                "expected": [
+                    "DF-2"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1335,
+                "y": -200
+            }
+        }
+    },
+    "DF_C_1_3": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    140,
+                    66,
+                    31
+                ],
+                "expected": [
+                    "DF-3"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1059,
+                "y": -14
+            }
+        }
+    },
+    "DF_C_1_4": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    140,
+                    66,
+                    31
+                ],
+                "expected": [
+                    "DF-4"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1335,
+                "y": -8
+            }
+        }
+    },
+    "DF_C_1_5": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    140,
+                    66,
+                    31
+                ],
+                "expected": [
+                    "DF-5"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1051,
+                "y": 250
+            }
+        }
+    },
+    "DF_C_1_6": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    140,
+                    66,
+                    31
+                ],
+                "expected": [
+                    "DF-6"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1346,
+                "y": 246
+            }
+        }
+    },
+    "DF_C_1_7": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    140,
+                    66,
+                    31
+                ],
+                "expected": [
+                    "DF-7"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1188,
+                "y": 441
+            }
+        }
+    },
+    "DF_C_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "sidestory/DF/DF_2.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    433,
+                    321,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 326,
+                "y": 672
+            }
+        }
+    },
+    "DF_C_3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "sidestory/DF/DF_3.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    700,
+                    326,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 333,
+                "y": 1045
+            }
+        }
+    },
+    "DF_Clean_find": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    932,
+                    78,
+                    338,
+                    527
+                ],
+                "template": [
+                    "sidestory/DF/DF_BANNER_S.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1112,
+                    284,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": -134,
+                "y": 507
+            }
+        }
+    }
+}
