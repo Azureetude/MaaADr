@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786447545614,
+            "lastSyncTime": 1786639070009,
             "isModifiedExternally": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\BattleModule.json",
             "savedViewport": {
-                "x": -37,
-                "y": -108,
-                "zoom": 0.46
+                "x": -3361,
+                "y": -560,
+                "zoom": 0.92
             },
             "filename": "BattleModule",
             "version": "v1.7.6"
@@ -19,9 +19,16 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    1011,
+                    189,
+                    230,
+                    81
+                ],
                 "template": [
-                    ""
-                ]
+                    "EXimage/fight/story_0_3.png"
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -33,7 +40,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 1681,
-                "y": 821
+                "y": 881
             }
         }
     },
@@ -41,18 +48,28 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    1011,
+                    189,
+                    230,
+                    81
+                ],
                 "template": [
                     "EXimage/fight/story_0_3.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
             "type": "Click"
         },
+        "next": [
+            "story_enter"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 1681,
-                "y": 305
+                "y": 215
             }
         }
     },
@@ -60,9 +77,16 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    1011,
+                    189,
+                    230,
+                    81
+                ],
                 "template": [
                     "EXimage/fight/battle_0_4.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -74,17 +98,24 @@
         "$__mpe_code": {
             "position": {
                 "x": 2017,
-                "y": 821
+                "y": 795
             }
         }
     },
-    "1/3": {
+    "1/3_battle": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    1011,
+                    189,
+                    230,
+                    81
+                ],
                 "template": [
-                    ""
-                ]
+                    "EXimage/fight/battle_1_3.png"
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -95,8 +126,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1681,
-                "y": 1051
+                "x": 1691,
+                "y": 1280
             }
         }
     },
@@ -104,9 +135,16 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    1011,
+                    189,
+                    230,
+                    81
+                ],
                 "template": [
-                    ""
-                ]
+                    "EXimage/fight/battle_1_4.png"
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -117,18 +155,25 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2017,
-                "y": 1066
+                "x": 2026,
+                "y": 1176
             }
         }
     },
-    "2/3": {
+    "2/3_battle": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    1011,
+                    189,
+                    230,
+                    81
+                ],
                 "template": [
-                    ""
-                ]
+                    "EXimage/fight/battle_2_3.png"
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -139,8 +184,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1681,
-                "y": 1270
+                "x": 1697,
+                "y": 1669
             }
         }
     },
@@ -148,9 +193,16 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    1011,
+                    189,
+                    230,
+                    81
+                ],
                 "template": [
                     "EXimage/fight/battle_2_4.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -161,8 +213,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2017,
-                "y": 1291
+                "x": 2032,
+                "y": 1480
             }
         }
     },
@@ -170,21 +222,25 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    1011,
+                    189,
+                    230,
+                    81
+                ],
                 "template": [
-                    ""
-                ]
+                    "EXimage/fight/story_3_3.png"
+                ],
+                "green_mask": true
             }
-        },
-        "action": {
-            "type": "Click"
         },
         "next": [
             "exitbattle"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1681,
-                "y": 1516
+                "x": 1691,
+                "y": 2163
             }
         }
     },
@@ -192,21 +248,25 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    1011,
+                    189,
+                    230,
+                    81
+                ],
                 "template": [
                     "EXimage/fight/story_3_3.png"
                 ],
-                "threshold": [
-                    0.9
-                ]
+                "green_mask": true
             }
         },
-        "action": {
-            "type": "Click"
-        },
+        "next": [
+            "story_back"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 1681,
-                "y": 546
+                "y": 507
             }
         }
     },
@@ -214,9 +274,16 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    1011,
+                    189,
+                    230,
+                    81
+                ],
                 "template": [
                     "EXimage/fight/battle_3_4.png"
-                ]
+                ],
+                "green_mask": true
             }
         },
         "action": {
@@ -227,8 +294,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2017,
-                "y": 1516
+                "x": 2032,
+                "y": 1855
             }
         }
     },
@@ -236,21 +303,24 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    1011,
+                    189,
+                    230,
+                    81
+                ],
                 "template": [
-                    ""
+                    "EXimage/fight/battle_4_4.png"
                 ]
             }
-        },
-        "action": {
-            "type": "Click"
         },
         "next": [
             "exitbattle"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2017,
-                "y": 1754
+                "x": 2032,
+                "y": 2163
             }
         }
     },
@@ -290,8 +360,8 @@
             "3/4_battle",
             "3/3_battle",
             "4/4_battle",
-            "1/3",
-            "2/3",
+            "1/3_battle",
+            "2/3_battle",
             "1/4_battle",
             "2/4_battle"
         ],
@@ -302,7 +372,114 @@
             }
         }
     },
+    "battle_1_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1043,
+                    352,
+                    236,
+                    357
+                ],
+                "template": [
+                    "basic/battle_blue.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "timeout": -1,
+        "next": [
+            "battle_1_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3362,
+                "y": 1189
+            }
+        }
+    },
+    "battle_1_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/3star.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 5000,
+        "focus": {
+            "Node.Recognition.Succeeded": "<span style=\"color:green;\">战斗执行成功</span>"
+        },
+        "next": [
+            "battle_end"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3710,
+                "y": 1158
+            }
+        }
+    },
+    "battle_end": {
+        "next": [
+            "battlemoduleend"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5471,
+                "y": 1185
+            }
+        }
+    },
+    "battle_start": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "EXimage/fight/fight_start.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "battle_1_1",
+            "no_np_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3010,
+                "y": 1025
+            }
+        }
+    },
+    "battlemoduleend": {
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "DFCleanBattleEndRoute"
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5721,
+                "y": -42
+            }
+        }
+    },
     "enterbattle_3": {
+        "next": [
+            "battle_start"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 2605,
@@ -311,6 +488,9 @@
         }
     },
     "enterbattle_4": {
+        "next": [
+            "battle_start"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 2605,
@@ -319,10 +499,248 @@
         }
     },
     "exitbattle": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/back.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
         "$__mpe_code": {
             "position": {
                 "x": 2605,
                 "y": 1551
+            }
+        }
+    },
+    "no_np_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    378,
+                    124,
+                    530,
+                    481
+                ],
+                "template": [
+                    "basic/ERROR.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    640,
+                    522,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "no_np_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3373,
+                "y": 758
+            }
+        }
+    },
+    "no_np_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/体力.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1016,
+                    41,
+                    1,
+                    1
+                ]
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "<span style=\"color:orange;\">体力不足,尝试使用体力药</span>"
+        },
+        "next": [
+            "no_np_3_s",
+            "no_np_3_l",
+            "no_np_3_error"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3710,
+                "y": 756
+            }
+        }
+    },
+    "no_np_3_error": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/np_useless.png"
+                ]
+            }
+        },
+        "next": [
+            "no_np_6"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4031,
+                "y": 860
+            }
+        }
+    },
+    "no_np_3_l": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/np_l_mid.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "no_np_4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4031,
+                "y": 320
+            }
+        }
+    },
+    "no_np_3_s": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/np_s_mid.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "no_np_4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4031,
+                "y": 588
+            }
+        }
+    },
+    "no_np_4": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/number.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1181,
+                    549,
+                    1,
+                    1
+                ]
+            }
+        },
+        "repeat": 1,
+        "next": [
+            "no_np_5"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4323,
+                "y": 487
+            }
+        }
+    },
+    "no_np_5": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/OK_small.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1158,
+                    655,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_delay": 500,
+        "next": [
+            "no_np_6"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4628,
+                "y": 580
+            }
+        }
+    },
+    "no_np_6": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/exit.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1244,
+                    42,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "battle_start"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4928,
+                "y": 748
             }
         }
     },
@@ -341,9 +759,6 @@
                 ]
             }
         },
-        "action": {
-            "type": "Click"
-        },
         "next": [
             "0/3_story",
             "3/3_story"
@@ -352,6 +767,155 @@
             "position": {
                 "x": 1285,
                 "y": 601
+            }
+        }
+    },
+    "story_back": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/back.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "story_end"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2819,
+                "y": 516
+            }
+        }
+    },
+    "story_end": {
+        "next": [
+            "battlemoduleend"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4031,
+                "y": -83
+            }
+        }
+    },
+    "story_enter": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "EXimage/fight/story_yes.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "timeout": -1,
+        "next": [
+            "story_skip_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2067,
+                "y": 212
+            }
+        }
+    },
+    "story_reward": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/dailyreward-s.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "story_end"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2819,
+                "y": 221
+            }
+        }
+    },
+    "story_skip_1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1159,
+                    10,
+                    98,
+                    62
+                ],
+                "expected": [
+                    "EXIT"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1201,
+                    35,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 2000,
+        "next": [
+            "story_reward"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2410,
+                "y": 199
+            }
+        }
+    },
+    "story_skip_2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1159,
+                    10,
+                    98,
+                    62
+                ],
+                "expected": [
+                    "EXIT"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1201,
+                    35,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 2416,
+                "y": -174
             }
         }
     }

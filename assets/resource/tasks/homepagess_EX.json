@@ -2,6 +2,7 @@
     "task": [
         {
             "name": "当期活动EX",
+            "description ": "通过*进入战斗直接胜利*清体力自动刷取活动底关",
             "entry": "findmap",
             "resource": ["EX"],
             "option": [

@@ -2,6 +2,7 @@
     "task": [
         {
             "name": "开始游戏",
+            "description ": "自动进入游戏并领取每日登录奖励(支持月卡)",
             "entry": "startgame",
             "option": [
                 "是否领取邮件"
