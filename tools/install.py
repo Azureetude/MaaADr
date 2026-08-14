@@ -29,7 +29,8 @@ if sys.argv.__len__() < 4:
 
 os_name = sys.argv[2]
 arch = sys.argv[3]
-embedded_python_version = "3.12.11"
+# Python 官方 Windows embeddable ZIP 使用已发布的补丁版本。
+embedded_python_version = "3.12.10"
 
 
 def get_dotnet_platform_tag():
