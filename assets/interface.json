@@ -48,11 +48,12 @@
             ]
         }
     ],
-    // 可选的 agent 示例
+    // 发布包内嵌 Python 运行时，不依赖用户机器上的 Python 安装。
     "agent": {
-        "child_exec": "C:/Python314/python.exe",
+        "child_exec": "./python/python.exe",
         "child_args": [
-            "E:/VSCode/MAAADr/agent/main.py"
+            "-u",
+            "./agent/main.py"
         ]
     },
      "import": [
