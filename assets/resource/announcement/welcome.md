@@ -1,8 +1,8 @@
+公告
+
 基于全新架构的 龙脉R(AnaDos) 自动清体/兑换小助手。图像技术+模拟控制，解放双手！
 
 由 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 强力驱动！
-
-</div>
 
 > [!Tip]
 >
@@ -12,11 +12,10 @@
 >
 > 💬MaaADr交流QQ群：[1071729734](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=MJV7fd5huEugZClnAKoslskuPqRb2Xq9&authKey=p%2B4yQS2nFW8pB00oTCkpy%2Frh8X79sZwEUNR2BVpnvcfg44%2BMWImzM%2FP%2BrLDJ%2F04g&noverify=0&group_code=1071729734)  *使用问题🐛、功能建议💡、闲聊摸鱼🐟，欢迎加入~*
 
-
 > [!NOTE]  
-> 
+>
 > 本软件目前仅提供 Windows 系统版本。在使用时请保持鼠标闲置，避免与软件产生冲突。
-> 
+>
 > 本软件功能开发基于桌面版，因此推荐使用桌面版进行游戏。模拟器仅保证基础功能运行，若出现问题，请第一时间把软件根目录下`debug\maa.log` 文件保存并截图进行反馈。
 
 ## 功能列表
@@ -36,14 +35,12 @@
 - **关闭游戏**:
   - ✅脚本执行完成后退出程序
 
-
 >[!CAUTION]
-> 
+>
 >以下功能仅于特定资源包内提供，使用者需自行承担所有风险。
 >作者不对因使用该资源包而导致的任何直接、间接或结果性损失承担责任。
 >
 >该资源包可加群了解详情（免费）
-
 
 - **当期活动EX**：
   - ✅通过 *进入战斗直接胜利*  清体力自动刷取活动底关（每周更新）

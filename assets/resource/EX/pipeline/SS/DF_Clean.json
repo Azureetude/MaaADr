@@ -599,14 +599,6 @@
             }
         }
     },
-    "DF_CleanFinish": {
-        "action": {
-            "type": "StopTask"
-        },
-        "focus": {
-            "Node.Action.Succeeded": "<span style=\"color:green;\">任务已全部完成</span>"
-        }
-    },
     "DF_CleanBackHome": {
         "next": [
             "backhome_start"

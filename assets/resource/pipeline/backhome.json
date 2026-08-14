@@ -86,6 +86,14 @@
             "DF_CleanFinish"
         ]
     },
+    "DF_CleanFinish": {
+        "action": {
+            "type": "StopTask"
+        },
+        "focus": {
+            "Node.Action.Succeeded": "<span style=\"color:green;\">任务已全部完成</span>"
+        }
+    },
     "backhome_start": {
         "$__mpe_code": {
             "position": {
