@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786001453766,
+            "lastSyncTime": 1786194095057,
             "isModifiedExternally": false,
-            "filePath": "E:\\VSCode\\MaaADr\\assets\\resource\\pipeline\\exchange.json",
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\exchange.json",
             "savedViewport": {
-                "x": 985,
-                "y": 788,
-                "zoom": 0.5
+                "x": 1265,
+                "y": 900,
+                "zoom": 0.66
             },
             "filename": "exchange",
             "version": "v1.7.4"
@@ -95,6 +95,7 @@
                 ]
             }
         },
+        "pre_delay": 2000,
         "action": {
             "type": "Click",
             "param": {
@@ -147,10 +148,9 @@
     "if_战斗记录": {
         "timeout": 2000,
         "next": [
-            "战斗记录_1"
-        ],
-        "on_error": [
-            "if_龙币"
+            "战斗记录_1",
+            "龙币_1",
+            "endexchange"
         ],
         "$__mpe_code": {
             "position": {
@@ -162,10 +162,11 @@
     "if_精力饮": {
         "timeout": 2000,
         "next": [
-            "精力饮_1"
-        ],
-        "on_error": [
-            "if_紫色礼盒"
+            "精力饮_1",
+            "紫色礼盒_1",
+            "战斗记录_1",
+            "龙币_1",
+            "endexchange"
         ],
         "$__mpe_code": {
             "position": {
@@ -177,10 +178,10 @@
     "if_紫色礼盒": {
         "timeout": 2000,
         "next": [
-            "紫色礼盒_1"
-        ],
-        "on_error": [
-            "if_战斗记录"
+            "紫色礼盒_1",
+            "战斗记录_1",
+            "龙币_1",
+            "endexchange"
         ],
         "$__mpe_code": {
             "position": {
@@ -192,9 +193,7 @@
     "if_龙币": {
         "timeout": 2000,
         "next": [
-            "龙币_1"
-        ],
-        "on_error": [
+            "龙币_1",
             "endexchange"
         ],
         "$__mpe_code": {
@@ -276,7 +275,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1500,
+        "post_wait_freezes": 2000,
         "focus": {
             "Node.Action.Succeeded": "<span style=\"color:blue;\">已兑换\"战斗记录 · IV\"</span>"
         },
@@ -359,7 +358,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1500,
+        "post_wait_freezes": 2000,
         "focus": {
             "Node.Action.Succeeded": "<span style=\"color:blue;\">已兑换\"精力饮\"</span>"
         },
@@ -442,7 +441,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1500,
+        "post_wait_freezes": 2000,
         "focus": {
             "Node.Action.Succeeded": "<span style=\"color:blue;\">已兑换\"紫色礼盒\"</span>"
         },
@@ -514,6 +513,7 @@
                 ]
             }
         },
+        "pre_wait_freezes": 2000,
         "action": {
             "type": "Click",
             "param": {
@@ -525,7 +525,6 @@
                 ]
             }
         },
-        "post_wait_freezes": 1500,
         "focus": {
             "Node.Action.Succeeded": "<span style=\"color:blue;\">已兑换\"龙币\"</span>"
         },

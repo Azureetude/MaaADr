@@ -2,6 +2,7 @@
     "task": [
         {
             "name": "开始游戏",
+            "description": "自动进入游戏并领取每日登录奖励(支持月卡)",
             "entry": "startgame",
             "option": [
                 "是否领取邮件"
@@ -16,7 +17,7 @@
                     "name": "Yes",
                     "pipeline_override": {
                         "startgame": {
-                            "next": "checkdaily"  // 控制跳转到返回主界面节点
+                            "next": "homepage_start"  // 控制跳转到返回主界面节点
                      }
                     }
                 },
@@ -24,7 +25,7 @@
                     "name": "No",
                     "pipeline_override": {
                         "startgame": {
-                            "next": "checkdaily_nomail"  // 控制跳转到返回主界面节点
+                            "next": "homepage_start_nomail"  // 控制跳转到返回主界面节点
                      }
                     }
                 }
