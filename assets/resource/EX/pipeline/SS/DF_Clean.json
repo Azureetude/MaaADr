@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\SS\\DF_Clean.json",
-            "lastSyncTime": 1786637692908,
+            "lastSyncTime": 1786709762906,
             "isModifiedExternally": false,
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": 188,
-                "y": -871,
-                "zoom": 0.46
+                "x": 117,
+                "y": -1334,
+                "zoom": 0.7
             },
             "filename": "DF_Clean",
             "version": "v1.7.6"
@@ -599,11 +599,6 @@
             }
         }
     },
-    "DF_CleanBackHome": {
-        "next": [
-            "backhome_start"
-        ]
-    },
     "DF_C_1_3": {
         "recognition": {
             "type": "OCR",
@@ -904,7 +899,7 @@
                 "green_mask": true
             }
         },
-        "pre_wait_freezes": 500,
+        "pre_wait_freezes": 1000,
         "action": {
             "type": "Click",
             "param": {
@@ -990,7 +985,7 @@
                 "green_mask": true
             }
         },
-        "pre_wait_freezes": 500,
+        "pre_wait_freezes": 1000,
         "action": {
             "type": "Click",
             "param": {
@@ -1064,6 +1059,17 @@
             }
         }
     },
+    "DF_CleanBackHome": {
+        "next": [
+            "backhome_start"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    },
     "DF_Clean_find": {
         "recognition": {
             "type": "TemplateMatch",
@@ -1101,6 +1107,14 @@
             "position": {
                 "x": 69,
                 "y": 2175
+            }
+        }
+    },
+    "$__mpe_external_backhome_start_DF_Clean": {
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 0
             }
         }
     }
