@@ -3,7 +3,7 @@
     "task": [
         {
             "name": "以太交换所(每日刷新)",
-            "description ": "每日铜之以太商品兑换(精力饮,紫色礼盒,战斗记录·IV,龙币)",
+            "description": "每日铜之以太商品兑换(精力饮,紫色礼盒,战斗记录·IV,龙币)",
             "entry": "checkhomepage_exchange",
             "option": [
                 "精力饮",  

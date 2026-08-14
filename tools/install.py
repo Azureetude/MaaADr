@@ -121,6 +121,14 @@ def install_resource():
         interface = jsonc.load(f)
 
     interface["version"] = version
+    # 源码 interface.json 使用开发机 PATH 中的 Python；发布包改为内嵌运行时。
+    interface["agent"] = {
+        "child_exec": "./python/python.exe",
+        "child_args": [
+            "-u",
+            "./agent/main.py",
+        ],
+    }
 
     with open(install_path / "interface.json", "w", encoding="utf-8") as f:
         jsonc.dump(interface, f, ensure_ascii=False, indent=4)

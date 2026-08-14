@@ -2,7 +2,7 @@
     "task": [
         {
             "name": "神の宣告",
-            "description ": "开启战斗修改",
+            "description": "开启战斗修改",
             "entry": "linkstart",
             "resource": ["EX"]
         }

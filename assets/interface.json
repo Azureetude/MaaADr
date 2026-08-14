@@ -48,12 +48,12 @@
             ]
         }
     ],
-    // 发布包内嵌 Python 运行时，不依赖用户机器上的 Python 安装。
+    // 使用系统 PATH 中的 Python。
     "agent": {
-        "child_exec": "./python/python.exe",
+        "child_exec": "python",
         "child_args": [
-            "-u",
-            "./agent/main.py"
+            "{PROJECT_DIR}/../agent/main.py",
+            "-u"
         ]
     },
      "import": [

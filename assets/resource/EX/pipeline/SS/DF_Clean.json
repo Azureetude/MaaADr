@@ -76,6 +76,9 @@
                 "custom_action": "DFCleanBattleBridge"
             }
         },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_1 关卡"
+        },
         "next": [
             "EstimateBegin"
         ],
@@ -106,6 +109,9 @@
             "param": {
                 "custom_action": "DFCleanBattleBridge"
             }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_10 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -138,6 +144,9 @@
                 "custom_action": "DFCleanBattleBridge"
             }
         },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_11 关卡"
+        },
         "next": [
             "EstimateBegin"
         ],
@@ -168,6 +177,9 @@
             "param": {
                 "custom_action": "DFCleanBattleBridge"
             }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_12 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -200,6 +212,9 @@
                 "custom_action": "DFCleanBattleBridge"
             }
         },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_13 关卡"
+        },
         "next": [
             "EstimateBegin"
         ],
@@ -230,6 +245,9 @@
             "param": {
                 "custom_action": "DFCleanBattleBridge"
             }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_14 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -262,6 +280,9 @@
                 "custom_action": "DFCleanBattleBridge"
             }
         },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_15 关卡"
+        },
         "next": [
             "EstimateBegin"
         ],
@@ -292,6 +313,9 @@
             "param": {
                 "custom_action": "DFCleanBattleBridge"
             }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_16 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -324,6 +348,9 @@
                 "custom_action": "DFCleanBattleBridge"
             }
         },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_17 关卡"
+        },
         "next": [
             "EstimateBegin"
         ],
@@ -354,6 +381,9 @@
             "param": {
                 "custom_action": "DFCleanBattleBridge"
             }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_18 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -386,6 +416,9 @@
                 "custom_action": "DFCleanBattleBridge"
             }
         },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_19 关卡"
+        },
         "next": [
             "EstimateBegin"
         ],
@@ -416,6 +449,9 @@
             "param": {
                 "custom_action": "DFCleanBattleBridge"
             }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_2 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -448,6 +484,9 @@
                 "custom_action": "DFCleanBattleBridge"
             }
         },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_20 关卡"
+        },
         "next": [
             "EstimateBegin"
         ],
@@ -478,6 +517,9 @@
             "param": {
                 "custom_action": "DFCleanBattleBridge"
             }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_21 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -510,6 +552,9 @@
                 "custom_action": "DFCleanBattleBridge"
             }
         },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_22 关卡"
+        },
         "next": [
             "EstimateBegin"
         ],
@@ -540,6 +585,9 @@
             "param": {
                 "custom_action": "DFCleanBattleBridge"
             }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_23 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -577,6 +625,9 @@
                 "custom_action": "DFCleanBattleBridge"
             }
         },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_3 关卡"
+        },
         "next": [
             "EstimateBegin"
         ],
@@ -607,6 +658,9 @@
             "param": {
                 "custom_action": "DFCleanBattleBridge"
             }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_4 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -639,6 +693,9 @@
                 "custom_action": "DFCleanBattleBridge"
             }
         },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_5 关卡"
+        },
         "next": [
             "EstimateBegin"
         ],
@@ -669,6 +726,9 @@
             "param": {
                 "custom_action": "DFCleanBattleBridge"
             }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_6 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -701,6 +761,9 @@
                 "custom_action": "DFCleanBattleBridge"
             }
         },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_7 关卡"
+        },
         "next": [
             "EstimateBegin"
         ],
@@ -732,6 +795,9 @@
                 "custom_action": "DFCleanBattleBridge"
             }
         },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_8 关卡"
+        },
         "next": [
             "EstimateBegin"
         ],
@@ -762,6 +828,9 @@
             "param": {
                 "custom_action": "DFCleanBattleBridge"
             }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_9 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -1024,6 +1093,8 @@
             }
         },
         "next": [
+            "DF_C_3",
+            "DF_C_2",
             "DF_C_1"
         ],
         "$__mpe_code": {
