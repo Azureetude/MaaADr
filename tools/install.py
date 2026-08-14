@@ -2,6 +2,8 @@ from pathlib import Path
 
 import shutil
 import sys
+import urllib.request
+import zipfile
 
 try:
     import jsonc
@@ -27,6 +29,8 @@ if sys.argv.__len__() < 4:
 
 os_name = sys.argv[2]
 arch = sys.argv[3]
+# Python 官方 Windows embeddable ZIP 使用已发布的补丁版本。
+embedded_python_version = "3.12.10"
 
 
 def get_dotnet_platform_tag():
@@ -117,6 +121,14 @@ def install_resource():
         interface = jsonc.load(f)
 
     interface["version"] = version
+    # 源码 interface.json 使用开发机 PATH 中的 Python；发布包改为内嵌运行时。
+    interface["agent"] = {
+        "child_exec": "./python/python.exe",
+        "child_args": [
+            "-u",
+            "./agent/main.py",
+        ],
+    }
 
     with open(install_path / "interface.json", "w", encoding="utf-8") as f:
         jsonc.dump(interface, f, ensure_ascii=False, indent=4)
@@ -138,6 +150,50 @@ def install_agent():
         working_dir / "agent",
         install_path / "agent",
         dirs_exist_ok=True,
+    )
+
+    install_embedded_python()
+
+
+def install_embedded_python():
+    if os_name != "win" or arch != "x86_64":
+        print("Embedded Python packaging currently supports win x86_64 only.")
+        sys.exit(1)
+
+    archive_name = f"python-{embedded_python_version}-embed-amd64.zip"
+    archive_path = working_dir / ".build" / archive_name
+    archive_path.parent.mkdir(parents=True, exist_ok=True)
+    if not archive_path.exists():
+        url = f"https://www.python.org/ftp/python/{embedded_python_version}/{archive_name}"
+        print(f"Downloading embedded Python: {url}")
+        urllib.request.urlretrieve(url, archive_path)
+
+    python_dir = install_path / "python"
+    if python_dir.exists():
+        shutil.rmtree(python_dir)
+    python_dir.mkdir(parents=True)
+    with zipfile.ZipFile(archive_path) as archive:
+        archive.extractall(python_dir)
+
+    pth_files = list(python_dir.glob("python*._pth"))
+    if len(pth_files) != 1:
+        raise RuntimeError("Embedded Python ._pth configuration file was not found.")
+    pth_files[0].write_text("python312.zip\n.\nLib/site-packages\nimport site\n", encoding="utf-8")
+
+    import subprocess
+
+    subprocess.run(
+        [
+            "uv",
+            "pip",
+            "install",
+            "--python",
+            str(python_dir / "python.exe"),
+            "--system",
+            "--requirement",
+            str(working_dir / "agent" / "requirements.txt"),
+        ],
+        check=True,
     )
 
 
