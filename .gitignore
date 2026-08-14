@@ -451,3 +451,5 @@ tools/ImageCropper/**/*.png
 
 config
 debug
+.agents/
+.codex/
