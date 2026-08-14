@@ -29,7 +29,8 @@ class DFCleanBattleBridge(CustomAction):
                 return False
 
         # Stage groups return to their chapter map after the shared battle:
-        # 1-6 -> DF_C_1, 7-15 -> DF_C_2, 16-22 -> DF_C_3, 23 -> finish.
+        # 1-6 -> DF_C_1, 7-15 -> DF_C_2, 16-22 -> DF_C_3,
+        # 23 -> return home, then finish.
         stage_number = int(argv.node_name.rsplit("_", 1)[-1])
         if stage_number <= 6:
             target = "DF_C_1"
@@ -38,7 +39,7 @@ class DFCleanBattleBridge(CustomAction):
         elif stage_number <= 22:
             target = "DF_C_3"
         else:
-            target = "DF_CleanFinish"
+            target = "DF_CleanBackHome"
         print(f"DFCleanBattleBridge: {argv.node_name} -> {target or '<end>'}")
         global _df_clean_target
         _df_clean_target = target

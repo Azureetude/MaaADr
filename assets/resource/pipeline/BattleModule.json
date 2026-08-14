@@ -3,16 +3,45 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786639070009,
+            "lastSyncTime": 1786702930123,
             "isModifiedExternally": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\BattleModule.json",
             "savedViewport": {
-                "x": -3361,
-                "y": -560,
-                "zoom": 0.92
+                "x": -837,
+                "y": -30,
+                "zoom": 0.8
             },
             "filename": "BattleModule",
             "version": "v1.7.6"
+        }
+    },
+    "0/3_story_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1011,
+                    189,
+                    230,
+                    81
+                ],
+                "template": [
+                    "EXimage/fight/story_0_3.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "story_enter"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1952,
+                "y": 215
+            }
         }
     },
     "0/3_battle": {
@@ -60,11 +89,8 @@
                 "green_mask": true
             }
         },
-        "action": {
-            "type": "Click"
-        },
         "next": [
-            "story_enter"
+            "0/3_story_1"
         ],
         "$__mpe_code": {
             "position": {
@@ -821,7 +847,7 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2067,
+                "x": 2211,
                 "y": 212
             }
         }
@@ -880,8 +906,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2410,
-                "y": 199
+                "x": 2535,
+                "y": 200
             }
         }
     },

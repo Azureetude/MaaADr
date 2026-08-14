@@ -1,0 +1,101 @@
+{
+    "$__mpe_config_backhome": {
+        "$__mpe_code": {
+            "coordinateMode": "absolute-v1",
+            "filename": "backhome",
+            "prefix": "",
+            "savedViewport": {
+                "x": -1072,
+                "y": -342,
+                "zoom": 0.7
+            },
+            "version": "v1.7.6"
+        }
+    },
+    "backhome_1": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2022,
+                "y": 679
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "backhome_end"
+        ],
+        "recognition": {
+            "param": {
+                "template": [
+                    "basic/no.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "backhome_2": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2022,
+                "y": 911
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "backhome_end"
+        ],
+        "recognition": {
+            "param": {
+                "template": [
+                    "basic/取消.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "backhome_end": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2464,
+                "y": 767
+            }
+        },
+        "action": {
+            "param": {
+                "target": [
+                    137,
+                    45,
+                    1,
+                    1
+                ]
+            },
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        },
+        "next": [
+            "DF_CleanFinish"
+        ]
+    },
+    "backhome_start": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1618,
+                "y": 850
+            }
+        },
+        "next": [
+            "backhome_1",
+            "backhome_2"
+        ]
+    }
+}
