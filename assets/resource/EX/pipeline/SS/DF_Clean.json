@@ -45,8 +45,11 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
+        "max_hit": 3,
         "next": [
-            "DF_C_1_UP"
+            "DF_C_1_UP",
+            "DF_C_1"
         ],
         "$__mpe_code": {
             "position": {
@@ -911,8 +914,11 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
+        "max_hit": 3,
         "next": [
-            "DF_C_2_UP"
+            "DF_C_2_UP",
+            "DF_C_2"
         ],
         "$__mpe_code": {
             "position": {
@@ -997,8 +1003,11 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
+        "max_hit": 3,
         "next": [
-            "DF_C_3_UP"
+            "DF_C_3_UP",
+            "DF_C_3"
         ],
         "$__mpe_code": {
             "position": {
@@ -1061,13 +1070,175 @@
     },
     "DF_CleanBackHome": {
         "next": [
-            "backhome_start"
+            "DF_CleanBackHomeConfirmNo",
+            "DF_CleanBackHomeConfirmCancel",
+            "DF_CleanBackHomeClick",
+            "DF_CleanBackHomeEnd"
         ],
         "$__mpe_code": {
             "position": {
                 "x": 0,
                 "y": 0
             }
+        }
+    },
+    "TaskStart_DFClean": {
+        "next": [
+            "TaskStart_DFClean_BackHomeConfirmNo",
+            "TaskStart_DFClean_BackHomeConfirmCancel",
+            "TaskStart_DFClean_BackHomeClick",
+            "TaskStart_DFClean_BackHomeEnd"
+        ]
+    },
+    "TaskStart_DFClean_BackHomeConfirmNo": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/no.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "TaskStart_DFClean_BackHomeClick"
+        ]
+    },
+    "TaskStart_DFClean_BackHomeConfirmCancel": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/取消.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "TaskStart_DFClean_BackHomeClick"
+        ]
+    },
+    "TaskStart_DFClean_BackHomeClick": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    137,
+                    45,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "TaskStart_DFClean_BackHomeEnd"
+        ]
+    },
+    "TaskStart_DFClean_BackHomeEnd": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "next": [
+            "DF_Clean_find"
+        ]
+    },
+    "DF_CleanBackHomeConfirmNo": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/no.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "DF_CleanBackHomeClick"
+        ]
+    },
+    "DF_CleanBackHomeConfirmCancel": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/取消.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "DF_CleanBackHomeClick"
+        ]
+    },
+    "DF_CleanBackHomeClick": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    137,
+                    45,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "DF_CleanBackHomeEnd"
+        ]
+    },
+    "DF_CleanBackHomeEnd": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "next": [
+            "DF_CleanFinish"
+        ]
+    },
+    "DF_CleanFinish": {
+        "action": {
+            "type": "StopTask"
+        },
+        "focus": {
+            "Node.Action.Succeeded": "**任务已全部完成**"
         }
     },
     "DF_Clean_find": {

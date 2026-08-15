@@ -1,0 +1,122 @@
+{
+    "TaskStart_DailyExchange": {
+        "next": [
+            "TaskStart_DailyExchange_BackHomeConfirmNo",
+            "TaskStart_DailyExchange_BackHomeConfirmCancel",
+            "TaskStart_DailyExchange_BackHomeClick",
+            "TaskStart_DailyExchange_BackHomeEnd"
+        ]
+    },
+    "TaskStart_DailyExchange_BackHomeConfirmNo": {
+        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/no.png"] } },
+        "action": { "type": "Click" },
+        "post_wait_freezes": 1000,
+        "next": ["TaskStart_DailyExchange_BackHomeClick"]
+    },
+    "TaskStart_DailyExchange_BackHomeConfirmCancel": {
+        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/取消.png"] } },
+        "action": { "type": "Click" },
+        "post_wait_freezes": 1000,
+        "next": ["TaskStart_DailyExchange_BackHomeClick"]
+    },
+    "TaskStart_DailyExchange_BackHomeClick": {
+        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/backhome.png"] } },
+        "action": { "type": "Click", "param": { "target": [137, 45, 1, 1] } },
+        "post_wait_freezes": 1000,
+        "next": ["TaskStart_DailyExchange_BackHomeEnd"]
+    },
+    "TaskStart_DailyExchange_BackHomeEnd": {
+        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/homepage_down.png"], "green_mask": true } },
+        "next": ["checkhomepage_exchange"]
+    },
+    "TaskStart_ObtainMaterials": {
+        "next": [
+            "TaskStart_ObtainMaterials_BackHomeConfirmNo",
+            "TaskStart_ObtainMaterials_BackHomeConfirmCancel",
+            "TaskStart_ObtainMaterials_BackHomeClick",
+            "TaskStart_ObtainMaterials_BackHomeEnd"
+        ]
+    },
+    "TaskStart_ObtainMaterials_BackHomeConfirmNo": {
+        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/no.png"] } },
+        "action": { "type": "Click" },
+        "post_wait_freezes": 1000,
+        "next": ["TaskStart_ObtainMaterials_BackHomeClick"]
+    },
+    "TaskStart_ObtainMaterials_BackHomeConfirmCancel": {
+        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/取消.png"] } },
+        "action": { "type": "Click" },
+        "post_wait_freezes": 1000,
+        "next": ["TaskStart_ObtainMaterials_BackHomeClick"]
+    },
+    "TaskStart_ObtainMaterials_BackHomeClick": {
+        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/backhome.png"] } },
+        "action": { "type": "Click", "param": { "target": [137, 45, 1, 1] } },
+        "post_wait_freezes": 1000,
+        "next": ["TaskStart_ObtainMaterials_BackHomeEnd"]
+    },
+    "TaskStart_ObtainMaterials_BackHomeEnd": {
+        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/homepage_down.png"], "green_mask": true } },
+        "next": ["obtainmaterials"]
+    },
+    "TaskStart_FindMap": {
+        "next": [
+            "TaskStart_FindMap_BackHomeConfirmNo",
+            "TaskStart_FindMap_BackHomeConfirmCancel",
+            "TaskStart_FindMap_BackHomeClick",
+            "TaskStart_FindMap_BackHomeEnd"
+        ]
+    },
+    "TaskStart_FindMap_BackHomeConfirmNo": {
+        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/no.png"] } },
+        "action": { "type": "Click" },
+        "post_wait_freezes": 1000,
+        "next": ["TaskStart_FindMap_BackHomeClick"]
+    },
+    "TaskStart_FindMap_BackHomeConfirmCancel": {
+        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/取消.png"] } },
+        "action": { "type": "Click" },
+        "post_wait_freezes": 1000,
+        "next": ["TaskStart_FindMap_BackHomeClick"]
+    },
+    "TaskStart_FindMap_BackHomeClick": {
+        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/backhome.png"] } },
+        "action": { "type": "Click", "param": { "target": [137, 45, 1, 1] } },
+        "post_wait_freezes": 1000,
+        "next": ["TaskStart_FindMap_BackHomeEnd"]
+    },
+    "TaskStart_FindMap_BackHomeEnd": {
+        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/homepage_down.png"], "green_mask": true } },
+        "next": ["findmap"]
+    },
+    "TaskStart_EndGame": {
+        "next": [
+            "TaskStart_EndGame_BackHomeConfirmNo",
+            "TaskStart_EndGame_BackHomeConfirmCancel",
+            "TaskStart_EndGame_BackHomeClick",
+            "TaskStart_EndGame_BackHomeEnd"
+        ]
+    },
+    "TaskStart_EndGame_BackHomeConfirmNo": {
+        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/no.png"] } },
+        "action": { "type": "Click" },
+        "post_wait_freezes": 1000,
+        "next": ["TaskStart_EndGame_BackHomeClick"]
+    },
+    "TaskStart_EndGame_BackHomeConfirmCancel": {
+        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/取消.png"] } },
+        "action": { "type": "Click" },
+        "post_wait_freezes": 1000,
+        "next": ["TaskStart_EndGame_BackHomeClick"]
+    },
+    "TaskStart_EndGame_BackHomeClick": {
+        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/backhome.png"] } },
+        "action": { "type": "Click", "param": { "target": [137, 45, 1, 1] } },
+        "post_wait_freezes": 1000,
+        "next": ["TaskStart_EndGame_BackHomeEnd"]
+    },
+    "TaskStart_EndGame_BackHomeEnd": {
+        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/homepage_down.png"], "green_mask": true } },
+        "next": ["endgame"]
+    }
+}

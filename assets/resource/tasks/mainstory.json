@@ -2,7 +2,7 @@
     "task": [
          {
             "name": "主线故事(开发中)",
-            "entry": "obtainmaterials",
+            "entry": "TaskStart_ObtainMaterials",
             "option": [
 //                "章节",
 //                "关卡",
