@@ -8,15 +8,12 @@ if str(AGENT_DIR) not in sys.path:
     sys.path.insert(0, str(AGENT_DIR))
 
 from maa.agent.agent_server import AgentServer
-from maa.toolkit import Toolkit
 
 import my_action
 import my_reco
 
 
 def main():
-    Toolkit.init_option(str(AGENT_DIR.parent))
-
     if len(sys.argv) < 2:
         print("Usage: python main.py <socket_id>")
         print("socket_id is provided by AgentIdentifier.")

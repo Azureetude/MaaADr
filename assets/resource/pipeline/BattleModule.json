@@ -3,44 +3,24 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786702930123,
+            "lastSyncTime": 1786861981376,
             "isModifiedExternally": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\BattleModule.json",
+            "isDeleted": true,
             "savedViewport": {
-                "x": -837,
-                "y": -30,
-                "zoom": 0.8
+                "x": -1669,
+                "y": -381,
+                "zoom": 0.53
             },
             "filename": "BattleModule",
             "version": "v1.7.6"
         }
     },
-    "0/3_story_1": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    1011,
-                    189,
-                    230,
-                    81
-                ],
-                "template": [
-                    "EXimage/fight/story_0_3.png"
-                ],
-                "green_mask": true
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "story_enter"
-        ],
+    "$__mpe_external_backhome_start_BattleModule": {
         "$__mpe_code": {
             "position": {
-                "x": 1952,
-                "y": 215
+                "x": 4463,
+                "y": 1048
             }
         }
     },
@@ -95,6 +75,35 @@
         "$__mpe_code": {
             "position": {
                 "x": 1681,
+                "y": 215
+            }
+        }
+    },
+    "0/3_story_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1011,
+                    189,
+                    230,
+                    81
+                ],
+                "template": [
+                    "EXimage/fight/story_0_3.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "story_enter"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1952,
                 "y": 215
             }
         }
@@ -287,6 +296,7 @@
             }
         },
         "next": [
+            "story_close",
             "story_back"
         ],
         "$__mpe_code": {
@@ -316,12 +326,12 @@
             "type": "Click"
         },
         "next": [
-            "enterbattle_4"
+            "exitbattle"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2032,
-                "y": 1855
+                "x": 2026,
+                "y": 1854
             }
         }
     },
@@ -418,12 +428,52 @@
         },
         "timeout": -1,
         "next": [
-            "battle_1_2"
+            "battle_1_2",
+            "battle_1_2_skip",
+            "battle_1_2_skip1"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3362,
-                "y": 1189
+                "x": 3415,
+                "y": 1707
+            }
+        }
+    },
+    "battle_1_1_skip": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1159,
+                    10,
+                    98,
+                    62
+                ],
+                "expected": [
+                    "EXIT"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1201,
+                    35,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 2000,
+        "next": [
+            "battle_1_2",
+            "battle_1_2_skip2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3426,
+                "y": 1253
             }
         }
     },
@@ -449,8 +499,45 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3710,
-                "y": 1158
+                "x": 4702,
+                "y": 1229
+            }
+        }
+    },
+    "battle_1_2_skip": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1159,
+                    10,
+                    98,
+                    62
+                ],
+                "expected": [
+                    "EXIT"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1201,
+                    35,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 2000,
+        "next": [
+            "battle_1_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4302,
+                "y": 1571
             }
         }
     },
@@ -460,8 +547,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5471,
-                "y": 1185
+                "x": 5077,
+                "y": 1296
             }
         }
     },
@@ -477,9 +564,11 @@
         "action": {
             "type": "Click"
         },
+        "timeout": -1,
         "next": [
             "battle_1_1",
-            "no_np_1"
+            "no_np_1",
+            "battle_1_1_skip"
         ],
         "$__mpe_code": {
             "position": {
@@ -497,8 +586,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 5721,
-                "y": -42
+                "x": 5442,
+                "y": 594
             }
         }
     },
@@ -536,6 +625,10 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 2,
+        "next": [
+            "battle_end"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 2605,
@@ -625,7 +718,7 @@
             }
         },
         "next": [
-            "no_np_6"
+            "backhome_start"
         ],
         "$__mpe_code": {
             "position": {
@@ -818,6 +911,28 @@
             }
         }
     },
+    "story_close": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/no.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "story_back"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2294,
+                "y": 607
+            }
+        }
+    },
     "story_end": {
         "next": [
             "battlemoduleend"
@@ -900,7 +1015,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 2000,
+        "post_wait_freezes": 3000,
         "next": [
             "story_reward"
         ],
@@ -942,6 +1057,53 @@
             "position": {
                 "x": 2416,
                 "y": -174
+            }
+        }
+    },
+    "battle_1_2_skip1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/skip.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 2000,
+        "next": [
+            "battle_1_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4302,
+                "y": 1927
+            }
+        }
+    },
+    "battle_1_2_skip2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/skip.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 2000,
+        "next": [
+            "battle_1_2",
+            "battle_1_2_skip2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3965,
+                "y": 1137
             }
         }
     }
