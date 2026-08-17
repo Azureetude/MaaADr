@@ -3,7 +3,7 @@
         {
             "name": "神の宣告",
             "description": "开启战斗修改",
-            "entry": "TaskStart_STClean_0",
+            "entry": "linkstart",
             "resource": ["EX"]
         }
     ]
