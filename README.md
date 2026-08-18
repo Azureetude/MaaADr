@@ -25,6 +25,8 @@
 
 由 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 强力驱动！
 
+🌟喜欢本项目就在仓库右上角点个星星吧🌟
+
 **简体中文 | [English](README_en.md)**
 
 </div>
