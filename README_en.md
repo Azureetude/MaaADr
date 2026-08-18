@@ -24,7 +24,7 @@
 A stamina managing / auto-battle assistant for AnotherEidos Of Dragon Vein R(AnaDos) based on a completely new architecture. Image processing + simulated control, free your hands!
 Powered by [MaaFramework](https://github.com/MaaXYZ/MaaFramework)!
 
-**[简体中文](README.md) | [繁體中文](README_tw.md) | English(README_en.md) | [日本語](README_jp.md)**
+**[简体中文](README.md) | English**
 
 🌟 If you like this project, please consider giving it a star! 🌟
 
