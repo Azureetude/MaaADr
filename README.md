@@ -35,15 +35,14 @@
 >
 > 💬MaaADr交流QQ群：[1071729734](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=MJV7fd5huEugZClnAKoslskuPqRb2Xq9&authKey=p%2B4yQS2nFW8pB00oTCkpy%2Frh8X79sZwEUNR2BVpnvcfg44%2BMWImzM%2FP%2BrLDJ%2F04g&noverify=0&group_code=1071729734)  *使用问题🐛、功能建议💡、闲聊摸鱼🐟，欢迎加入~*
 
-
 > [!NOTE]  
 > 本软件目前仅提供 Windows 系统版本。在使用时请保持鼠标闲置，避免与软件产生冲突。
-> 
+>
 > 本软件功能开发基于桌面版，因此推荐使用桌面版进行游戏。模拟器仅保证基础功能运行，若出现问题，请第一时间把软件根目录下`debug\maa.log` 文件保存并截图进行反馈。
 
 ## 下载
 
-前往 [GitHub Releases](https://github.com/Azureetude/MaaADr/releases) 下载全量包*maaadr-mfa-win-x86_64-vx.x.x.zip*。
+前往 [GitHub Releases](https://github.com/Azureetude/MaaADr/releases) 下载全量包*MaaADr-mfa-win-x86_64-vx.x.x.zip*。
 
 如果你有 Mirror 酱 CDK，也可以通过 [Mirror 酱高速下载](https://mirrorchyan.com/zh/projects?rid=MaaADr&os=win&arch=x64&channel=stable) 获取最新版本。
 
@@ -75,7 +74,6 @@
 >作者不对因使用该资源包而导致的任何直接、间接或结果性损失承担责任。
 >
 >该资源包可加入群聊了解详情（免费）
-
 
 - **当期活动EX**：
   - ✅通过 *进入战斗直接胜利*  清体力自动刷取活动底关（每周更新）

@@ -248,7 +248,7 @@ jobs:
             fi
             archive_prefix="$f"
             if [ "$f" = "MaaADr-win-x86_64" ]; then
-              archive_prefix="maaadr-mfa-win-x86_64"
+              archive_prefix="MaaADr-mfa-win-x86_64"
             fi
             (cd "$f" && zip -r "../${archive_prefix}-${{ needs.meta.outputs.tag }}.zip" .)
           done
