@@ -22,7 +22,7 @@ jobs:
       - uses: MirrorChyan/uploading-action@v1
         with:
           filetype: latest-release
-          filename: ${{ format('MaaADr-{0}-{1}-*.zip', matrix.os, matrix.arch) }}
+          filename: ${{ format('maaadr-mfa-{0}-{1}-*.zip', matrix.os, matrix.arch) }}
           mirrorchyan_rid: MaaADr
           tag: ${{ inputs.tag }}
 

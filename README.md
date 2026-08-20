@@ -43,7 +43,7 @@
 
 ## 下载
 
-前往 [GitHub Releases](https://github.com/Azureetude/MaaADr/releases) 下载全量包*MaaADr-win-x86_64-vx.x.x.zip*。
+前往 [GitHub Releases](https://github.com/Azureetude/MaaADr/releases) 下载全量包*maaadr-mfa-win-x86_64-vx.x.x.zip*。
 
 如果你有 Mirror 酱 CDK，也可以通过 [Mirror 酱高速下载](https://mirrorchyan.com/zh/projects?rid=MaaADr&os=win&arch=x64&channel=stable) 获取最新版本。
 
