@@ -3,29 +3,58 @@
         {
             "name": "一键过图EX",
             "description": "通过*进入战斗直接胜利*及关卡导航自动通关当期活动",
-            "entry": "TaskStart_DFClean",
+            "entry": "TaskStart_LatastSSCleanEX",
             "resource": ["EX"],
             "option": [
-                "是否自动吃药"
+                "活动(Clean)"
             ]
         }
     ],
      "option": {
-         "是否自动吃药": {
-            "type": "switch",
+        "活动(Clean)": {
+            "type": "select",
             "cases": [
                 {
-                    "name": "Yes"
+                    "name": "龙焰FIRE!(Clean)",
+                    "pipeline_override": {
+                        "TaskStart_LatastSSCleanEX": {
+                            "next": "TaskStart_DFClean"
+                        }
+                    }
                 },
                 {
-                    "name": "No",
+                    "name": "英雄时间EP.3(Clean)",
                     "pipeline_override": {
-                        "no_np_1": {
-                            "next": "story_back"  
-                     }
+                        "TaskStart_LatastSSCleanEX": {
+                            "next": "TaskStart_HT3Clean"
+                        }
                     }
                 }
+                // {
+                //     "name": "第2章 ",
+                //     "pipeline_override": {
+                //         "SelectDungeonLevel": {
+                //             "expected": "雷之回廊"
+                //         }
+                //     }
+                // },
+                // {
+                //     "name": "第3章",
+                //     "pipeline_override": {
+                //         "SelectDungeonLevel": {
+                //             "expected": "光之回廊"
+                //         }
+                //     }
+                // },
+                // {
+                //     "name": "第4章",
+                //     "pipeline_override": {
+                //         "SelectDungeonLevel": {
+                //             "expected": "暗之回廊"
+                //         }
+                //     }
+                // }
             ]
         }
-     }
+    }
 }

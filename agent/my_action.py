@@ -31,7 +31,7 @@ class DFCleanBattleBridge(CustomAction):
 
         # Stage groups return to their chapter map after the shared battle:
         # 1-6 -> DF_C_1, 7-15 -> DF_C_2, 16-22 -> DF_C_3,
-        # 23 -> return home, then finish.
+        # 23-31 -> DF_C_4, 32 -> return home, then finish.
         stage_number = int(argv.node_name.rsplit("_", 1)[-1])
         if stage_number <= 6:
             target = "DF_C_1"
@@ -39,12 +39,44 @@ class DFCleanBattleBridge(CustomAction):
             target = "DF_C_2"
         elif stage_number <= 22:
             target = "DF_C_3"
+        elif stage_number <= 31:
+            target = "DF_C_4"
         else:
             target = "DF_CleanBackHome"
         print(f"DFCleanBattleBridge: {argv.node_name} -> {target or '<end>'}")
         global _battle_route_target
         _battle_route_target = target
         print(f"DFCleanBattleBridge: battlemoduleend -> {target}")
+        return context.override_next(argv.node_name, ["EstimateBegin"])
+
+
+@AgentServer.custom_action("HT3CleanBattleBridge")
+class HT3CleanBattleBridge(CustomAction):
+    """Click an HT3-C stage, run the shared BattleModule, then continue navigation."""
+
+    def run(
+        self,
+        context: Context,
+        argv: CustomAction.RunArg,
+    ) -> bool:
+        if not _click_recognition_box(context, argv):
+            return False
+
+        stage_number = int(argv.node_name.rsplit("_", 1)[-1])
+        if stage_number <= 10:
+            target = "HT3_C_1"
+        elif stage_number <= 15:
+            target = "HT3_C_2"
+        elif stage_number <= 20:
+            target = "HT3_C_3"
+        elif stage_number <= 26:
+            target = "HT3_C_4"
+        else:
+            target = "HT3_CleanBackHome"
+
+        print(f"HT3CleanBattleBridge: {argv.node_name} -> {target}")
+        global _battle_route_target
+        _battle_route_target = target
         return context.override_next(argv.node_name, ["EstimateBegin"])
 
 

@@ -117,7 +117,7 @@
         "关卡_DF": {
             "type": "select",
             "cases": [
-            { "name": "DF_22" }
+            { "name": "DF_30" }
              ]
         }
      }

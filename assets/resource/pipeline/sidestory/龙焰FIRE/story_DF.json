@@ -3,16 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786273507743,
+            "lastSyncTime": 1787313539936,
             "isModifiedExternally": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\sidestory\\龙焰FIRE\\story_DF.json",
             "savedViewport": {
-                "x": 76,
-                "y": -117,
-                "zoom": 0.75
+                "x": 86,
+                "y": 17,
+                "zoom": 0.3
             },
             "filename": "story_DF",
-            "version": "v1.7.4"
+            "version": "v1.8.0"
         }
     },
     "DF_1": {
@@ -20,7 +20,7 @@
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "sidestory/DF/DF_3.png"
+                    "sidestory/DF/DF_4.png"
                 ],
                 "green_mask": true
             }
@@ -29,16 +29,22 @@
             "type": "Click",
             "param": {
                 "target": [
-                    700,
-                    331,
+                    970,
+                    312,
                     1,
                     1
                 ]
             }
         },
         "post_delay": 1000,
+        "focus": {
+            "Node.Recognition.Failed": "当前未解锁关卡"
+        },
         "next": [
             "DF_1_1"
+        ],
+        "on_error": [
+            "DF_BACK_HOME"
         ],
         "$__mpe_code": {
             "position": {
@@ -141,8 +147,14 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    638,
+                    400,
+                    638,
+                    181
+                ],
                 "template": [
-                    "sidestory/DF/DF_22.png"
+                    "EXimage/SS/DF/DF_30.png"
                 ]
             }
         },
@@ -150,8 +162,8 @@
             "type": "Click",
             "param": {
                 "target": [
-                    1013,
-                    345,
+                    886,
+                    494,
                     1,
                     1
                 ]
@@ -173,13 +185,13 @@
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    0,
-                    0,
-                    0,
-                    0
+                    649,
+                    402,
+                    615,
+                    173
                 ],
                 "template": [
-                    "sidestory/DF/DF_22.png"
+                    "EXimage/SS/DF/DF_30.png"
                 ]
             }
         },
@@ -187,10 +199,10 @@
             "type": "Click",
             "param": {
                 "target": [
-                    1013,
-                    345,
-                    1,
-                    1
+                    896,
+                    476,
+                    0,
+                    2
                 ]
             }
         },
@@ -210,7 +222,7 @@
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "sidestory/DF/DF_3.png"
+                    "sidestory/DF/DF_4.png"
                 ],
                 "green_mask": true
             }
@@ -220,15 +232,21 @@
             "type": "Click",
             "param": {
                 "target": [
-                    700,
-                    326,
+                    962,
+                    318,
                     1,
                     1
                 ]
             }
         },
+        "focus": {
+            "Node.Recognition.Failed": "当前未解锁关卡"
+        },
         "next": [
             "DF_1_1_EX"
+        ],
+        "on_error": [
+            "DF_BACK_HOME"
         ],
         "$__mpe_code": {
             "position": {
