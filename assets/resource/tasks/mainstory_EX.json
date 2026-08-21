@@ -1,35 +1,35 @@
 {
     "task": [
-        {
-            "name": "一键过图EX",
-            "description": "通过*进入战斗直接胜利*及关卡导航自动通关当期活动",
-            "entry": "TaskStart_LatastSSCleanEX",
+         {
+            "name": "主线故事EX",
+            "description": "通过*进入战斗直接胜利*及关卡导航自动通关主线任务",
+            "entry": "MainStoryChapterRouter",
             "resource": ["EX"],
             "option": [
-                "活动(Clean)"
+               "章节"
             ]
         }
     ],
-     "option": {
-        "活动(Clean)": {
+    "option": {
+        "章节": {
             "type": "select",
             "cases": [
                 {
-                    "name": "龙焰FIRE!(Clean)",
+                    "name": "第0章",
                     "pipeline_override": {
-                        "TaskStart_LatastSSCleanEX": {
-                            "next": "TaskStart_DFClean"
-                        }
-                    }
-                },
-                {
-                    "name": "英雄时间EP.3(Clean)",
-                    "pipeline_override": {
-                        "TaskStart_LatastSSCleanEX": {
-                            "next": "TaskStart_HT3Clean"
+                        "MainStoryChapterRouter": {
+                            "next": "TaskStart_STClean_0"
                         }
                     }
                 }
+                // {
+                //     "name": "第1章",
+                //     "pipeline_override": {
+                //         "SelectDungeonLevel": {
+                //             "expected": "冰之回廊"
+                //         }
+                //     }
+                // },
                 // {
                 //     "name": "第2章 ",
                 //     "pipeline_override": {

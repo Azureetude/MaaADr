@@ -2,7 +2,7 @@
     "task": [
         {
             "name": "素材周回",
-            "entry": "obtainmaterials",
+            "entry": "TaskStart_ObtainMaterials",
             "resource": ["official"],
             "option": [
                 "道具"

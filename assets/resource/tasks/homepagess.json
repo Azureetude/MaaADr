@@ -3,7 +3,7 @@
         {
             "name": "当期活动",
             "description": "当期活动底关自动使用*跳过券*清体力",
-            "entry": "findmap",
+            "entry": "TaskStart_FindMap",
             "resource": ["official"],
             "option": [
                 "活动"
@@ -117,7 +117,7 @@
         "关卡_DF": {
             "type": "select",
             "cases": [
-            { "name": "DF_22" }
+            { "name": "DF_30" }
              ]
         }
      }

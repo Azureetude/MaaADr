@@ -1,415 +1,21 @@
 {
-    "$__mpe_config_DF_Clean": {
+    "$__mpe_config_HT3_Clean": {
         "$__mpe_code": {
             "prefix": "",
-            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\SS\\DF_Clean.json",
-            "lastSyncTime": 1787308981411,
-            "isModifiedExternally": false,
             "coordinateMode": "absolute-v1",
-            "isDeleted": true,
+            "lastSyncTime": 1787318107449,
+            "isModifiedExternally": false,
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\SS\\HT3_Clean.json",
             "savedViewport": {
-                "x": 314,
-                "y": -1484,
-                "zoom": 0.46
+                "x": -825,
+                "y": -2148,
+                "zoom": 1.21
             },
-            "filename": "DF_Clean",
+            "filename": "HT3_Clean",
             "version": "v1.8.0"
         }
     },
-    "DF_C_1_26": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    794,
-                    140,
-                    66,
-                    31
-                ],
-                "expected": [
-                    "DF-26"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "DFCleanBattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_26 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1646,
-                "y": 4102
-            }
-        }
-    },
-    "DF_C_1_27": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    794,
-                    140,
-                    66,
-                    31
-                ],
-                "expected": [
-                    "DF-27"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "DFCleanBattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_27 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1935,
-                "y": 4116
-            }
-        }
-    },
-    "DF_C_1_28": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    794,
-                    140,
-                    66,
-                    31
-                ],
-                "expected": [
-                    "DF-28"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "DFCleanBattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_28 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1046,
-                "y": 4450
-            }
-        }
-    },
-    "DF_C_1_29": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    794,
-                    140,
-                    66,
-                    31
-                ],
-                "expected": [
-                    "DF-29"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "DFCleanBattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_29 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1355,
-                "y": 4450
-            }
-        }
-    },
-    "DF_C_1_30": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    794,
-                    140,
-                    66,
-                    31
-                ],
-                "expected": [
-                    "DF-30"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "DFCleanBattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_30 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1651,
-                "y": 4450
-            }
-        }
-    },
-    "DF_C_1_31": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    794,
-                    140,
-                    66,
-                    31
-                ],
-                "expected": [
-                    "DF-31"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "DFCleanBattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_31 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1940,
-                "y": 4450
-            }
-        }
-    },
-    "DF_C_1_32": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    794,
-                    140,
-                    66,
-                    31
-                ],
-                "expected": [
-                    "DF-32"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "DFCleanBattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_32 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2233,
-                "y": 4450
-            }
-        }
-    },
-    "DF_C_1_24": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    794,
-                    140,
-                    66,
-                    31
-                ],
-                "expected": [
-                    "DF-24"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "DFCleanBattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_24 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1040,
-                "y": 4126
-            }
-        }
-    },
-    "DF_C_1_25": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    794,
-                    140,
-                    66,
-                    31
-                ],
-                "expected": [
-                    "DF-25"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "DFCleanBattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_25 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1343,
-                "y": 4126
-            }
-        }
-    },
-    "DF_C_4": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "sidestory/DF/DF_4.png"
-                ],
-                "green_mask": true
-            }
-        },
-        "pre_wait_freezes": 1000,
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    965,
-                    327,
-                    1,
-                    1
-                ]
-            }
-        },
-        "post_wait_freezes": 1000,
-        "next": [
-            "DF_C_4_UP"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 326,
-                "y": 4246
-            }
-        }
-    },
-    "DF_C_4_UP": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    644,
-                    81,
-                    184,
-                    615
-                ],
-                "template": [
-                    "basic/story_logo.png",
-                    "basic/battle_logo.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Swipe",
-            "param": {
-                "begin": [
-                    944,
-                    221,
-                    1,
-                    1
-                ],
-                "end": [
-                    [
-                        950,
-                        586,
-                        1,
-                        1
-                    ]
-                ]
-            }
-        },
-        "repeat": 3,
-        "next": [
-            "DF_C_1_24",
-            "DF_C_1_25",
-            "DF_C_1_26",
-            "DF_C_1_27",
-            "DF_C_1_28",
-            "DF_C_1_29",
-            "DF_C_1_30",
-            "DF_C_1_31",
-            "DF_C_1_32"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 662,
-                "y": 4215
-            }
-        }
-    },
-    "$__mpe_external_EstimateBegin_DF_Clean": {
+    "$__mpe_external_EstimateBegin_HT3_Clean": {
         "$__mpe_code": {
             "position": {
                 "x": 3596,
@@ -417,7 +23,7 @@
             }
         }
     },
-    "$__mpe_external_backhome_start_DF_Clean": {
+    "$__mpe_external_TaskStart_DFClean_HT3_Clean": {
         "$__mpe_code": {
             "position": {
                 "x": 0,
@@ -425,12 +31,20 @@
             }
         }
     },
-    "DF_C_1": {
+    "$__mpe_external_backhome_start_HT3_Clean": {
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    },
+    "HT3_C_1": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "sidestory/DF/DF_1.png"
+                    "EXimage/SS/HT3/HT3_1.png"
                 ],
                 "green_mask": true
             }
@@ -440,8 +54,8 @@
             "type": "Click",
             "param": {
                 "target": [
-                    173,
-                    316,
+                    171,
+                    336,
                     1,
                     1
                 ]
@@ -449,8 +63,8 @@
         },
         "post_wait_freezes": 1000,
         "next": [
-            "DF_C_1_UP",
-            "DF_C_1"
+            "HT3_C_1_UP",
+            "HT3_C_1"
         ],
         "$__mpe_code": {
             "position": {
@@ -459,25 +73,25 @@
             }
         }
     },
-    "DF_C_1_1": {
+    "HT3_C_1_1": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    794,
-                    140,
-                    66,
-                    31
+                    791,
+                    139,
+                    95,
+                    34
                 ],
                 "expected": [
-                    "DF-1"
+                    "HT3-1"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "DFCleanBattleBridge"
+                "custom_action": "HT3CleanBattleBridge"
             }
         },
         "focus": {
@@ -493,267 +107,267 @@
             }
         }
     },
-    "DF_C_1_10": {
+    "HT3_C_1_10": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    794,
-                    140,
-                    66,
-                    31
+                    791,
+                    139,
+                    95,
+                    34
                 ],
                 "expected": [
-                    "DF-10"
+                    "HT3-10"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "DFCleanBattleBridge"
+                "custom_action": "HT3CleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_10 关卡"
+            "Node.Action.Succeeded": "开始进行 HT3_10 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1691,
-                "y": 2688
+                "x": 2007,
+                "y": 2385
             }
         }
     },
-    "DF_C_1_11": {
+    "HT3_C_1_11": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    794,
-                    140,
-                    66,
-                    31
+                    791,
+                    139,
+                    95,
+                    34
                 ],
                 "expected": [
-                    "DF-11"
+                    "HT3-11"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "DFCleanBattleBridge"
+                "custom_action": "HT3CleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_11 关卡"
+            "Node.Action.Succeeded": "开始进行 HT3_11 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1980,
-                "y": 2702
+                "x": 2287,
+                "y": 2395
             }
         }
     },
-    "DF_C_1_12": {
+    "HT3_C_1_12": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    794,
-                    140,
-                    66,
-                    31
+                    791,
+                    139,
+                    95,
+                    34
                 ],
                 "expected": [
-                    "DF-12"
+                    "HT3-12"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "DFCleanBattleBridge"
+                "custom_action": "HT3CleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_12 关卡"
+            "Node.Action.Succeeded": "开始进行 HT3_12 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1086,
-                "y": 2977
+                "x": 1063,
+                "y": 2842
             }
         }
     },
-    "DF_C_1_13": {
+    "HT3_C_1_13": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    794,
-                    140,
-                    66,
-                    31
+                    791,
+                    139,
+                    95,
+                    34
                 ],
                 "expected": [
-                    "DF-13"
+                    "HT3-13"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "DFCleanBattleBridge"
+                "custom_action": "HT3CleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_13 关卡"
+            "Node.Action.Succeeded": "开始进行 HT3_13 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1395,
-                "y": 2977
+                "x": 1372,
+                "y": 2842
             }
         }
     },
-    "DF_C_1_14": {
+    "HT3_C_1_14": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    794,
-                    140,
-                    66,
-                    31
+                    791,
+                    139,
+                    95,
+                    34
                 ],
                 "expected": [
-                    "DF-14"
+                    "HT3-14"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "DFCleanBattleBridge"
+                "custom_action": "HT3CleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_14 关卡"
+            "Node.Action.Succeeded": "开始进行 HT3_14 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1691,
-                "y": 2977
+                "x": 1668,
+                "y": 2842
             }
         }
     },
-    "DF_C_1_15": {
+    "HT3_C_1_15": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    794,
-                    140,
-                    66,
-                    31
+                    791,
+                    139,
+                    95,
+                    34
                 ],
                 "expected": [
-                    "DF-15"
+                    "HT3-15"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "DFCleanBattleBridge"
+                "custom_action": "HT3CleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_15 关卡"
+            "Node.Action.Succeeded": "开始进行 HT3_15 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1980,
-                "y": 2977
+                "x": 1957,
+                "y": 2842
             }
         }
     },
-    "DF_C_1_16": {
+    "HT3_C_1_16": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    794,
-                    140,
-                    66,
-                    31
+                    791,
+                    139,
+                    95,
+                    34
                 ],
                 "expected": [
-                    "DF-16"
+                    "HT3-16"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "DFCleanBattleBridge"
+                "custom_action": "HT3CleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_16 关卡"
+            "Node.Action.Succeeded": "开始进行 HT3_16 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2273,
-                "y": 2977
+                "x": 2250,
+                "y": 2842
             }
         }
     },
-    "DF_C_1_17": {
+    "HT3_C_1_17": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    794,
-                    140,
-                    66,
-                    31
+                    791,
+                    139,
+                    95,
+                    34
                 ],
                 "expected": [
-                    "DF-17"
+                    "HT3-17"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "DFCleanBattleBridge"
+                "custom_action": "HT3CleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_17 关卡"
+            "Node.Action.Succeeded": "开始进行 HT3_17 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -765,29 +379,29 @@
             }
         }
     },
-    "DF_C_1_18": {
+    "HT3_C_1_18": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    794,
-                    140,
-                    66,
-                    31
+                    791,
+                    139,
+                    95,
+                    34
                 ],
                 "expected": [
-                    "DF-18"
+                    "HT3-18"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "DFCleanBattleBridge"
+                "custom_action": "HT3CleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_18 关卡"
+            "Node.Action.Succeeded": "开始进行 HT3_18 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -799,29 +413,29 @@
             }
         }
     },
-    "DF_C_1_19": {
+    "HT3_C_1_19": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    794,
-                    140,
-                    66,
-                    31
+                    791,
+                    139,
+                    95,
+                    34
                 ],
                 "expected": [
-                    "DF-19"
+                    "HT3-19"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "DFCleanBattleBridge"
+                "custom_action": "HT3CleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_19 关卡"
+            "Node.Action.Succeeded": "开始进行 HT3_19 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -833,29 +447,29 @@
             }
         }
     },
-    "DF_C_1_2": {
+    "HT3_C_1_2": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    794,
-                    140,
-                    66,
-                    31
+                    791,
+                    139,
+                    95,
+                    34
                 ],
                 "expected": [
-                    "DF-2"
+                    "HT3-2"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "DFCleanBattleBridge"
+                "custom_action": "HT3CleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_2 关卡"
+            "Node.Action.Succeeded": "开始进行 HT3_2 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -867,29 +481,29 @@
             }
         }
     },
-    "DF_C_1_20": {
+    "HT3_C_1_20": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    794,
-                    140,
-                    66,
-                    31
+                    791,
+                    139,
+                    95,
+                    34
                 ],
                 "expected": [
-                    "DF-20"
+                    "HT3-20"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "DFCleanBattleBridge"
+                "custom_action": "HT3CleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_20 关卡"
+            "Node.Action.Succeeded": "开始进行 HT3_20 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -901,29 +515,29 @@
             }
         }
     },
-    "DF_C_1_21": {
+    "HT3_C_1_21": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    794,
-                    140,
-                    66,
-                    31
+                    791,
+                    139,
+                    95,
+                    34
                 ],
                 "expected": [
-                    "DF-21"
+                    "HT3-21"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "DFCleanBattleBridge"
+                "custom_action": "HT3CleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_21 关卡"
+            "Node.Action.Succeeded": "开始进行 HT3_21 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -935,97 +549,233 @@
             }
         }
     },
-    "DF_C_1_22": {
+    "HT3_C_1_22": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    794,
-                    140,
-                    66,
-                    31
+                    791,
+                    139,
+                    95,
+                    34
                 ],
                 "expected": [
-                    "DF-22"
+                    "HT3-22"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "DFCleanBattleBridge"
+                "custom_action": "HT3CleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_22 关卡"
+            "Node.Action.Succeeded": "开始进行 HT3_22 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1675,
-                "y": 3643
+                "x": 1048,
+                "y": 4126
             }
         }
     },
-    "DF_C_1_23": {
+    "HT3_C_1_23": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    794,
-                    140,
-                    66,
-                    31
+                    791,
+                    139,
+                    95,
+                    34
                 ],
                 "expected": [
-                    "DF-23"
+                    "HT3-23"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "DFCleanBattleBridge"
+                "custom_action": "HT3CleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_23 关卡"
+            "Node.Action.Succeeded": "开始进行 HT3_23 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1985,
-                "y": 3643
+                "x": 1358,
+                "y": 4126
             }
         }
     },
-    "DF_C_1_3": {
+    "HT3_C_1_24": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    794,
-                    140,
-                    66,
-                    31
+                    791,
+                    139,
+                    95,
+                    34
                 ],
                 "expected": [
-                    "DF-3"
+                    "HT3-24"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "DFCleanBattleBridge"
+                "custom_action": "HT3CleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_3 关卡"
+            "Node.Action.Succeeded": "开始进行 HT3_24 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1032,
+                "y": 4467
+            }
+        }
+    },
+    "HT3_C_1_25": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "HT3-25"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "HT3CleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 HT3_25 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1335,
+                "y": 4467
+            }
+        }
+    },
+    "HT3_C_1_26": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "HT3-26"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "HT3CleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 HT3_26 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1638,
+                "y": 4443
+            }
+        }
+    },
+    "HT3_C_1_27": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "HT3-27"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "HT3CleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 HT3_27 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1927,
+                "y": 4457
+            }
+        }
+    },
+    "HT3_C_1_3": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "HT3-3"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "HT3CleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 HT3_3 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -1037,29 +787,29 @@
             }
         }
     },
-    "DF_C_1_4": {
+    "HT3_C_1_4": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    794,
-                    140,
-                    66,
-                    31
+                    791,
+                    139,
+                    95,
+                    34
                 ],
                 "expected": [
-                    "DF-4"
+                    "HT3-4"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "DFCleanBattleBridge"
+                "custom_action": "HT3CleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_4 关卡"
+            "Node.Action.Succeeded": "开始进行 HT3_4 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -1071,29 +821,97 @@
             }
         }
     },
-    "DF_C_1_5": {
+    "HT3_C_1_5": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    794,
-                    140,
-                    66,
-                    31
+                    791,
+                    139,
+                    95,
+                    34
                 ],
                 "expected": [
-                    "DF-5"
+                    "HT3-5"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "DFCleanBattleBridge"
+                "custom_action": "HT3CleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_5 关卡"
+            "Node.Action.Succeeded": "开始进行 HT3_5 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2279,
+                "y": 2047
+            }
+        }
+    },
+    "HT3_C_1_6": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "HT3-6"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "HT3CleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 HT3_6 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2581,
+                "y": 2047
+            }
+        }
+    },
+    "HT3_C_1_7": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "HT3-7"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "HT3CleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 HT3_7 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -1101,33 +919,33 @@
         "$__mpe_code": {
             "position": {
                 "x": 1104,
-                "y": 2333
+                "y": 2374
             }
         }
     },
-    "DF_C_1_6": {
+    "HT3_C_1_8": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    794,
-                    140,
-                    66,
-                    31
+                    791,
+                    139,
+                    95,
+                    34
                 ],
                 "expected": [
-                    "DF-6"
+                    "HT3-8"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "DFCleanBattleBridge"
+                "custom_action": "HT3CleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_6 关卡"
+            "Node.Action.Succeeded": "开始进行 HT3_8 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -1135,33 +953,33 @@
         "$__mpe_code": {
             "position": {
                 "x": 1401,
-                "y": 2333
+                "y": 2374
             }
         }
     },
-    "DF_C_1_7": {
+    "HT3_C_1_9": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    794,
-                    140,
-                    66,
-                    31
+                    791,
+                    139,
+                    95,
+                    34
                 ],
                 "expected": [
-                    "DF-7"
+                    "HT3-9"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "DFCleanBattleBridge"
+                "custom_action": "HT3CleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_7 关卡"
+            "Node.Action.Succeeded": "开始进行 HT3_9 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -1169,79 +987,11 @@
         "$__mpe_code": {
             "position": {
                 "x": 1715,
-                "y": 2333
+                "y": 2374
             }
         }
     },
-    "DF_C_1_8": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    794,
-                    140,
-                    66,
-                    31
-                ],
-                "expected": [
-                    "DF-8"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "DFCleanBattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_8 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1086,
-                "y": 2712
-            }
-        }
-    },
-    "DF_C_1_9": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    794,
-                    140,
-                    66,
-                    31
-                ],
-                "expected": [
-                    "DF-9"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "DFCleanBattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_9 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1388,
-                "y": 2712
-            }
-        }
-    },
-    "DF_C_1_UP": {
+    "HT3_C_1_UP": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1278,13 +1028,17 @@
         },
         "repeat": 3,
         "next": [
-            "DF_C_1_7",
-            "DF_C_1_6",
-            "DF_C_1_5",
-            "DF_C_1_4",
-            "DF_C_1_3",
-            "DF_C_1_2",
-            "DF_C_1_1"
+            "HT3_C_1_11",
+            "HT3_C_1_10",
+            "HT3_C_1_9",
+            "HT3_C_1_8",
+            "HT3_C_1_7",
+            "HT3_C_1_6",
+            "HT3_C_1_5",
+            "HT3_C_1_4",
+            "HT3_C_1_3",
+            "HT3_C_1_2",
+            "HT3_C_1_1"
         ],
         "$__mpe_code": {
             "position": {
@@ -1293,12 +1047,12 @@
             }
         }
     },
-    "DF_C_2": {
+    "HT3_C_2": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "sidestory/DF/DF_2.png"
+                    "EXimage/SS/HT3/HT3_2.png"
                 ],
                 "green_mask": true
             }
@@ -1308,8 +1062,8 @@
             "type": "Click",
             "param": {
                 "target": [
-                    440,
-                    312,
+                    421,
+                    329,
                     1,
                     1
                 ]
@@ -1317,8 +1071,8 @@
         },
         "post_wait_freezes": 1000,
         "next": [
-            "DF_C_2_UP",
-            "DF_C_2"
+            "HT3_C_2_UP",
+            "HT3_C_2"
         ],
         "$__mpe_code": {
             "position": {
@@ -1327,7 +1081,7 @@
             }
         }
     },
-    "DF_C_2_UP": {
+    "HT3_C_2_UP": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1364,15 +1118,11 @@
         },
         "repeat": 3,
         "next": [
-            "DF_C_1_15",
-            "DF_C_1_14",
-            "DF_C_1_13",
-            "DF_C_1_12",
-            "DF_C_1_11",
-            "DF_C_1_10",
-            "DF_C_1_9",
-            "DF_C_1_8",
-            "DF_C_1_16"
+            "HT3_C_1_16",
+            "HT3_C_1_15",
+            "HT3_C_1_14",
+            "HT3_C_1_13",
+            "HT3_C_1_12"
         ],
         "$__mpe_code": {
             "position": {
@@ -1381,12 +1131,99 @@
             }
         }
     },
-    "DF_C_3": {
+    "HT3_C_3": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "sidestory/DF/DF_3.png"
+                    "EXimage/SS/HT3/HT3_3.png"
+                ],
+                "green_mask": true,
+                "threshold": [
+                    0.8
+                ]
+            }
+        },
+        "pre_wait_freezes": 1000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    835,
+                    318,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "HT3_C_3_UP",
+            "HT3_C_3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 3454
+            }
+        }
+    },
+    "HT3_C_3_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "HT3_C_1_21",
+            "HT3_C_1_20",
+            "HT3_C_1_19",
+            "HT3_C_1_18",
+            "HT3_C_1_17"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 3418
+            }
+        }
+    },
+    "HT3_C_4": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "EXimage/SS/HT3/HT3_4.png"
                 ],
                 "green_mask": true
             }
@@ -1396,8 +1233,8 @@
             "type": "Click",
             "param": {
                 "target": [
-                    700,
-                    326,
+                    1086,
+                    310,
                     1,
                     1
                 ]
@@ -1405,17 +1242,16 @@
         },
         "post_wait_freezes": 1000,
         "next": [
-            "DF_C_3_UP",
-            "DF_C_3"
+            "HT3_C_4_UP"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 332,
-                "y": 3454
+                "x": 326,
+                "y": 4246
             }
         }
     },
-    "DF_C_3_UP": {
+    "HT3_C_4_UP": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1452,27 +1288,26 @@
         },
         "repeat": 3,
         "next": [
-            "DF_C_1_23",
-            "DF_C_1_22",
-            "DF_C_1_21",
-            "DF_C_1_20",
-            "DF_C_1_19",
-            "DF_C_1_18",
-            "DF_C_1_17"
+            "HT3_C_1_27",
+            "HT3_C_1_26",
+            "HT3_C_1_25",
+            "HT3_C_1_24",
+            "HT3_C_1_23",
+            "HT3_C_1_22"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 652,
-                "y": 3418
+                "x": 662,
+                "y": 4215
             }
         }
     },
-    "DF_CleanBackHome": {
+    "HT3_CleanBackHome": {
         "next": [
-            "DF_CleanBackHomeConfirmNo",
-            "DF_CleanBackHomeConfirmCancel",
-            "DF_CleanBackHomeClick",
-            "DF_CleanBackHomeEnd"
+            "HT3_CleanBackHomeConfirmNo",
+            "HT3_CleanBackHomeConfirmCancel",
+            "HT3_CleanBackHomeClick",
+            "HT3_CleanBackHomeEnd"
         ],
         "$__mpe_code": {
             "position": {
@@ -1481,7 +1316,7 @@
             }
         }
     },
-    "DF_CleanBackHomeClick": {
+    "HT3_CleanBackHomeClick": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1502,7 +1337,7 @@
             }
         },
         "next": [
-            "DF_CleanBackHomeEnd"
+            "HT3_CleanBackHomeEnd"
         ],
         "$__mpe_code": {
             "position": {
@@ -1511,7 +1346,7 @@
             }
         }
     },
-    "DF_CleanBackHomeConfirmCancel": {
+    "HT3_CleanBackHomeConfirmCancel": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1524,7 +1359,7 @@
             "type": "Click"
         },
         "next": [
-            "DF_CleanBackHomeClick"
+            "HT3_CleanBackHomeClick"
         ],
         "$__mpe_code": {
             "position": {
@@ -1533,7 +1368,7 @@
             }
         }
     },
-    "DF_CleanBackHomeConfirmNo": {
+    "HT3_CleanBackHomeConfirmNo": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1546,7 +1381,7 @@
             "type": "Click"
         },
         "next": [
-            "DF_CleanBackHomeClick"
+            "HT3_CleanBackHomeClick"
         ],
         "$__mpe_code": {
             "position": {
@@ -1555,7 +1390,7 @@
             }
         }
     },
-    "DF_CleanBackHomeEnd": {
+    "HT3_CleanBackHomeEnd": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1566,7 +1401,7 @@
             }
         },
         "next": [
-            "DF_CleanFinish"
+            "HT3_CleanFinish"
         ],
         "$__mpe_code": {
             "position": {
@@ -1575,7 +1410,7 @@
             }
         }
     },
-    "DF_CleanFinish": {
+    "HT3_CleanFinish": {
         "action": {
             "type": "StopTask"
         },
@@ -1589,7 +1424,7 @@
             }
         }
     },
-    "DF_Clean_find": {
+    "HT3_Clean_find": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1600,28 +1435,20 @@
                     527
                 ],
                 "template": [
-                    "sidestory/DF/DF_BANNER_S.png"
+                    "EXimage/SS/HT3/banner.png"
                 ],
                 "green_mask": true
             }
         },
         "pre_wait_freezes": 500,
         "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    1112,
-                    284,
-                    1,
-                    1
-                ]
-            }
+            "type": "Click"
         },
         "next": [
-            "DF_C_4",
-            "DF_C_3",
-            "DF_C_2",
-            "DF_C_1"
+            "HT3_C_4",
+            "HT3_C_3",
+            "HT3_C_2",
+            "HT3_C_1"
         ],
         "$__mpe_code": {
             "position": {
@@ -1630,12 +1457,12 @@
             }
         }
     },
-    "TaskStart_DFClean": {
+    "TaskStart_HT3Clean": {
         "next": [
-            "TaskStart_DFClean_BackHomeConfirmNo",
-            "TaskStart_DFClean_BackHomeConfirmCancel",
-            "TaskStart_DFClean_BackHomeClick",
-            "TaskStart_DFClean_BackHomeEnd"
+            "TaskStart_HT3Clean_BackHomeConfirmNo",
+            "TaskStart_HT3Clean_BackHomeConfirmCancel",
+            "TaskStart_HT3Clean_BackHomeClick",
+            "TaskStart_HT3Clean_BackHomeEnd"
         ],
         "$__mpe_code": {
             "position": {
@@ -1644,7 +1471,7 @@
             }
         }
     },
-    "TaskStart_DFClean_BackHomeClick": {
+    "TaskStart_HT3Clean_BackHomeClick": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1666,7 +1493,7 @@
         },
         "post_wait_freezes": 1000,
         "next": [
-            "TaskStart_DFClean_BackHomeEnd"
+            "TaskStart_HT3Clean_BackHomeEnd"
         ],
         "$__mpe_code": {
             "position": {
@@ -1675,7 +1502,7 @@
             }
         }
     },
-    "TaskStart_DFClean_BackHomeConfirmCancel": {
+    "TaskStart_HT3Clean_BackHomeConfirmCancel": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1689,7 +1516,7 @@
         },
         "post_wait_freezes": 1000,
         "next": [
-            "TaskStart_DFClean_BackHomeClick"
+            "TaskStart_HT3Clean_BackHomeClick"
         ],
         "$__mpe_code": {
             "position": {
@@ -1698,7 +1525,7 @@
             }
         }
     },
-    "TaskStart_DFClean_BackHomeConfirmNo": {
+    "TaskStart_HT3Clean_BackHomeConfirmNo": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1712,7 +1539,7 @@
         },
         "post_wait_freezes": 1000,
         "next": [
-            "TaskStart_DFClean_BackHomeClick"
+            "TaskStart_HT3Clean_BackHomeClick"
         ],
         "$__mpe_code": {
             "position": {
@@ -1721,7 +1548,7 @@
             }
         }
     },
-    "TaskStart_DFClean_BackHomeEnd": {
+    "TaskStart_HT3Clean_BackHomeEnd": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1732,12 +1559,23 @@
             }
         },
         "next": [
-            "DF_Clean_find"
+            "HT3_Clean_find"
         ],
         "$__mpe_code": {
             "position": {
                 "x": -360,
                 "y": 2225
+            }
+        }
+    },
+    "TaskStart_LatastSSCleanEX": {
+        "next": [
+            "TaskStart_DFClean"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 0
             }
         }
     }

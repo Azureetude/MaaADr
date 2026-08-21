@@ -246,7 +246,11 @@ jobs:
             if [ ! -d "$f" ]; then
               continue
             fi
-            (cd $f && zip -r ../$f-${{ needs.meta.outputs.tag }}.zip .)
+            archive_prefix="$f"
+            if [ "$f" = "MaaADr-win-x86_64" ]; then
+              archive_prefix="MaaADr-mfa-win-x86_64"
+            fi
+            (cd "$f" && zip -r "../${archive_prefix}-${{ needs.meta.outputs.tag }}.zip" .)
           done
           
       - uses: softprops/action-gh-release@v2

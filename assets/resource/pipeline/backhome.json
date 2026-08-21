@@ -2,31 +2,17 @@
     "$__mpe_config_backhome": {
         "$__mpe_code": {
             "prefix": "",
-            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\backhome.json",
-            "lastSyncTime": 1786709763895,
-            "isModifiedExternally": false,
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1786793441749,
+            "isModifiedExternally": false,
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\backhome.json",
             "savedViewport": {
-                "x": -1524,
-                "y": -557,
-                "zoom": 0.92
+                "x": -229,
+                "y": 37,
+                "zoom": 0.38
             },
             "filename": "backhome",
             "version": "v1.7.6"
-        }
-    },
-    "DF_CleanFinish": {
-        "action": {
-            "type": "StopTask"
-        },
-        "focus": {
-            "Node.Action.Succeeded": "<span style=\"color:green;\">任务已全部完成</span>"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 2950,
-                "y": 795
-            }
         }
     },
     "backhome_1": {
@@ -41,13 +27,14 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "next": [
-            "backhome_end"
+            "backhome_3"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2022,
-                "y": 679
+                "x": 2234,
+                "y": 293
             }
         }
     },
@@ -63,17 +50,18 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "next": [
-            "backhome_end"
+            "backhome_3"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2022,
-                "y": 911
+                "x": 2164,
+                "y": 1235
             }
         }
     },
-    "backhome_end": {
+    "backhome_3": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -93,13 +81,14 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "next": [
-            "DF_CleanFinish"
+            "backhome_end"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2464,
-                "y": 767
+                "x": 2491,
+                "y": 996
             }
         }
     },
@@ -107,12 +96,30 @@
         "next": [
             "backhome_1",
             "backhome_2",
+            "backhome_3",
             "backhome_end"
         ],
         "$__mpe_code": {
             "position": {
                 "x": 1618,
                 "y": 850
+            }
+        }
+    },
+    "backhome_end": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3010,
+                "y": 767
             }
         }
     }
