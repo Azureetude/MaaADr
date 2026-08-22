@@ -1,26 +1,25 @@
 {
-    "$__mpe_config_story_DF": {
+    "$__mpe_config_story_HT3": {
         "$__mpe_code": {
             "prefix": "",
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\sidestory\\HT3\\story_HT3.json",
+            "lastSyncTime": 1787406837340,
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787320492661,
-            "isModifiedExternally": false,
-            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\sidestory\\龙焰FIRE\\story_DF.json",
             "savedViewport": {
-                "x": 104,
-                "y": -183,
-                "zoom": 0.7
+                "x": 118,
+                "y": -9,
+                "zoom": 0.47
             },
-            "filename": "story_DF",
+            "filename": "story_HT3",
             "version": "v1.8.0"
         }
     },
-    "DF_1": {
+    "HT3_1": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "sidestory/DF/DF_4.png"
+                    "EXimage/SS/HT3/HT3_4.png"
                 ],
                 "green_mask": true
             }
@@ -29,8 +28,8 @@
             "type": "Click",
             "param": {
                 "target": [
-                    970,
-                    312,
+                    1087,
+                    314,
                     1,
                     1
                 ]
@@ -38,19 +37,19 @@
         },
         "post_delay": 1000,
         "next": [
-            "DF_1_1"
+            "HT3_1_1"
         ],
         "on_error": [
-            "DF_BACK_HOME"
+            "HT3_BACK_HOME"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 332,
-                "y": 1053
+                "x": 432,
+                "y": 1103
             }
         }
     },
-    "DF_1_1": {
+    "HT3_1_1": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -86,16 +85,16 @@
         },
         "repeat": 3,
         "next": [
-            "DF_1_2"
+            "HT3_1_2"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 652,
-                "y": 1066
+                "x": 752,
+                "y": 1116
             }
         }
     },
-    "DF_1_1_EX": {
+    "HT3_1_1_EX": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -131,27 +130,27 @@
         },
         "repeat": 3,
         "next": [
-            "DF_1_2_EX"
+            "HT3_1_2_EX"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 652,
-                "y": 386
+                "x": 752,
+                "y": 436
             }
         }
     },
-    "DF_1_2": {
+    "HT3_1_2": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    638,
-                    400,
-                    638,
-                    181
+                    646,
+                    241,
+                    619,
+                    205
                 ],
                 "template": [
-                    "EXimage/SS/DF/DF_30.png"
+                    "sidestory/DT3/DT3_26.png"
                 ]
             }
         },
@@ -159,8 +158,8 @@
             "type": "Click",
             "param": {
                 "target": [
-                    886,
-                    494,
+                    881,
+                    344,
                     1,
                     1
                 ]
@@ -168,27 +167,27 @@
         },
         "post_delay": 1000,
         "next": [
-            "DF_SKIP_1"
+            "HT3_SKIP_1"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 972,
-                "y": 1050
+                "x": 1072,
+                "y": 1100
             }
         }
     },
-    "DF_1_2_EX": {
+    "HT3_1_2_EX": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    649,
-                    402,
-                    615,
-                    173
+                    635,
+                    238,
+                    634,
+                    205
                 ],
                 "template": [
-                    "EXimage/SS/DF/DF_30.png"
+                    "sidestory/DT3/DT3_26.png"
                 ]
             }
         },
@@ -196,30 +195,30 @@
             "type": "Click",
             "param": {
                 "target": [
-                    896,
-                    476,
-                    0,
-                    2
+                    868,
+                    346,
+                    1,
+                    1
                 ]
             }
         },
         "post_delay": 1000,
         "next": [
-            "DF_EX_1"
+            "HT3_EX_1"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 972,
-                "y": 370
+                "x": 1072,
+                "y": 420
             }
         }
     },
-    "DF_1_EX": {
+    "HT3_1_EX": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "sidestory/DF/DF_4.png"
+                    "EXimage/SS/HT3/HT3_4.png"
                 ],
                 "green_mask": true
             }
@@ -229,27 +228,27 @@
             "type": "Click",
             "param": {
                 "target": [
-                    962,
-                    318,
+                    1095,
+                    325,
                     1,
                     1
                 ]
             }
         },
         "next": [
-            "DF_1_1_EX"
+            "HT3_1_1_EX"
         ],
         "on_error": [
-            "DF_BACK_HOME"
+            "HT3_BACK_HOME"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 332,
-                "y": 325
+                "x": 432,
+                "y": 375
             }
         }
     },
-    "DF_BACK_HOME": {
+    "HT3_BACK_HOME": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -270,27 +269,27 @@
             }
         },
         "next": [
-            "DF_END"
+            "HT3_END"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2516,
-                "y": 739
+                "x": 2616,
+                "y": 789
             }
         }
     },
-    "DF_END": {
+    "HT3_END": {
         "action": {
             "type": "StopTask"
         },
         "$__mpe_code": {
             "position": {
-                "x": 2848,
-                "y": 748
+                "x": 2948,
+                "y": 798
             }
         }
     },
-    "DF_ERROR": {
+    "HT3_ERROR": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -320,16 +319,16 @@
             "Node.Action.Succeeded": "<span style=\"color:crimson;\">体力不足</span>"
         },
         "next": [
-            "DF_BACK_HOME"
+            "HT3_BACK_HOME"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1612,
-                "y": 702
+                "x": 1712,
+                "y": 752
             }
         }
     },
-    "DF_EX_1": {
+    "HT3_EX_1": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -351,17 +350,17 @@
         },
         "timeout": -1,
         "next": [
-            "DF_EX_2",
-            "DF_ERROR"
+            "HT3_ERROR",
+            "HT3_EX_2"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1292,
-                "y": 355
+                "x": 1392,
+                "y": 405
             }
         }
     },
-    "DF_EX_2": {
+    "HT3_EX_2": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -380,16 +379,16 @@
             "type": "Click"
         },
         "next": [
-            "DF_EX_3"
+            "HT3_EX_3"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1612,
-                "y": 304
+                "x": 1712,
+                "y": 354
             }
         }
     },
-    "DF_EX_3": {
+    "HT3_EX_3": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -407,16 +406,16 @@
             "Node.Recognition.Succeeded": "<span style=\"color:green;\">战斗执行成功</span>"
         },
         "next": [
-            "[JumpBack]DF_1_EX"
+            "[JumpBack]HT3_1_EX"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1932,
-                "y": 208
+                "x": 2032,
+                "y": 258
             }
         }
     },
-    "DF_NOSKIP_1": {
+    "HT3_NOSKIP_1": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -427,12 +426,12 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 12,
-                "y": 12
+                "x": 112,
+                "y": 62
             }
         }
     },
-    "DF_SKIP_1": {
+    "HT3_SKIP_1": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -454,17 +453,17 @@
         },
         "timeout": 3000,
         "next": [
-            "DF_SKIP_2",
-            "DF_ERROR"
+            "HT3_ERROR",
+            "HT3_SKIP_2"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1292,
-                "y": 1035
+                "x": 1392,
+                "y": 1085
             }
         }
     },
-    "DF_SKIP_2": {
+    "HT3_SKIP_2": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -485,16 +484,16 @@
             }
         },
         "next": [
-            "DF_SKIP_3"
+            "HT3_SKIP_3"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1612,
-                "y": 1132
+                "x": 1712,
+                "y": 1182
             }
         }
     },
-    "DF_SKIP_3": {
+    "HT3_SKIP_3": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -516,16 +515,16 @@
         },
         "post_wait_freezes": 500,
         "next": [
-            "DF_SKIP_4"
+            "HT3_SKIP_4"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1932,
-                "y": 1100
+                "x": 2032,
+                "y": 1150
             }
         }
     },
-    "DF_SKIP_4": {
+    "HT3_SKIP_4": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -539,16 +538,16 @@
             "type": "Click"
         },
         "next": [
-            "DF_BACK_HOME"
+            "HT3_BACK_HOME"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2252,
-                "y": 1125
+                "x": 2352,
+                "y": 1175
             }
         }
     },
-    "find_DF": {
+    "find_HT3": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -559,7 +558,7 @@
                     527
                 ],
                 "template": [
-                    "sidestory/DF/DF_BANNER_S.png"
+                    "EXimage/SS/HT3/banner.png"
                 ],
                 "green_mask": true
             }
@@ -568,24 +567,24 @@
             "type": "Click",
             "param": {
                 "target": [
-                    1112,
-                    284,
+                    1165,
+                    406,
                     1,
                     1
                 ]
             }
         },
         "next": [
-            "DF_1"
+            "HT3_1"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 12,
-                "y": 1045
+                "x": 112,
+                "y": 1095
             }
         }
     },
-    "find_DF_EX": {
+    "find_HT3_EX": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -596,7 +595,7 @@
                     527
                 ],
                 "template": [
-                    "sidestory/DF/DF_BANNER_S.png"
+                    "EXimage/SS/HT3/banner.png"
                 ],
                 "green_mask": true
             }
@@ -606,20 +605,20 @@
             "type": "Click",
             "param": {
                 "target": [
-                    1112,
-                    284,
+                    1143,
+                    409,
                     1,
                     1
                 ]
             }
         },
         "next": [
-            "DF_1_EX"
+            "HT3_1_EX"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 12,
-                "y": 317
+                "x": 112,
+                "y": 367
             }
         }
     }

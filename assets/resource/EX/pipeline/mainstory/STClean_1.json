@@ -1,61 +1,43 @@
 {
-    "$__mpe_config_HT3_Clean": {
+    "$__mpe_config_STClean_1": {
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787318107449,
+            "lastSyncTime": 1787403295613,
             "isModifiedExternally": false,
-            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\SS\\HT3_Clean.json",
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\mainstory\\STClean_1.json",
             "savedViewport": {
-                "x": -825,
-                "y": -2148,
-                "zoom": 1.21
+                "x": -79,
+                "y": -683,
+                "zoom": 0.37
             },
-            "filename": "HT3_Clean",
+            "filename": "STClean_1",
             "version": "v1.8.0"
         }
     },
-    "$__mpe_external_EstimateBegin_HT3_Clean": {
+    "$__mpe_external_EstimateBegin_STClean_1": {
         "$__mpe_code": {
             "position": {
-                "x": 3596,
-                "y": 2864
+                "x": 4838,
+                "y": 2232
             }
         }
     },
-    "$__mpe_external_TaskStart_DFClean_HT3_Clean": {
-        "$__mpe_code": {
-            "position": {
-                "x": 0,
-                "y": 0
-            }
-        }
-    },
-    "$__mpe_external_backhome_start_HT3_Clean": {
-        "$__mpe_code": {
-            "position": {
-                "x": 0,
-                "y": 0
-            }
-        }
-    },
-    "HT3_C_1": {
+    "STC_1_1": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "EXimage/SS/HT3/HT3_1.png"
-                ],
-                "green_mask": true
+                    "EXimage/mainstory/1/1-1.png"
+                ]
             }
         },
-        "pre_wait_freezes": 500,
         "action": {
             "type": "Click",
             "param": {
                 "target": [
-                    171,
-                    336,
+                    313,
+                    326,
                     1,
                     1
                 ]
@@ -63,935 +45,1206 @@
         },
         "post_wait_freezes": 1000,
         "next": [
-            "HT3_C_1_UP",
-            "HT3_C_1"
+            "STC_1_1_UP"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 389,
-                "y": 2183
+                "x": 1635,
+                "y": 1501
             }
         }
     },
-    "HT3_C_1_1": {
+    "STC_1_1_1": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
                     791,
-                    139,
-                    95,
-                    34
+                    141,
+                    57,
+                    30
                 ],
                 "expected": [
-                    "HT3-1"
+                    "1-1"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "STClean1BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_1 关卡"
+            "Node.Action.Succeeded": "开始进行 1-1 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1104,
-                "y": 2047
+                "x": 2450,
+                "y": 1103
             }
         }
     },
-    "HT3_C_1_10": {
+    "STC_1_1_10": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
                     791,
-                    139,
-                    95,
-                    34
+                    141,
+                    57,
+                    30
                 ],
                 "expected": [
-                    "HT3-10"
+                    "1-10"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "STClean1BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_10 关卡"
+            "Node.Action.Succeeded": "开始进行 1-10 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2007,
-                "y": 2385
+                "x": 2450,
+                "y": 1688
             }
         }
     },
-    "HT3_C_1_11": {
+    "STC_1_1_11": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
                     791,
-                    139,
-                    95,
-                    34
+                    141,
+                    57,
+                    30
                 ],
                 "expected": [
-                    "HT3-11"
+                    "1-11"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "STClean1BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_11 关卡"
+            "Node.Action.Succeeded": "开始进行 1-11 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2287,
-                "y": 2395
+                "x": 2748,
+                "y": 1688
             }
         }
     },
-    "HT3_C_1_12": {
+    "STC_1_1_12": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
                     791,
-                    139,
-                    95,
-                    34
+                    141,
+                    57,
+                    30
                 ],
                 "expected": [
-                    "HT3-12"
+                    "1-12"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "STClean1BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_12 关卡"
+            "Node.Action.Succeeded": "开始进行 1-12 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1063,
-                "y": 2842
+                "x": 3046,
+                "y": 1688
             }
         }
     },
-    "HT3_C_1_13": {
+    "STC_1_1_13": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
                     791,
-                    139,
-                    95,
-                    34
+                    141,
+                    57,
+                    30
                 ],
                 "expected": [
-                    "HT3-13"
+                    "1-13"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "STClean1BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_13 关卡"
+            "Node.Action.Succeeded": "开始进行 1-13 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1372,
-                "y": 2842
+                "x": 3357,
+                "y": 1688
             }
         }
     },
-    "HT3_C_1_14": {
+    "STC_1_1_14": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
                     791,
-                    139,
-                    95,
-                    34
+                    141,
+                    57,
+                    30
                 ],
                 "expected": [
-                    "HT3-14"
+                    "1-14"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "STClean1BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_14 关卡"
+            "Node.Action.Succeeded": "开始进行 1-14 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1668,
-                "y": 2842
+                "x": 3654,
+                "y": 1688
             }
         }
     },
-    "HT3_C_1_15": {
+    "STC_1_1_15": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
                     791,
-                    139,
-                    95,
-                    34
+                    141,
+                    57,
+                    30
                 ],
                 "expected": [
-                    "HT3-15"
+                    "1-15"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "STClean1BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_15 关卡"
+            "Node.Action.Succeeded": "开始进行 1-15 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1957,
-                "y": 2842
+                "x": 2439,
+                "y": 2144
             }
         }
     },
-    "HT3_C_1_16": {
+    "STC_1_1_16": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
                     791,
-                    139,
-                    95,
-                    34
+                    141,
+                    57,
+                    30
                 ],
                 "expected": [
-                    "HT3-16"
+                    "1-16"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "STClean1BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_16 关卡"
+            "Node.Action.Succeeded": "开始进行 1-16 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2250,
-                "y": 2842
+                "x": 2738,
+                "y": 2144
             }
         }
     },
-    "HT3_C_1_17": {
+    "STC_1_1_17": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
                     791,
-                    139,
-                    95,
-                    34
+                    141,
+                    57,
+                    30
                 ],
                 "expected": [
-                    "HT3-17"
+                    "1-17"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "STClean1BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_17 关卡"
+            "Node.Action.Succeeded": "开始进行 1-17 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1040,
-                "y": 3343
+                "x": 3036,
+                "y": 2144
             }
         }
     },
-    "HT3_C_1_18": {
+    "STC_1_1_18": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
                     791,
-                    139,
-                    95,
-                    34
+                    141,
+                    57,
+                    30
                 ],
                 "expected": [
-                    "HT3-18"
+                    "1-18"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "STClean1BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_18 关卡"
+            "Node.Action.Succeeded": "开始进行 1-18 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1362,
-                "y": 3343
+                "x": 2427,
+                "y": 2518
             }
         }
     },
-    "HT3_C_1_19": {
+    "STC_1_1_19": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
                     791,
-                    139,
-                    95,
-                    34
+                    141,
+                    57,
+                    30
                 ],
                 "expected": [
-                    "HT3-19"
+                    "1-19"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "STClean1BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_19 关卡"
+            "Node.Action.Succeeded": "开始进行 1-19 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1662,
-                "y": 3343
+                "x": 2723,
+                "y": 2518
             }
         }
     },
-    "HT3_C_1_2": {
+    "STC_1_1_2": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
                     791,
-                    139,
-                    95,
-                    34
+                    141,
+                    57,
+                    30
                 ],
                 "expected": [
-                    "HT3-2"
+                    "1-2"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "STClean1BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_2 关卡"
+            "Node.Action.Succeeded": "开始进行 1-2 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1401,
-                "y": 2047
+                "x": 2746,
+                "y": 1103
             }
         }
     },
-    "HT3_C_1_20": {
+    "STC_1_1_20": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
                     791,
-                    139,
-                    95,
-                    34
+                    141,
+                    57,
+                    30
                 ],
                 "expected": [
-                    "HT3-20"
+                    "1-20"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "STClean1BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_20 关卡"
+            "Node.Action.Succeeded": "开始进行 1-20 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1040,
-                "y": 3643
+                "x": 3020,
+                "y": 2518
             }
         }
     },
-    "HT3_C_1_21": {
+    "STC_1_1_21": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
                     791,
-                    139,
-                    95,
-                    34
+                    141,
+                    57,
+                    30
                 ],
                 "expected": [
-                    "HT3-21"
+                    "1-21"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "STClean1BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_21 关卡"
+            "Node.Action.Succeeded": "开始进行 1-21 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1362,
-                "y": 3643
+                "x": 3331,
+                "y": 2518
             }
         }
     },
-    "HT3_C_1_22": {
+    "STC_1_1_22": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
                     791,
-                    139,
-                    95,
-                    34
+                    141,
+                    57,
+                    30
                 ],
                 "expected": [
-                    "HT3-22"
+                    "1-22"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "STClean1BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_22 关卡"
+            "Node.Action.Succeeded": "开始进行 1-22 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1048,
-                "y": 4126
+                "x": 3628,
+                "y": 2518
             }
         }
     },
-    "HT3_C_1_23": {
+    "STC_1_1_23": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
                     791,
-                    139,
-                    95,
-                    34
+                    141,
+                    57,
+                    30
                 ],
                 "expected": [
-                    "HT3-23"
+                    "1-23"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "STClean1BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_23 关卡"
+            "Node.Action.Succeeded": "开始进行 1-23 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1358,
-                "y": 4126
+                "x": 3931,
+                "y": 2511
             }
         }
     },
-    "HT3_C_1_24": {
+    "STC_1_1_24": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
                     791,
-                    139,
-                    95,
-                    34
+                    141,
+                    57,
+                    30
                 ],
                 "expected": [
-                    "HT3-24"
+                    "1-24"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "STClean1BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_24 关卡"
+            "Node.Action.Succeeded": "开始进行 1-24 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1032,
-                "y": 4467
+                "x": 2427,
+                "y": 2855
             }
         }
     },
-    "HT3_C_1_25": {
+    "STC_1_1_25": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
                     791,
-                    139,
-                    95,
-                    34
+                    141,
+                    57,
+                    30
                 ],
                 "expected": [
-                    "HT3-25"
+                    "1-25"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "STClean1BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_25 关卡"
+            "Node.Action.Succeeded": "开始进行 1-25 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1335,
-                "y": 4467
+                "x": 2723,
+                "y": 2855
             }
         }
     },
-    "HT3_C_1_26": {
+    "STC_1_1_26": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
                     791,
-                    139,
-                    95,
-                    34
+                    141,
+                    57,
+                    30
                 ],
                 "expected": [
-                    "HT3-26"
+                    "1-26"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "STClean1BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_26 关卡"
+            "Node.Action.Succeeded": "开始进行 1-26 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1638,
-                "y": 4443
+                "x": 3021,
+                "y": 2855
             }
         }
     },
-    "HT3_C_1_27": {
+    "STC_1_1_27": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
                     791,
-                    139,
-                    95,
-                    34
+                    141,
+                    57,
+                    30
                 ],
                 "expected": [
-                    "HT3-27"
+                    "1-27"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "STClean1BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_27 关卡"
+            "Node.Action.Succeeded": "开始进行 1-27 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1927,
-                "y": 4457
+                "x": 3332,
+                "y": 2855
             }
         }
     },
-    "HT3_C_1_3": {
+    "STC_1_1_28": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
                     791,
-                    139,
-                    95,
-                    34
+                    141,
+                    57,
+                    30
                 ],
                 "expected": [
-                    "HT3-3"
+                    "1-28"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "STClean1BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_3 关卡"
+            "Node.Action.Succeeded": "开始进行 1-28 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1715,
-                "y": 2047
+                "x": 3629,
+                "y": 2855
             }
         }
     },
-    "HT3_C_1_4": {
+    "STC_1_1_29": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
                     791,
-                    139,
-                    95,
-                    34
+                    141,
+                    57,
+                    30
                 ],
                 "expected": [
-                    "HT3-4"
+                    "1-29"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "STClean1BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_4 关卡"
+            "Node.Action.Succeeded": "开始进行 1-29 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2007,
-                "y": 2047
+                "x": 3932,
+                "y": 2848
             }
         }
     },
-    "HT3_C_1_5": {
+    "STC_1_1_3": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
                     791,
-                    139,
-                    95,
-                    34
+                    141,
+                    57,
+                    30
                 ],
                 "expected": [
-                    "HT3-5"
+                    "1-3"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "STClean1BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_5 关卡"
+            "Node.Action.Succeeded": "开始进行 1-3 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2279,
-                "y": 2047
+                "x": 3044,
+                "y": 1103
             }
         }
     },
-    "HT3_C_1_6": {
+    "STC_1_1_30": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
                     791,
-                    139,
-                    95,
-                    34
+                    141,
+                    57,
+                    30
                 ],
                 "expected": [
-                    "HT3-6"
+                    "1-30"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "STClean1BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_6 关卡"
+            "Node.Action.Succeeded": "开始进行 1-30 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2581,
-                "y": 2047
+                "x": 2427,
+                "y": 3201
             }
         }
     },
-    "HT3_C_1_7": {
+    "STC_1_1_31": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
                     791,
-                    139,
-                    95,
-                    34
+                    141,
+                    57,
+                    30
                 ],
                 "expected": [
-                    "HT3-7"
+                    "1-31"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "STClean1BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_7 关卡"
+            "Node.Action.Succeeded": "开始进行 1-31 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1104,
-                "y": 2374
+                "x": 2725,
+                "y": 3201
             }
         }
     },
-    "HT3_C_1_8": {
+    "STC_1_1_32": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
                     791,
-                    139,
-                    95,
-                    34
+                    141,
+                    57,
+                    30
                 ],
                 "expected": [
-                    "HT3-8"
+                    "1-32"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "STClean1BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_8 关卡"
+            "Node.Action.Succeeded": "开始进行 1-32 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1401,
-                "y": 2374
+                "x": 3023,
+                "y": 3201
             }
         }
     },
-    "HT3_C_1_9": {
+    "STC_1_1_33": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
                     791,
-                    139,
-                    95,
-                    34
+                    141,
+                    57,
+                    30
                 ],
                 "expected": [
-                    "HT3-9"
+                    "1-33"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "STClean1BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_9 关卡"
+            "Node.Action.Succeeded": "开始进行 1-33 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1715,
-                "y": 2374
+                "x": 3333,
+                "y": 3201
             }
         }
     },
-    "HT3_C_1_UP": {
+    "STC_1_1_34": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "1-34"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean1BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 1-34 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3630,
+                "y": 3201
+            }
+        }
+    },
+    "STC_1_1_35": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "1-35"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean1BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 1-35 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3933,
+                "y": 3194
+            }
+        }
+    },
+    "STC_1_1_4": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "1-4"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean1BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 1-4 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3354,
+                "y": 1103
+            }
+        }
+    },
+    "STC_1_1_5": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "1-5"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean1BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 1-5 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2450,
+                "y": 1371
+            }
+        }
+    },
+    "STC_1_1_6": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "1-6"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean1BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 1-6 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2746,
+                "y": 1371
+            }
+        }
+    },
+    "STC_1_1_7": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "1-7"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean1BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 1-7 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3044,
+                "y": 1371
+            }
+        }
+    },
+    "STC_1_1_8": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "1-8"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean1BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 1-8 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3354,
+                "y": 1371
+            }
+        }
+    },
+    "STC_1_1_9": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "1-9"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean1BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 1-9 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3651,
+                "y": 1371
+            }
+        }
+    },
+    "STC_1_1_UP": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1028,60 +1281,55 @@
         },
         "repeat": 3,
         "next": [
-            "HT3_C_1_11",
-            "HT3_C_1_10",
-            "HT3_C_1_9",
-            "HT3_C_1_8",
-            "HT3_C_1_7",
-            "HT3_C_1_6",
-            "HT3_C_1_5",
-            "HT3_C_1_4",
-            "HT3_C_1_3",
-            "HT3_C_1_2",
-            "HT3_C_1_1"
+            "STC_1_1_9",
+            "STC_1_1_8",
+            "STC_1_1_7",
+            "STC_1_1_6",
+            "STC_1_1_5",
+            "STC_1_1_4",
+            "STC_1_1_3",
+            "STC_1_1_2",
+            "STC_1_1_1"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 709,
-                "y": 2147
+                "x": 2064,
+                "y": 1229
             }
         }
     },
-    "HT3_C_2": {
+    "STC_1_2": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "EXimage/SS/HT3/HT3_2.png"
-                ],
-                "green_mask": true
+                    "EXimage/mainstory/1/1-2.png"
+                ]
             }
         },
-        "pre_wait_freezes": 1000,
         "action": {
             "type": "Click",
             "param": {
                 "target": [
-                    421,
-                    329,
-                    1,
-                    1
+                    478,
+                    499,
+                    0,
+                    2
                 ]
             }
         },
         "post_wait_freezes": 1000,
         "next": [
-            "HT3_C_2_UP",
-            "HT3_C_2"
+            "STC_1_2_UP"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 366,
-                "y": 2773
+                "x": 1635,
+                "y": 1863
             }
         }
     },
-    "HT3_C_2_UP": {
+    "STC_1_2_UP": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1118,39 +1366,37 @@
         },
         "repeat": 3,
         "next": [
-            "HT3_C_1_16",
-            "HT3_C_1_15",
-            "HT3_C_1_14",
-            "HT3_C_1_13",
-            "HT3_C_1_12"
+            "STC_1_1_14",
+            "STC_1_1_13",
+            "STC_1_1_12",
+            "STC_1_1_11",
+            "STC_1_1_10"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 686,
-                "y": 2737
+                "x": 2064,
+                "y": 1680
             }
         }
     },
-    "HT3_C_3": {
+    "STC_1_3": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "EXimage/SS/HT3/HT3_3.png"
+                    "EXimage/mainstory/1/1-3.png"
                 ],
-                "green_mask": true,
                 "threshold": [
                     0.8
                 ]
             }
         },
-        "pre_wait_freezes": 1000,
         "action": {
             "type": "Click",
             "param": {
                 "target": [
-                    835,
-                    318,
+                    770,
+                    557,
                     1,
                     1
                 ]
@@ -1158,17 +1404,16 @@
         },
         "post_wait_freezes": 1000,
         "next": [
-            "HT3_C_3_UP",
-            "HT3_C_3"
+            "STC_1_3_UP"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 332,
-                "y": 3454
+                "x": 1635,
+                "y": 2226
             }
         }
     },
-    "HT3_C_3_UP": {
+    "STC_1_3_UP": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1205,36 +1450,32 @@
         },
         "repeat": 3,
         "next": [
-            "HT3_C_1_21",
-            "HT3_C_1_20",
-            "HT3_C_1_19",
-            "HT3_C_1_18",
-            "HT3_C_1_17"
+            "STC_1_1_17",
+            "STC_1_1_16",
+            "STC_1_1_15"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 652,
-                "y": 3418
+                "x": 2064,
+                "y": 2116
             }
         }
     },
-    "HT3_C_4": {
+    "STC_1_4": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "EXimage/SS/HT3/HT3_4.png"
-                ],
-                "green_mask": true
+                    "EXimage/mainstory/1/1-4.png"
+                ]
             }
         },
-        "pre_wait_freezes": 1000,
         "action": {
             "type": "Click",
             "param": {
                 "target": [
-                    1086,
-                    310,
+                    970,
+                    373,
                     1,
                     1
                 ]
@@ -1242,16 +1483,16 @@
         },
         "post_wait_freezes": 1000,
         "next": [
-            "HT3_C_4_UP"
+            "STC_1_4_UP"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 326,
-                "y": 4246
+                "x": 1635,
+                "y": 2677
             }
         }
     },
-    "HT3_C_4_UP": {
+    "STC_1_4_UP": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1288,35 +1529,47 @@
         },
         "repeat": 3,
         "next": [
-            "HT3_C_1_27",
-            "HT3_C_1_26",
-            "HT3_C_1_25",
-            "HT3_C_1_24",
-            "HT3_C_1_23",
-            "HT3_C_1_22"
+            "STC_1_1_35",
+            "STC_1_1_34",
+            "STC_1_1_33",
+            "STC_1_1_32",
+            "STC_1_1_31",
+            "STC_1_1_30",
+            "STC_1_1_29",
+            "STC_1_1_28",
+            "STC_1_1_27",
+            "STC_1_1_26",
+            "STC_1_1_25",
+            "STC_1_1_24",
+            "STC_1_1_23",
+            "STC_1_1_22",
+            "STC_1_1_21",
+            "STC_1_1_20",
+            "STC_1_1_19",
+            "STC_1_1_18"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 662,
-                "y": 4215
+                "x": 2064,
+                "y": 2759
             }
         }
     },
-    "HT3_CleanBackHome": {
+    "STClean_1BackHome": {
         "next": [
-            "HT3_CleanBackHomeConfirmNo",
-            "HT3_CleanBackHomeConfirmCancel",
-            "HT3_CleanBackHomeClick",
-            "HT3_CleanBackHomeEnd"
+            "STClean_1BackHomeConfirmNo",
+            "STClean_1BackHomeConfirmCancel",
+            "STClean_1BackHomeClick",
+            "STClean_1BackHomeEnd"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 82,
-                "y": 120
+                "x": -306,
+                "y": 353
             }
         }
     },
-    "HT3_CleanBackHomeClick": {
+    "STClean_1BackHomeClick": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1336,17 +1589,18 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "next": [
-            "HT3_CleanBackHomeEnd"
+            "STClean_1BackHomeEnd"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 948,
-                "y": 135
+                "x": 509,
+                "y": -53
             }
         }
     },
-    "HT3_CleanBackHomeConfirmCancel": {
+    "STClean_1BackHomeConfirmCancel": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1358,17 +1612,18 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "next": [
-            "HT3_CleanBackHomeClick"
+            "STClean_1BackHomeClick"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 610,
-                "y": -247
+                "x": 136,
+                "y": 660
             }
         }
     },
-    "HT3_CleanBackHomeConfirmNo": {
+    "STClean_1BackHomeConfirmNo": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1380,17 +1635,18 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "next": [
-            "HT3_CleanBackHomeClick"
+            "STClean_1BackHomeClick"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 363,
-                "y": 418
+                "x": 161,
+                "y": -64
             }
         }
     },
-    "HT3_CleanBackHomeEnd": {
+    "STClean_1BackHomeEnd": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1401,41 +1657,67 @@
             }
         },
         "next": [
-            "HT3_CleanFinish"
+            "STClean_1Finish"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1301,
-                "y": -11
+                "x": 774,
+                "y": 353
             }
         }
     },
-    "HT3_CleanFinish": {
+    "STClean_1Finish": {
         "action": {
             "type": "StopTask"
         },
         "focus": {
-            "Node.Action.Succeeded": "**任务已全部完成**"
+            "Node.Action.Succeeded": "第一章关卡完成"
         },
         "$__mpe_code": {
             "position": {
-                "x": 1701,
-                "y": -52
+                "x": 1178,
+                "y": 395
             }
         }
     },
-    "HT3_Clean_find": {
+    "STClean_1_find": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "roi": [
-                    932,
-                    78,
-                    338,
-                    527
-                ],
                 "template": [
-                    "EXimage/SS/HT3/banner.png"
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1105,
+                    141,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "STClean_1_find_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 186,
+                "y": 2288
+            }
+        }
+    },
+    "STClean_1_find_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/mainstory.png"
                 ],
                 "green_mask": true
             }
@@ -1445,33 +1727,97 @@
             "type": "Click"
         },
         "next": [
-            "HT3_C_4",
-            "HT3_C_3",
-            "HT3_C_2",
-            "HT3_C_1"
+            "STClean_1_find_2"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 69,
-                "y": 2175
+                "x": 512,
+                "y": 2288
             }
         }
     },
-    "TaskStart_HT3Clean": {
+    "STClean_1_find_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "EXimage/mainstory/1/banner_1.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click"
+        },
         "next": [
-            "TaskStart_HT3Clean_BackHomeConfirmNo",
-            "TaskStart_HT3Clean_BackHomeConfirmCancel",
-            "TaskStart_HT3Clean_BackHomeClick",
-            "TaskStart_HT3Clean_BackHomeEnd"
+            "STClean_1_swipe_up"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -2095,
-                "y": 2110
+                "x": 823,
+                "y": 2288
             }
         }
     },
-    "TaskStart_HT3Clean_BackHomeClick": {
+    "STClean_1_swipe_up": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    964,
+                    260,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        364,
+                        482,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 2,
+        "repeat_wait_freezes": 500,
+        "next": [
+            "STC_1_4",
+            "STC_1_3",
+            "STC_1_2",
+            "STC_1_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1209,
+                "y": 2068
+            }
+        }
+    },
+    "TaskStart_STClean_1": {
+        "next": [
+            "TaskStart_STClean_1_BackHomeConfirmNo",
+            "TaskStart_STClean_1_BackHomeConfirmCancel",
+            "TaskStart_STClean_1_BackHomeClick",
+            "TaskStart_STClean_1_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1671,
+                "y": 2320
+            }
+        }
+    },
+    "TaskStart_STClean_1_BackHomeClick": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1493,16 +1839,16 @@
         },
         "post_wait_freezes": 1000,
         "next": [
-            "TaskStart_HT3Clean_BackHomeEnd"
+            "TaskStart_STClean_1_BackHomeEnd"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -795,
-                "y": 2155
+                "x": -640,
+                "y": 1988
             }
         }
     },
-    "TaskStart_HT3Clean_BackHomeConfirmCancel": {
+    "TaskStart_STClean_1_BackHomeConfirmCancel": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1516,16 +1862,16 @@
         },
         "post_wait_freezes": 1000,
         "next": [
-            "TaskStart_HT3Clean_BackHomeClick"
+            "TaskStart_STClean_1_BackHomeClick"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1700,
-                "y": 805
+                "x": -1213,
+                "y": 2656
             }
         }
     },
-    "TaskStart_HT3Clean_BackHomeConfirmNo": {
+    "TaskStart_STClean_1_BackHomeConfirmNo": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1539,16 +1885,16 @@
         },
         "post_wait_freezes": 1000,
         "next": [
-            "TaskStart_HT3Clean_BackHomeClick"
+            "TaskStart_STClean_1_BackHomeClick"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1350,
-                "y": 1680
+                "x": -1213,
+                "y": 1904
             }
         }
     },
-    "TaskStart_HT3Clean_BackHomeEnd": {
+    "TaskStart_STClean_1_BackHomeEnd": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1559,23 +1905,12 @@
             }
         },
         "next": [
-            "HT3_Clean_find"
+            "STClean_1_find"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -360,
-                "y": 2225
-            }
-        }
-    },
-    "TaskStart_LatastSSCleanEX": {
-        "next": [
-            "TaskStart_DFClean"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 0,
-                "y": 0
+                "x": -166,
+                "y": 2320
             }
         }
     }

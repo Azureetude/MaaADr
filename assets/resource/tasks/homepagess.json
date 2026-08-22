@@ -61,6 +61,22 @@
                 }
             ]
         },
+        "是否跳过战斗_HT3": {
+            "type": "switch",
+            "cases": [
+                {
+                    "name": "Yes"
+                },
+                {
+                    "name": "No",
+                    "pipeline_override": {
+                        "HT3_1_2": {
+                            "next": "HT3_NOSKIP_1"  
+                     }
+                    }
+                }
+            ]
+        },
          "活动": {
             "type": "select",
             "cases": [
@@ -75,7 +91,19 @@
                             "next": "find_DF"  // 控制跳转到对应活动地图
                         }
                     }
-                // },
+                },
+                {
+                    "name": "英雄时刻EP.3",
+                    "option": [  // 嵌套的子选项
+                       "关卡_HT3",
+                       "是否跳过战斗_HT3"
+                   ],
+                    "pipeline_override": {
+                        "findmap": {
+                            "next": "find_HT3"  // 控制跳转到对应活动地图
+                        }
+                    }
+                }
                 // {
                 //     "name": "监狱迷宫瓦尔拉哈",
                 //     "option": [  // 嵌套的子选项
@@ -99,7 +127,7 @@
                 //             "next": "find_MR"  // 控制跳转到对应活动地图
                 //         }
                 //     }
-                }
+                // }
             ]
         },
         "关卡_MR": {
@@ -108,10 +136,10 @@
             { "name": "MR_37" }
              ]
         },
-        "关卡_JV": {
+        "关卡_HT3": {
             "type": "select",
             "cases": [
-            { "name": "JV_33" }
+            { "name": "HT3_26" }
              ]
         },
         "关卡_DF": {

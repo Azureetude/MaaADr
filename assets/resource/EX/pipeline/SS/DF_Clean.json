@@ -1516,7 +1516,7 @@
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "basic/取消.png"
+                    "basic/Cancel.png"
                 ]
             }
         },
@@ -1680,7 +1680,7 @@
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "basic/取消.png"
+                    "basic/Cancel.png"
                 ]
             }
         },

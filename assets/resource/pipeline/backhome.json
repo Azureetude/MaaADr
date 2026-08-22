@@ -43,7 +43,7 @@
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "basic/取消.png"
+                    "basic/Cancel.png"
                 ]
             }
         },
