@@ -26,6 +26,17 @@
                             "next": "find_DF_EX"  // 控制跳转到对应活动地图
                         }
                     }
+                },
+                {
+                    "name": "英雄时刻EP.3(EX)",
+                    "option": [  // 嵌套的子选项
+                       "关卡_HT3(EX)"
+                   ],
+                    "pipeline_override": {
+                        "findmap": {
+                            "next": "find_HT3_EX"  // 控制跳转到对应活动地图
+                        }
+                    }
                 }
             //    {
             //        "name": "监狱迷宫瓦尔拉哈(EX)",
@@ -67,6 +78,12 @@
             "type": "select",
             "cases": [
             { "name": "DF_30" }
+             ]
+        },
+        "关卡_HT3(EX)": {
+            "type": "select",
+            "cases": [
+            { "name": "HT3_26" }
              ]
         }
      }

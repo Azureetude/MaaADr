@@ -14,7 +14,7 @@
         "next": ["TaskStart_DailyExchange_BackHomeClick"]
     },
     "TaskStart_DailyExchange_BackHomeConfirmCancel": {
-        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/取消.png"] } },
+        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/Cancel.png"] } },
         "action": { "type": "Click" },
         "post_wait_freezes": 1000,
         "next": ["TaskStart_DailyExchange_BackHomeClick"]
@@ -44,7 +44,7 @@
         "next": ["TaskStart_ObtainMaterials_BackHomeClick"]
     },
     "TaskStart_ObtainMaterials_BackHomeConfirmCancel": {
-        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/取消.png"] } },
+        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/Cancel.png"] } },
         "action": { "type": "Click" },
         "post_wait_freezes": 1000,
         "next": ["TaskStart_ObtainMaterials_BackHomeClick"]
@@ -74,7 +74,7 @@
         "next": ["TaskStart_FindMap_BackHomeClick"]
     },
     "TaskStart_FindMap_BackHomeConfirmCancel": {
-        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/取消.png"] } },
+        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/Cancel.png"] } },
         "action": { "type": "Click" },
         "post_wait_freezes": 1000,
         "next": ["TaskStart_FindMap_BackHomeClick"]
@@ -104,7 +104,7 @@
         "next": ["TaskStart_EndGame_BackHomeClick"]
     },
     "TaskStart_EndGame_BackHomeConfirmCancel": {
-        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/取消.png"] } },
+        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/Cancel.png"] } },
         "action": { "type": "Click" },
         "post_wait_freezes": 1000,
         "next": ["TaskStart_EndGame_BackHomeClick"]

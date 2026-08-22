@@ -21,6 +21,22 @@
                             "next": "TaskStart_STClean_0"
                         }
                     }
+                },
+                {
+                    "name": "第1章",
+                    "pipeline_override": {
+                        "MainStoryChapterRouter": {
+                            "next": "TaskStart_STClean_1"
+                        }
+                    }
+                },
+                {
+                    "name": "第2章",
+                    "pipeline_override": {
+                        "MainStoryChapterRouter": {
+                            "next": "TaskStart_STClean_2"
+                        }
+                    }
                 }
                 // {
                 //     "name": "第1章",
