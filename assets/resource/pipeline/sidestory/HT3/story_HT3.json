@@ -590,7 +590,7 @@
             "param": {
                 "custom_action": "ReportSanityFullTime",
                 "custom_action_param": {
-                    "display_node": "SanityCurrent_DisplayFullTime"
+                    "display_node": "SanityCurrent_3_HT3"
                 }
             }
         },
