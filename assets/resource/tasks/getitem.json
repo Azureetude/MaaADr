@@ -2,7 +2,7 @@
     "task": [
         {
             "name": "素材周回",
-            "entry": "TaskStart_ObtainMaterials",
+            "entry": "ApplyRecognitionTimeout_ObtainMaterials",
             "resource": ["official"],
             "option": [
                 "道具"

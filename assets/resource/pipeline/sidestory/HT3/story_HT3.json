@@ -3,15 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\sidestory\\HT3\\story_HT3.json",
-            "lastSyncTime": 1787406837340,
+            "lastSyncTime": 1787664116590,
+            "isModifiedExternally": false,
             "coordinateMode": "absolute-v1",
+            "isDeleted": false,
             "savedViewport": {
-                "x": 118,
-                "y": -9,
-                "zoom": 0.47
+                "x": -1604,
+                "y": -322,
+                "zoom": 0.92
             },
             "filename": "story_HT3",
-            "version": "v1.8.0"
+            "version": "v1.8.1"
         }
     },
     "HT3_1": {
@@ -273,8 +275,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2616,
-                "y": 789
+                "x": 2951,
+                "y": 783
             }
         }
     },
@@ -284,8 +286,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 2948,
-                "y": 798
+                "x": 3366,
+                "y": 833
             }
         }
     },
@@ -319,7 +321,7 @@
             "Node.Action.Succeeded": "<span style=\"color:crimson;\">体力不足</span>"
         },
         "next": [
-            "HT3_BACK_HOME"
+            "SanityCurrent_1_HT3"
         ],
         "$__mpe_code": {
             "position": {
@@ -544,6 +546,75 @@
             "position": {
                 "x": 2352,
                 "y": 1175
+            }
+        }
+    },
+    "SanityCurrent_1_HT3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/体力.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_delay": 1000,
+        "next": [
+            "SanityCurrent_2_HT3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1990,
+                "y": 769
+            }
+        }
+    },
+    "SanityCurrent_2_HT3": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    883,
+                    30,
+                    107,
+                    31
+                ],
+                "expected": [
+                    ""
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "ReportSanityFullTime",
+                "custom_action_param": {
+                    "display_node": "SanityCurrent_DisplayFullTime"
+                }
+            }
+        },
+        "next": [
+            "SanityCurrent_3_HT3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2324,
+                "y": 778
+            }
+        }
+    },
+    "SanityCurrent_3_HT3": {
+        "focus": {
+            "Node.Action.Succeeded": "体力回满时间计算中…"
+        },
+        "next": [
+            "HT3_BACK_HOME"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2627,
+                "y": 737
             }
         }
     },

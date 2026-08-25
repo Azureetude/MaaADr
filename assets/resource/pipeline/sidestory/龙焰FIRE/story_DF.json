@@ -3,16 +3,86 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787320492661,
+            "lastSyncTime": 1787588747810,
             "isModifiedExternally": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\sidestory\\龙焰FIRE\\story_DF.json",
+            "isDeleted": false,
             "savedViewport": {
-                "x": 104,
-                "y": -183,
+                "x": -881,
+                "y": -145,
                 "zoom": 0.7
             },
             "filename": "story_DF",
-            "version": "v1.8.0"
+            "version": "v1.8.1"
+        }
+    },
+    "SanityCurrent_1_DF": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/体力.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_delay": 1000,
+        "next": [
+            "SanityCurrent_2_DF"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2042,
+                "y": 712
+            }
+        }
+    },
+    "SanityCurrent_2_DF": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    883,
+                    30,
+                    107,
+                    31
+                ],
+                "expected": [
+                    ""
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "ReportSanityFullTime",
+                "custom_action_param": {
+                    "display_node": "SanityCurrent_DisplayFullTime"
+                }
+            }
+        },
+        "next": [
+            "SanityCurrent_3_DF"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2376,
+                "y": 722
+            }
+        }
+    },
+    "SanityCurrent_3_DF": {
+        "focus": {
+            "Node.Action.Succeeded": "体力回满时间计算中…"
+        },
+        "next": [
+            "DF_BACK_HOME"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2679,
+                "y": 680
+            }
         }
     },
     "DF_1": {
@@ -274,8 +344,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2516,
-                "y": 739
+                "x": 3124,
+                "y": 735
             }
         }
     },
@@ -285,8 +355,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 2848,
-                "y": 748
+                "x": 3422,
+                "y": 778
             }
         }
     },
@@ -320,7 +390,7 @@
             "Node.Action.Succeeded": "<span style=\"color:crimson;\">体力不足</span>"
         },
         "next": [
-            "DF_BACK_HOME"
+            "SanityCurrent_1_DF"
         ],
         "$__mpe_code": {
             "position": {

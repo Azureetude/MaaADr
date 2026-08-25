@@ -2,7 +2,7 @@
     "task": [
         {
             "name": "吃体力药",
-            "entry": "RestoreStamina",
+            "entry": "ApplyRecognitionTimeout_RestoreStamina",
             "option": [
                 "体力药选择"
             ]

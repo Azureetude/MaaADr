@@ -3,7 +3,7 @@
         {
             "name": "当期活动EX",
             "description": "通过*进入战斗直接胜利*清体力自动刷取活动底关",
-            "entry": "TaskStart_FindMap",
+            "entry": "ApplyRecognitionTimeout_FindMap",
             "resource": ["EX"],
             "option": [
                 "活动(EX)"

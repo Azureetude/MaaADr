@@ -3,7 +3,7 @@
          {
             "name": "主线故事EX",
             "description": "通过*进入战斗直接胜利*及关卡导航自动通关主线任务",
-            "entry": "MainStoryChapterRouter",
+            "entry": "ApplyRecognitionTimeout_MainStory",
             "resource": ["EX"],
             "option": [
                "章节"

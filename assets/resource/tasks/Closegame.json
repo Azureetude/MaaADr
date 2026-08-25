@@ -2,7 +2,7 @@
     "task": [
         {
             "name": "关闭游戏",
-            "entry": "TaskStart_EndGame",
+            "entry": "ApplyRecognitionTimeout_EndGame",
             "controller": ["Win32"]
         }
     ]

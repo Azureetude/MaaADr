@@ -3,7 +3,7 @@
         {
             "name": "当期活动",
             "description": "当期活动底关自动使用*跳过券*清体力",
-            "entry": "TaskStart_FindMap",
+            "entry": "ApplyRecognitionTimeout_FindMap",
             "resource": ["official"],
             "option": [
                 "活动"
