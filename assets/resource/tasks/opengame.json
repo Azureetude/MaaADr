@@ -16,7 +16,7 @@
                 {
                     "name": "Yes",
                     "pipeline_override": {
-                        "startgame": {
+                        "startgame_1": {
                             "next": "homepage_start"  // 控制跳转到返回主界面节点
                      }
                     }
@@ -24,7 +24,7 @@
                 {
                     "name": "No",
                     "pipeline_override": {
-                        "startgame": {
+                        "startgame_1": {
                             "next": "homepage_start_nomail"  // 控制跳转到返回主界面节点
                      }
                     }

@@ -338,3 +338,29 @@ class STClean2BattleBridge(CustomAction):
         _battle_route_target = target
         print(f"STClean2BattleBridge: {argv.node_name} -> {target}")
         return context.override_next(argv.node_name, ["EstimateBegin"])
+
+
+@AgentServer.custom_action("STClean3BattleBridge")
+class STClean3BattleBridge(CustomAction):
+    """Run the shared BattleModule and route back to the appropriate Chapter 3 map."""
+
+    def run(self, context: Context, argv: CustomAction.RunArg) -> bool:
+        if not _click_recognition_box(context, argv):
+            return False
+
+        stage_number = int(argv.node_name.rsplit("_", 1)[-1])
+        if stage_number <= 6:
+            target = "STClean_3_swipe_down_1"
+        elif stage_number <= 18:
+            target = "STClean_3_swipe_down_2_1"
+        elif stage_number <= 23:
+            target = "STClean_3_swipe_down_3_1"
+        elif stage_number <= 32:
+            target = "STClean_3_swipe_down_4_1"
+        else:
+            target = "STClean_3BackHome"
+
+        global _battle_route_target
+        _battle_route_target = target
+        print(f"STClean3BattleBridge: {argv.node_name} -> {target}")
+        return context.override_next(argv.node_name, ["EstimateBegin"])

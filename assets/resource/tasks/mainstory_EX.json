@@ -37,6 +37,14 @@
                             "next": "TaskStart_STClean_2"
                         }
                     }
+                },
+                {
+                    "name": "第3章",
+                    "pipeline_override": {
+                        "MainStoryChapterRouter": {
+                            "next": "TaskStart_STClean_3"
+                        }
+                    }
                 }
                 // {
                 //     "name": "第1章",

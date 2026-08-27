@@ -3,47 +3,223 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1785977376946,
+            "lastSyncTime": 1787815994746,
             "isModifiedExternally": false,
-            "filePath": "E:\\VSCode\\MaaADr\\assets\\resource\\EX\\pipeline\\linkstart.json",
+            "isDeleted": false,
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\linkstart.json",
             "savedViewport": {
-                "x": 2122,
-                "y": 897,
-                "zoom": 0.5
+                "x": 2536,
+                "y": 743,
+                "zoom": 0.57
             },
             "filename": "linkstart",
-            "version": "v1.7.4"
+            "version": "v1.9.0"
         }
     },
-    "linkstart": {
+    "linkstart_BackHome3": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "roi": [
-                    261,
-                    565,
-                    777,
-                    152
-                ],
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    137,
+                    45,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "linkstart_BackHome4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -3351,
+                "y": -1440
+            }
+        }
+    },
+    "linkstart_BackHome2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/Cancel.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "linkstart_BackHome3",
+            "linkstart_BackHome4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -3924,
+                "y": -772
+            }
+        }
+    },
+    "linkstart_BackHome1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/no.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "linkstart_BackHome3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -3924,
+                "y": -1522
+            }
+        }
+    },
+    "linkstart_BackHome4": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
                 "template": [
                     "basic/homepage_down.png"
                 ],
                 "green_mask": true
             }
         },
-        "pre_delay": 300,
-        "timeout": 3000,
+        "pre_wait_freezes": 1000,
         "next": [
             "linkstart_1"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -2833,
-                "y": -1151
+                "x": -2963,
+                "y": -1113
+            }
+        }
+    },
+    "linkstart": {
+        "next": [
+            "linkstart_BackHome1",
+            "linkstart_BackHome2",
+            "linkstart_BackHome3",
+            "linkstart_BackHome4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -4402,
+                "y": -1173
             }
         }
     },
     "linkstart_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    586,
+                    2,
+                    102,
+                    94
+                ],
+                "template": [
+                    "basic/coin.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    701,
+                    42,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "linkstart_on",
+            "linkstart_off"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2476,
+                "y": -1140
+            }
+        }
+    },
+    "linkstart_on": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    520,
+                    273,
+                    242,
+                    98
+                ],
+                "expected": [
+                    "戰鬥修改開啓"
+                ]
+            }
+        },
+        "post_wait_freezes": 5000,
+        "focus": {
+            "Node.Recognition.Succeeded": "龙王的力量充满了全身...!"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": -2128,
+                "y": -1274
+            }
+        }
+    },
+    "linkstart_off": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    520,
+                    273,
+                    242,
+                    98
+                ],
+                "expected": [
+                    "戰鬥修改關閉"
+                ]
+            }
+        },
+        "pre_wait_freezes": 4000,
+        "next": [
+            "linkstart_1_副本2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2128,
+                "y": -931
+            }
+        }
+    },
+    "linkstart_1_副本2": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -76,8 +252,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": -2476,
-                "y": -1140
+                "x": -1705,
+                "y": -974
             }
         }
     }

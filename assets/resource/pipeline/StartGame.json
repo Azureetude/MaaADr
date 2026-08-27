@@ -3,16 +3,120 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786234912484,
+            "lastSyncTime": 1787818876500,
             "isModifiedExternally": false,
+            "isDeleted": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\StartGame.json",
             "savedViewport": {
-                "x": 313,
-                "y": 83,
-                "zoom": 0.25
+                "x": 1057,
+                "y": 156,
+                "zoom": 0.46
             },
             "filename": "StartGame",
-            "version": "v1.7.4"
+            "version": "v1.9.0"
+        }
+    },
+    "PassPort": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/passport.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "next": [
+            "PassPort_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 572,
+                "y": 55
+            }
+        }
+    },
+    "PassPort_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/dailyreward-s.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": {
+            "time": 3000,
+            "target": [
+                295,
+                246,
+                1092,
+                451
+            ]
+        },
+        "action": {
+            "type": "Click"
+        },
+        "focus": "月卡奖励已领取",
+        "next": [
+            "[JumpBack]homepage_start_nomail"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 892,
+                "y": 12
+            }
+        }
+    },
+    "PassPort_1_副本3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/dailyreward-s.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": {
+            "time": 3000,
+            "target": [
+                250,
+                290,
+                1191,
+                389
+            ]
+        },
+        "action": {
+            "type": "Click"
+        },
+        "focus": "月卡奖励已领取",
+        "next": [
+            "[JumpBack]homepage_start"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 992,
+                "y": 1050
+            }
+        }
+    },
+    "PassPort_副本2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/passport.png"
+                ]
+            }
+        },
+        "next": [
+            "PassPort_1_副本3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 1084
+            }
         }
     },
     "STARTGame_END": {
@@ -26,13 +130,14 @@
             }
         }
     },
-    "checkhomepage_mail": {
+    "TaskStart_STClean_2_BackHomeEnd_副本4": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "basic/homepage.png"
-                ]
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
             }
         },
         "next": [
@@ -40,8 +145,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2752,
-                "y": 1423
+                "x": -518,
+                "y": 619
             }
         }
     },
@@ -189,6 +294,25 @@
             "position": {
                 "x": 1312,
                 "y": 1466
+            }
+        }
+    },
+    "checkhomepage_mail": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage.png"
+                ]
+            }
+        },
+        "next": [
+            "STARTGame_END"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2752,
+                "y": 1423
             }
         }
     },
@@ -389,6 +513,33 @@
             }
         }
     },
+    "homepage_start": {
+        "timeout": -1,
+        "next": [
+            "checkdaily_1",
+            "dailyreward_1",
+            "PassPort_副本2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 1487
+            }
+        }
+    },
+    "homepage_start_nomail": {
+        "next": [
+            "PassPort",
+            "checkdaily_nomail_1",
+            "dailyreward_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 252,
+                "y": 451
+            }
+        }
+    },
     "mail": {
         "recognition": {
             "type": "TemplateMatch",
@@ -443,6 +594,32 @@
     },
     "startgame": {
         "recognition": {
+            "type": "DirectHit",
+            "param": {
+                "roi": [
+                    176,
+                    17,
+                    978,
+                    511
+                ]
+            }
+        },
+        "next": [
+            "startgame_1",
+            "startgame_back2",
+            "startgame_back1",
+            "startgame_back4",
+            "TaskStart_STClean_2_BackHomeEnd_副本4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1928,
+                "y": 348
+            }
+        }
+    },
+    "startgame_1": {
+        "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "roi": [
@@ -467,141 +644,87 @@
                 ]
             }
         },
-        "post_delay": 30000,
-        "timeout": -1,
         "$__mpe_code": {
             "position": {
-                "x": -400,
-                "y": 853
+                "x": -1373,
+                "y": 718
             }
         }
     },
-    "homepage_start_nomail": {
-        "next": [
-            "PassPort",
-            "checkdaily_nomail_1",
-            "dailyreward_2"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 252,
-                "y": 451
-            }
-        }
-    },
-    "PassPort": {
+    "startgame_back1": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "basic/passport.png"
-                ],
-                "green_mask": true
-            }
-        },
-        "next": [
-            "PassPort_1"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 572,
-                "y": 55
-            }
-        }
-    },
-    "PassPort_1": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/dailyreward-s.png"
+                    "basic/no.png"
                 ]
             }
-        },
-        "pre_wait_freezes": {
-            "time": 3000,
-            "target": [
-                295,
-                246,
-                1092,
-                451
-            ]
         },
         "action": {
             "type": "Click"
         },
-        "focus": "月卡奖励已领取",
+        "post_wait_freezes": 1000,
         "next": [
-            "[JumpBack]homepage_start_nomail"
+            "startgame_back4"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 892,
-                "y": 12
+                "x": -1373,
+                "y": 82
             }
         }
     },
-    "homepage_start": {
-        "next": [
-            "checkdaily_1",
-            "dailyreward_1",
-            "PassPort_副本2"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 12,
-                "y": 1487
-            }
-        }
-    },
-    "PassPort_副本2": {
+    "startgame_back2": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "basic/passport.png"
+                    "basic/Cancel.png"
                 ]
             }
-        },
-        "next": [
-            "PassPort_1_副本3"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 332,
-                "y": 1084
-            }
-        }
-    },
-    "PassPort_1_副本3": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/dailyreward-s.png"
-                ]
-            }
-        },
-        "pre_wait_freezes": {
-            "time": 3000,
-            "target": [
-                250,
-                290,
-                1191,
-                389
-            ]
         },
         "action": {
             "type": "Click"
         },
-        "focus": "月卡奖励已领取",
+        "post_wait_freezes": 1000,
         "next": [
-            "[JumpBack]homepage_start"
+            "startgame_back4"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 992,
-                "y": 1050
+                "x": -1373,
+                "y": 396
+            }
+        }
+    },
+    "startgame_back4": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    137,
+                    45,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "TaskStart_STClean_2_BackHomeEnd_副本4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -956,
+                "y": 221
             }
         }
     }
