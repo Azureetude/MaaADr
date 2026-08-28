@@ -2,411 +2,18 @@
     "$__mpe_config_DF_Clean": {
         "$__mpe_code": {
             "prefix": "",
-            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\SS\\DF_Clean.json",
-            "lastSyncTime": 1787308981411,
-            "isModifiedExternally": false,
             "coordinateMode": "absolute-v1",
-            "isDeleted": true,
+            "lastSyncTime": 1787926242714,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\SS\\DF_Clean.json",
             "savedViewport": {
-                "x": 314,
-                "y": -1484,
-                "zoom": 0.46
+                "x": 451,
+                "y": -1478,
+                "zoom": 0.4
             },
             "filename": "DF_Clean",
-            "version": "v1.8.0"
-        }
-    },
-    "DF_C_1_26": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    794,
-                    140,
-                    66,
-                    31
-                ],
-                "expected": [
-                    "DF-26"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "DFCleanBattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_26 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1646,
-                "y": 4102
-            }
-        }
-    },
-    "DF_C_1_27": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    794,
-                    140,
-                    66,
-                    31
-                ],
-                "expected": [
-                    "DF-27"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "DFCleanBattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_27 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1935,
-                "y": 4116
-            }
-        }
-    },
-    "DF_C_1_28": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    794,
-                    140,
-                    66,
-                    31
-                ],
-                "expected": [
-                    "DF-28"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "DFCleanBattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_28 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1046,
-                "y": 4450
-            }
-        }
-    },
-    "DF_C_1_29": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    794,
-                    140,
-                    66,
-                    31
-                ],
-                "expected": [
-                    "DF-29"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "DFCleanBattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_29 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1355,
-                "y": 4450
-            }
-        }
-    },
-    "DF_C_1_30": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    794,
-                    140,
-                    66,
-                    31
-                ],
-                "expected": [
-                    "DF-30"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "DFCleanBattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_30 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1651,
-                "y": 4450
-            }
-        }
-    },
-    "DF_C_1_31": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    794,
-                    140,
-                    66,
-                    31
-                ],
-                "expected": [
-                    "DF-31"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "DFCleanBattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_31 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1940,
-                "y": 4450
-            }
-        }
-    },
-    "DF_C_1_32": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    794,
-                    140,
-                    66,
-                    31
-                ],
-                "expected": [
-                    "DF-32"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "DFCleanBattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_32 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2233,
-                "y": 4450
-            }
-        }
-    },
-    "DF_C_1_24": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    794,
-                    140,
-                    66,
-                    31
-                ],
-                "expected": [
-                    "DF-24"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "DFCleanBattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_24 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1040,
-                "y": 4126
-            }
-        }
-    },
-    "DF_C_1_25": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    794,
-                    140,
-                    66,
-                    31
-                ],
-                "expected": [
-                    "DF-25"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "DFCleanBattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_25 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1343,
-                "y": 4126
-            }
-        }
-    },
-    "DF_C_4": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "sidestory/DF/DF_4.png"
-                ],
-                "green_mask": true
-            }
-        },
-        "pre_wait_freezes": 1000,
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    965,
-                    327,
-                    1,
-                    1
-                ]
-            }
-        },
-        "post_wait_freezes": 1000,
-        "next": [
-            "DF_C_4_UP"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 326,
-                "y": 4246
-            }
-        }
-    },
-    "DF_C_4_UP": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    644,
-                    81,
-                    184,
-                    615
-                ],
-                "template": [
-                    "basic/story_logo.png",
-                    "basic/battle_logo.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Swipe",
-            "param": {
-                "begin": [
-                    944,
-                    221,
-                    1,
-                    1
-                ],
-                "end": [
-                    [
-                        950,
-                        586,
-                        1,
-                        1
-                    ]
-                ]
-            }
-        },
-        "repeat": 3,
-        "next": [
-            "DF_C_1_24",
-            "DF_C_1_25",
-            "DF_C_1_26",
-            "DF_C_1_27",
-            "DF_C_1_28",
-            "DF_C_1_29",
-            "DF_C_1_30",
-            "DF_C_1_31",
-            "DF_C_1_32"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 662,
-                "y": 4215
-            }
+            "version": "v1.9.1"
         }
     },
     "$__mpe_external_EstimateBegin_DF_Clean": {
@@ -431,8 +38,7 @@
             "param": {
                 "template": [
                     "sidestory/DF/DF_1.png"
-                ],
-                "green_mask": true
+                ]
             }
         },
         "pre_wait_freezes": 500,
@@ -1003,6 +609,210 @@
             }
         }
     },
+    "DF_C_1_24": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    140,
+                    66,
+                    31
+                ],
+                "expected": [
+                    "DF-24"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "DFCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_24 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1040,
+                "y": 4126
+            }
+        }
+    },
+    "DF_C_1_25": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    140,
+                    66,
+                    31
+                ],
+                "expected": [
+                    "DF-25"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "DFCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_25 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1343,
+                "y": 4126
+            }
+        }
+    },
+    "DF_C_1_26": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    140,
+                    66,
+                    31
+                ],
+                "expected": [
+                    "DF-26"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "DFCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_26 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1646,
+                "y": 4102
+            }
+        }
+    },
+    "DF_C_1_27": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    140,
+                    66,
+                    31
+                ],
+                "expected": [
+                    "DF-27"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "DFCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_27 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1935,
+                "y": 4116
+            }
+        }
+    },
+    "DF_C_1_28": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    140,
+                    66,
+                    31
+                ],
+                "expected": [
+                    "DF-28"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "DFCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_28 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1046,
+                "y": 4450
+            }
+        }
+    },
+    "DF_C_1_29": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    140,
+                    66,
+                    31
+                ],
+                "expected": [
+                    "DF-29"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "DFCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_29 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1355,
+                "y": 4450
+            }
+        }
+    },
     "DF_C_1_3": {
         "recognition": {
             "type": "OCR",
@@ -1034,6 +844,108 @@
             "position": {
                 "x": 1715,
                 "y": 2047
+            }
+        }
+    },
+    "DF_C_1_30": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    140,
+                    66,
+                    31
+                ],
+                "expected": [
+                    "DF-30"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "DFCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_30 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1651,
+                "y": 4450
+            }
+        }
+    },
+    "DF_C_1_31": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    140,
+                    66,
+                    31
+                ],
+                "expected": [
+                    "DF-31"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "DFCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_31 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1940,
+                "y": 4450
+            }
+        }
+    },
+    "DF_C_1_32": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    140,
+                    66,
+                    31
+                ],
+                "expected": [
+                    "DF-32"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "DFCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_32 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2233,
+                "y": 4450
             }
         }
     },
@@ -1467,6 +1379,94 @@
             }
         }
     },
+    "DF_C_4": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "sidestory/DF/DF_4.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 1000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    965,
+                    327,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "DF_C_4_UP",
+            "DF_C_4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 326,
+                "y": 4246
+            }
+        }
+    },
+    "DF_C_4_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "DF_C_1_24",
+            "DF_C_1_25",
+            "DF_C_1_26",
+            "DF_C_1_27",
+            "DF_C_1_28",
+            "DF_C_1_29",
+            "DF_C_1_30",
+            "DF_C_1_31",
+            "DF_C_1_32"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 662,
+                "y": 4215
+            }
+        }
+    },
     "DF_CleanBackHome": {
         "next": [
             "DF_CleanBackHomeConfirmNo",
@@ -1618,6 +1618,7 @@
             }
         },
         "next": [
+            "DF_C_5",
             "DF_C_4",
             "DF_C_3",
             "DF_C_2",
@@ -1738,6 +1739,315 @@
             "position": {
                 "x": -360,
                 "y": 2225
+            }
+        }
+    },
+    "DF_C_5": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "sidestory/DF/DF_5.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": 1000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    965,
+                    327,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "DF_C_5_UP",
+            "DF_C_5"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 290,
+                "y": 5017
+            }
+        }
+    },
+    "DF_C_5_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "DF_C_1_39",
+            "DF_C_1_38",
+            "DF_C_1_37",
+            "DF_C_1_36",
+            "DF_C_1_35",
+            "DF_C_1_34",
+            "DF_C_1_33"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 626,
+                "y": 4986
+            }
+        }
+    },
+    "DF_C_1_33": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    140,
+                    66,
+                    31
+                ],
+                "expected": [
+                    "DF-33"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "DFCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_33 关卡"
+        },
+        "next": ["EstimateBegin"],
+        "$__mpe_code": {
+            "position": {
+                "x": 1029,
+                "y": 4919
+            }
+        }
+    },
+    "DF_C_1_34": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    140,
+                    66,
+                    31
+                ],
+                "expected": [
+                    "DF-34"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "DFCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_34 关卡"
+        },
+        "next": ["EstimateBegin"],
+        "$__mpe_code": {
+            "position": {
+                "x": 1351,
+                "y": 4919
+            }
+        }
+    },
+    "DF_C_1_35": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    140,
+                    66,
+                    31
+                ],
+                "expected": [
+                    "DF-35"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "DFCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_35 关卡"
+        },
+        "next": ["EstimateBegin"],
+        "$__mpe_code": {
+            "position": {
+                "x": 1651,
+                "y": 4919
+            }
+        }
+    },
+    "DF_C_1_36": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    140,
+                    66,
+                    31
+                ],
+                "expected": [
+                    "DF-36"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "DFCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_36 关卡"
+        },
+        "next": ["EstimateBegin"],
+        "$__mpe_code": {
+            "position": {
+                "x": 1029,
+                "y": 5219
+            }
+        }
+    },
+    "DF_C_1_37": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    140,
+                    66,
+                    31
+                ],
+                "expected": [
+                    "DF-37"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "DFCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_37 关卡"
+        },
+        "next": ["EstimateBegin"],
+        "$__mpe_code": {
+            "position": {
+                "x": 1351,
+                "y": 5219
+            }
+        }
+    },
+    "DF_C_1_38": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    140,
+                    66,
+                    31
+                ],
+                "expected": [
+                    "DF-38"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "DFCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_38 关卡"
+        },
+        "next": ["EstimateBegin"],
+        "$__mpe_code": {
+            "position": {
+                "x": 1664,
+                "y": 5219
+            }
+        }
+    },
+    "DF_C_1_39": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    140,
+                    66,
+                    31
+                ],
+                "expected": [
+                    "DF-39"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "DFCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_39 关卡"
+        },
+        "next": ["EstimateBegin"],
+        "$__mpe_code": {
+            "position": {
+                "x": 1974,
+                "y": 5219
             }
         }
     }
