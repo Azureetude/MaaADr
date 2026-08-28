@@ -1,0 +1,37 @@
+{
+    "ConfigureRecognitionTimeout": {
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "ConfigureRecognitionTimeout",
+                "custom_action_param": {
+                    "timeout": ""
+                }
+            }
+        }
+    },
+    "ApplyRecognitionTimeout_StartGame": {
+        "action": { "type": "Custom", "param": { "custom_action": "ApplyRecognitionTimeout" } },
+        "next": ["startgame"]
+    },
+    "ApplyRecognitionTimeout_DailyExchange": {
+        "action": { "type": "Custom", "param": { "custom_action": "ApplyRecognitionTimeout" } },
+        "next": ["TaskStart_DailyExchange"]
+    },
+    "ApplyRecognitionTimeout_FindMap": {
+        "action": { "type": "Custom", "param": { "custom_action": "ApplyRecognitionTimeout" } },
+        "next": ["TaskStart_FindMap"]
+    },
+    "ApplyRecognitionTimeout_ObtainMaterials": {
+        "action": { "type": "Custom", "param": { "custom_action": "ApplyRecognitionTimeout" } },
+        "next": ["TaskStart_ObtainMaterials"]
+    },
+    "ApplyRecognitionTimeout_RestoreStamina": {
+        "action": { "type": "Custom", "param": { "custom_action": "ApplyRecognitionTimeout" } },
+        "next": ["RestoreStamina"]
+    },
+    "ApplyRecognitionTimeout_EndGame": {
+        "action": { "type": "Custom", "param": { "custom_action": "ApplyRecognitionTimeout" } },
+        "next": ["TaskStart_EndGame"]
+    }
+}

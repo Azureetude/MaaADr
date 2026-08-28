@@ -1,93 +1,133 @@
 {
+    "$__mpe_config_TaskStart": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1787922070326,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\TaskStart.json",
+            "savedViewport": {
+                "x": 177,
+                "y": -186,
+                "zoom": 0.4
+            },
+            "filename": "TaskStart",
+            "version": "v1.9.1"
+        }
+    },
     "TaskStart_DailyExchange": {
         "next": [
             "TaskStart_DailyExchange_BackHomeConfirmNo",
             "TaskStart_DailyExchange_BackHomeConfirmCancel",
             "TaskStart_DailyExchange_BackHomeClick",
             "TaskStart_DailyExchange_BackHomeEnd"
-        ]
-    },
-    "TaskStart_DailyExchange_BackHomeConfirmNo": {
-        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/no.png"] } },
-        "action": { "type": "Click" },
-        "post_wait_freezes": 1000,
-        "next": ["TaskStart_DailyExchange_BackHomeClick"]
-    },
-    "TaskStart_DailyExchange_BackHomeConfirmCancel": {
-        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/Cancel.png"] } },
-        "action": { "type": "Click" },
-        "post_wait_freezes": 1000,
-        "next": ["TaskStart_DailyExchange_BackHomeClick"]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 1366
+            }
+        }
     },
     "TaskStart_DailyExchange_BackHomeClick": {
-        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/backhome.png"] } },
-        "action": { "type": "Click", "param": { "target": [137, 45, 1, 1] } },
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    137,
+                    45,
+                    1,
+                    1
+                ]
+            }
+        },
         "post_wait_freezes": 1000,
-        "next": ["TaskStart_DailyExchange_BackHomeEnd"]
+        "next": [
+            "TaskStart_DailyExchange_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 1184
+            }
+        }
+    },
+    "TaskStart_DailyExchange_BackHomeConfirmCancel": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/Cancel.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "TaskStart_DailyExchange_BackHomeClick",
+            "TaskStart_DailyExchange_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 1194
+            }
+        }
+    },
+    "TaskStart_DailyExchange_BackHomeConfirmNo": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/no.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "TaskStart_DailyExchange_BackHomeClick",
+            "TaskStart_DailyExchange_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 811
+            }
+        }
     },
     "TaskStart_DailyExchange_BackHomeEnd": {
-        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/homepage_down.png"], "green_mask": true } },
-        "next": ["checkhomepage_exchange"]
-    },
-    "TaskStart_ObtainMaterials": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
         "next": [
-            "TaskStart_ObtainMaterials_BackHomeConfirmNo",
-            "TaskStart_ObtainMaterials_BackHomeConfirmCancel",
-            "TaskStart_ObtainMaterials_BackHomeClick",
-            "TaskStart_ObtainMaterials_BackHomeEnd"
-        ]
-    },
-    "TaskStart_ObtainMaterials_BackHomeConfirmNo": {
-        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/no.png"] } },
-        "action": { "type": "Click" },
-        "post_wait_freezes": 1000,
-        "next": ["TaskStart_ObtainMaterials_BackHomeClick"]
-    },
-    "TaskStart_ObtainMaterials_BackHomeConfirmCancel": {
-        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/Cancel.png"] } },
-        "action": { "type": "Click" },
-        "post_wait_freezes": 1000,
-        "next": ["TaskStart_ObtainMaterials_BackHomeClick"]
-    },
-    "TaskStart_ObtainMaterials_BackHomeClick": {
-        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/backhome.png"] } },
-        "action": { "type": "Click", "param": { "target": [137, 45, 1, 1] } },
-        "post_wait_freezes": 1000,
-        "next": ["TaskStart_ObtainMaterials_BackHomeEnd"]
-    },
-    "TaskStart_ObtainMaterials_BackHomeEnd": {
-        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/homepage_down.png"], "green_mask": true } },
-        "next": ["obtainmaterials"]
-    },
-    "TaskStart_FindMap": {
-        "next": [
-            "TaskStart_FindMap_BackHomeConfirmNo",
-            "TaskStart_FindMap_BackHomeConfirmCancel",
-            "TaskStart_FindMap_BackHomeClick",
-            "TaskStart_FindMap_BackHomeEnd"
-        ]
-    },
-    "TaskStart_FindMap_BackHomeConfirmNo": {
-        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/no.png"] } },
-        "action": { "type": "Click" },
-        "post_wait_freezes": 1000,
-        "next": ["TaskStart_FindMap_BackHomeClick"]
-    },
-    "TaskStart_FindMap_BackHomeConfirmCancel": {
-        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/Cancel.png"] } },
-        "action": { "type": "Click" },
-        "post_wait_freezes": 1000,
-        "next": ["TaskStart_FindMap_BackHomeClick"]
-    },
-    "TaskStart_FindMap_BackHomeClick": {
-        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/backhome.png"] } },
-        "action": { "type": "Click", "param": { "target": [137, 45, 1, 1] } },
-        "post_wait_freezes": 1000,
-        "next": ["TaskStart_FindMap_BackHomeEnd"]
-    },
-    "TaskStart_FindMap_BackHomeEnd": {
-        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/homepage_down.png"], "green_mask": true } },
-        "next": ["findmap"]
+            "checkhomepage_exchange"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 1361
+            }
+        }
     },
     "TaskStart_EndGame": {
         "next": [
@@ -95,28 +135,369 @@
             "TaskStart_EndGame_BackHomeConfirmCancel",
             "TaskStart_EndGame_BackHomeClick",
             "TaskStart_EndGame_BackHomeEnd"
-        ]
-    },
-    "TaskStart_EndGame_BackHomeConfirmNo": {
-        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/no.png"] } },
-        "action": { "type": "Click" },
-        "post_wait_freezes": 1000,
-        "next": ["TaskStart_EndGame_BackHomeClick"]
-    },
-    "TaskStart_EndGame_BackHomeConfirmCancel": {
-        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/Cancel.png"] } },
-        "action": { "type": "Click" },
-        "post_wait_freezes": 1000,
-        "next": ["TaskStart_EndGame_BackHomeClick"]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 559
+            }
+        }
     },
     "TaskStart_EndGame_BackHomeClick": {
-        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/backhome.png"] } },
-        "action": { "type": "Click", "param": { "target": [137, 45, 1, 1] } },
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    137,
+                    45,
+                    1,
+                    1
+                ]
+            }
+        },
         "post_wait_freezes": 1000,
-        "next": ["TaskStart_EndGame_BackHomeEnd"]
+        "next": [
+            "TaskStart_EndGame_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 366
+            }
+        }
+    },
+    "TaskStart_EndGame_BackHomeConfirmCancel": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/Cancel.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "TaskStart_EndGame_BackHomeClick",
+            "TaskStart_EndGame_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 376
+            }
+        }
+    },
+    "TaskStart_EndGame_BackHomeConfirmNo": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/no.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "TaskStart_EndGame_BackHomeClick",
+            "TaskStart_EndGame_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 12
+            }
+        }
     },
     "TaskStart_EndGame_BackHomeEnd": {
-        "recognition": { "type": "TemplateMatch", "param": { "template": ["basic/homepage_down.png"], "green_mask": true } },
-        "next": ["endgame"]
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "next": [
+            "endgame"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 543
+            }
+        }
+    },
+    "TaskStart_FindMap": {
+        "next": [
+            "TaskStart_FindMap_BackHomeConfirmNo",
+            "TaskStart_FindMap_BackHomeConfirmCancel",
+            "TaskStart_FindMap_BackHomeClick",
+            "TaskStart_FindMap_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1522,
+                "y": 559
+            }
+        }
+    },
+    "TaskStart_FindMap_BackHomeClick": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    137,
+                    45,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "TaskStart_FindMap_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2162,
+                "y": 366
+            }
+        }
+    },
+    "TaskStart_FindMap_BackHomeConfirmCancel": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/Cancel.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "TaskStart_FindMap_BackHomeClick",
+            "TaskStart_FindMap_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1842,
+                "y": 376
+            }
+        }
+    },
+    "TaskStart_FindMap_BackHomeConfirmNo": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/no.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "TaskStart_FindMap_BackHomeClick",
+            "TaskStart_FindMap_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1842,
+                "y": 12
+            }
+        }
+    },
+    "TaskStart_FindMap_BackHomeEnd": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "next": [
+            "findmap"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2482,
+                "y": 543
+            }
+        }
+    },
+    "TaskStart_ObtainMaterials": {
+        "next": [
+            "TaskStart_ObtainMaterials_BackHomeConfirmNo",
+            "TaskStart_ObtainMaterials_BackHomeConfirmCancel",
+            "TaskStart_ObtainMaterials_BackHomeClick",
+            "TaskStart_ObtainMaterials_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1522,
+                "y": 1366
+            }
+        }
+    },
+    "TaskStart_ObtainMaterials_BackHomeClick": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    137,
+                    45,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "TaskStart_ObtainMaterials_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2162,
+                "y": 1184
+            }
+        }
+    },
+    "TaskStart_ObtainMaterials_BackHomeConfirmCancel": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/Cancel.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "TaskStart_ObtainMaterials_BackHomeClick",
+            "TaskStart_ObtainMaterials_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1842,
+                "y": 1194
+            }
+        }
+    },
+    "TaskStart_ObtainMaterials_BackHomeConfirmNo": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/no.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "TaskStart_ObtainMaterials_BackHomeClick",
+            "TaskStart_ObtainMaterials_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1842,
+                "y": 811
+            }
+        }
+    },
+    "TaskStart_ObtainMaterials_BackHomeEnd": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "next": [
+            "obtainmaterials"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2482,
+                "y": 1361
+            }
+        }
+    },
+    "$__mpe_external_checkhomepage_exchange_TaskStart": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 1455
+            }
+        }
+    },
+    "$__mpe_external_endgame_TaskStart": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 637
+            }
+        }
+    },
+    "$__mpe_external_findmap_TaskStart": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2802,
+                "y": 637
+            }
+        }
+    },
+    "$__mpe_external_obtainmaterials_TaskStart": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2802,
+                "y": 1455
+            }
+        }
     }
 }

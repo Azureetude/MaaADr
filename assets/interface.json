@@ -17,7 +17,7 @@
             "type": "Win32",
             "win32": {
                 "class_regex": ".*",
-                "window_regex": "龍脈|Anados",
+                "window_regex": "龍脈|Ana",
                 "screencap": "PrintWindow", // 截图方式
                 "mouse": "PostMessageWithCursorPos", // 鼠标控制方式
                 "keyboard": "PostMessageWithCursorPos" // 键盘控制方式
@@ -57,6 +57,7 @@
         ]
     },
      "import": [
+       "./resource/tasks/recognition_timeout.json",
        "./resource/tasks/opengame.json",
        "./resource/tasks/linkstart.json",
        "./resource/tasks/dailyexchange.json",

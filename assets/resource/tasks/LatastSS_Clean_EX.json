@@ -3,7 +3,7 @@
         {
             "name": "一键过图EX",
             "description": "通过*进入战斗直接胜利*及关卡导航自动通关当期活动",
-            "entry": "TaskStart_LatastSSCleanEX",
+            "entry": "ApplyRecognitionTimeout_LatestSSCleanEX",
             "resource": ["EX"],
             "option": [
                 "活动(Clean)"

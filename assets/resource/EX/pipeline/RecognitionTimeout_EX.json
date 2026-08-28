@@ -1,0 +1,14 @@
+{
+    "ApplyRecognitionTimeout_LinkStart": {
+        "action": { "type": "Custom", "param": { "custom_action": "ApplyRecognitionTimeout" } },
+        "next": ["linkstart"]
+    },
+    "ApplyRecognitionTimeout_LatestSSCleanEX": {
+        "action": { "type": "Custom", "param": { "custom_action": "ApplyRecognitionTimeout" } },
+        "next": ["TaskStart_LatastSSCleanEX"]
+    },
+    "ApplyRecognitionTimeout_MainStory": {
+        "action": { "type": "Custom", "param": { "custom_action": "ApplyRecognitionTimeout" } },
+        "next": ["MainStoryChapterRouter"]
+    }
+}

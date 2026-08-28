@@ -3,225 +3,26 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787320492661,
+            "lastSyncTime": 1787922973926,
             "isModifiedExternally": false,
+            "isDeleted": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\sidestory\\龙焰FIRE\\story_DF.json",
             "savedViewport": {
-                "x": 104,
-                "y": -183,
-                "zoom": 0.7
+                "x": 129,
+                "y": 109,
+                "zoom": 0.2
             },
             "filename": "story_DF",
-            "version": "v1.8.0"
+            "version": "v1.9.1"
         }
     },
-    "DF_1": {
+    "DF_5_EX_1": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "sidestory/DF/DF_4.png"
-                ],
-                "green_mask": true
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    970,
-                    312,
-                    1,
-                    1
+                    "sidestory/DF/DF_5.png"
                 ]
-            }
-        },
-        "post_delay": 1000,
-        "next": [
-            "DF_1_1"
-        ],
-        "on_error": [
-            "DF_BACK_HOME"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 332,
-                "y": 1053
-            }
-        }
-    },
-    "DF_1_1": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    665,
-                    89,
-                    160,
-                    595
-                ],
-                "template": [
-                    "basic/story_logo.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Swipe",
-            "param": {
-                "begin": [
-                    944,
-                    221,
-                    1,
-                    1
-                ],
-                "end": [
-                    [
-                        950,
-                        586,
-                        1,
-                        1
-                    ]
-                ]
-            }
-        },
-        "repeat": 3,
-        "next": [
-            "DF_1_2"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 652,
-                "y": 1066
-            }
-        }
-    },
-    "DF_1_1_EX": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    644,
-                    81,
-                    184,
-                    615
-                ],
-                "template": [
-                    "basic/story_logo.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Swipe",
-            "param": {
-                "begin": [
-                    944,
-                    221,
-                    1,
-                    1
-                ],
-                "end": [
-                    [
-                        950,
-                        586,
-                        1,
-                        1
-                    ]
-                ]
-            }
-        },
-        "repeat": 3,
-        "next": [
-            "DF_1_2_EX"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 652,
-                "y": 386
-            }
-        }
-    },
-    "DF_1_2": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    638,
-                    400,
-                    638,
-                    181
-                ],
-                "template": [
-                    "EXimage/SS/DF/DF_30.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    886,
-                    494,
-                    1,
-                    1
-                ]
-            }
-        },
-        "post_delay": 1000,
-        "next": [
-            "DF_SKIP_1"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 972,
-                "y": 1050
-            }
-        }
-    },
-    "DF_1_2_EX": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    649,
-                    402,
-                    615,
-                    173
-                ],
-                "template": [
-                    "EXimage/SS/DF/DF_30.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    896,
-                    476,
-                    0,
-                    2
-                ]
-            }
-        },
-        "post_delay": 1000,
-        "next": [
-            "DF_EX_1"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 972,
-                "y": 370
-            }
-        }
-    },
-    "DF_1_EX": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "sidestory/DF/DF_4.png"
-                ],
-                "green_mask": true
             }
         },
         "pre_wait_freezes": 500,
@@ -229,359 +30,82 @@
             "type": "Click",
             "param": {
                 "target": [
-                    962,
-                    318,
+                    1052,
+                    324,
                     1,
                     1
                 ]
             }
         },
         "next": [
-            "DF_1_1_EX"
-        ],
-        "on_error": [
-            "DF_BACK_HOME"
+            "DF_5_UP_1"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 332,
-                "y": 325
+                "x": 480,
+                "y": -1121
             }
         }
     },
-    "DF_BACK_HOME": {
+    "DF_5_EX_3": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "basic/backhome.png"
+                    "sidestory/DF/DF_5.png"
                 ]
             }
         },
+        "pre_wait_freezes": 500,
         "action": {
             "type": "Click",
             "param": {
                 "target": [
-                    137,
-                    45,
+                    1052,
+                    324,
                     1,
                     1
                 ]
             }
         },
         "next": [
-            "DF_END"
+            "DF_5_DOWN"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2516,
-                "y": 739
+                "x": 471,
+                "y": -235
             }
         }
     },
-    "DF_END": {
-        "action": {
-            "type": "StopTask"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 2848,
-                "y": 748
-            }
-        }
-    },
-    "DF_ERROR": {
+    "DF_5_EX_2": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "roi": [
-                    378,
-                    124,
-                    530,
-                    481
-                ],
                 "template": [
-                    "basic/ERROR.png"
+                    "sidestory/DF/DF_5.png"
                 ]
             }
         },
+        "pre_wait_freezes": 500,
         "action": {
             "type": "Click",
             "param": {
                 "target": [
-                    640,
-                    522,
-                    1,
-                    1
-                ]
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "<span style=\"color:crimson;\">体力不足</span>"
-        },
-        "next": [
-            "DF_BACK_HOME"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1612,
-                "y": 702
-            }
-        }
-    },
-    "DF_EX_1": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/SKIP_START.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    326,
-                    630,
-                    1,
-                    1
-                ]
-            }
-        },
-        "timeout": -1,
-        "next": [
-            "DF_EX_2",
-            "DF_ERROR"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1292,
-                "y": 355
-            }
-        }
-    },
-    "DF_EX_2": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    1043,
-                    352,
-                    236,
-                    357
-                ],
-                "template": [
-                    "basic/battle_blue.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "DF_EX_3"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1612,
-                "y": 304
-            }
-        }
-    },
-    "DF_EX_3": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/3star.png"
-                ],
-                "green_mask": true
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "timeout": 5000,
-        "focus": {
-            "Node.Recognition.Succeeded": "<span style=\"color:green;\">战斗执行成功</span>"
-        },
-        "next": [
-            "[JumpBack]DF_1_EX"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1932,
-                "y": 208
-            }
-        }
-    },
-    "DF_NOSKIP_1": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/SKIP_START.png"
-                ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 12,
-                "y": 12
-            }
-        }
-    },
-    "DF_SKIP_1": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/SKIP_START.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    511,
-                    634,
-                    1,
-                    1
-                ]
-            }
-        },
-        "timeout": 3000,
-        "next": [
-            "DF_SKIP_2",
-            "DF_ERROR"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1292,
-                "y": 1035
-            }
-        }
-    },
-    "DF_SKIP_2": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/SKIP_NUMBER.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    812,
-                    228,
+                    1052,
+                    324,
                     1,
                     1
                 ]
             }
         },
         "next": [
-            "DF_SKIP_3"
+            "DF_5_UP_2"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1612,
-                "y": 1132
-            }
-        }
-    },
-    "DF_SKIP_3": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/SKIP_OK.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    795,
-                    538,
-                    1,
-                    1
-                ]
-            }
-        },
-        "post_wait_freezes": 500,
-        "next": [
-            "DF_SKIP_4"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1932,
-                "y": 1100
-            }
-        }
-    },
-    "DF_SKIP_4": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/3star.png"
-                ],
-                "green_mask": true
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "DF_BACK_HOME"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2252,
-                "y": 1125
-            }
-        }
-    },
-    "find_DF": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    932,
-                    78,
-                    338,
-                    527
-                ],
-                "template": [
-                    "sidestory/DF/DF_BANNER_S.png"
-                ],
-                "green_mask": true
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    1112,
-                    284,
-                    1,
-                    1
-                ]
-            }
-        },
-        "next": [
-            "DF_1"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 12,
-                "y": 1045
+                "x": 480,
+                "y": -708
             }
         }
     },
@@ -618,8 +142,1287 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 12,
-                "y": 317
+                "x": -1154,
+                "y": -931
+            }
+        }
+    },
+    "DF_5_38_副本18": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    641,
+                    236,
+                    636,
+                    205
+                ],
+                "template": [
+                    "sidestory/DF/DF_38.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    896,
+                    476,
+                    0,
+                    2
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "DF_SKIP_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 588,
+                "y": 1824
+            }
+        }
+    },
+    "DF_5_UP_1_副本19": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "DF_5_38_副本18"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 221,
+                "y": 1824
+            }
+        }
+    },
+    "DF_5_37_副本20": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    649,
+                    402,
+                    615,
+                    173
+                ],
+                "template": [
+                    "sidestory/DF/DF_37.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    896,
+                    476,
+                    0,
+                    2
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "DF_SKIP_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 591,
+                "y": 2269
+            }
+        }
+    },
+    "DF_5_UP_2_副本21": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "DF_5_37_副本20"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 227,
+                "y": 2269
+            }
+        }
+    },
+    "DF_5_34_副本22": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    647,
+                    333,
+                    618,
+                    210
+                ],
+                "template": [
+                    "sidestory/DF/DF_34.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    896,
+                    476,
+                    0,
+                    2
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "DF_SKIP_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 588,
+                "y": 2724
+            }
+        }
+    },
+    "DF_5_DOWN_副本23": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    1036,
+                    509,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        1046,
+                        216,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "DF_5_34_副本22"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 221,
+                "y": 2724
+            }
+        }
+    },
+    "DF_4_30_副本24": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    650,
+                    368,
+                    609,
+                    224
+                ],
+                "template": [
+                    "EXimage/SS/DF/DF_30.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    896,
+                    476,
+                    0,
+                    2
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "DF_SKIP_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 591,
+                "y": 1351
+            }
+        }
+    },
+    "DF_4_UP_副本25": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "DF_4_30_副本24"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 221,
+                "y": 1351
+            }
+        }
+    },
+    "DF_4": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "sidestory/DF/DF_4.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    836,
+                    315,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "DF_4_UP_副本25"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -280,
+                "y": 1369
+            }
+        }
+    },
+    "DF_5_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "sidestory/DF/DF_5.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1052,
+                    324,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "DF_5_UP_1_副本19"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -280,
+                "y": 1824
+            }
+        }
+    },
+    "DF_5_3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "sidestory/DF/DF_5.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1052,
+                    324,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "DF_5_DOWN_副本23"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -289,
+                "y": 2710
+            }
+        }
+    },
+    "DF_5_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "sidestory/DF/DF_5.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1052,
+                    324,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "DF_5_UP_2_副本21"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -280,
+                "y": 2236
+            }
+        }
+    },
+    "DF_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "sidestory/DF/DF_4.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    970,
+                    312,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "on_error": [
+            "DF_BACK_HOME"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -603,
+                "y": 953
+            }
+        }
+    },
+    "DF_5_38": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    641,
+                    236,
+                    636,
+                    205
+                ],
+                "template": [
+                    "sidestory/DF/DF_38.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    896,
+                    476,
+                    0,
+                    2
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "DF_EX_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1348,
+                "y": -1121
+            }
+        }
+    },
+    "DF_1_EX": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "sidestory/DF/DF_4.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "on_error": [
+            "DF_BACK_HOME"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -411,
+                "y": -902
+            }
+        }
+    },
+    "DF_BACK_HOME": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    137,
+                    45,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "DF_END"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4094,
+                "y": 702
+            }
+        }
+    },
+    "DF_END": {
+        "action": {
+            "type": "StopTask"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4362,
+                "y": 793
+            }
+        }
+    },
+    "DF_ERROR": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    378,
+                    124,
+                    530,
+                    481
+                ],
+                "template": [
+                    "basic/ERROR.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    640,
+                    522,
+                    1,
+                    1
+                ]
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "<span style=\"color:crimson;\">体力不足</span>"
+        },
+        "next": [
+            "SanityCurrent_1_DF"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1612,
+                "y": 702
+            }
+        }
+    },
+    "DF_EX_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/SKIP_START.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    326,
+                    630,
+                    1,
+                    1
+                ]
+            }
+        },
+        "timeout": -1,
+        "next": [
+            "DF_EX_2",
+            "DF_ERROR"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1932,
+                "y": -285
+            }
+        }
+    },
+    "DF_EX_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1043,
+                    352,
+                    236,
+                    357
+                ],
+                "template": [
+                    "basic/battle_blue.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "DF_EX_3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2395,
+                "y": -931
+            }
+        }
+    },
+    "DF_EX_3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/3star.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 5000,
+        "focus": {
+            "Node.Recognition.Succeeded": "<span style=\"color:green;\">战斗执行成功</span>"
+        },
+        "next": [
+            "[JumpBack]DF_1_EX"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2899,
+                "y": -1594
+            }
+        }
+    },
+    "DF_NOSKIP_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/SKIP_START.png"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 845,
+                "y": 579
+            }
+        }
+    },
+    "DF_SKIP_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/SKIP_START.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    511,
+                    634,
+                    1,
+                    1
+                ]
+            }
+        },
+        "timeout": 3000,
+        "next": [
+            "DF_SKIP_2",
+            "DF_ERROR"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1252,
+                "y": 1935
+            }
+        }
+    },
+    "DF_SKIP_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/SKIP_NUMBER.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    812,
+                    228,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "DF_SKIP_3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2092,
+                "y": 1227
+            }
+        }
+    },
+    "DF_SKIP_3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/SKIP_OK.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    795,
+                    538,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 500,
+        "next": [
+            "DF_SKIP_4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2412,
+                "y": 1195
+            }
+        }
+    },
+    "DF_SKIP_4": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/3star.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "SanityCurrent_1_DF"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2732,
+                "y": 1220
+            }
+        }
+    },
+    "SanityCurrent_1_DF": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/体力.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_delay": 1000,
+        "next": [
+            "SanityCurrent_2_DF"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2042,
+                "y": 712
+            }
+        }
+    },
+    "SanityCurrent_2_DF": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    883,
+                    30,
+                    107,
+                    31
+                ],
+                "expected": [
+                    ""
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "ReportSanityFullTime",
+                "custom_action_param": {
+                    "display_node": "SanityCurrent_3_DF"
+                }
+            }
+        },
+        "next": [
+            "SanityCurrent_3_DF"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2376,
+                "y": 722
+            }
+        }
+    },
+    "SanityCurrent_3_DF": {
+        "focus": {
+            "Node.Action.Succeeded": "体力回满时间计算中…"
+        },
+        "next": [
+            "DF_BACK_HOME"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2679,
+                "y": 680
+            }
+        }
+    },
+    "find_DF": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    932,
+                    78,
+                    338,
+                    527
+                ],
+                "template": [
+                    "sidestory/DF/DF_BANNER_S.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1112,
+                    284,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "DF_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -923,
+                "y": 945
+            }
+        }
+    },
+    "DF_5_UP_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "DF_5_38"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 981,
+                "y": -1121
+            }
+        }
+    },
+    "DF_5_37": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    649,
+                    402,
+                    615,
+                    173
+                ],
+                "template": [
+                    "sidestory/DF/DF_37.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    896,
+                    476,
+                    0,
+                    2
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "DF_EX_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1354,
+                "y": -676
+            }
+        }
+    },
+    "DF_5_UP_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "DF_5_37"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 987,
+                "y": -676
+            }
+        }
+    },
+    "DF_5_34": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    647,
+                    333,
+                    618,
+                    210
+                ],
+                "template": [
+                    "sidestory/DF/DF_34.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    896,
+                    476,
+                    0,
+                    2
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "DF_EX_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1348,
+                "y": -221
+            }
+        }
+    },
+    "DF_5_DOWN": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    1036,
+                    509,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        1046,
+                        216,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "DF_5_34"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 981,
+                "y": -221
+            }
+        }
+    },
+    "DF_4_30": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    650,
+                    368,
+                    609,
+                    224
+                ],
+                "template": [
+                    "EXimage/SS/DF/DF_30.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    896,
+                    476,
+                    0,
+                    2
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "DF_EX_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1351,
+                "y": -1594
+            }
+        }
+    },
+    "DF_4_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "DF_4_30"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 981,
+                "y": -1594
+            }
+        }
+    },
+    "DF_4_EX": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "sidestory/DF/DF_4.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    836,
+                    315,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "DF_4_UP"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 480,
+                "y": -1576
             }
         }
     }

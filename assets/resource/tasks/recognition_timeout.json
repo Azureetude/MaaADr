@@ -1,0 +1,37 @@
+{
+    "task": [
+        {
+            "name": "识别等待设置",
+            "description": "设置后续任务中所有识别节点的最高等待时间。单位为秒；留空时保持各节点原有默认值。",
+            "entry": "ConfigureRecognitionTimeout",
+            "default_check": true,
+            "option": ["识别最高等待时间"]
+        }
+    ],
+    "option": {
+        "识别最高等待时间": {
+            "type": "input",
+            "inputs": [
+                {
+                    "name": "timeout",
+                    "label": "识别最高等待时间（秒）",
+                    "description": "例如 15。留空时不覆盖默认超时。",
+                    "pipeline_type": "string",
+                    "verify": "^(?:|[1-9][0-9]*)$",
+                    "pattern_msg": "请输入正整数秒数，或留空"
+                }
+            ],
+            "pipeline_override": {
+                "ConfigureRecognitionTimeout": {
+                    "action": {
+                        "param": {
+                            "custom_action_param": {
+                                "timeout": "{timeout}"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
