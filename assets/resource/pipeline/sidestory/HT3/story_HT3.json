@@ -2,18 +2,18 @@
     "$__mpe_config_story_HT3": {
         "$__mpe_code": {
             "prefix": "",
-            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\sidestory\\HT3\\story_HT3.json",
-            "lastSyncTime": 1787664116590,
-            "isModifiedExternally": false,
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1787923163869,
+            "isModifiedExternally": false,
             "isDeleted": false,
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\sidestory\\HT3\\story_HT3.json",
             "savedViewport": {
-                "x": -1604,
-                "y": -322,
-                "zoom": 0.92
+                "x": 465,
+                "y": 209,
+                "zoom": 0.2
             },
             "filename": "story_HT3",
-            "version": "v1.8.1"
+            "version": "v1.9.1"
         }
     },
     "HT3_1": {
@@ -26,159 +26,18 @@
                 "green_mask": true
             }
         },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    1087,
-                    314,
-                    1,
-                    1
-                ]
-            }
-        },
         "post_delay": 1000,
-        "next": [
-            "HT3_1_1"
-        ],
         "on_error": [
             "HT3_BACK_HOME"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 432,
-                "y": 1103
+                "x": -808,
+                "y": 1213
             }
         }
     },
-    "HT3_1_1": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    665,
-                    89,
-                    160,
-                    595
-                ],
-                "template": [
-                    "basic/story_logo.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Swipe",
-            "param": {
-                "begin": [
-                    944,
-                    221,
-                    1,
-                    1
-                ],
-                "end": [
-                    [
-                        950,
-                        586,
-                        1,
-                        1
-                    ]
-                ]
-            }
-        },
-        "repeat": 3,
-        "next": [
-            "HT3_1_2"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 752,
-                "y": 1116
-            }
-        }
-    },
-    "HT3_1_1_EX": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    644,
-                    81,
-                    184,
-                    615
-                ],
-                "template": [
-                    "basic/story_logo.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Swipe",
-            "param": {
-                "begin": [
-                    944,
-                    221,
-                    1,
-                    1
-                ],
-                "end": [
-                    [
-                        950,
-                        586,
-                        1,
-                        1
-                    ]
-                ]
-            }
-        },
-        "repeat": 3,
-        "next": [
-            "HT3_1_2_EX"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 752,
-                "y": 436
-            }
-        }
-    },
-    "HT3_1_2": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    646,
-                    241,
-                    619,
-                    205
-                ],
-                "template": [
-                    "sidestory/DT3/DT3_26.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    881,
-                    344,
-                    1,
-                    1
-                ]
-            }
-        },
-        "post_delay": 1000,
-        "next": [
-            "HT3_SKIP_1"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1072,
-                "y": 1100
-            }
-        }
-    },
-    "HT3_1_2_EX": {
+    "HT3_26_EX": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -210,8 +69,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1072,
-                "y": 420
+                "x": 937,
+                "y": -1182
             }
         }
     },
@@ -226,27 +85,13 @@
             }
         },
         "pre_wait_freezes": 500,
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    1095,
-                    325,
-                    1,
-                    1
-                ]
-            }
-        },
-        "next": [
-            "HT3_1_1_EX"
-        ],
         "on_error": [
             "HT3_BACK_HOME"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 432,
-                "y": 375
+                "x": -482,
+                "y": -787
             }
         }
     },
@@ -357,8 +202,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1392,
-                "y": 405
+                "x": 1390,
+                "y": -296
             }
         }
     },
@@ -385,8 +230,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1712,
-                "y": 354
+                "x": 1795,
+                "y": -841
             }
         }
     },
@@ -412,8 +257,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2032,
-                "y": 258
+                "x": 2330,
+                "y": -1542
             }
         }
     },
@@ -428,8 +273,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 112,
-                "y": 62
+                "x": -473,
+                "y": 37
             }
         }
     },
@@ -540,7 +385,7 @@
             "type": "Click"
         },
         "next": [
-            "HT3_BACK_HOME"
+            "SanityCurrent_1_HT3"
         ],
         "$__mpe_code": {
             "position": {
@@ -650,8 +495,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 112,
-                "y": 1095
+                "x": -1128,
+                "y": 1205
             }
         }
     },
@@ -688,8 +533,891 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 112,
-                "y": 367
+                "x": -1068,
+                "y": -812
+            }
+        }
+    },
+    "HT3_4_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "HT3_26_EX"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 469,
+                "y": -1192
+            }
+        }
+    },
+    "HT3_25_EX": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    652,
+                    379,
+                    623,
+                    211
+                ],
+                "template": [
+                    "sidestory/DT3/HT3_25.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    877,
+                    489,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "HT3_EX_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 932,
+                "y": -777
+            }
+        }
+    },
+    "HT3_4_UP_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "HT3_25_EX"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 469,
+                "y": -787
+            }
+        }
+    },
+    "HT3_23_EX": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    647,
+                    333,
+                    618,
+                    210
+                ],
+                "template": [
+                    "sidestory/DT3/HT3_23.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    973,
+                    441,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "HT3_EX_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 921,
+                "y": -318
+            }
+        }
+    },
+    "HT3_4_DOWN": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    1036,
+                    509,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        1046,
+                        216,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "HT3_23_EX"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 481,
+                "y": -328
+            }
+        }
+    },
+    "HT3_21_EX": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    642,
+                    103,
+                    630,
+                    207
+                ],
+                "template": [
+                    "sidestory/DT3/HT3_21.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    960,
+                    192,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "HT3_EX_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 933,
+                "y": -1593
+            }
+        }
+    },
+    "HT3_3_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "HT3_21_EX"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 469,
+                "y": -1604
+            }
+        }
+    },
+    "HT3_3_EX": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "EXimage/SS/HT3/HT3_3.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    836,
+                    315,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "HT3_3_UP"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 50,
+                "y": -1593
+            }
+        }
+    },
+    "DF_4_EX_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "EXimage/SS/HT3/HT3_4.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1094,
+                    308,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "HT3_4_UP"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 50,
+                "y": -1173
+            }
+        }
+    },
+    "DF_4_EX_3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "EXimage/SS/HT3/HT3_4.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1085,
+                    331,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "HT3_4_DOWN"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 50,
+                "y": -313
+            }
+        }
+    },
+    "DF_4_EX_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "EXimage/SS/HT3/HT3_4.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1090,
+                    320,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "HT3_4_UP_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 50,
+                "y": -760
+            }
+        }
+    },
+    "HT3_26_EX_副本43": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    635,
+                    238,
+                    634,
+                    205
+                ],
+                "template": [
+                    "sidestory/DT3/DT3_26.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    868,
+                    346,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "HT3_SKIP_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 792,
+                "y": 1043
+            }
+        }
+    },
+    "HT3_4_UP_副本44": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "HT3_26_EX_副本43"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 324,
+                "y": 1033
+            }
+        }
+    },
+    "HT3_25_EX_副本45": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    652,
+                    379,
+                    623,
+                    211
+                ],
+                "template": [
+                    "sidestory/DT3/HT3_25.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    877,
+                    489,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "HT3_SKIP_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 787,
+                "y": 1448
+            }
+        }
+    },
+    "HT3_4_UP_1_副本46": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "HT3_25_EX_副本45"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 324,
+                "y": 1438
+            }
+        }
+    },
+    "HT3_23_EX_副本47": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    647,
+                    333,
+                    618,
+                    210
+                ],
+                "template": [
+                    "sidestory/DT3/HT3_23.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    973,
+                    441,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "HT3_SKIP_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 776,
+                "y": 1906
+            }
+        }
+    },
+    "HT3_4_DOWN_副本48": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    1036,
+                    509,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        1046,
+                        216,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "HT3_23_EX_副本47"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 336,
+                "y": 1897
+            }
+        }
+    },
+    "HT3_21_EX_副本49": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    642,
+                    103,
+                    630,
+                    207
+                ],
+                "template": [
+                    "sidestory/DT3/HT3_21.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    960,
+                    192,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "HT3_SKIP_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 788,
+                "y": 632
+            }
+        }
+    },
+    "HT3_3_UP_副本50": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "HT3_21_EX_副本49"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 324,
+                "y": 621
+            }
+        }
+    },
+    "HT3_3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "EXimage/SS/HT3/HT3_3.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    836,
+                    315,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "HT3_3_UP_副本50"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -95,
+                "y": 632
+            }
+        }
+    },
+    "DF_4_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "EXimage/SS/HT3/HT3_4.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1094,
+                    308,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "HT3_4_UP_副本44"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -95,
+                "y": 1052
+            }
+        }
+    },
+    "DF_4_3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "EXimage/SS/HT3/HT3_4.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1085,
+                    331,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "HT3_4_DOWN_副本48"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -95,
+                "y": 1912
+            }
+        }
+    },
+    "DF_4_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "EXimage/SS/HT3/HT3_4.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1090,
+                    320,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "HT3_4_UP_1_副本46"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -95,
+                "y": 1468
             }
         }
     }

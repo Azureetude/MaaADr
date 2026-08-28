@@ -54,7 +54,7 @@
                 {
                     "name": "No",
                     "pipeline_override": {
-                        "DF_1_2": {
+                        "DF_SKIP_1": {
                             "next": "DF_NOSKIP_1"  
                      }
                     }
@@ -70,7 +70,7 @@
                 {
                     "name": "No",
                     "pipeline_override": {
-                        "HT3_1_2": {
+                        "HT3_SKIP_1": {
                             "next": "HT3_NOSKIP_1"  
                      }
                     }
@@ -139,13 +139,51 @@
         "关卡_HT3": {
             "type": "select",
             "cases": [
-            { "name": "HT3_26" }
+            {
+                "name": "HT3_21(经验书)",
+                "pipeline_override": { "HT3_1": { "next": "HT3_3" } }
+            },
+            {
+                "name": "HT3_23(技能书)",
+                "pipeline_override": { "HT3_1": { "next": "DF_4_3" } }
+            },
+            {
+                "name": "HT3_25(龙币)",
+                "pipeline_override": { "HT3_1": { "next": "DF_4_2" } }
+            },
+            {
+                "name": "HT3_26(礼物盒)",
+                "pipeline_override": { "HT3_1": { "next": "DF_4_1" } }
+            }
              ]
         },
         "关卡_DF": {
             "type": "select",
             "cases": [
-            { "name": "DF_30" }
+            {
+                "name": "DF_30(技能书)",
+                "pipeline_override": {
+                    "DF_1": { "next": "DF_4" }
+                }
+            },
+            {
+                "name": "DF_34(龙币)",
+                "pipeline_override": {
+                    "DF_1": { "next": "DF_5_1" }
+                }
+            },
+            {
+                "name": "DF_37(礼物盒)",
+                "pipeline_override": {
+                    "DF_1": { "next": "DF_5_2" }
+                }
+            },
+            {
+                "name": "DF_38(经验书)",
+                "pipeline_override": {
+                    "DF_1": { "next": "DF_5_3" }
+                }
+            }
              ]
         }
      }

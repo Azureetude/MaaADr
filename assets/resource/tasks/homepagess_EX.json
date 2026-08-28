@@ -77,13 +77,51 @@
         "关卡_DF(EX)": {
             "type": "select",
             "cases": [
-            { "name": "DF_30" }
+            {
+                "name": "DF_30(技能书)",
+                "pipeline_override": {
+                    "DF_1_EX": { "next": "DF_4_EX" }
+                }
+            },
+            {
+                "name": "DF_34(龙币)",
+                "pipeline_override": {
+                    "DF_1_EX": { "next": "DF_5_EX_1" }
+                }
+            },
+            {
+                "name": "DF_37(礼物盒)",
+                "pipeline_override": {
+                    "DF_1_EX": { "next": "DF_5_EX_2" }
+                }
+            },
+            {
+                "name": "DF_38(经验书)",
+                "pipeline_override": {
+                    "DF_1_EX": { "next": "DF_5_EX_3" }
+                }
+            }
              ]
         },
         "关卡_HT3(EX)": {
             "type": "select",
             "cases": [
-            { "name": "HT3_26" }
+            {
+                "name": "HT3_21(经验书)",
+                "pipeline_override": { "HT3_1_EX": { "next": "HT3_3_EX" } }
+            },
+            {
+                "name": "HT3_23(技能书)",
+                "pipeline_override": { "HT3_1_EX": { "next": "DF_4_EX_3" } }
+            },
+            {
+                "name": "HT3_25(龙币)",
+                "pipeline_override": { "HT3_1_EX": { "next": "DF_4_EX_2" } }
+            },
+            {
+                "name": "HT3_26(礼物盒)",
+                "pipeline_override": { "HT3_1_EX": { "next": "DF_4_EX_1" } }
+            }
              ]
         }
      }

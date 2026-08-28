@@ -160,6 +160,10 @@
             "linkstart_on",
             "linkstart_off"
         ],
+        "timeout": 3000,
+        "on_error": [
+            "linkstart_1"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": -2476,
