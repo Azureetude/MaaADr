@@ -16,7 +16,11 @@ _SWITCHACCOUNT_FILE = Path(__file__).resolve().parent.parent / "config" / "switc
 
 def _load_switchaccount(profile: str = "default") -> dict:
     try:
-        data = json.loads(_SWITCHACCOUNT_FILE.read_text(encoding="utf-8"))
+        file_path = _SWITCHACCOUNT_FILE
+        if not file_path.exists():
+            candidates = [Path.cwd() / "config" / "switchaccount.json", Path.cwd().parent / "config" / "switchaccount.json"]
+            file_path = next((p for p in candidates if p.exists()), file_path)
+        data = json.loads(file_path.read_text(encoding="utf-8"))
         # New format stores profiles under `profiles`; migrate old flat data.
         if isinstance(data, dict) and isinstance(data.get("profiles"), dict):
             return data["profiles"].get(profile, {})
