@@ -3,17 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787818876500,
+            "lastSyncTime": 1788400036610,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\StartGame.json",
             "savedViewport": {
-                "x": 1057,
-                "y": 156,
-                "zoom": 0.46
+                "x": 220,
+                "y": -661,
+                "zoom": 0.8
             },
             "filename": "StartGame",
-            "version": "v1.9.0"
+            "version": "v1.9.2"
         }
     },
     "PassPort": {
@@ -102,10 +102,16 @@
     },
     "PassPort_副本2": {
         "recognition": {
-            "type": "TemplateMatch",
+            "type": "OCR",
             "param": {
-                "template": [
-                    "basic/passport.png"
+                "roi": [
+                    494,
+                    82,
+                    297,
+                    100
+                ],
+                "expected": [
+                    "獲得月票道具"
                 ]
             }
         },

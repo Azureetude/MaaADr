@@ -86,7 +86,7 @@
             {
                 "name": "DF_34(龙币)",
                 "pipeline_override": {
-                    "DF_1_EX": { "next": "DF_5_EX_1" }
+                    "DF_1_EX": { "next": "DF_5_EX_3" }
                 }
             },
             {
@@ -98,7 +98,7 @@
             {
                 "name": "DF_38(经验书)",
                 "pipeline_override": {
-                    "DF_1_EX": { "next": "DF_5_EX_3" }
+                    "DF_1_EX": { "next": "DF_5_EX_1" }
                 }
             }
              ]

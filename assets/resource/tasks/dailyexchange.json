@@ -1,4 +1,3 @@
-
 {
     "task": [
         {
@@ -6,37 +5,37 @@
             "description": "每日铜之以太商品兑换(精力饮,紫色礼盒,战斗记录·IV,龙币)",
             "entry": "ApplyRecognitionTimeout_DailyExchange",
             "option": [
-                "精力饮",  
+                "精力饮",
                 "紫色礼盒",
-                "战斗记录 · IV",  
+                "战斗记录 · IV",
                 "龙币"
             ]
         }
     ],
     "option": {
-       "精力饮": {
+        "精力饮": {
             "type": "switch",
             "cases": [
                 {
                     "name": "Yes",
                     "pipeline_override": {
-                        "copperymana": {
-                            "next": "if_精力饮"  // 控制跳转到返回主界面节点
-                     },
-                     "精力饮_3": {
-                            "next": "if_紫色礼盒"  // 控制跳转到返回主界面节点
-                     }
+                        "精力饮_3": {
+                            "next": "if_紫色礼盒"
+                        },
+                        "ExchangeSelectEnergyDrink": {
+                            "enabled": true
+                        }
                     }
                 },
                 {
                     "name": "No",
                     "pipeline_override": {
-                        "copperymana": {
-                            "next": "if_精力饮"  // 控制跳转到返回主界面节点
-                     },
-                     "if_精力饮": {
-                            "next": "if_紫色礼盒"  // 控制跳转到返回主界面节点
-                     }
+                        "if_精力饮": {
+                            "next": "if_紫色礼盒"
+                        },
+                        "ExchangeSelectEnergyDrink": {
+                            "enabled": false
+                        }
                     }
                 }
             ]
@@ -47,17 +46,23 @@
                 {
                     "name": "Yes",
                     "pipeline_override": {
-                     "紫色礼盒_3": {
-                            "next": "if_战斗记录"  // 控制跳转到返回主界面节点
-                     }
+                        "紫色礼盒_3": {
+                            "next": "if_战斗记录"
+                        },
+                        "ExchangeSelectPurpleGift": {
+                            "enabled": true
+                        }
                     }
                 },
                 {
                     "name": "No",
                     "pipeline_override": {
                         "if_紫色礼盒": {
-                            "next": "if_战斗记录"  // 控制跳转到返回主界面节点
-                     }
+                            "next": "if_战斗记录"
+                        },
+                        "ExchangeSelectPurpleGift": {
+                            "enabled": false
+                        }
                     }
                 }
             ]
@@ -68,17 +73,23 @@
                 {
                     "name": "Yes",
                     "pipeline_override": {
-                     "战斗记录_3": {
-                            "next": "if_龙币"  // 控制跳转到返回主界面节点
-                     }
+                        "战斗记录_3": {
+                            "next": "if_龙币"
+                        },
+                        "ExchangeSelectBattleRecord": {
+                            "enabled": true
+                        }
                     }
                 },
                 {
                     "name": "No",
                     "pipeline_override": {
                         "if_战斗记录": {
-                            "next": "if_龙币"  // 控制跳转到返回主界面节点
-                     }
+                            "next": "if_龙币"
+                        },
+                        "ExchangeSelectBattleRecord": {
+                            "enabled": false
+                        }
                     }
                 }
             ]
@@ -90,19 +101,25 @@
                     "name": "Yes",
                     "pipeline_override": {
                         "龙币_3": {
-                            "next": "endexchange"  // 控制跳转到返回主界面节点
-                     }
+                            "next": "endexchange"
+                        },
+                        "ExchangeSelectDragonCoin": {
+                            "enabled": true
+                        }
                     }
                 },
                 {
                     "name": "No",
                     "pipeline_override": {
                         "if_龙币": {
-                            "next": "endexchange"  // 控制跳转到返回主界面节点
-                     }
+                            "next": "endexchange"
+                        },
+                        "ExchangeSelectDragonCoin": {
+                            "enabled": false
+                        }
                     }
                 }
             ]
         }
-     }
+    }
 }

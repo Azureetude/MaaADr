@@ -3,47 +3,156 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786194095057,
+            "lastSyncTime": 1788427009412,
             "isModifiedExternally": false,
+            "isDeleted": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\exchange.json",
             "savedViewport": {
-                "x": 1265,
-                "y": 900,
-                "zoom": 0.66
+                "x": 3128,
+                "y": 913,
+                "zoom": 0.61
             },
             "filename": "exchange",
-            "version": "v1.7.4"
+            "version": "v1.9.2"
+        }
+    },
+    "ExchangeSelectBattleRecord": {
+        "enabled": false,
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    },
+    "ExchangeSelectDragonCoin": {
+        "enabled": false,
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    },
+    "ExchangeSelectEnergyDrink": {
+        "enabled": false,
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    },
+    "ExchangeSelectPurpleGift": {
+        "enabled": false,
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 0
+            }
         }
     },
     "checkhomepage_exchange": {
+        "next": [
+            "checkhomepage_exchange1",
+            "checkhomepage_exchange2",
+            "checkhomepage_exchange3",
+            "checkhomepage_exchange4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -5123,
+                "y": -1066
+            }
+        }
+    },
+    "checkhomepage_exchange1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/no.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "checkhomepage_exchange3",
+            "checkhomepage_exchange4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -4703,
+                "y": -1447
+            }
+        }
+    },
+    "checkhomepage_exchange2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/Cancel.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "checkhomepage_exchange3",
+            "checkhomepage_exchange4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -4483,
+                "y": -806
+            }
+        }
+    },
+    "checkhomepage_exchange3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
         "action": {
             "type": "Click",
             "param": {
                 "target": [
-                    131,
+                    137,
                     45,
                     1,
                     1
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "next": [
-            "checkhomepage_exchange_2"
+            "checkhomepage_exchange4"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -2535,
-                "y": -1201
+                "x": -4125,
+                "y": -1577
             }
         }
     },
-    "checkhomepage_exchange_2": {
+    "checkhomepage_exchange4": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "basic/homepage.png"
-                ]
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
             }
         },
         "next": [
@@ -51,8 +160,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -2214,
-                "y": -1193
+                "x": -3856,
+                "y": -1049
             }
         }
     },
@@ -66,23 +175,18 @@
             }
         },
         "action": {
-            "type": "Click",
+            "type": "Custom",
             "param": {
-                "target": [
-                    616,
-                    132,
-                    1,
-                    1
-                ]
+                "custom_action": "OpenCopperEtherAndCheck"
             }
         },
         "next": [
-            "if_精力饮"
+            "ether_1"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1634,
-                "y": -1196
+                "x": -3165,
+                "y": -1222
             }
         }
     },
@@ -92,6 +196,9 @@
             "param": {
                 "template": [
                     "basic/endexchange.png"
+                ],
+                "threshold": [
+                    0.68
                 ]
             }
         },
@@ -111,6 +218,78 @@
             "position": {
                 "x": 279,
                 "y": -1015
+            }
+        }
+    },
+    "ether_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    578,
+                    2,
+                    124,
+                    90
+                ],
+                "template": [
+                    "basic/copperyether.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_delay": 1000,
+        "next": [
+            "ether_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2590,
+                "y": -1176
+            }
+        }
+    },
+    "ether_2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    675,
+                    32,
+                    115,
+                    28
+                ],
+                "expected": [
+                    ""
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "CheckCopperEtherForExchange"
+            }
+        },
+        "next": [
+            "ether_3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2256,
+                "y": -1166
+            }
+        }
+    },
+    "ether_3": {
+        "focus": {
+            "Node.Action.Succeeded": "正在计算本次兑换所需铜以太"
+        },
+        "next": [
+            "if_精力饮"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1766,
+                "y": -822
             }
         }
     },
@@ -140,8 +319,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1934,
-                "y": -1220
+                "x": -3465,
+                "y": -1245
             }
         }
     },
@@ -212,6 +391,7 @@
                 ]
             }
         },
+        "pre_wait_freezes": 1000,
         "action": {
             "type": "Click"
         },
@@ -234,6 +414,7 @@
                 ]
             }
         },
+        "pre_wait_freezes": 1000,
         "action": {
             "type": "Click",
             "param": {
@@ -295,6 +476,7 @@
                 ]
             }
         },
+        "pre_wait_freezes": 1000,
         "action": {
             "type": "Click"
         },
@@ -317,6 +499,7 @@
                 ]
             }
         },
+        "pre_wait_freezes": 1000,
         "action": {
             "type": "Click",
             "param": {
@@ -378,6 +561,7 @@
                 ]
             }
         },
+        "pre_wait_freezes": 1000,
         "action": {
             "type": "Click"
         },
@@ -400,6 +584,7 @@
                 ]
             }
         },
+        "pre_wait_freezes": 1000,
         "action": {
             "type": "Click",
             "param": {
@@ -461,6 +646,7 @@
                 ]
             }
         },
+        "pre_wait_freezes": 1000,
         "action": {
             "type": "Click"
         },
@@ -483,6 +669,7 @@
                 ]
             }
         },
+        "pre_wait_freezes": 1000,
         "action": {
             "type": "Click",
             "param": {

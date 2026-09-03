@@ -1,35 +1,35 @@
 {
-    "$__mpe_config_STClean_3": {
+    "$__mpe_config_STClean_5": {
         "$__mpe_code": {
             "prefix": "",
-            "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787847260724,
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\mainstory\\STClean_5.json",
+            "lastSyncTime": 1788403553841,
             "isModifiedExternally": false,
+            "coordinateMode": "absolute-v1",
             "isDeleted": false,
-            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\mainstory\\STClean_3.json",
             "savedViewport": {
-                "x": 19,
-                "y": 192,
-                "zoom": 0.53
+                "x": 273,
+                "y": 136,
+                "zoom": 0.4
             },
-            "filename": "STClean_3",
-            "version": "v1.9.0"
+            "filename": "STClean_5",
+            "version": "v1.9.2"
         }
     },
-    "$__mpe_external_EstimateBegin_STClean_3": {
+    "$__mpe_external_EstimateBegin_STClean_5": {
         "$__mpe_code": {
             "position": {
-                "x": 6437,
-                "y": 2243
+                "x": 6662,
+                "y": 2434
             }
         }
     },
-    "STC_3_1": {
+    "STC_5_1": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "EXimage/mainstory/3/3_1.png"
+                    "EXimage/mainstory/5/5_1.png"
                 ]
             }
         },
@@ -37,25 +37,25 @@
             "type": "Click",
             "param": {
                 "target": [
-                    983,
-                    244,
-                    1,
-                    1
+                    749,
+                    542,
+                    57,
+                    35
                 ]
             }
         },
         "post_wait_freezes": 1000,
         "next": [
-            "STC_3_1_UP"
+            "STC_5_1_UP"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3178,
-                "y": 1480
+                "x": 2783,
+                "y": 1928
             }
         }
     },
-    "STC_3_1_1": {
+    "STC_5_1_1": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -66,30 +66,30 @@
                     30
                 ],
                 "expected": [
-                    "3-1"
+                    "5-1"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "STClean3BattleBridge"
+                "custom_action": "STClean5BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 3-1 关卡"
+            "Node.Action.Succeeded": "开始进行 5-1 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3990,
-                "y": 1304
+                "x": 3596,
+                "y": 1401
             }
         }
     },
-    "STC_3_1_10": {
+    "STC_5_1_10": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -100,30 +100,30 @@
                     30
                 ],
                 "expected": [
-                    "3-10"
+                    "5-10"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "STClean3BattleBridge"
+                "custom_action": "STClean5BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 3-10 关卡"
+            "Node.Action.Succeeded": "开始进行 5-10 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4556,
-                "y": 1911
+                "x": 4144,
+                "y": 1819
             }
         }
     },
-    "STC_3_1_11": {
+    "STC_5_1_11": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -134,30 +134,30 @@
                     30
                 ],
                 "expected": [
-                    "3-11"
+                    "5-11"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "STClean3BattleBridge"
+                "custom_action": "STClean5BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 3-11 关卡"
+            "Node.Action.Succeeded": "开始进行 5-11 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4865,
-                "y": 1911
+                "x": 4453,
+                "y": 1819
             }
         }
     },
-    "STC_3_1_12": {
+    "STC_5_1_12": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -168,30 +168,30 @@
                     30
                 ],
                 "expected": [
-                    "3-12"
+                    "5-12"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "STClean3BattleBridge"
+                "custom_action": "STClean5BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 3-12 关卡"
+            "Node.Action.Succeeded": "开始进行 5-12 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5176,
-                "y": 1911
+                "x": 4759,
+                "y": 1816
             }
         }
     },
-    "STC_3_1_13": {
+    "STC_5_1_13": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -202,30 +202,30 @@
                     30
                 ],
                 "expected": [
-                    "3-13"
+                    "5-13"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "STClean3BattleBridge"
+                "custom_action": "STClean5BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 3-13 关卡"
+            "Node.Action.Succeeded": "开始进行 5-13 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5493,
-                "y": 1911
+                "x": 5030,
+                "y": 1816
             }
         }
     },
-    "STC_3_1_14": {
+    "STC_5_1_14": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -236,30 +236,30 @@
                     30
                 ],
                 "expected": [
-                    "3-14"
+                    "5-14"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "STClean3BattleBridge"
+                "custom_action": "STClean5BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 3-14 关卡"
+            "Node.Action.Succeeded": "开始进行 5-14 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3990,
-                "y": 2186
+                "x": 5322,
+                "y": 1816
             }
         }
     },
-    "STC_3_1_15": {
+    "STC_5_1_2": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -270,30 +270,30 @@
                     30
                 ],
                 "expected": [
-                    "3-15"
+                    "5-2"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "STClean3BattleBridge"
+                "custom_action": "STClean5BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 3-15 关卡"
+            "Node.Action.Succeeded": "开始进行 5-2 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4266,
-                "y": 2186
+                "x": 3867,
+                "y": 1401
             }
         }
     },
-    "STC_3_1_16": {
+    "STC_5_1_3": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -304,30 +304,30 @@
                     30
                 ],
                 "expected": [
-                    "3-16"
+                    "5-3"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "STClean3BattleBridge"
+                "custom_action": "STClean5BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 3-16 关卡"
+            "Node.Action.Succeeded": "开始进行 5-3 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4558,
-                "y": 2186
+                "x": 4159,
+                "y": 1401
             }
         }
     },
-    "STC_3_1_17": {
+    "STC_5_1_4": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -338,30 +338,30 @@
                     30
                 ],
                 "expected": [
-                    "3-17"
+                    "5-4"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "STClean3BattleBridge"
+                "custom_action": "STClean5BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 3-17 关卡"
+            "Node.Action.Succeeded": "开始进行 5-4 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4867,
-                "y": 2186
+                "x": 4468,
+                "y": 1401
             }
         }
     },
-    "STC_3_1_18": {
+    "STC_5_1_5": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -372,30 +372,30 @@
                     30
                 ],
                 "expected": [
-                    "3-18"
+                    "5-5"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "STClean3BattleBridge"
+                "custom_action": "STClean5BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 3-18 关卡"
+            "Node.Action.Succeeded": "开始进行 5-5 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5178,
-                "y": 2186
+                "x": 4774,
+                "y": 1398
             }
         }
     },
-    "STC_3_1_19": {
+    "STC_5_1_6": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -406,30 +406,30 @@
                     30
                 ],
                 "expected": [
-                    "3-19"
+                    "5-6"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "STClean3BattleBridge"
+                "custom_action": "STClean5BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 3-19 关卡"
+            "Node.Action.Succeeded": "开始进行 5-6 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5493,
-                "y": 2186
+                "x": 5045,
+                "y": 1398
             }
         }
     },
-    "STC_3_1_2": {
+    "STC_5_1_7": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -440,30 +440,30 @@
                     30
                 ],
                 "expected": [
-                    "3-2"
+                    "5-7"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "STClean3BattleBridge"
+                "custom_action": "STClean5BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 3-2 关卡"
+            "Node.Action.Succeeded": "开始进行 5-7 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4261,
-                "y": 1304
+                "x": 5337,
+                "y": 1398
             }
         }
     },
-    "STC_3_1_20": {
+    "STC_5_1_8": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -474,30 +474,30 @@
                     30
                 ],
                 "expected": [
-                    "3-20"
+                    "5-8"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "STClean3BattleBridge"
+                "custom_action": "STClean5BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 3-20 关卡"
+            "Node.Action.Succeeded": "开始进行 5-8 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3990,
-                "y": 2623
+                "x": 3581,
+                "y": 1819
             }
         }
     },
-    "STC_3_1_21": {
+    "STC_5_1_9": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -508,676 +508,30 @@
                     30
                 ],
                 "expected": [
-                    "3-21"
+                    "5-9"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "STClean3BattleBridge"
+                "custom_action": "STClean5BattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 3-21 关卡"
+            "Node.Action.Succeeded": "开始进行 5-9 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4264,
-                "y": 2623
+                "x": 3852,
+                "y": 1819
             }
         }
     },
-    "STC_3_1_22": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    791,
-                    141,
-                    57,
-                    30
-                ],
-                "expected": [
-                    "3-22"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "STClean3BattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 3-22 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4556,
-                "y": 2623
-            }
-        }
-    },
-    "STC_3_1_23": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    791,
-                    141,
-                    57,
-                    30
-                ],
-                "expected": [
-                    "3-23"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "STClean3BattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 3-23 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4865,
-                "y": 2623
-            }
-        }
-    },
-    "STC_3_1_24": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    791,
-                    141,
-                    57,
-                    30
-                ],
-                "expected": [
-                    "3-24"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "STClean3BattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 3-24 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 5176,
-                "y": 2623
-            }
-        }
-    },
-    "STC_3_1_25": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    791,
-                    141,
-                    57,
-                    30
-                ],
-                "expected": [
-                    "3-25"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "STClean3BattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 3-25 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3990,
-                "y": 3047
-            }
-        }
-    },
-    "STC_3_1_26": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    791,
-                    141,
-                    57,
-                    30
-                ],
-                "expected": [
-                    "3-26"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "STClean3BattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 3-26 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4263,
-                "y": 3047
-            }
-        }
-    },
-    "STC_3_1_27": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    791,
-                    141,
-                    57,
-                    30
-                ],
-                "expected": [
-                    "3-27"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "STClean3BattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 3-27 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4555,
-                "y": 3047
-            }
-        }
-    },
-    "STC_3_1_28": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    791,
-                    141,
-                    57,
-                    30
-                ],
-                "expected": [
-                    "3-28"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "STClean3BattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 3-28 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4864,
-                "y": 3047
-            }
-        }
-    },
-    "STC_3_1_29": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    791,
-                    141,
-                    57,
-                    30
-                ],
-                "expected": [
-                    "3-29"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "STClean3BattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 3-29 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 5175,
-                "y": 3047
-            }
-        }
-    },
-    "STC_3_1_3": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    791,
-                    141,
-                    57,
-                    30
-                ],
-                "expected": [
-                    "3-3"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "STClean3BattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 3-3 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4553,
-                "y": 1304
-            }
-        }
-    },
-    "STC_3_1_30": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    791,
-                    141,
-                    57,
-                    30
-                ],
-                "expected": [
-                    "3-30"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "STClean3BattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 3-30 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3992,
-                "y": 3348
-            }
-        }
-    },
-    "STC_3_1_31": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    791,
-                    141,
-                    57,
-                    30
-                ],
-                "expected": [
-                    "3-31"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "STClean3BattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 3-31 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4263,
-                "y": 3348
-            }
-        }
-    },
-    "STC_3_1_32": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    791,
-                    141,
-                    57,
-                    30
-                ],
-                "expected": [
-                    "3-32"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "STClean3BattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 3-32 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4555,
-                "y": 3348
-            }
-        }
-    },
-    "STC_3_1_33": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    791,
-                    141,
-                    57,
-                    30
-                ],
-                "expected": [
-                    "3-33"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "STClean3BattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 3-33 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4864,
-                "y": 3348
-            }
-        }
-    },
-    "STC_3_1_4": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    791,
-                    141,
-                    57,
-                    30
-                ],
-                "expected": [
-                    "3-4"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "STClean3BattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 3-4 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4862,
-                "y": 1304
-            }
-        }
-    },
-    "STC_3_1_5": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    791,
-                    141,
-                    57,
-                    30
-                ],
-                "expected": [
-                    "3-5"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "STClean3BattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 3-5 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 5173,
-                "y": 1304
-            }
-        }
-    },
-    "STC_3_1_6": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    791,
-                    141,
-                    57,
-                    30
-                ],
-                "expected": [
-                    "3-6"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "STClean3BattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 3-6 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3990,
-                "y": 1573
-            }
-        }
-    },
-    "STC_3_1_7": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    791,
-                    141,
-                    57,
-                    30
-                ],
-                "expected": [
-                    "3-7"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "STClean3BattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 3-7 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4261,
-                "y": 1573
-            }
-        }
-    },
-    "STC_3_1_8": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    791,
-                    141,
-                    57,
-                    30
-                ],
-                "expected": [
-                    "3-8"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "STClean3BattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 3-8 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3990,
-                "y": 1911
-            }
-        }
-    },
-    "STC_3_1_9": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    791,
-                    141,
-                    57,
-                    30
-                ],
-                "expected": [
-                    "3-9"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "STClean3BattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 3-9 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4264,
-                "y": 1911
-            }
-        }
-    },
-    "STC_3_1_UP": {
+    "STC_5_1_UP": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1214,27 +568,34 @@
         },
         "repeat": 3,
         "next": [
-            "STC_3_1_7",
-            "STC_3_1_6",
-            "STC_3_1_5",
-            "STC_3_1_4",
-            "STC_3_1_3",
-            "STC_3_1_2",
-            "STC_3_1_1"
+            "STC_5_1_14",
+            "STC_5_1_13",
+            "STC_5_1_12",
+            "STC_5_1_11",
+            "STC_5_1_10",
+            "STC_5_1_9",
+            "STC_5_1_8",
+            "STC_5_1_7",
+            "STC_5_1_6",
+            "STC_5_1_5",
+            "STC_5_1_4",
+            "STC_5_1_3",
+            "STC_5_1_2",
+            "STC_5_1_1"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3604,
-                "y": 1400
+                "x": 3227,
+                "y": 1547
             }
         }
     },
-    "STC_3_2": {
+    "STC_5_2": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "EXimage/mainstory/3/3_2.png"
+                    "EXimage/mainstory/5/5_2.png"
                 ]
             }
         },
@@ -1242,25 +603,365 @@
             "type": "Click",
             "param": {
                 "target": [
-                    849,
-                    307,
-                    1,
-                    1
+                    380,
+                    662,
+                    43,
+                    38
                 ]
             }
         },
         "post_wait_freezes": 1000,
         "next": [
-            "STC_3_2_UP"
+            "STC_5_2_UP"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3165,
-                "y": 2114
+                "x": 2783,
+                "y": 2294
             }
         }
     },
-    "STC_3_2_UP": {
+    "STC_5_2_15": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "5-15"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean5BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 5-15 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3581,
+                "y": 2140
+            }
+        }
+    },
+    "STC_5_2_16": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "5-16"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean5BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 5-16 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3852,
+                "y": 2140
+            }
+        }
+    },
+    "STC_5_2_17": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "5-17"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean5BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 5-17 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4144,
+                "y": 2140
+            }
+        }
+    },
+    "STC_5_2_18": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "5-18"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean5BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 5-18 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4453,
+                "y": 2140
+            }
+        }
+    },
+    "STC_5_2_19": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "5-19"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean5BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 5-19 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4759,
+                "y": 2138
+            }
+        }
+    },
+    "STC_5_2_20": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "5-20"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean5BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 5-20 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3581,
+                "y": 2455
+            }
+        }
+    },
+    "STC_5_2_21": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "5-21"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean5BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 5-21 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3854,
+                "y": 2455
+            }
+        }
+    },
+    "STC_5_2_22": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "5-22"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean5BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 5-22 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4146,
+                "y": 2455
+            }
+        }
+    },
+    "STC_5_2_23": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "5-23"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean5BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 5-23 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4455,
+                "y": 2455
+            }
+        }
+    },
+    "STC_5_2_24": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "5-24"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean5BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 5-24 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4761,
+                "y": 2452
+            }
+        }
+    },
+    "STC_5_2_UP": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1297,35 +998,30 @@
         },
         "repeat": 3,
         "next": [
-            "STC_3_1_19",
-            "STC_3_1_18",
-            "STC_3_1_17",
-            "STC_3_1_16",
-            "STC_3_1_15",
-            "STC_3_1_14",
-            "STC_3_1_13",
-            "STC_3_1_12",
-            "STC_3_1_11",
-            "STC_3_1_10",
-            "STC_3_1_9",
-            "STC_3_1_8"
+            "STC_5_2_24",
+            "STC_5_2_23",
+            "STC_5_2_22",
+            "STC_5_2_21",
+            "STC_5_2_20",
+            "STC_5_2_19",
+            "STC_5_2_18",
+            "STC_5_2_17",
+            "STC_5_2_16",
+            "STC_5_2_15"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3604,
-                "y": 2035
+                "x": 3240,
+                "y": 2158
             }
         }
     },
-    "STC_3_3": {
+    "STC_5_3": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "EXimage/mainstory/3/3-3.png"
-                ],
-                "threshold": [
-                    0.8
+                    "EXimage/mainstory/5/5_3.png"
                 ]
             }
         },
@@ -1333,25 +1029,161 @@
             "type": "Click",
             "param": {
                 "target": [
-                    507,
-                    437,
-                    1,
-                    1
+                    248,
+                    315,
+                    54,
+                    43
                 ]
             }
         },
         "post_wait_freezes": 1000,
         "next": [
-            "STC_3_3_UP"
+            "STC_5_3_UP"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3165,
-                "y": 2570
+                "x": 2777,
+                "y": 2645
             }
         }
     },
-    "STC_3_3_UP": {
+    "STC_5_3_25": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "5-25"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean5BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 5-25 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3581,
+                "y": 2821
+            }
+        }
+    },
+    "STC_5_3_26": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "5-26"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean5BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 5-26 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3852,
+                "y": 2821
+            }
+        }
+    },
+    "STC_5_3_27": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "5-27"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean5BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 5-27 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4144,
+                "y": 2821
+            }
+        }
+    },
+    "STC_5_3_28": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "5-28"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean5BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 5-28 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4453,
+                "y": 2821
+            }
+        }
+    },
+    "STC_5_3_UP": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1388,25 +1220,24 @@
         },
         "repeat": 3,
         "next": [
-            "STC_3_1_24",
-            "STC_3_1_23",
-            "STC_3_1_22",
-            "STC_3_1_21",
-            "STC_3_1_20"
+            "STC_5_3_28",
+            "STC_5_3_27",
+            "STC_5_3_26",
+            "STC_5_3_25"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3604,
-                "y": 2640
+                "x": 3227,
+                "y": 2730
             }
         }
     },
-    "STC_3_4": {
+    "STC_5_4": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "EXimage/mainstory/3/3_4.png"
+                    "EXimage/mainstory/5/5_4.png"
                 ]
             }
         },
@@ -1414,25 +1245,331 @@
             "type": "Click",
             "param": {
                 "target": [
-                    594,
-                    326,
-                    1,
-                    1
+                    448,
+                    391,
+                    52,
+                    44
                 ]
             }
         },
         "post_wait_freezes": 1000,
         "next": [
-            "STC_3_4_UP"
+            "STC_5_4_UP"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3178,
-                "y": 3058
+                "x": 2783,
+                "y": 2979
             }
         }
     },
-    "STC_3_4_UP": {
+    "STC_5_4_29": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "5-29"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean5BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 5-29 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3572,
+                "y": 3181
+            }
+        }
+    },
+    "STC_5_4_30": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "5-30"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean5BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 5-30 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3843,
+                "y": 3181
+            }
+        }
+    },
+    "STC_5_4_31": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "5-31"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean5BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 5-31 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4135,
+                "y": 3181
+            }
+        }
+    },
+    "STC_5_4_32": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "5-32"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean5BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 5-32 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4444,
+                "y": 3181
+            }
+        }
+    },
+    "STC_5_4_33": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "5-33"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean5BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 5-33 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4750,
+                "y": 3178
+            }
+        }
+    },
+    "STC_5_4_34": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "5-34"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean5BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 5-34 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3572,
+                "y": 3495
+            }
+        }
+    },
+    "STC_5_4_35": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "5-35"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean5BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 5-35 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3845,
+                "y": 3495
+            }
+        }
+    },
+    "STC_5_4_36": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "5-36"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean5BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 5-36 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4137,
+                "y": 3495
+            }
+        }
+    },
+    "STC_5_4_37": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "5-37"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean5BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 5-37 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4446,
+                "y": 3495
+            }
+        }
+    },
+    "STC_5_4_UP": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1469,38 +1606,38 @@
         },
         "repeat": 3,
         "next": [
-            "STC_3_1_33",
-            "STC_3_1_32",
-            "STC_3_1_31",
-            "STC_3_1_30",
-            "STC_3_1_29",
-            "STC_3_1_28",
-            "STC_3_1_27",
-            "STC_3_1_26",
-            "STC_3_1_25"
+            "STC_5_4_37",
+            "STC_5_4_36",
+            "STC_5_4_35",
+            "STC_5_4_34",
+            "STC_5_4_33",
+            "STC_5_4_32",
+            "STC_5_4_31",
+            "STC_5_4_30",
+            "STC_5_4_29"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3604,
-                "y": 3144
+                "x": 3227,
+                "y": 3199
             }
         }
     },
-    "STClean_3BackHome": {
+    "STClean_5BackHome": {
         "next": [
-            "STClean_3BackHomeConfirmNo",
-            "STClean_3BackHomeConfirmCancel",
-            "STClean_3BackHomeClick",
-            "STClean_3BackHomeEnd"
+            "STClean_5BackHomeConfirmNo",
+            "STClean_5BackHomeConfirmCancel",
+            "STClean_5BackHomeClick",
+            "STClean_5BackHomeEnd"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -643,
-                "y": 75
+                "x": -527,
+                "y": 389
             }
         }
     },
-    "STClean_3BackHomeClick": {
+    "STClean_5BackHomeClick": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1520,17 +1657,18 @@
                 ]
             }
         },
+        "post_wait_freezes": 1000,
         "next": [
-            "STClean_3BackHomeEnd"
+            "STClean_5BackHomeEnd"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 304,
-                "y": -333
+                "x": 302,
+                "y": -127
             }
         }
     },
-    "STClean_3BackHomeConfirmCancel": {
+    "STClean_5BackHomeConfirmCancel": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1542,18 +1680,19 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "next": [
-            "STClean_3BackHomeClick",
-            "STClean_3BackHomeEnd"
+            "STClean_5BackHomeClick",
+            "STClean_5BackHomeEnd"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -89,
-                "y": 315
+                "x": -232,
+                "y": -140
             }
         }
     },
-    "STClean_3BackHomeConfirmNo": {
+    "STClean_5BackHomeConfirmNo": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1565,17 +1704,19 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 1000,
         "next": [
-            "STClean_3BackHomeClick"
+            "STClean_5BackHomeClick",
+            "STClean_5BackHomeEnd"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -257,
-                "y": -344
+                "x": -40,
+                "y": 687
             }
         }
     },
-    "STClean_3BackHomeEnd": {
+    "STClean_5BackHomeEnd": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1586,30 +1727,30 @@
             }
         },
         "next": [
-            "STClean_3Finish"
+            "STClean_5Finish"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 630,
-                "y": -15
+                "x": 560,
+                "y": 265
             }
         }
     },
-    "STClean_3Finish": {
+    "STClean_5Finish": {
         "action": {
             "type": "StopTask"
         },
         "focus": {
-            "Node.Action.Succeeded": "第三章关卡完成"
+            "Node.Action.Succeeded": "第五章关卡完成"
         },
         "$__mpe_code": {
             "position": {
-                "x": 986,
-                "y": 11
+                "x": 882,
+                "y": 312
             }
         }
     },
-    "STClean_3_find": {
+    "STClean_5_find": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1632,16 +1773,16 @@
             }
         },
         "next": [
-            "STClean_3_find_1"
+            "STClean_5_find_1"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 386,
-                "y": 2388
+                "x": 515,
+                "y": 2398
             }
         }
     },
-    "STClean_3_find_1": {
+    "STClean_5_find_1": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1656,16 +1797,16 @@
             "type": "Click"
         },
         "next": [
-            "STClean_3_find_swap"
+            "STClean_5_find_swap"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 712,
-                "y": 2388
+                "x": 912,
+                "y": 2488
             }
         }
     },
-    "STClean_3_find_2": {
+    "STClean_5_find_2": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1695,24 +1836,24 @@
                 ]
             }
         },
-        "repeat": 2,
+        "repeat": 6,
         "post_delay": 2000,
         "next": [
-            "STClean_3_find_3"
+            "STClean_5_find_3"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1296,
-                "y": 2364
+                "x": 1496,
+                "y": 2464
             }
         }
     },
-    "STClean_3_find_3": {
+    "STClean_5_find_3": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "EXimage/mainstory/3/banner_3.png"
+                    "EXimage/mainstory/5/banner_5.png"
                 ],
                 "green_mask": true
             }
@@ -1722,16 +1863,16 @@
             "type": "Click"
         },
         "next": [
-            "STClean_3_swipe_down_1"
+            "STClean_5_swipe_up_1"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1626,
-                "y": 2395
+                "x": 1826,
+                "y": 2495
             }
         }
     },
-    "STClean_3_find_swap": {
+    "STClean_5_find_swap": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1762,16 +1903,16 @@
         "repeat": 3,
         "repeat_wait_freezes": 500,
         "next": [
-            "STClean_3_find_2"
+            "STClean_5_find_2"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1000,
-                "y": 2364
+                "x": 1200,
+                "y": 2464
             }
         }
     },
-    "STClean_3_swipe_down_1": {
+    "STClean_5_swipe_up_1": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1784,254 +1925,15 @@
             "type": "Swipe",
             "param": {
                 "begin": [
-                    749,
-                    554,
+                    757,
+                    224,
                     1,
                     1
                 ],
                 "end": [
                     [
-                        709,
-                        237,
-                        0,
-                        2
-                    ]
-                ]
-            }
-        },
-        "repeat": 2,
-        "repeat_wait_freezes": 500,
-        "next": [
-            "STC_3_1"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2670,
-                "y": 1585
-            }
-        }
-    },
-    "STClean_3_swipe_down_2_1": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/backhome.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Swipe",
-            "param": {
-                "begin": [
-                    749,
-                    554,
-                    1,
-                    1
-                ],
-                "end": [
-                    [
-                        709,
-                        237,
-                        0,
-                        2
-                    ]
-                ]
-            }
-        },
-        "repeat": 2,
-        "repeat_wait_freezes": 500,
-        "next": [
-            "STClean_3_swipe_down_2_2"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2397,
-                "y": 2114
-            }
-        }
-    },
-    "STClean_3_swipe_down_2_2": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "EXimage/mainstory/3/3_1.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Swipe",
-            "param": {
-                "begin": [
-                    1193,
-                    391,
-                    1,
-                    1
-                ],
-                "end": [
-                    [
-                        1214,
-                        626,
-                        1,
-                        1
-                    ]
-                ]
-            }
-        },
-        "repeat_wait_freezes": 500,
-        "next": [
-            "STC_3_2"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2832,
-                "y": 2114
-            }
-        }
-    },
-    "STClean_3_swipe_down_3_1": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/backhome.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Swipe",
-            "param": {
-                "begin": [
-                    749,
-                    554,
-                    1,
-                    1
-                ],
-                "end": [
-                    [
-                        709,
-                        237,
-                        0,
-                        2
-                    ]
-                ]
-            }
-        },
-        "repeat": 2,
-        "repeat_wait_freezes": 500,
-        "next": [
-            "STClean_3_swipe_down_3_2"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2397,
-                "y": 2554
-            }
-        }
-    },
-    "STClean_3_swipe_down_3_2": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "EXimage/mainstory/3/3_1.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Swipe",
-            "param": {
-                "begin": [
-                    1193,
-                    391,
-                    1,
-                    1
-                ],
-                "end": [
-                    [
-                        1214,
-                        626,
-                        1,
-                        1
-                    ]
-                ]
-            }
-        },
-        "repeat": 2,
-        "repeat_wait_freezes": 500,
-        "next": [
-            "STC_3_3"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2832,
-                "y": 2554
-            }
-        }
-    },
-    "STClean_3_swipe_down_4_1": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/backhome.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Swipe",
-            "param": {
-                "begin": [
-                    749,
-                    554,
-                    1,
-                    1
-                ],
-                "end": [
-                    [
-                        709,
-                        237,
-                        0,
-                        2
-                    ]
-                ]
-            }
-        },
-        "repeat": 2,
-        "repeat_wait_freezes": 500,
-        "next": [
-            "STClean_3_swipe_down_4_2"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2397,
-                "y": 2985
-            }
-        }
-    },
-    "STClean_3_swipe_down_4_2": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "EXimage/mainstory/3/3_1.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Swipe",
-            "param": {
-                "begin": [
-                    1193,
-                    391,
-                    1,
-                    1
-                ],
-                "end": [
-                    [
-                        1214,
-                        626,
+                        581,
+                        548,
                         1,
                         1
                     ]
@@ -2041,30 +1943,33 @@
         "repeat": 3,
         "repeat_wait_freezes": 500,
         "next": [
-            "STC_3_4"
+            "STC_5_4",
+            "STC_5_3",
+            "STC_5_2",
+            "STC_5_1"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2832,
-                "y": 2985
+                "x": 2232,
+                "y": 2440
             }
         }
     },
-    "TaskStart_STClean_3": {
+    "TaskStart_STClean_5": {
         "next": [
-            "TaskStart_STClean_3_BackHomeConfirmNo",
-            "TaskStart_STClean_3_BackHomeConfirmCancel",
-            "TaskStart_STClean_3_BackHomeClick",
-            "TaskStart_STClean_3_BackHomeEnd"
+            "TaskStart_STClean_5_BackHomeConfirmNo",
+            "TaskStart_STClean_5_BackHomeConfirmCancel",
+            "TaskStart_STClean_5_BackHomeClick",
+            "TaskStart_STClean_5_BackHomeEnd"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1471,
-                "y": 2420
+                "x": -1402,
+                "y": 2436
             }
         }
     },
-    "TaskStart_STClean_3_BackHomeClick": {
+    "TaskStart_STClean_5_BackHomeClick": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -2086,16 +1991,16 @@
         },
         "post_wait_freezes": 1000,
         "next": [
-            "TaskStart_STClean_3_BackHomeEnd"
+            "TaskStart_STClean_5_BackHomeEnd"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -440,
-                "y": 2088
+                "x": -188,
+                "y": 1870
             }
         }
     },
-    "TaskStart_STClean_3_BackHomeConfirmCancel": {
+    "TaskStart_STClean_5_BackHomeConfirmCancel": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -2109,17 +2014,17 @@
         },
         "post_wait_freezes": 1000,
         "next": [
-            "TaskStart_STClean_3_BackHomeClick",
-            "TaskStart_STClean_3_BackHomeEnd"
+            "TaskStart_STClean_5_BackHomeClick",
+            "TaskStart_STClean_5_BackHomeEnd"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1013,
-                "y": 2756
+                "x": -887,
+                "y": 1915
             }
         }
     },
-    "TaskStart_STClean_3_BackHomeConfirmNo": {
+    "TaskStart_STClean_5_BackHomeConfirmNo": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -2133,16 +2038,17 @@
         },
         "post_wait_freezes": 1000,
         "next": [
-            "TaskStart_STClean_3_BackHomeClick"
+            "TaskStart_STClean_5_BackHomeClick",
+            "TaskStart_STClean_5_BackHomeEnd"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1013,
-                "y": 2004
+                "x": -667,
+                "y": 2742
             }
         }
     },
-    "TaskStart_STClean_3_BackHomeEnd": {
+    "TaskStart_STClean_5_BackHomeEnd": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -2153,12 +2059,12 @@
             }
         },
         "next": [
-            "STClean_3_find"
+            "STClean_5_find"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 34,
-                "y": 2420
+                "x": 92,
+                "y": 2428
             }
         }
     }

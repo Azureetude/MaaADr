@@ -1,0 +1,536 @@
+{
+    "$__mpe_config_switchaccount": {
+        "$__mpe_code": {
+            "prefix": "",
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\switchaccount.json",
+            "lastSyncTime": 1788443976543,
+            "isModifiedExternally": false,
+            "coordinateMode": "absolute-v1",
+            "isDeleted": false,
+            "savedViewport": {
+                "x": 1480,
+                "y": 455,
+                "zoom": 0.2
+            },
+            "filename": "switchaccount",
+            "version": "v1.9.2"
+        }
+    },
+    "ReportSwitchAccountLogin": {
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "ReportSwitchAccountLogin"
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 925,
+                "y": -985
+            }
+        }
+    },
+    "SaveSwitchAccount": {
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "SaveSwitchAccount",
+                "custom_action_param": {
+                    "account": "",
+                    "password": "",
+                    "remark": ""
+                }
+            }
+        },
+        "next": [
+            "checkhomepage_switchaccount"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -5340,
+                "y": -950
+            }
+        }
+    },
+    "SaveSwitchAccountAccount": {
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "SaveSwitchAccountAccount",
+                "custom_action_param": {
+                    "account": ""
+                }
+            }
+        },
+        "next": [
+            "SaveSwitchAccountPassword"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -6465,
+                "y": -1071
+            }
+        }
+    },
+    "SaveSwitchAccountPassword": {
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "SaveSwitchAccountPassword",
+                "custom_action_param": {
+                    "password": ""
+                }
+            }
+        },
+        "next": [
+            "SaveSwitchAccountRemark"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -5980,
+                "y": -1361
+            }
+        }
+    },
+    "SaveSwitchAccountRemark": {
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "SaveSwitchAccountRemark",
+                "custom_action_param": {
+                    "remark": ""
+                }
+            }
+        },
+        "next": [
+            "checkhomepage_switchaccount"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -5499,
+                "y": -1448
+            }
+        }
+    },
+    "checkhomepage_switchaccount": {
+        "next": [
+            "checkhomepage_switchaccount_1",
+            "checkhomepage_switchaccount_2",
+            "checkhomepage_switchaccount_3",
+            "checkhomepage_switchaccount_4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -5023,
+                "y": -1016
+            }
+        }
+    },
+    "checkhomepage_switchaccount_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/no.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "checkhomepage_switchaccount_3",
+            "checkhomepage_switchaccount_4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -4603,
+                "y": -1397
+            }
+        }
+    },
+    "checkhomepage_switchaccount_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/Cancel.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "checkhomepage_switchaccount_3",
+            "checkhomepage_switchaccount_4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -4383,
+                "y": -756
+            }
+        }
+    },
+    "checkhomepage_switchaccount_3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    137,
+                    45,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "checkhomepage_switchaccount_4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -4025,
+                "y": -1527
+            }
+        }
+    },
+    "checkhomepage_switchaccount_4": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "next": [
+            "switchaccount_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -3657,
+                "y": -1043
+            }
+        }
+    },
+    "login": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    578,
+                    477,
+                    114,
+                    46
+                ],
+                "expected": [
+                    "登入"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "ReportSwitchAccountLogin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 559,
+                "y": -1000
+            }
+        }
+    },
+    "name_1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    332,
+                    288,
+                    263,
+                    35
+                ],
+                "expected": [
+                    "user@example.com"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "name_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -971,
+                "y": -1000
+            }
+        }
+    },
+    "name_2": {
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "InputSwitchAccountName"
+                ,"custom_action_param": {"profile": "default"}
+            }
+        },
+        "next": [
+            "password_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -604,
+                "y": -976
+            }
+        }
+    },
+    "password_1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    331,
+                    388,
+                    190,
+                    32
+                ],
+                "expected": [
+                    "Password..."
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "password_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -254,
+                "y": -993
+            }
+        }
+    },
+    "password_2": {
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "InputSwitchAccountPassword"
+                ,"custom_action_param": {"profile": "default"}
+            }
+        },
+        "next": [
+            "login"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 116,
+                "y": -976
+            }
+        }
+    },
+    "switchaccount_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    63,
+                    353,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "switchaccount_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -3168,
+                "y": -1042
+            }
+        }
+    },
+    "switchaccount_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/setting.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    894,
+                    120,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "switchaccount_3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2806,
+                "y": -1042
+            }
+        }
+    },
+    "switchaccount_3": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    803,
+                    550,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        821,
+                        266,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "next": [
+            "switchaccount_4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2514,
+                "y": -1024
+            }
+        }
+    },
+    "switchaccount_4": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/closegame.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    776,
+                    561,
+                    51,
+                    14
+                ]
+            }
+        },
+        "next": [
+            "switchaccount_5"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2185,
+                "y": -1013
+            }
+        }
+    },
+    "switchaccount_5": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "EXimage/fight/story_yes.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    735,
+                    499,
+                    113,
+                    46
+                ]
+            }
+        },
+        "post_wait_freezes": 500,
+        "next": [
+            "switchaccount_6"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1809,
+                "y": -993
+            }
+        }
+    },
+    "switchaccount_6": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    176,
+                    17,
+                    978,
+                    511
+                ],
+                "template": [
+                    "basic/logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    634,
+                    548,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "name_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1376,
+                "y": -1013
+            }
+        }
+    }
+}
