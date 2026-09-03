@@ -1,14 +1,108 @@
 {
-  "task": [{
-    "name": "账号切换",
-    "description": "输入账号、密码执行账号切换流程。(如有多个账号切换需求，请填写不同的账号配置名)",
-    "entry": "SaveSwitchAccountAccount",
-    "option": ["账号", "密码", "备注", "账号配置名"]
-  }],
-  "option": {
-    "账号": {"type": "input", "inputs": [{"name": "account", "label": "账号", "pipeline_type": "string"}], "pipeline_override": {"SaveSwitchAccountAccount": {"action": {"param": {"custom_action_param": {"account": "{account}", "profile": "{profile}"}}}}}},
-    "密码": {"type": "input", "inputs": [{"name": "password", "label": "密码", "pipeline_type": "string"}], "pipeline_override": {"SaveSwitchAccountPassword": {"action": {"param": {"custom_action_param": {"password": "{password}", "profile": "{profile}"}}}}}},
-    "备注": {"type": "input", "inputs": [{"name": "remark", "label": "备注", "pipeline_type": "string"}], "pipeline_override": {"SaveSwitchAccountRemark": {"action": {"param": {"custom_action_param": {"remark": "{remark}", "profile": "{profile}"}}}}}},
-    "账号配置名": {"type": "input", "inputs": [{"name": "profile", "label": "账号配置名", "pipeline_type": "string"}], "pipeline_override": {}}
-  }
+    "task": [
+        {
+            "name": "账号切换",
+            "description": "输入账号、密码和备注并保存，然后执行账号切换流程。",
+            "entry": "SaveSwitchAccountAccount",
+            "option": [
+                "账号",
+                "密码",
+                "备注",
+                "账号配置名"
+            ]
+        }
+    ],
+    "option": {
+        "账号": {
+            "type": "input",
+            "inputs": [
+                {
+                    "name": "account",
+                    "label": "账号",
+                    "pipeline_type": "string"
+                }
+            ],
+            "pipeline_override": {
+                "SaveSwitchAccountAccount": {
+                    "action": {
+                        "param": {
+                            "custom_action_param": {
+                                "account": "{account}",
+                                "profile": "{profile}"
+                            }
+                        }
+                    }
+                },
+                "name_2": {
+                    "action": {
+                        "param": {
+                            "input_text": "{account}"
+                        }
+                    }
+                }
+            }
+        },
+        "密码": {
+            "type": "input",
+            "inputs": [
+                {
+                    "name": "password",
+                    "label": "密码",
+                    "pipeline_type": "string"
+                }
+            ],
+            "pipeline_override": {
+                "SaveSwitchAccountPassword": {
+                    "action": {
+                        "param": {
+                            "custom_action_param": {
+                                "password": "{password}",
+                                "profile": "{profile}"
+                            }
+                        }
+                    }
+                },
+                "password_2": {
+                    "action": {
+                        "param": {
+                            "input_text": "{password}"
+                        }
+                    }
+                }
+            }
+        },
+        "备注": {
+            "type": "input",
+            "inputs": [
+                {
+                    "name": "remark",
+                    "label": "备注",
+                    "pipeline_type": "string"
+                }
+            ],
+            "pipeline_override": {
+                "SaveSwitchAccountRemark": {
+                    "action": {
+                        "param": {
+                            "custom_action_param": {
+                                "remark": "{remark}",
+                                "profile": "{profile}"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "账号配置名": {
+            "type": "input",
+            "inputs": [
+                {
+                    "name": "profile",
+                    "label": "账号配置名",
+                    "pipeline_type": "string"
+                }
+            ],
+            "pipeline_override": {}
+        }
+    }
 }

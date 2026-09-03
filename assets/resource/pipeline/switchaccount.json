@@ -283,11 +283,8 @@
     },
     "name_2": {
         "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "InputSwitchAccountName"
-                ,"custom_action_param": {"profile": "default"}
-            }
+            "type": "InputText",
+            "param": {"input_text": ""}
         },
         "next": [
             "password_1"
@@ -329,11 +326,8 @@
     },
     "password_2": {
         "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "InputSwitchAccountPassword"
-                ,"custom_action_param": {"profile": "default"}
-            }
+            "type": "InputText",
+            "param": {"input_text": ""}
         },
         "next": [
             "login"
