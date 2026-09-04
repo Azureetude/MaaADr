@@ -108,9 +108,16 @@ def _input_saved_switchaccount(context: Context, field: str, profile: str = "def
     if not value:
         print(f"SwitchAccount: missing {field}")
         return False
-    job = context.tasker.controller.post_input_text(str(value))
-    job.wait()
-    return True
+    try:
+        job = context.tasker.controller.post_input_text(str(value))
+        if job is not None and hasattr(job, "wait"):
+            job.wait()
+        return True
+    except Exception as exc:
+        # Text injection failures must fail the pipeline immediately.  Keep
+        # credentials out of the diagnostic message.
+        print(f"SwitchAccount: text input for {field} failed ({type(exc).__name__})")
+        return False
 
 
 @AgentServer.custom_action("InputSwitchAccountName")
@@ -134,13 +141,12 @@ class ReportSwitchAccountLogin(CustomAction):
         message = f"当前登录账号为{account or '未知'}"
         try:
             context.override_pipeline({
-                "SwitchAccountLoginReport": {
+                argv.node_name: {
                     "focus": {"Node.Action.Succeeded": message}
                 }
             })
         except Exception:
             pass
-        print(message)
         return True
 
 

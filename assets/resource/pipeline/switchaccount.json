@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\switchaccount.json",
-            "lastSyncTime": 1788443976543,
+            "lastSyncTime": 1788482235028,
             "isModifiedExternally": false,
             "coordinateMode": "absolute-v1",
             "isDeleted": false,
             "savedViewport": {
-                "x": 1480,
-                "y": 455,
-                "zoom": 0.2
+                "x": -539,
+                "y": 2012,
+                "zoom": 1.84
             },
             "filename": "switchaccount",
             "version": "v1.9.2"
@@ -23,6 +23,9 @@
                 "custom_action": "ReportSwitchAccountLogin"
             }
         },
+        "next": [
+            "startgame"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 925,
@@ -284,7 +287,9 @@
     "name_2": {
         "action": {
             "type": "InputText",
-            "param": {"input_text": ""}
+            "param": {
+                "input_text": ""
+            }
         },
         "next": [
             "password_1"
@@ -327,7 +332,9 @@
     "password_2": {
         "action": {
             "type": "InputText",
-            "param": {"input_text": ""}
+            "param": {
+                "input_text": ""
+            }
         },
         "next": [
             "login"
@@ -359,6 +366,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 500,
         "next": [
             "switchaccount_2"
         ],
@@ -389,6 +397,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 500,
         "next": [
             "switchaccount_3"
         ],
@@ -438,6 +447,7 @@
                 ]
             }
         },
+        "pre_wait_freezes": 500,
         "action": {
             "type": "Click",
             "param": {

@@ -1,10 +1,10 @@
 {
-    "task": [
-        {
-            "name": "神の宣告",
-            "description": "开启战斗修改",
-            "entry": "ApplyRecognitionTimeout_LinkStart",
-            "resource": ["EX"]
-        }
-    ]
+  "task": [
+    {
+      "name": "神の宣告",
+      "description": "<span style=\"color:red; font-size:20px; font-weight:bold;\">开启战斗修改</span>",
+      "entry": "ApplyRecognitionTimeout_LinkStart",
+      "resource": ["EX"]
+    }
+  ]
 }
