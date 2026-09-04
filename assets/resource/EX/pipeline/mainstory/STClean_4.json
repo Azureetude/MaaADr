@@ -2,15 +2,15 @@
     "$__mpe_config_STClean_4": {
         "$__mpe_code": {
             "prefix": "",
-            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\mainstory\\STClean_4.json",
-            "lastSyncTime": 1788401698629,
-            "isModifiedExternally": false,
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1788522574583,
+            "isModifiedExternally": false,
             "isDeleted": false,
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\mainstory\\STClean_4.json",
             "savedViewport": {
-                "x": -443,
-                "y": -577,
-                "zoom": 0.35
+                "x": -326,
+                "y": -680,
+                "zoom": 0.38
             },
             "filename": "STClean_4",
             "version": "v1.9.2"
@@ -237,212 +237,6 @@
             "position": {
                 "x": 3068,
                 "y": 1594
-            }
-        }
-    },
-    "STC_4_4_UP": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    644,
-                    81,
-                    184,
-                    615
-                ],
-                "template": [
-                    "basic/story_logo.png",
-                    "basic/battle_logo.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Swipe",
-            "param": {
-                "begin": [
-                    944,
-                    221,
-                    1,
-                    1
-                ],
-                "end": [
-                    [
-                        950,
-                        586,
-                        1,
-                        1
-                    ]
-                ]
-            }
-        },
-        "repeat": 3,
-        "next": [
-            "STC_4_4_20",
-            "STC_4_4_19",
-            "STC_4_4_18",
-            "STC_4_4_17"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3068,
-                "y": 3071
-            }
-        }
-    },
-    "STC_4_3_UP": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    644,
-                    81,
-                    184,
-                    615
-                ],
-                "template": [
-                    "basic/story_logo.png",
-                    "basic/battle_logo.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Swipe",
-            "param": {
-                "begin": [
-                    944,
-                    221,
-                    1,
-                    1
-                ],
-                "end": [
-                    [
-                        950,
-                        586,
-                        1,
-                        1
-                    ]
-                ]
-            }
-        },
-        "repeat": 3,
-        "next": [
-            "STC_4_3_16",
-            "STC_4_3_15",
-            "STC_4_3_14",
-            "STC_4_3_13",
-            "STC_4_3_12",
-            "STC_4_3_11"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3081,
-                "y": 2519
-            }
-        }
-    },
-    "STC_4_5_UP": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    644,
-                    81,
-                    184,
-                    615
-                ],
-                "template": [
-                    "basic/story_logo.png",
-                    "basic/battle_logo.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Swipe",
-            "param": {
-                "begin": [
-                    944,
-                    221,
-                    1,
-                    1
-                ],
-                "end": [
-                    [
-                        950,
-                        586,
-                        1,
-                        1
-                    ]
-                ]
-            }
-        },
-        "repeat": 3,
-        "next": [
-            "STC_4_5_30",
-            "STC_4_5_29",
-            "STC_4_5_28",
-            "STC_4_5_27",
-            "STC_4_5_26",
-            "STC_4_5_25",
-            "STC_4_5_24",
-            "STC_4_5_23",
-            "STC_4_5_22",
-            "STC_4_5_21"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3068,
-                "y": 3669
-            }
-        }
-    },
-    "STC_4_2_UP": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    644,
-                    81,
-                    184,
-                    615
-                ],
-                "template": [
-                    "basic/story_logo.png",
-                    "basic/battle_logo.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Swipe",
-            "param": {
-                "begin": [
-                    944,
-                    221,
-                    1,
-                    1
-                ],
-                "end": [
-                    [
-                        950,
-                        586,
-                        1,
-                        1
-                    ]
-                ]
-            }
-        },
-        "repeat": 3,
-        "next": [
-            "STC_4_2_10",
-            "STC_4_2_9",
-            "STC_4_2_8",
-            "STC_4_2_7",
-            "STC_4_2_6",
-            "STC_4_2_5"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3081,
-                "y": 2082
             }
         }
     },
@@ -687,6 +481,57 @@
             }
         }
     },
+    "STC_4_2_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "STC_4_2_10",
+            "STC_4_2_9",
+            "STC_4_2_8",
+            "STC_4_2_7",
+            "STC_4_2_6",
+            "STC_4_2_5"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3081,
+                "y": 2082
+            }
+        }
+    },
     "STC_4_3": {
         "recognition": {
             "type": "TemplateMatch",
@@ -922,6 +767,57 @@
             }
         }
     },
+    "STC_4_3_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "STC_4_3_16",
+            "STC_4_3_15",
+            "STC_4_3_14",
+            "STC_4_3_13",
+            "STC_4_3_12",
+            "STC_4_3_11"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3081,
+                "y": 2519
+            }
+        }
+    },
     "STC_4_4": {
         "recognition": {
             "type": "TemplateMatch",
@@ -1092,6 +988,55 @@
             "position": {
                 "x": 4318,
                 "y": 2909
+            }
+        }
+    },
+    "STC_4_4_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "STC_4_4_20",
+            "STC_4_4_19",
+            "STC_4_4_18",
+            "STC_4_4_17"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3068,
+                "y": 3071
             }
         }
     },
@@ -1466,6 +1411,61 @@
             }
         }
     },
+    "STC_4_5_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "STC_4_5_30",
+            "STC_4_5_29",
+            "STC_4_5_28",
+            "STC_4_5_27",
+            "STC_4_5_26",
+            "STC_4_5_25",
+            "STC_4_5_24",
+            "STC_4_5_23",
+            "STC_4_5_22",
+            "STC_4_5_21"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3068,
+                "y": 3669
+            }
+        }
+    },
     "STClean_4BackHome": {
         "next": [
             "STClean_4BackHomeConfirmNo",
@@ -1764,6 +1764,7 @@
                 ]
             }
         },
+        "pre_wait_freezes": 1000,
         "action": {
             "type": "Swipe",
             "param": {

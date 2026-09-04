@@ -87,7 +87,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_1 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_1 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -121,7 +121,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_10 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_10 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -155,7 +155,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_11 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_11 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -189,7 +189,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_12 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_12 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -223,7 +223,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_13 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_13 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -257,7 +257,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_14 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_14 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -291,7 +291,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_15 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_15 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -325,7 +325,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_16 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_16 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -359,7 +359,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_17 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_17 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -393,7 +393,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_18 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_18 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -427,7 +427,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_19 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_19 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -461,7 +461,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_2 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_2 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -495,7 +495,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_20 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_20 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -529,7 +529,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_21 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_21 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -563,7 +563,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_22 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_22 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -597,7 +597,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_23 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_23 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -631,7 +631,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_24 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_24 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -665,7 +665,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_25 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_25 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -699,7 +699,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_26 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_26 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -733,7 +733,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_27 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_27 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -767,7 +767,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_28 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_28 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -801,7 +801,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_29 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_29 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -835,7 +835,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_3 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_3 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -869,7 +869,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_30 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_30 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -903,7 +903,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_31 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_31 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -937,7 +937,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_32 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_32 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -971,7 +971,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_33 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_33 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -1005,7 +1005,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_34 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_34 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -1039,7 +1039,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_35 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_35 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -1073,7 +1073,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_36 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_36 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -1107,7 +1107,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_37 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_37 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -1141,7 +1141,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_38 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_38 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -1175,7 +1175,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_39 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_39 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -1209,7 +1209,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_4 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_4 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -1243,7 +1243,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_5 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_5 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -1277,7 +1277,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_6 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_6 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -1311,7 +1311,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_7 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_7 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -1345,7 +1345,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_8 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_8 关卡"
         },
         "next": [
             "EstimateBegin"
@@ -1379,7 +1379,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_9 鍏冲崱"
+            "Node.Action.Succeeded": "开始进行 DF_9 关卡"
         },
         "next": [
             "EstimateBegin"

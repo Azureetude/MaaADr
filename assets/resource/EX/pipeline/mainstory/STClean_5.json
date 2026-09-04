@@ -2,15 +2,15 @@
     "$__mpe_config_STClean_5": {
         "$__mpe_code": {
             "prefix": "",
-            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\mainstory\\STClean_5.json",
-            "lastSyncTime": 1788403553841,
-            "isModifiedExternally": false,
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1788522589133,
+            "isModifiedExternally": false,
             "isDeleted": false,
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\mainstory\\STClean_5.json",
             "savedViewport": {
-                "x": 273,
-                "y": 136,
-                "zoom": 0.4
+                "x": -367,
+                "y": -706,
+                "zoom": 0.38
             },
             "filename": "STClean_5",
             "version": "v1.9.2"
@@ -1921,6 +1921,7 @@
                 ]
             }
         },
+        "pre_wait_freezes": 1000,
         "action": {
             "type": "Swipe",
             "param": {
