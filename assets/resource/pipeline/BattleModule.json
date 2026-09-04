@@ -3,17 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786861981376,
+            "lastSyncTime": 1788412825021,
             "isModifiedExternally": false,
+            "isDeleted": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\BattleModule.json",
-            "isDeleted": true,
             "savedViewport": {
-                "x": -1669,
-                "y": -381,
-                "zoom": 0.53
+                "x": -502,
+                "y": -418,
+                "zoom": 0.4
             },
             "filename": "BattleModule",
-            "version": "v1.7.6"
+            "version": "v1.9.2"
         }
     },
     "$__mpe_external_backhome_start_BattleModule": {
@@ -541,6 +541,53 @@
             }
         }
     },
+    "battle_1_2_skip1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/skip.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 2000,
+        "next": [
+            "battle_1_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4302,
+                "y": 1927
+            }
+        }
+    },
+    "battle_1_2_skip2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/skip.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 2000,
+        "next": [
+            "battle_1_2",
+            "battle_1_2_skip2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3965,
+                "y": 1137
+            }
+        }
+    },
     "battle_end": {
         "next": [
             "battlemoduleend"
@@ -617,6 +664,12 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    2,
+                    9,
+                    94,
+                    79
+                ],
                 "template": [
                     "basic/back.png"
                 ]
@@ -893,6 +946,12 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    7,
+                    2,
+                    87,
+                    90
+                ],
                 "template": [
                     "basic/back.png"
                 ]
@@ -1057,53 +1116,6 @@
             "position": {
                 "x": 2416,
                 "y": -174
-            }
-        }
-    },
-    "battle_1_2_skip1": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/skip.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_wait_freezes": 2000,
-        "next": [
-            "battle_1_2"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4302,
-                "y": 1927
-            }
-        }
-    },
-    "battle_1_2_skip2": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/skip.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_wait_freezes": 2000,
-        "next": [
-            "battle_1_2",
-            "battle_1_2_skip2"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3965,
-                "y": 1137
             }
         }
     }

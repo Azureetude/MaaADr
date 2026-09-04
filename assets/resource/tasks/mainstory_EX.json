@@ -2,7 +2,7 @@
     "task": [
          {
             "name": "主线故事EX",
-            "description": "通过*进入战斗直接胜利*及关卡导航自动通关主线任务",
+            "description": "通过*进入战斗直接胜利*及关卡导航自动通关主线任务，自动使用体力药，无体力药可用时自动退出",
             "entry": "ApplyRecognitionTimeout_MainStory",
             "resource": ["EX"],
             "option": [
@@ -45,39 +45,39 @@
                             "next": "TaskStart_STClean_3"
                         }
                     }
+                },
+                {
+                    "name": "第4章",
+                    "pipeline_override": {
+                        "MainStoryChapterRouter": {
+                            "next": "TaskStart_STClean_4"
+                        }
+                    }
+                },
+                {
+                    "name": "第5章",
+                    "pipeline_override": {
+                        "MainStoryChapterRouter": {
+                            "next": "TaskStart_STClean_5"
+                        }
+                    }
+                },
+                {
+                    "name": "第6章",
+                    "pipeline_override": {
+                        "MainStoryChapterRouter": {
+                            "next": "TaskStart_STClean_6"
+                        }
+                    }
+                },
+                {
+                    "name": "第7章",
+                    "pipeline_override": {
+                        "MainStoryChapterRouter": {
+                            "next": "TaskStart_STClean_7"
+                        }
+                    }
                 }
-                // {
-                //     "name": "第1章",
-                //     "pipeline_override": {
-                //         "SelectDungeonLevel": {
-                //             "expected": "冰之回廊"
-                //         }
-                //     }
-                // },
-                // {
-                //     "name": "第2章 ",
-                //     "pipeline_override": {
-                //         "SelectDungeonLevel": {
-                //             "expected": "雷之回廊"
-                //         }
-                //     }
-                // },
-                // {
-                //     "name": "第3章",
-                //     "pipeline_override": {
-                //         "SelectDungeonLevel": {
-                //             "expected": "光之回廊"
-                //         }
-                //     }
-                // },
-                // {
-                //     "name": "第4章",
-                //     "pipeline_override": {
-                //         "SelectDungeonLevel": {
-                //             "expected": "暗之回廊"
-                //         }
-                //     }
-                // }
             ]
         }
     }

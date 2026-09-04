@@ -11,6 +11,155 @@ _battle_route_target = ""
 _recognition_timeout_ms: int | None = None
 _recognition_node_names: tuple[str, ...] | None = None
 
+_SWITCHACCOUNT_FILE = Path(__file__).resolve().parent.parent / "config" / "switchaccount.json"
+
+
+def _load_switchaccount(profile: str = "default") -> dict:
+    try:
+        file_path = _SWITCHACCOUNT_FILE
+        if not file_path.exists():
+            candidates = [Path.cwd() / "config" / "switchaccount.json", Path.cwd().parent / "config" / "switchaccount.json"]
+            file_path = next((p for p in candidates if p.exists()), file_path)
+        data = json.loads(file_path.read_text(encoding="utf-8"))
+        # New format stores profiles under `profiles`; migrate old flat data.
+        if isinstance(data, dict) and isinstance(data.get("profiles"), dict):
+            return data["profiles"].get(profile, {})
+        return data if profile == "default" and isinstance(data, dict) else {}
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
+def _save_switchaccount(data: dict, profile: str = "default") -> None:
+    _SWITCHACCOUNT_FILE.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        root = json.loads(_SWITCHACCOUNT_FILE.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        root = {}
+    profiles = root.get("profiles") if isinstance(root, dict) else None
+    if not isinstance(profiles, dict):
+        profiles = {"default": root} if isinstance(root, dict) and root else {}
+    profiles[profile] = data
+    _SWITCHACCOUNT_FILE.write_text(json.dumps({"profiles": profiles}, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+@AgentServer.custom_action("SaveSwitchAccount")
+class SaveSwitchAccount(CustomAction):
+    """Persist account, password and remark supplied by the task UI."""
+
+    def run(self, context: Context, argv: CustomAction.RunArg) -> bool:
+        try:
+            params = json.loads(argv.custom_action_param or "{}")
+        except (json.JSONDecodeError, TypeError):
+            params = {}
+        profile = str(params.get("profile", "default")).strip() or "default"
+        old = _load_switchaccount(profile)
+        data = dict(old)
+        if "account" in params:
+            data["account"] = str(params.get("account", "")).strip() or old.get("account", "")
+        if "password" in params:
+            data["password"] = str(params.get("password", "")) or old.get("password", "")
+        if "remark" in params:
+            data["remark"] = str(params.get("remark", "")).strip()
+        _save_switchaccount(data, profile)
+        print("SwitchAccount: account information saved")
+        return True
+
+
+def _save_switchaccount_field(field: str, value: object, profile: str = "default") -> None:
+    data = _load_switchaccount(profile)
+    if field == "account":
+        data[field] = str(value).strip() or data.get(field, "")
+    elif field == "password":
+        data[field] = str(value) or data.get(field, "")
+    else:
+        data[field] = str(value).strip()
+    _save_switchaccount(data, profile)
+
+
+class _SaveSwitchAccountField(CustomAction):
+    field = ""
+    def run(self, context: Context, argv: CustomAction.RunArg) -> bool:
+        try:
+            params = json.loads(argv.custom_action_param or "{}")
+        except (json.JSONDecodeError, TypeError):
+            params = {}
+        profile = str(params.get("profile", "default")).strip() or "default"
+        _save_switchaccount_field(self.field, params.get(self.field, ""), profile)
+        return True
+
+
+@AgentServer.custom_action("SaveSwitchAccountAccount")
+class SaveSwitchAccountAccount(_SaveSwitchAccountField):
+    field = "account"
+
+
+@AgentServer.custom_action("SaveSwitchAccountPassword")
+class SaveSwitchAccountPassword(_SaveSwitchAccountField):
+    field = "password"
+
+
+@AgentServer.custom_action("SaveSwitchAccountRemark")
+class SaveSwitchAccountRemark(_SaveSwitchAccountField):
+    field = "remark"
+
+
+def _input_saved_switchaccount(context: Context, field: str, profile: str = "default") -> bool:
+    value = _load_switchaccount(profile).get(field, "")
+    if not value:
+        print(f"SwitchAccount: missing {field}")
+        return False
+    try:
+        job = context.tasker.controller.post_input_text(str(value))
+        if job is not None and hasattr(job, "wait"):
+            job.wait()
+        return True
+    except Exception as exc:
+        # Text injection failures must fail the pipeline immediately.  Keep
+        # credentials out of the diagnostic message.
+        print(f"SwitchAccount: text input for {field} failed ({type(exc).__name__})")
+        return False
+
+
+@AgentServer.custom_action("InputSwitchAccountName")
+class InputSwitchAccountName(CustomAction):
+    def run(self, context: Context, argv: CustomAction.RunArg) -> bool:
+        return _input_saved_switchaccount(context, "account")
+
+
+@AgentServer.custom_action("InputSwitchAccountPassword")
+class InputSwitchAccountPassword(CustomAction):
+    def run(self, context: Context, argv: CustomAction.RunArg) -> bool:
+        return _input_saved_switchaccount(context, "password")
+
+
+@AgentServer.custom_action("ReportSwitchAccountLogin")
+class ReportSwitchAccountLogin(CustomAction):
+    """Show the account used after the login click succeeds."""
+
+    def run(self, context: Context, argv: CustomAction.RunArg) -> bool:
+        account = str(_load_switchaccount().get("account", "")).strip()
+        message = f"当前登录账号为{account or '未知'}"
+        try:
+            context.override_pipeline({
+                argv.node_name: {
+                    "focus": {"Node.Action.Succeeded": message}
+                }
+            })
+        except Exception:
+            pass
+        return True
+
+
+def _parse_positive_int(text: object) -> int | None:
+    """Parse an OCR number, tolerating grouping separators and surrounding text."""
+    match = re.search(r"\d[\d,，\s]*", str(text))
+    if not match:
+        return None
+    try:
+        return int(re.sub(r"[^0-9]", "", match.group(0)))
+    except ValueError:
+        return None
+
 
 def _format_sanity_full_time(ocr_text: str, now: datetime | None = None) -> str | None:
     """Return the full-stamina estimate parsed from an OCR value such as ``42/100``."""
@@ -193,6 +342,70 @@ class ReportSanityFullTime(CustomAction):
         return True
 
 
+@AgentServer.custom_action("CheckCopperEtherForExchange")
+class CheckCopperEtherForExchange(CustomAction):
+    """Verify the OCR'd copper ether can pay for all selected daily exchanges."""
+
+    _selection_nodes = (
+        "ExchangeSelectEnergyDrink",
+        "ExchangeSelectPurpleGift",
+        "ExchangeSelectBattleRecord",
+        "ExchangeSelectDragonCoin",
+    )
+
+    def run(self, context: Context, argv: CustomAction.RunArg) -> bool:
+        result = getattr(argv.reco_detail, "best_result", None)
+        balance = _parse_positive_int(getattr(result, "text", ""))
+        if balance is None:
+            print("Exchange: unable to parse current copper ether")
+            return False
+        selected = 0
+        for node_name in self._selection_nodes:
+            node = context.get_node_data(node_name)
+            if isinstance(node, dict) and node.get("enabled", False):
+                selected += 1
+        cost = selected * 5
+        if balance < cost:
+            message = "目前兑换所需铜以太不足"
+            context.override_pipeline(
+                {
+                    "ether_3": {
+                        "focus": {"Node.Action.Succeeded": message},
+                        "action": {"type": "DoNothing"},
+                        "next": ["endexchange"],
+                    }
+                }
+            )
+            context.override_next(argv.node_name, ["ether_3"])
+            print(f"Exchange: {message} (current={balance}, required={cost})")
+            return True
+        message = f"本次兑换共消耗 {cost} 铜以太，剩余 {balance - cost} 铜以太"
+        context.override_pipeline(
+            {
+                "ether_3": {
+                    "focus": {"Node.Action.Succeeded": message},
+                    "next": ["if_精力饮"],
+                }
+            }
+        )
+        context.override_next(argv.node_name, ["ether_3"])
+        print(f"Exchange: {message}")
+        return True
+
+
+@AgentServer.custom_action("OpenCopperEtherAndCheck")
+class OpenCopperEtherAndCheck(CustomAction):
+    """Open the copper-ether shop then force the balance check before purchases."""
+
+    def run(self, context: Context, argv: CustomAction.RunArg) -> bool:
+        # Keep the original copperymana click target, but do not permit legacy
+        # task-option overrides to bypass ether_1 -> ether_2 afterwards.
+        result = context.tasker.controller.post_click(616, 132).wait()
+        if hasattr(result, "succeeded") and not result.succeeded:
+            return False
+        return context.override_next(argv.node_name, ["ether_1"])
+
+
 def _click_recognition_box(context: Context, argv: CustomAction.RunArg) -> bool:
     """Click the center of the recognition box, when one is available."""
     box = getattr(argv, "box", None)
@@ -229,8 +442,10 @@ class DFCleanBattleBridge(CustomAction):
             target = "DF_C_3"
         elif stage_number <= 31:
             target = "DF_C_4"
-        elif stage_number <= 38:
+        elif stage_number <= 41:
             target = "DF_C_5"
+        elif stage_number <= 44:
+            target = "DF_C_6"
         else:
             target = "DF_CleanBackHome"
         print(f"DFCleanBattleBridge: {argv.node_name} -> {target or '<end>'}")
@@ -365,4 +580,77 @@ class STClean3BattleBridge(CustomAction):
         global _battle_route_target
         _battle_route_target = target
         print(f"STClean3BattleBridge: {argv.node_name} -> {target}")
+        return context.override_next(argv.node_name, ["EstimateBegin"])
+
+
+@AgentServer.custom_action("STClean4BattleBridge")
+class STClean4BattleBridge(CustomAction):
+    """Run the shared BattleModule for chapter 4 and return to its map."""
+
+    def run(self, context: Context, argv: CustomAction.RunArg) -> bool:
+        if not _click_recognition_box(context, argv):
+            return False
+        # Chapter 4 stages 1-29 are on the same map page.  Stage 30 is the
+        # final stage and proceeds through the chapter back-home/finish flow.
+        match = re.search(r"_(\d+)$", argv.node_name)
+        stage_number = int(match.group(1)) if match else 0
+        target = "STClean_4_swipe_down_1" if stage_number <= 29 else "STClean_4BackHome"
+        global _battle_route_target
+        _battle_route_target = target
+        print(f"STClean4BattleBridge: {argv.node_name} -> {target}")
+        return context.override_next(argv.node_name, ["EstimateBegin"])
+
+
+@AgentServer.custom_action("STClean5BattleBridge")
+class STClean5BattleBridge(CustomAction):
+    """Run the shared BattleModule for chapter 5 and route back to its map."""
+
+    def run(self, context: Context, argv: CustomAction.RunArg) -> bool:
+        if not _click_recognition_box(context, argv):
+            return False
+        match = re.search(r"_(\d+)$", argv.node_name)
+        stage_number = int(match.group(1)) if match else 0
+        target = "STClean_5_swipe_up_1" if stage_number <= 36 else "STClean_5BackHome"
+        global _battle_route_target
+        _battle_route_target = target
+        print(f"STClean5BattleBridge: {argv.node_name} -> {target}")
+        return context.override_next(argv.node_name, ["EstimateBegin"])
+
+
+@AgentServer.custom_action("STClean6BattleBridge")
+class STClean6BattleBridge(CustomAction):
+    """Run the shared BattleModule and route chapter 6 stages to their map pages."""
+
+    def run(self, context: Context, argv: CustomAction.RunArg) -> bool:
+        if not _click_recognition_box(context, argv):
+            return False
+        match = re.search(r"_(\d+)$", argv.node_name)
+        stage_number = int(match.group(1)) if match else 0
+        if stage_number <= 15:
+            target = "STClean_6_swipe_down_1"
+        elif stage_number <= 34:
+            target = "STClean_6_swipe_down_2"
+        elif stage_number <= 42:
+            target = "STClean_6_swipe_down_3"
+        else:
+            target = "STClean_6BackHome"
+        global _battle_route_target
+        _battle_route_target = target
+        print(f"STClean6BattleBridge: {argv.node_name} -> {target}")
+        return context.override_next(argv.node_name, ["EstimateBegin"])
+
+
+@AgentServer.custom_action("STClean7BattleBridge")
+class STClean7BattleBridge(CustomAction):
+    """Run the shared BattleModule and return chapter 7 stages to its map."""
+
+    def run(self, context: Context, argv: CustomAction.RunArg) -> bool:
+        if not _click_recognition_box(context, argv):
+            return False
+        match = re.search(r"_(\d+)$", argv.node_name)
+        stage_number = int(match.group(1)) if match else 0
+        target = "STClean_7_swipe_up" if stage_number <= 43 else "STClean_7BackHome"
+        global _battle_route_target
+        _battle_route_target = target
+        print(f"STClean7BattleBridge: {argv.node_name} -> {target}")
         return context.override_next(argv.node_name, ["EstimateBegin"])

@@ -1,0 +1,130 @@
+{
+    "task": [
+        {
+            "name": "账号切换",
+            "description": "输入账号、密码即可执行账号切换流程，备注和账号配置名为非必填项",
+            "entry": "SaveSwitchAccountAccount",
+            "option": [
+                "账号",
+                "密码",
+                "备注",
+                "账号配置名",
+                "是否领取邮件"
+            ]
+        }
+    ],
+    "option": {
+        "账号": {
+            "type": "input",
+            "inputs": [
+                {
+                    "name": "account",
+                    "label": "账号",
+                    "pipeline_type": "string"
+                }
+            ],
+            "pipeline_override": {
+                "SaveSwitchAccountAccount": {
+                    "action": {
+                        "param": {
+                            "custom_action_param": {
+                                "account": "{account}",
+                                "profile": "{profile}"
+                            }
+                        }
+                    }
+                },
+                "name_2": {
+                    "action": {
+                        "param": {
+                            "input_text": "{account}"
+                        }
+                    }
+                }
+            }
+        },
+        "密码": {
+            "type": "input",
+            "inputs": [
+                {
+                    "name": "password",
+                    "label": "密码",
+                    "pipeline_type": "string"
+                }
+            ],
+            "pipeline_override": {
+                "SaveSwitchAccountPassword": {
+                    "action": {
+                        "param": {
+                            "custom_action_param": {
+                                "password": "{password}",
+                                "profile": "{profile}"
+                            }
+                        }
+                    }
+                },
+                "password_2": {
+                    "action": {
+                        "param": {
+                            "input_text": "{password}"
+                        }
+                    }
+                }
+            }
+        },
+        "备注": {
+            "type": "input",
+            "inputs": [
+                {
+                    "name": "remark",
+                    "label": "备注",
+                    "pipeline_type": "string"
+                }
+            ],
+            "pipeline_override": {
+                "SaveSwitchAccountRemark": {
+                    "action": {
+                        "param": {
+                            "custom_action_param": {
+                                "remark": "{remark}",
+                                "profile": "{profile}"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "账号配置名": {
+            "type": "input",
+            "inputs": [
+                {
+                    "name": "profile",
+                    "label": "账号配置名",
+                    "pipeline_type": "string"
+                }
+            ],
+            "pipeline_override": {}
+        },
+        "是否领取邮件": {
+            "type": "switch",
+            "cases": [
+                {
+                    "name": "Yes",
+                    "pipeline_override": {
+                        "startgame_1": {
+                            "next": "homepage_start"
+                        }
+                    }
+                },
+                {
+                    "name": "No",
+                    "pipeline_override": {
+                        "startgame_1": {
+                            "next": "homepage_start_nomail"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
