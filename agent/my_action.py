@@ -442,8 +442,10 @@ class DFCleanBattleBridge(CustomAction):
             target = "DF_C_3"
         elif stage_number <= 31:
             target = "DF_C_4"
-        elif stage_number <= 38:
+        elif stage_number <= 41:
             target = "DF_C_5"
+        elif stage_number <= 44:
+            target = "DF_C_6"
         else:
             target = "DF_CleanBackHome"
         print(f"DFCleanBattleBridge: {argv.node_name} -> {target or '<end>'}")

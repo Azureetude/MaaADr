@@ -83,18 +83,6 @@
             "type": "select",
             "cases": [
                 {
-                    "name": "龙焰FIRE!",
-                    "option": [ // 嵌套的子选项
-                        "关卡_DF",
-                        "是否跳过战斗_DF"
-                    ],
-                    "pipeline_override": {
-                        "findmap": {
-                            "next": "find_DF" // 控制跳转到对应活动地图
-                        }
-                    }
-                },
-                {
                     "name": "英雄时刻EP.3",
                     "option": [ // 嵌套的子选项
                         "关卡_HT3",

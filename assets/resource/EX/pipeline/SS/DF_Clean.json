@@ -3,17 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787930524611,
+            "lastSyncTime": 1788513229870,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\SS\\DF_Clean.json",
             "savedViewport": {
-                "x": 509,
-                "y": -809,
-                "zoom": 0.43
+                "x": 62,
+                "y": -2572,
+                "zoom": 0.53
             },
             "filename": "DF_Clean",
-            "version": "v1.9.1"
+            "version": "v1.9.2"
         }
     },
     "$__mpe_external_EstimateBegin_DF_Clean": {
@@ -87,7 +87,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_1 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_1 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -121,7 +121,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_10 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_10 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -155,7 +155,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_11 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_11 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -189,7 +189,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_12 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_12 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -223,7 +223,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_13 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_13 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -257,7 +257,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_14 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_14 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -291,7 +291,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_15 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_15 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -325,7 +325,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_16 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_16 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -359,7 +359,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_17 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_17 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -393,7 +393,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_18 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_18 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -427,7 +427,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_19 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_19 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -461,7 +461,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_2 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_2 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -495,7 +495,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_20 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_20 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -529,7 +529,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_21 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_21 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -563,7 +563,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_22 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_22 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -597,7 +597,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_23 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_23 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -631,7 +631,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_24 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_24 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -665,7 +665,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_25 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_25 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -699,7 +699,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_26 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_26 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -733,7 +733,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_27 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_27 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -767,7 +767,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_28 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_28 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -801,7 +801,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_29 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_29 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -835,7 +835,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_3 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_3 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -869,7 +869,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_30 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_30 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -903,7 +903,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_31 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_31 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -937,7 +937,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_32 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_32 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -971,7 +971,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_33 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_33 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -1005,7 +1005,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_34 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_34 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -1039,7 +1039,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_35 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_35 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -1073,7 +1073,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_36 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_36 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -1107,7 +1107,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_37 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_37 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -1141,7 +1141,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_38 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_38 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -1175,7 +1175,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_39 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_39 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -1209,7 +1209,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_4 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_4 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -1243,7 +1243,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_5 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_5 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -1277,7 +1277,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_6 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_6 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -1311,7 +1311,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_7 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_7 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -1345,7 +1345,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_8 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_8 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -1379,7 +1379,7 @@
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 DF_9 关卡"
+            "Node.Action.Succeeded": "寮€濮嬭繘琛?DF_9 鍏冲崱"
         },
         "next": [
             "EstimateBegin"
@@ -1775,6 +1775,9 @@
         },
         "repeat": 3,
         "next": [
+            "DF_C_1_42",
+            "DF_C_1_41",
+            "DF_C_1_40",
             "DF_C_1_39",
             "DF_C_1_38",
             "DF_C_1_37",
@@ -1903,7 +1906,7 @@
             "type": "StopTask"
         },
         "focus": {
-            "Node.Action.Succeeded": "**任务已全部完成**"
+            "Node.Action.Succeeded": "**浠诲姟宸插叏閮ㄥ畬鎴?*"
         },
         "$__mpe_code": {
             "position": {
@@ -1941,6 +1944,7 @@
             }
         },
         "next": [
+            "DF_C_6",
             "DF_C_5",
             "DF_C_4",
             "DF_C_3",
@@ -2064,5 +2068,284 @@
                 "y": 2225
             }
         }
+    },
+    "DF_C_1_40": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    140,
+                    66,
+                    31
+                ],
+                "expected": [
+                    "DF-40"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "DFCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_40 关卡"
+        },
+        "next": ["EstimateBegin"],
+        "$__mpe_code": {
+            "position": {
+                "x": 2277,
+                "y": 5235
+            }
+        }
+    },
+    "DF_C_1_41": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    140,
+                    66,
+                    31
+                ],
+                "expected": [
+                    "DF-41"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "DFCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_41 关卡"
+        },
+        "next": ["EstimateBegin"],
+        "$__mpe_code": {
+            "position": {
+                "x": 2590,
+                "y": 5235
+            }
+        }
+    },
+    "DF_C_1_42": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    140,
+                    66,
+                    31
+                ],
+                "expected": [
+                    "DF-42"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "DFCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_42 关卡"
+        },
+        "next": ["EstimateBegin"],
+        "$__mpe_code": {
+            "position": {
+                "x": 2900,
+                "y": 5235
+            }
+        }
+    },
+    "DF_C_6": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "sidestory/DF/DF_6.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": 1000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1059,
+                    576,
+                    32,
+                    33
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "DF_C_6_UP",
+            "DF_C_6"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 260,
+                "y": 5798
+            }
+        }
+    },
+    "DF_C_6_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "DF_C_1_45",
+            "DF_C_1_44",
+            "DF_C_1_43"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 626,
+                "y": 5776
+            }
+        }
+    },
+    "DF_C_1_43": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    140,
+                    66,
+                    31
+                ],
+                "expected": [
+                    "DF-43"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "DFCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_43 关卡"
+        },
+        "next": ["EstimateBegin"],
+        "$__mpe_code": {
+            "position": {
+                "x": 1029,
+                "y": 5739
+            }
+        }
+    },
+    "DF_C_1_44": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    140,
+                    66,
+                    31
+                ],
+                "expected": [
+                    "DF-44"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "DFCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_44 关卡"
+        },
+        "next": ["EstimateBegin"],
+        "$__mpe_code": {
+            "position": {
+                "x": 1349,
+                "y": 5739
+            }
+        }
+    },
+    "DF_C_1_45": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    140,
+                    66,
+                    31
+                ],
+                "expected": [
+                    "DF-45"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "DFCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 DF_45 关卡"
+        },
+        "next": ["EstimateBegin"],
+        "$__mpe_code": {
+            "position": {
+                "x": 1662,
+                "y": 5739
+            }
+        }
     }
 }
+
+
+
+
+
+
