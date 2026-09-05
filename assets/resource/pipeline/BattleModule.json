@@ -3,17 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1788412825021,
+            "lastSyncTime": 1788569623870,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\BattleModule.json",
             "savedViewport": {
-                "x": -502,
-                "y": -418,
-                "zoom": 0.4
+                "x": -270,
+                "y": -229,
+                "zoom": 0.43
             },
             "filename": "BattleModule",
-            "version": "v1.9.2"
+            "version": "v1.9.3"
         }
     },
     "$__mpe_external_backhome_start_BattleModule": {
@@ -94,9 +94,6 @@
                 ],
                 "green_mask": true
             }
-        },
-        "action": {
-            "type": "Click"
         },
         "next": [
             "story_enter"
@@ -430,7 +427,8 @@
         "next": [
             "battle_1_2",
             "battle_1_2_skip",
-            "battle_1_2_skip1"
+            "battle_1_2_skip1",
+            "battle_1_1"
         ],
         "$__mpe_code": {
             "position": {
@@ -615,7 +613,8 @@
         "next": [
             "battle_1_1",
             "no_np_1",
-            "battle_1_1_skip"
+            "battle_1_1_skip",
+            "battle_start"
         ],
         "$__mpe_code": {
             "position": {
@@ -983,7 +982,8 @@
             "type": "Click"
         },
         "next": [
-            "story_back"
+            "story_back",
+            "story_close"
         ],
         "$__mpe_code": {
             "position": {
@@ -1017,7 +1017,9 @@
         },
         "timeout": -1,
         "next": [
-            "story_skip_1"
+            "story_skip_1",
+            "story_skip_3",
+            "story_enter"
         ],
         "$__mpe_code": {
             "position": {
@@ -1039,7 +1041,8 @@
             "type": "Click"
         },
         "next": [
-            "story_end"
+            "story_end",
+            "story_reward"
         ],
         "$__mpe_code": {
             "position": {
@@ -1114,8 +1117,45 @@
         "post_wait_freezes": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 2416,
-                "y": -174
+                "x": 2224,
+                "y": -248
+            }
+        }
+    },
+    "story_skip_3": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1071,
+                    15,
+                    67,
+                    41
+                ],
+                "expected": [
+                    "SKIP"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1197,
+                    34,
+                    17,
+                    6
+                ]
+            }
+        },
+        "post_wait_freezes": 3000,
+        "next": [
+            "story_reward"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2535,
+                "y": -117
             }
         }
     }
