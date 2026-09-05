@@ -3,17 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1788522602078,
+            "lastSyncTime": 1788568908869,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\mainstory\\STClean_6.json",
             "savedViewport": {
-                "x": -480,
-                "y": -725,
-                "zoom": 0.38
+                "x": -2356,
+                "y": -1560,
+                "zoom": 0.86
             },
             "filename": "STClean_6",
-            "version": "v1.9.2"
+            "version": "v1.9.3"
         }
     },
     "$__mpe_external_EstimateBegin_STClean_6": {
@@ -294,10 +294,10 @@
             "type": "Click",
             "param": {
                 "target": [
-                    278,
-                    91,
-                    65,
-                    25
+                    305,
+                    85,
+                    48,
+                    29
                 ]
             }
         },

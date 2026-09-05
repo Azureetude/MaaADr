@@ -594,7 +594,7 @@ class STClean4BattleBridge(CustomAction):
         # final stage and proceeds through the chapter back-home/finish flow.
         match = re.search(r"_(\d+)$", argv.node_name)
         stage_number = int(match.group(1)) if match else 0
-        target = "STClean_4_swipe_down_1" if stage_number <= 29 else "STClean_4BackHome"
+        target = "STClean_4_swipe_up" if stage_number <= 29 else "STClean_4BackHome"
         global _battle_route_target
         _battle_route_target = target
         print(f"STClean4BattleBridge: {argv.node_name} -> {target}")
