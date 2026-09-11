@@ -31,6 +31,14 @@
                             "next": "TaskStart_HT3Clean"
                         }
                     }
+                },
+                {
+                    "name": "帕斯・白朗的白晝與黑夜(Clean)",
+                    "pipeline_override": {
+                        "TaskStart_LatastSSCleanEX": {
+                            "next": "TaskStart_PNClean"
+                        }
+                    }
                 }
             ]
         }
