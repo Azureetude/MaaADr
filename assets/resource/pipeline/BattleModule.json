@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1788569623870,
+            "lastSyncTime": 1788570700703,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\BattleModule.json",
             "savedViewport": {
-                "x": -270,
-                "y": -229,
-                "zoom": 0.43
+                "x": 26,
+                "y": 109,
+                "zoom": 0.25
             },
             "filename": "BattleModule",
             "version": "v1.9.3"
@@ -466,7 +466,8 @@
         "post_wait_freezes": 2000,
         "next": [
             "battle_1_2",
-            "battle_1_2_skip2"
+            "battle_1_2_skip2",
+            "battle_1_1_skip"
         ],
         "$__mpe_code": {
             "position": {
@@ -493,7 +494,8 @@
             "Node.Recognition.Succeeded": "<span style=\"color:green;\">战斗执行成功</span>"
         },
         "next": [
-            "battle_end"
+            "battle_end",
+            "battle_1_2"
         ],
         "$__mpe_code": {
             "position": {
@@ -530,7 +532,8 @@
         },
         "post_wait_freezes": 2000,
         "next": [
-            "battle_1_2"
+            "battle_1_2",
+            "battle_1_2_skip"
         ],
         "$__mpe_code": {
             "position": {
@@ -553,7 +556,8 @@
         },
         "post_wait_freezes": 2000,
         "next": [
-            "battle_1_2"
+            "battle_1_2",
+            "battle_1_2_skip1"
         ],
         "$__mpe_code": {
             "position": {
@@ -715,7 +719,8 @@
             }
         },
         "next": [
-            "no_np_2"
+            "no_np_2",
+            "no_np_1"
         ],
         "$__mpe_code": {
             "position": {
@@ -858,6 +863,12 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    1086,
+                    618,
+                    178,
+                    95
+                ],
                 "template": [
                     "basic/OK_small.png"
                 ]
@@ -876,7 +887,8 @@
         },
         "post_delay": 500,
         "next": [
-            "no_np_6"
+            "no_np_6",
+            "no_np_5"
         ],
         "$__mpe_code": {
             "position": {
@@ -889,6 +901,12 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    1182,
+                    1,
+                    97,
+                    81
+                ],
                 "template": [
                     "basic/exit.png"
                 ]
@@ -906,7 +924,8 @@
             }
         },
         "next": [
-            "battle_start"
+            "battle_start",
+            "no_np_6"
         ],
         "$__mpe_code": {
             "position": {
@@ -1079,7 +1098,8 @@
         },
         "post_wait_freezes": 3000,
         "next": [
-            "story_reward"
+            "story_reward",
+            "story_skip_1"
         ],
         "$__mpe_code": {
             "position": {
@@ -1150,7 +1170,8 @@
         },
         "post_wait_freezes": 3000,
         "next": [
-            "story_reward"
+            "story_reward",
+            "story_skip_3"
         ],
         "$__mpe_code": {
             "position": {

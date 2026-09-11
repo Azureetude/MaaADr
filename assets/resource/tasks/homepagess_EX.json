@@ -28,6 +28,17 @@
                             "next": "find_HT3_EX" // 控制跳转到对应活动地图
                         }
                     }
+                },
+                {
+                    "name": "帕斯・白朗的白晝與黑夜(EX)",
+                    "option": [ // 嵌套的子选项
+                        "关卡_PN(EX)"
+                    ],
+                    "pipeline_override": {
+                        "findmap": {
+                            "next": "find_PN_EX" // 控制跳转到对应活动地图
+                        }
+                    }
                 }
                 //    {
                 //        "name": "监狱迷宫瓦尔拉哈(EX)",
@@ -97,6 +108,43 @@
                     "pipeline_override": {
                         "DF_1_EX": {
                             "next": "DF_5_EX_1"
+                        }
+                    }
+                }
+            ]
+        },
+        "关卡_PN(EX)": {
+            "type": "select",
+            "cases": [
+                {
+                    "name": "PN_14(技能书)",
+                    "pipeline_override": {
+                        "PN_1_EX": {
+                            "next": "PN_14_EX_1"
+                        }
+                    }
+                },
+                {
+                    "name": "PN_16(龙币)",
+                    "pipeline_override": {
+                        "PN_1_EX": {
+                            "next": "PN_16_EX_1"
+                        }
+                    }
+                },
+                {
+                    "name": "PN_8(礼物盒)",
+                    "pipeline_override": {
+                        "PN_1_EX": {
+                            "next": "PN_8_EX_1"
+                        }
+                    }
+                },
+                {
+                    "name": "PN_18(经验书)",
+                    "pipeline_override": {
+                        "PN_1_EX": {
+                            "next": "PN_18_EX_1"
                         }
                     }
                 }

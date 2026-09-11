@@ -1,0 +1,780 @@
+{
+    "$__mpe_config_story_PN": {
+        "$__mpe_code": {
+            "prefix": "",
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\sidestory\\PN\\story_PN.json",
+            "lastSyncTime": 1789135358244,
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": 71,
+                "y": 224,
+                "zoom": 0.26
+            },
+            "filename": "story_PN",
+            "version": "v1.10.0"
+        }
+    },
+    "PN_16_EX_1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    954,
+                    557,
+                    113,
+                    43
+                ],
+                "expected": [
+                    "鍛造工作坊"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    981,
+                    472,
+                    71,
+                    51
+                ]
+            }
+        },
+        "next": [
+            "PN_16_DOWN"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 150,
+                "y": -1123
+            }
+        }
+    },
+    "PN_14_EX_1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    624,
+                    342,
+                    86,
+                    38
+                ],
+                "expected": [
+                    "大浴場"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    651,
+                    266,
+                    67,
+                    40
+                ]
+            }
+        },
+        "next": [
+            "PN_14_UP"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 150,
+                "y": -710
+            }
+        }
+    },
+    "PN_8_EX_1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    429,
+                    248,
+                    94,
+                    27
+                ],
+                "expected": [
+                    "冒險者公會"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    439,
+                    159,
+                    73,
+                    49
+                ]
+            }
+        },
+        "next": [
+            "PN_8_UP"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 150,
+                "y": -263
+            }
+        }
+    },
+    "PN_1_EX": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "$__mpe_code": {
+            "position": {
+                "x": -382,
+                "y": -737
+            }
+        }
+    },
+    "PN_18_EX_2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    795,
+                    289,
+                    78,
+                    27
+                ],
+                "expected": [
+                    "PN-18"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    722,
+                    299,
+                    457,
+                    90
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "HT3_EX_1_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1033,
+                "y": -1543
+            }
+        }
+    },
+    "PN_8_EX_2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    795,
+                    145,
+                    71,
+                    24
+                ],
+                "expected": [
+                    "PN-8"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    745,
+                    155,
+                    409,
+                    84
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "HT3_EX_1_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1021,
+                "y": -268
+            }
+        }
+    },
+    "PN_14_EX_2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    291,
+                    81,
+                    24
+                ],
+                "expected": [
+                    "PN-14"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    718,
+                    293,
+                    460,
+                    97
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "HT3_EX_1_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1032,
+                "y": -727
+            }
+        }
+    },
+    "PN_16_EX_2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    797,
+                    530,
+                    79,
+                    27
+                ],
+                "expected": [
+                    "PN-16"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    780,
+                    548,
+                    389,
+                    81
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "HT3_EX_1_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1037,
+                "y": -1132
+            }
+        }
+    },
+    "PN_18_EX_1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    951,
+                    556,
+                    111,
+                    41
+                ],
+                "expected": [
+                    "鍛造工作坊"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    986,
+                    473,
+                    67,
+                    56
+                ]
+            }
+        },
+        "next": [
+            "PN_18_UP"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 150,
+                "y": -1543
+            }
+        }
+    },
+    "PN_18_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "PN_18_EX_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 569,
+                "y": -1554
+            }
+        }
+    },
+    "PN_16_DOWN": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    1010,
+                    477,
+                    19,
+                    11
+                ],
+                "end": [
+                    [
+                        1035,
+                        212,
+                        16,
+                        13
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "PN_16_EX_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 569,
+                "y": -1142
+            }
+        }
+    },
+    "PN_14_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "PN_14_EX_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 569,
+                "y": -737
+            }
+        }
+    },
+    "HT3_BACK_HOME_副本1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    137,
+                    45,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "HT3_END_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3051,
+                "y": 833
+            }
+        }
+    },
+    "HT3_END_副本1": {
+        "action": {
+            "type": "StopTask"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3466,
+                "y": 883
+            }
+        }
+    },
+    "HT3_ERROR_副本1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    378,
+                    124,
+                    530,
+                    481
+                ],
+                "template": [
+                    "basic/ERROR.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    640,
+                    522,
+                    1,
+                    1
+                ]
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "<span style=\"color:crimson;\">体力不足</span>"
+        },
+        "next": [
+            "SanityCurrent_1_HT3_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1812,
+                "y": 802
+            }
+        }
+    },
+    "HT3_EX_1_副本1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/SKIP_START.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    326,
+                    630,
+                    1,
+                    1
+                ]
+            }
+        },
+        "timeout": -1,
+        "next": [
+            "HT3_EX_2_副本1",
+            "HT3_ERROR_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1490,
+                "y": -246
+            }
+        }
+    },
+    "HT3_EX_2_副本1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1043,
+                    352,
+                    236,
+                    357
+                ],
+                "template": [
+                    "basic/battle_blue.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "HT3_EX_3_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1895,
+                "y": -791
+            }
+        }
+    },
+    "HT3_EX_3_副本1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/3star.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 5000,
+        "focus": {
+            "Node.Recognition.Succeeded": "<span style=\"color:green;\">战斗执行成功</span>"
+        },
+        "next": [
+            "[JumpBack]PN_1_EX"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2430,
+                "y": -1492
+            }
+        }
+    },
+    "SanityCurrent_1_HT3_副本1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/体力.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_delay": 1000,
+        "next": [
+            "SanityCurrent_2_HT3_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2090,
+                "y": 819
+            }
+        }
+    },
+    "SanityCurrent_2_HT3_副本1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    883,
+                    30,
+                    107,
+                    31
+                ],
+                "expected": [
+                    ""
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "ReportSanityFullTime",
+                "custom_action_param": {
+                    "display_node": "SanityCurrent_3_HT3"
+                }
+            }
+        },
+        "next": [
+            "SanityCurrent_3_HT3_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2424,
+                "y": 828
+            }
+        }
+    },
+    "SanityCurrent_3_HT3_副本1": {
+        "focus": {
+            "Node.Action.Succeeded": "体力回满时间计算中…"
+        },
+        "next": [
+            "HT3_BACK_HOME_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2727,
+                "y": 787
+            }
+        }
+    },
+    "find_PN_EX": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    932,
+                    78,
+                    338,
+                    527
+                ],
+                "template": [
+                    "sidestory/PN/BANNER_HOME_PN.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "PN_1_EX"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -968,
+                "y": -762
+            }
+        }
+    },
+    "PN_8_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "PN_8_EX_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 569,
+                "y": -263
+            }
+        }
+    }
+}

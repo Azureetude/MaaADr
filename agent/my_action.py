@@ -485,6 +485,31 @@ class HT3CleanBattleBridge(CustomAction):
         return context.override_next(argv.node_name, ["EstimateBegin"])
 
 
+@AgentServer.custom_action("PNCleanBattleBridge")
+class PNCleanBattleBridge(CustomAction):
+    """Run the shared BattleModule for PN stages and return to the PN map."""
+
+    def run(
+        self,
+        context: Context,
+        argv: CustomAction.RunArg,
+    ) -> bool:
+        if not _click_recognition_box(context, argv):
+            return False
+
+        # PN_C_5_2 is the final stage; all earlier stages return to the map
+        # selector so the next configured stage can be detected.
+        target = (
+            "PN_CleanBackHome"
+            if argv.node_name == "PN_C_5_2"
+            else "PN_Clean_find_1"
+        )
+        global _battle_route_target
+        _battle_route_target = target
+        print(f"PNCleanBattleBridge: {argv.node_name} -> {target}")
+        return context.override_next(argv.node_name, ["EstimateBegin"])
+
+
 @AgentServer.custom_action("DFCleanBattleEndRoute")
 class DFCleanBattleEndRoute(CustomAction):
     """Route the shared BattleModule terminator back to the DF-C map."""
