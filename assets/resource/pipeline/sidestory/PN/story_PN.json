@@ -674,12 +674,12 @@
             "param": {
                 "custom_action": "ReportSanityFullTime",
                 "custom_action_param": {
-                    "display_node": "SanityCurrent_3_HT3"
+                    "display_node": "SanityCurrent_3_PN"
                 }
             }
         },
         "next": [
-            "SanityCurrent_3_HT3_副本1"
+            "SanityCurrent_3_PN"
         ],
         "$__mpe_code": {
             "position": {
@@ -688,9 +688,9 @@
             }
         }
     },
-    "SanityCurrent_3_HT3_副本1": {
+    "SanityCurrent_3_PN": {
         "focus": {
-            "Node.Action.Succeeded": "体力回满时间计算中…"
+            "Node.Action.Succeeded": "正在计算 PN 体力回满时间…"
         },
         "next": [
             "HT3_BACK_HOME_副本1"

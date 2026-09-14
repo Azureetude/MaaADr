@@ -163,7 +163,11 @@ def _parse_positive_int(text: object) -> int | None:
 
 def _format_sanity_full_time(ocr_text: str, now: datetime | None = None) -> str | None:
     """Return the full-stamina estimate parsed from an OCR value such as ``42/100``."""
-    match = re.search(r"(\d{1,3})\s*/\s*(\d{1,3})", ocr_text)
+    # OCR may return a full-width slash or include the leading ``x`` marker
+    # shown by the game (for example ``x5／100``). Normalize those variants
+    # before extracting the current and maximum stamina values.
+    normalized = str(ocr_text).translate(str.maketrans({"／": "/", "∕": "/", "⁄": "/"}))
+    match = re.search(r"(\d{1,3})\s*/\s*(\d{1,3})", normalized)
     if not match:
         return None
     current, maximum = (int(value) for value in match.groups())
