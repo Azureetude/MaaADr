@@ -3,60 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786603693186,
+            "lastSyncTime": 1789666004706,
             "isModifiedExternally": false,
+            "isDeleted": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\RestoreStamina.json",
             "savedViewport": {
-                "x": 2031,
-                "y": 581,
-                "zoom": 0.61
+                "x": 1755,
+                "y": 532,
+                "zoom": 0.57
             },
             "filename": "RestoreStamina",
-            "version": "v1.7.6"
-        }
-    },
-    "RestoreStamina-1-2-1": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/np_useless.png"
-                ]
-            }
-        },
-        "focus": {
-            "Node.Recognition.Succeeded": "无可用体力药"
-        },
-        "next": [
-            "RestoreStamina-1-5"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -1879,
-                "y": -1022
-            }
-        }
-    },
-    "RestoreStamina-2-2-1": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/np_useless.png"
-                ]
-            }
-        },
-        "focus": {
-            "Node.Recognition.Succeeded": "无可用体力药"
-        },
-        "next": [
-            "RestoreStamina-2-5"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -1896,
-                "y": -9
-            }
+            "version": "v1.10.1"
         }
     },
     "RestoreStamina": {
@@ -77,6 +34,7 @@
                 "green_mask": true
             }
         },
+        "pre_wait_freezes": 500,
         "action": {
             "type": "Click",
             "param": {
@@ -108,24 +66,40 @@
                 ]
             }
         },
+        "pre_wait_freezes": 500,
         "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    1019,
-                    214,
-                    1,
-                    1
-                ]
-            }
+            "type": "Click"
         },
+        "post_wait_freezes": 500,
         "next": [
             "RestoreStamina-1-3"
         ],
         "$__mpe_code": {
             "position": {
                 "x": -1879,
-                "y": -703
+                "y": -701
+            }
+        }
+    },
+    "RestoreStamina-1-2-1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/np_useless.png"
+                ]
+            }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "无可用体力药"
+        },
+        "next": [
+            "RestoreStamina-1-5"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1879,
+                "y": -1022
             }
         }
     },
@@ -150,6 +124,7 @@
             }
         },
         "repeat": 3,
+        "repeat_wait_freezes": 200,
         "next": [
             "RestoreStamina-1-4"
         ],
@@ -228,6 +203,7 @@
                 "green_mask": true
             }
         },
+        "pre_wait_freezes": 500,
         "action": {
             "type": "Click",
             "param": {
@@ -259,17 +235,11 @@
                 ]
             }
         },
+        "pre_wait_freezes": 500,
         "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    1158,
-                    242,
-                    1,
-                    1
-                ]
-            }
+            "type": "Click"
         },
+        "post_wait_freezes": 500,
         "next": [
             "RestoreStamina-2-3"
         ],
@@ -277,6 +247,28 @@
             "position": {
                 "x": -1896,
                 "y": -333
+            }
+        }
+    },
+    "RestoreStamina-2-2-1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/np_useless.png"
+                ]
+            }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "无可用体力药"
+        },
+        "next": [
+            "RestoreStamina-2-5"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1896,
+                "y": -9
             }
         }
     },
