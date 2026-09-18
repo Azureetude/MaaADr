@@ -17,14 +17,6 @@
             "type": "select",
             "cases": [
                 {
-                    "name": "龙焰FIRE!(Clean)",
-                    "pipeline_override": {
-                        "TaskStart_LatastSSCleanEX": {
-                            "next": "TaskStart_DFClean"
-                        }
-                    }
-                },
-                {
                     "name": "英雄时间EP.3(Clean)",
                     "pipeline_override": {
                         "TaskStart_LatastSSCleanEX": {
