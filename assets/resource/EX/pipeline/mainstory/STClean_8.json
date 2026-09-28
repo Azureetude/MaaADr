@@ -1,0 +1,727 @@
+{
+    "$__mpe_config_STClean_8": {
+        "$__mpe_code": {
+            "prefix": "",
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\mainstory\\STClean_8.json",
+            "lastSyncTime": 1790556948529,
+            "isDeleted": false,
+            "isModifiedExternally": false,
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": 27,
+                "y": 266,
+                "zoom": 0.2
+            },
+            "filename": "STClean_8",
+            "version": "v2.0.3"
+        }
+    },
+    "$__mpe_external_EstimateBegin_STClean_8": {
+        "$__mpe_code": {
+            "position": {
+                "x": 7517,
+                "y": 2352
+            }
+        }
+    },
+    "STC_8_1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    553,
+                    656,
+                    273,
+                    41
+                ],
+                "expected": [
+                    "金光閃閃又亮晶晶的帕斯·白朗城"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    657,
+                    599,
+                    76,
+                    49
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "STC_8_1_UP"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3955,
+                "y": 15
+            }
+        }
+    },
+    "STC_8_1_1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "8-1"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean8BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 8-1 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4908,
+                "y": -375
+            }
+        }
+    },
+    "STC_8_1_2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "8-2"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean8BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 8-2 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5202,
+                "y": -375
+            }
+        }
+    },
+    "STC_8_1_3": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "8-3"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean8BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 8-3 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5566,
+                "y": -359
+            }
+        }
+    },
+    "STC_8_1_4": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "8-4"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean8BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 8-4 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5956,
+                "y": -359
+            }
+        }
+    },
+    "STC_8_1_5": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "8-5"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean8BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 8-5 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6306,
+                "y": -359
+            }
+        }
+    },
+    "STC_8_1_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "STC_8_1_5",
+            "STC_8_1_4",
+            "STC_8_1_3",
+            "STC_8_1_2",
+            "STC_8_1_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4377,
+                "y": -400
+            }
+        }
+    },
+    "STClean_8BackHome": {
+        "next": [
+            "STClean_8BackHomeConfirmNo",
+            "STClean_8BackHomeConfirmCancel",
+            "STClean_8BackHomeClick",
+            "STClean_8BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -355,
+                "y": -159
+            }
+        }
+    },
+    "STClean_8BackHomeClick": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    137,
+                    45,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "STClean_8BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 925,
+                "y": -410
+            }
+        }
+    },
+    "STClean_8BackHomeConfirmCancel": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/Cancel.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "STClean_8BackHomeClick",
+            "STClean_8BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 345,
+                "y": 118
+            }
+        }
+    },
+    "STClean_8BackHomeConfirmNo": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/no.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "STClean_8BackHomeClick",
+            "STClean_8BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 320,
+                "y": -510
+            }
+        }
+    },
+    "STClean_8BackHomeEnd": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "next": [
+            "STClean_8Finish"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1345,
+                "y": -159
+            }
+        }
+    },
+    "STClean_8Finish": {
+        "action": {
+            "type": "StopTask"
+        },
+        "focus": {
+            "Node.Action.Succeeded": "第八章关卡完成"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1813,
+                "y": 33
+            }
+        }
+    },
+    "STClean_8_find": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1105,
+                    141,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "STClean_8_find_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1593,
+                "y": 1133
+            }
+        }
+    },
+    "STClean_8_find_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/mainstory.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "STClean_8_find_swap"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1976,
+                "y": 1143
+            }
+        }
+    },
+    "STClean_8_find_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "EXimage/mainstory/0/banner_0.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    1095,
+                    355,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        892,
+                        339,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 12,
+        "post_delay": 2000,
+        "next": [
+            "STClean_8_find_3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2738,
+                "y": 1102
+            }
+        }
+    },
+    "STClean_8_find_3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "EXimage/mainstory/8/banner_8.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "STClean_8_swipe_up"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3104,
+                "y": 1133
+            }
+        }
+    },
+    "STClean_8_find_swap": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    311,
+                    344,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        922,
+                        337,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "repeat_wait_freezes": 500,
+        "next": [
+            "STClean_8_find_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2382,
+                "y": 1118
+            }
+        }
+    },
+    "STClean_8_swipe_up": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": 1000,
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    875,
+                    288,
+                    22,
+                    19
+                ],
+                "end": [
+                    [
+                        429,
+                        424,
+                        16,
+                        14
+                    ]
+                ]
+            }
+        },
+        "repeat": 2,
+        "repeat_wait_freezes": 500,
+        "next": [
+            "STC_8_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3490,
+                "y": 1102
+            }
+        }
+    },
+    "TaskStart_STClean_8": {
+        "next": [
+            "TaskStart_STClean_8_BackHomeConfirmNo",
+            "TaskStart_STClean_8_BackHomeConfirmCancel",
+            "TaskStart_STClean_8_BackHomeClick",
+            "TaskStart_STClean_8_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -732,
+                "y": 1115
+            }
+        }
+    },
+    "TaskStart_STClean_8_BackHomeClick": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    137,
+                    45,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "TaskStart_STClean_8_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 528,
+                "y": 825
+            }
+        }
+    },
+    "TaskStart_STClean_8_BackHomeConfirmCancel": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/Cancel.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "TaskStart_STClean_8_BackHomeClick",
+            "TaskStart_STClean_8_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -79,
+                "y": 1461
+            }
+        }
+    },
+    "TaskStart_STClean_8_BackHomeConfirmNo": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/no.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "TaskStart_STClean_8_BackHomeClick",
+            "TaskStart_STClean_8_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -73,
+                "y": 719
+            }
+        }
+    },
+    "TaskStart_STClean_8_BackHomeEnd": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "next": [
+            "STClean_8_find"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1168,
+                "y": 1171
+            }
+        }
+    }
+}
