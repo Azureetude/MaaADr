@@ -692,10 +692,35 @@ class STClean8BattleBridge(CustomAction):
     def run(self, context: Context, argv: CustomAction.RunArg) -> bool:
         if not _click_recognition_box(context, argv):
             return False
-        match = re.search(r"_(\d+)$", argv.node_name)
-        stage_number = int(match.group(1)) if match else 0
-        target = "STClean_8_swipe_up" if stage_number <= 4 else "STClean_8BackHome"
+        # Only STC_8_2_10 is the final stage; every other stage returns to
+        # the chapter map for the next recognition pass.
+        target = (
+            "STClean_8BackHome"
+            if argv.node_name == "STC_8_2_10"
+            else "STClean_8_swipe_up"
+        )
         global _battle_route_target
         _battle_route_target = target
         print(f"STClean8BattleBridge: {argv.node_name} -> {target}")
+        return context.override_next(argv.node_name, ["EstimateBegin"])
+
+
+@AgentServer.custom_action("EWCleanBattleBridge")
+class EWCleanBattleBridge(CustomAction):
+    """Run the shared BattleModule for EW stages and return to the EW map."""
+
+    def run(self, context: Context, argv: CustomAction.RunArg) -> bool:
+        if not _click_recognition_box(context, argv):
+            return False
+        # EW_5_CH_2 is the current final stage. Keep the old name for
+        # compatibility with resource packs that still use EW_4_CH_2.
+        if argv.node_name == "EW_5_CH_2":
+            target = "EW_CleanBackHome"
+        elif argv.node_name in {"EW_4_20", "EW_5_CH_1"}:
+            target = "EW_Clean_find_2"
+        else:
+            target = "EW_Clean_find_1"
+        global _battle_route_target
+        _battle_route_target = target
+        print(f"EWCleanBattleBridge: {argv.node_name} -> {target}")
         return context.override_next(argv.node_name, ["EstimateBegin"])

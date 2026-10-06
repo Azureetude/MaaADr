@@ -31,6 +31,14 @@
                             "next": "TaskStart_PNClean"
                         }
                     }
+                },
+                {
+                    "name": "燃燒吧！色情摔角大賽！(Clean)",
+                    "pipeline_override": {
+                        "TaskStart_LatastSSCleanEX": {
+                            "next": "TaskStart_EWClean"
+                        }
+                    }
                 }
             ]
         }

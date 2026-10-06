@@ -3,17 +3,275 @@
         "$__mpe_code": {
             "prefix": "",
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\mainstory\\STClean_8.json",
-            "lastSyncTime": 1790556948529,
+            "lastSyncTime": 1790557755293,
             "isDeleted": false,
             "isModifiedExternally": false,
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": 27,
-                "y": 266,
-                "zoom": 0.2
+                "x": -601,
+                "y": 42,
+                "zoom": 0.26
             },
             "filename": "STClean_8",
-            "version": "v2.0.3"
+            "version": "v2.0.7"
+        }
+    },
+    "STC_8_2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    478,
+                    530,
+                    157,
+                    29
+                ],
+                "expected": [
+                    "陽光灑落之日的渡橋"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    534,
+                    453,
+                    43,
+                    27
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "STC_8_2_UP",
+            "STC_8_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3964,
+                "y": 558
+            }
+        }
+    },
+    "STC_8_2_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "STC_8_2_10",
+            "STC_8_2_9",
+            "STC_8_2_8",
+            "STC_8_2_7",
+            "STC_8_2_6"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4376,
+                "y": 293
+            }
+        }
+    },
+    "STC_8_2_6": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "8-6"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean8BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 8-6 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4908,
+                "y": 322
+            }
+        }
+    },
+    "STC_8_2_7": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "8-7"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean8BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 8-7 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5236,
+                "y": 322
+            }
+        }
+    },
+    "STC_8_2_8": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "8-8"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean8BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 8-8 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5566,
+                "y": 339
+            }
+        }
+    },
+    "STC_8_2_9": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "8-9"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean8BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 8-9 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5956,
+                "y": 339
+            }
+        }
+    },
+    "STC_8_2_10": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "8-10"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean8BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 8-10 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6306,
+                "y": 339
+            }
         }
     },
     "$__mpe_external_EstimateBegin_STClean_8": {
@@ -52,7 +310,8 @@
         },
         "post_wait_freezes": 1000,
         "next": [
-            "STC_8_1_UP"
+            "STC_8_1_UP",
+            "STC_8_1"
         ],
         "$__mpe_code": {
             "position": {
@@ -602,6 +861,7 @@
         "repeat": 2,
         "repeat_wait_freezes": 500,
         "next": [
+            "STC_8_2",
             "STC_8_1"
         ],
         "$__mpe_code": {

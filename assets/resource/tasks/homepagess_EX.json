@@ -18,17 +18,17 @@
         "活动(EX)": {
             "type": "select",
             "cases": [
-                {
-                    "name": "英雄时刻EP.3(EX)",
-                    "option": [ // 嵌套的子选项
-                        "关卡_HT3(EX)"
-                    ],
-                    "pipeline_override": {
-                        "findmap": {
-                            "next": "find_HT3_EX" // 控制跳转到对应活动地图
-                        }
-                    }
-                },
+                // {
+                //     "name": "英雄时刻EP.3(EX)",
+                //     "option": [ // 嵌套的子选项
+                //         "关卡_HT3(EX)"
+                //     ],
+                //     "pipeline_override": {
+                //         "findmap": {
+                //             "next": "find_HT3_EX" // 控制跳转到对应活动地图
+                //         }
+                //     }
+                // },
                 {
                     "name": "帕斯・白朗的白晝與黑夜(EX)",
                     "option": [ // 嵌套的子选项
@@ -37,6 +37,17 @@
                     "pipeline_override": {
                         "findmap": {
                             "next": "find_PN_EX" // 控制跳转到对应活动地图
+                        }
+                    }
+                },
+                {
+                    "name": "燃燒吧！色情摔角大賽！(EX)",
+                    "option": [ // 嵌套的子选项
+                        "关卡_EW(EX)"
+                    ],
+                    "pipeline_override": {
+                        "findmap": {
+                            "next": "find_EW_EX" // 控制跳转到对应活动地图
                         }
                     }
                 }
@@ -182,6 +193,43 @@
                     "pipeline_override": {
                         "HT3_1_EX": {
                             "next": "DF_4_EX_1"
+                        }
+                    }
+                }
+            ]
+        },
+        "关卡_EW(EX)": {
+            "type": "select",
+            "cases": [
+                {
+                    "name": "EW_15(经验书)",
+                    "pipeline_override": {
+                        "EW_1_EX": {
+                            "next": "EW_EXP"
+                        }
+                    }
+                },
+                {
+                    "name": "EW_11(技能书)",
+                    "pipeline_override": {
+                        "EW_1_EX": {
+                            "next": "EW_SKILL"
+                        }
+                    }
+                },
+                {
+                    "name": "EW_19(龙币)",
+                    "pipeline_override": {
+                        "EW_1_EX": {
+                            "next": "EW_COIN"
+                        }
+                    }
+                },
+                {
+                    "name": "EW_8(礼物盒)",
+                    "pipeline_override": {
+                        "EW_1_EX": {
+                            "next": "EW_GIFT"
                         }
                     }
                 }

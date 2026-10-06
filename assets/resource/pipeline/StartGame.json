@@ -3,17 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1788400036610,
+            "lastSyncTime": 1791249544673,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\StartGame.json",
             "savedViewport": {
-                "x": 220,
-                "y": -661,
-                "zoom": 0.8
+                "x": -1168,
+                "y": -961,
+                "zoom": 0.92
             },
             "filename": "StartGame",
-            "version": "v1.9.2"
+            "version": "v2.0.7"
         }
     },
     "PassPort": {
@@ -587,7 +587,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "post_wait_freezes": 2000,
         "next": [
             "backhomepage"
         ],
