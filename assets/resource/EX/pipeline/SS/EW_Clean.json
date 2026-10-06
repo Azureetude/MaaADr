@@ -1,53 +1,34 @@
 {
-    "$__mpe_config_HT3_Clean": {
+    "$__mpe_config_EW_Clean": {
         "$__mpe_code": {
             "prefix": "",
-            "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1789136850862,
-            "isModifiedExternally": false,
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\SS\\EW_Clean.json",
+            "lastSyncTime": 1791249746469,
             "isDeleted": false,
-            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\SS\\HT3_Clean.json",
+            "isModifiedExternally": false,
+            "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": 697,
-                "y": -1046,
-                "zoom": 0.61
+                "x": -354,
+                "y": -3279,
+                "zoom": 0.53
             },
-            "filename": "HT3_Clean",
+            "filename": "EW_Clean",
             "version": "v2.0.7"
         }
     },
-    "$__mpe_external_EstimateBegin_HT3_Clean": {
-        "$__mpe_code": {
-            "position": {
-                "x": 3596,
-                "y": 2864
-            }
-        }
-    },
-    "$__mpe_external_TaskStart_DFClean_HT3_Clean": {
-        "$__mpe_code": {
-            "position": {
-                "x": 0,
-                "y": 0
-            }
-        }
-    },
-    "$__mpe_external_backhome_start_HT3_Clean": {
-        "$__mpe_code": {
-            "position": {
-                "x": 0,
-                "y": 0
-            }
-        }
-    },
-    "HT3_C_1": {
+    "EW5": {
         "recognition": {
-            "type": "TemplateMatch",
+            "type": "OCR",
             "param": {
-                "template": [
-                    "EXimage/SS/HT3/HT3_1.png"
+                "roi": [
+                    627,
+                    581,
+                    103,
+                    43
                 ],
-                "green_mask": true
+                "expected": [
+                    "表演賽會場"
+                ]
             }
         },
         "pre_wait_freezes": 500,
@@ -55,26 +36,26 @@
             "type": "Click",
             "param": {
                 "target": [
-                    171,
-                    336,
-                    1,
-                    1
+                    654,
+                    507,
+                    59,
+                    48
                 ]
             }
         },
         "post_wait_freezes": 1000,
         "next": [
-            "HT3_C_1_UP",
-            "HT3_C_1"
+            "EW_5_UP",
+            "EW5"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 389,
-                "y": 2183
+                "x": 1713,
+                "y": 7440
             }
         }
     },
-    "HT3_C_1_1": {
+    "EW_1_1": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -85,30 +66,30 @@
                     34
                 ],
                 "expected": [
-                    "HT3-1"
+                    "EW-1"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "EWCleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_1 关卡"
+            "Node.Action.Succeeded": "开始进行 EW-1 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1104,
-                "y": 2047
+                "x": 2416,
+                "y": 4986
             }
         }
     },
-    "HT3_C_1_10": {
+    "EW_1_2": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -119,30 +100,30 @@
                     34
                 ],
                 "expected": [
-                    "HT3-10"
+                    "EW-2"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "EWCleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_10 关卡"
+            "Node.Action.Succeeded": "开始进行 EW-2 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2007,
-                "y": 2385
+                "x": 2764,
+                "y": 4986
             }
         }
     },
-    "HT3_C_1_11": {
+    "EW_1_3": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -153,30 +134,30 @@
                     34
                 ],
                 "expected": [
-                    "HT3-11"
+                    "EW-3"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "EWCleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_11 关卡"
+            "Node.Action.Succeeded": "开始进行 EW-3 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2287,
-                "y": 2395
+                "x": 3119,
+                "y": 4986
             }
         }
     },
-    "HT3_C_1_12": {
+    "EW_1_4": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -187,30 +168,30 @@
                     34
                 ],
                 "expected": [
-                    "HT3-12"
+                    "EW-4"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "EWCleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_12 关卡"
+            "Node.Action.Succeeded": "开始进行 EW-4 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1063,
-                "y": 2842
+                "x": 3466,
+                "y": 4986
             }
         }
     },
-    "HT3_C_1_13": {
+    "EW_1_5": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -221,30 +202,30 @@
                     34
                 ],
                 "expected": [
-                    "HT3-13"
+                    "EW-5"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "EWCleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_13 关卡"
+            "Node.Action.Succeeded": "开始进行 EW-5 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1372,
-                "y": 2842
+                "x": 2416,
+                "y": 5376
             }
         }
     },
-    "HT3_C_1_14": {
+    "EW_1_6": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -255,30 +236,30 @@
                     34
                 ],
                 "expected": [
-                    "HT3-14"
+                    "EW-6"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "EWCleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_14 关卡"
+            "Node.Action.Succeeded": "开始进行 EW-6 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1668,
-                "y": 2842
+                "x": 2764,
+                "y": 5389
             }
         }
     },
-    "HT3_C_1_15": {
+    "EW_1_7": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -289,30 +270,30 @@
                     34
                 ],
                 "expected": [
-                    "HT3-15"
+                    "EW-7"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "EWCleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_15 关卡"
+            "Node.Action.Succeeded": "开始进行 EW-7 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1957,
-                "y": 2842
+                "x": 3119,
+                "y": 5406
             }
         }
     },
-    "HT3_C_1_16": {
+    "EW_1_8": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -323,30 +304,30 @@
                     34
                 ],
                 "expected": [
-                    "HT3-16"
+                    "EW-8"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "EWCleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_16 关卡"
+            "Node.Action.Succeeded": "开始进行 EW-8 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2250,
-                "y": 2842
+                "x": 3472,
+                "y": 5406
             }
         }
     },
-    "HT3_C_1_17": {
+    "EW_2_10": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -357,30 +338,30 @@
                     34
                 ],
                 "expected": [
-                    "HT3-17"
+                    "EW-10"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "EWCleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_17 关卡"
+            "Node.Action.Succeeded": "开始进行 EW-10 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1040,
-                "y": 3343
+                "x": 2712,
+                "y": 5808
             }
         }
     },
-    "HT3_C_1_18": {
+    "EW_2_11": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -391,30 +372,30 @@
                     34
                 ],
                 "expected": [
-                    "HT3-18"
+                    "EW-11"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "EWCleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_18 关卡"
+            "Node.Action.Succeeded": "开始进行 EW-11 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1362,
-                "y": 3343
+                "x": 3047,
+                "y": 5808
             }
         }
     },
-    "HT3_C_1_19": {
+    "EW_2_9": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -425,30 +406,30 @@
                     34
                 ],
                 "expected": [
-                    "HT3-19"
+                    "EW-9"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "EWCleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_19 关卡"
+            "Node.Action.Succeeded": "开始进行 EW-9 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1662,
-                "y": 3343
+                "x": 2400,
+                "y": 5808
             }
         }
     },
-    "HT3_C_1_2": {
+    "EW_3_12": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -459,30 +440,30 @@
                     34
                 ],
                 "expected": [
-                    "HT3-2"
+                    "EW-12"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "EWCleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_2 关卡"
+            "Node.Action.Succeeded": "开始进行 EW-12 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1401,
-                "y": 2047
+                "x": 2373,
+                "y": 6189
             }
         }
     },
-    "HT3_C_1_20": {
+    "EW_3_13": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -493,30 +474,30 @@
                     34
                 ],
                 "expected": [
-                    "HT3-20"
+                    "EW-13"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "EWCleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_20 关卡"
+            "Node.Action.Succeeded": "开始进行 EW-13 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1040,
-                "y": 3643
+                "x": 2685,
+                "y": 6189
             }
         }
     },
-    "HT3_C_1_21": {
+    "EW_3_14": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -527,30 +508,30 @@
                     34
                 ],
                 "expected": [
-                    "HT3-21"
+                    "EW-14"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "EWCleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_21 关卡"
+            "Node.Action.Succeeded": "开始进行 EW-14 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1362,
-                "y": 3643
+                "x": 3020,
+                "y": 6189
             }
         }
     },
-    "HT3_C_1_22": {
+    "EW_3_15": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -561,30 +542,30 @@
                     34
                 ],
                 "expected": [
-                    "HT3-22"
+                    "EW-15"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "EWCleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_22 关卡"
+            "Node.Action.Succeeded": "开始进行 EW-15 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1048,
-                "y": 4126
+                "x": 3387,
+                "y": 6189
             }
         }
     },
-    "HT3_C_1_23": {
+    "EW_3_16": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -595,30 +576,30 @@
                     34
                 ],
                 "expected": [
-                    "HT3-23"
+                    "EW-16"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "EWCleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_23 关卡"
+            "Node.Action.Succeeded": "开始进行 EW-16 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1358,
-                "y": 4126
+                "x": 2373,
+                "y": 6563
             }
         }
     },
-    "HT3_C_1_24": {
+    "EW_3_17": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -629,30 +610,30 @@
                     34
                 ],
                 "expected": [
-                    "HT3-24"
+                    "EW-17"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "EWCleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_24 关卡"
+            "Node.Action.Succeeded": "开始进行 EW-17 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1032,
-                "y": 4467
+                "x": 2685,
+                "y": 6563
             }
         }
     },
-    "HT3_C_1_25": {
+    "EW_3_18": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -663,30 +644,30 @@
                     34
                 ],
                 "expected": [
-                    "HT3-25"
+                    "EW-18"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "EWCleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_25 关卡"
+            "Node.Action.Succeeded": "开始进行 EW-18 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1335,
-                "y": 4467
+                "x": 3020,
+                "y": 6563
             }
         }
     },
-    "HT3_C_1_26": {
+    "EW_3_19": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -697,30 +678,30 @@
                     34
                 ],
                 "expected": [
-                    "HT3-26"
+                    "EW-19"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "EWCleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_26 关卡"
+            "Node.Action.Succeeded": "开始进行 EW-19 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1638,
-                "y": 4443
+                "x": 3387,
+                "y": 6563
             }
         }
     },
-    "HT3_C_1_27": {
+    "EW_4_20": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -731,30 +712,30 @@
                     34
                 ],
                 "expected": [
-                    "HT3-27"
+                    "EW-20"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "EWCleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_27 关卡"
+            "Node.Action.Succeeded": "开始进行 EW-20 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1927,
-                "y": 4457
+                "x": 2373,
+                "y": 6969
             }
         }
     },
-    "HT3_C_1_3": {
+    "EW_5_CH_1": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -765,30 +746,30 @@
                     34
                 ],
                 "expected": [
-                    "HT3-3"
+                    "EW-CH-1"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "EWCleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_3 关卡"
+            "Node.Action.Succeeded": "开始进行 EW-CH-1 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1715,
-                "y": 2047
+                "x": 2373,
+                "y": 7362
             }
         }
     },
-    "HT3_C_1_4": {
+    "EW_5_CH_2": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -799,525 +780,44 @@
                     34
                 ],
                 "expected": [
-                    "HT3-4"
+                    "EW-CH-2"
                 ]
             }
         },
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "HT3CleanBattleBridge"
+                "custom_action": "EWCleanBattleBridge"
             }
         },
         "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_4 关卡"
+            "Node.Action.Succeeded": "开始进行 EW-CH-2 关卡"
         },
         "next": [
             "EstimateBegin"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2007,
-                "y": 2047
+                "x": 2710,
+                "y": 7362
             }
         }
     },
-    "HT3_C_1_5": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    791,
-                    139,
-                    95,
-                    34
-                ],
-                "expected": [
-                    "HT3-5"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "HT3CleanBattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_5 关卡"
-        },
+    "EW_CleanBackHome": {
         "next": [
-            "EstimateBegin"
+            "EW_CleanBackHomeConfirmNo",
+            "EW_CleanBackHomeConfirmCancel",
+            "EW_CleanBackHomeClick",
+            "EW_CleanBackHomeEnd"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2279,
-                "y": 2047
+                "x": -33,
+                "y": 4281
             }
         }
     },
-    "HT3_C_1_6": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    791,
-                    139,
-                    95,
-                    34
-                ],
-                "expected": [
-                    "HT3-6"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "HT3CleanBattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_6 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2581,
-                "y": 2047
-            }
-        }
-    },
-    "HT3_C_1_7": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    791,
-                    139,
-                    95,
-                    34
-                ],
-                "expected": [
-                    "HT3-7"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "HT3CleanBattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_7 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1104,
-                "y": 2374
-            }
-        }
-    },
-    "HT3_C_1_8": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    791,
-                    139,
-                    95,
-                    34
-                ],
-                "expected": [
-                    "HT3-8"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "HT3CleanBattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_8 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1401,
-                "y": 2374
-            }
-        }
-    },
-    "HT3_C_1_9": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    791,
-                    139,
-                    95,
-                    34
-                ],
-                "expected": [
-                    "HT3-9"
-                ]
-            }
-        },
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "HT3CleanBattleBridge"
-            }
-        },
-        "focus": {
-            "Node.Action.Succeeded": "开始进行 HT3_9 关卡"
-        },
-        "next": [
-            "EstimateBegin"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1715,
-                "y": 2374
-            }
-        }
-    },
-    "HT3_C_1_UP": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    644,
-                    81,
-                    184,
-                    615
-                ],
-                "template": [
-                    "basic/story_logo.png",
-                    "basic/battle_logo.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Swipe",
-            "param": {
-                "begin": [
-                    944,
-                    221,
-                    1,
-                    1
-                ],
-                "end": [
-                    [
-                        950,
-                        586,
-                        1,
-                        1
-                    ]
-                ]
-            }
-        },
-        "repeat": 3,
-        "next": [
-            "HT3_C_1_11",
-            "HT3_C_1_10",
-            "HT3_C_1_9",
-            "HT3_C_1_8",
-            "HT3_C_1_7",
-            "HT3_C_1_6",
-            "HT3_C_1_5",
-            "HT3_C_1_4",
-            "HT3_C_1_3",
-            "HT3_C_1_2",
-            "HT3_C_1_1"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 709,
-                "y": 2147
-            }
-        }
-    },
-    "HT3_C_2": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "EXimage/SS/HT3/HT3_2.png"
-                ],
-                "green_mask": true
-            }
-        },
-        "pre_wait_freezes": 1000,
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    421,
-                    329,
-                    1,
-                    1
-                ]
-            }
-        },
-        "post_wait_freezes": 1000,
-        "next": [
-            "HT3_C_2_UP",
-            "HT3_C_2"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 366,
-                "y": 2773
-            }
-        }
-    },
-    "HT3_C_2_UP": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    644,
-                    81,
-                    184,
-                    615
-                ],
-                "template": [
-                    "basic/story_logo.png",
-                    "basic/battle_logo.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Swipe",
-            "param": {
-                "begin": [
-                    944,
-                    221,
-                    1,
-                    1
-                ],
-                "end": [
-                    [
-                        950,
-                        586,
-                        1,
-                        1
-                    ]
-                ]
-            }
-        },
-        "repeat": 3,
-        "next": [
-            "HT3_C_1_16",
-            "HT3_C_1_15",
-            "HT3_C_1_14",
-            "HT3_C_1_13",
-            "HT3_C_1_12"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 686,
-                "y": 2737
-            }
-        }
-    },
-    "HT3_C_3": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "EXimage/SS/HT3/HT3_3.png"
-                ],
-                "green_mask": true,
-                "threshold": [
-                    0.8
-                ]
-            }
-        },
-        "pre_wait_freezes": 1000,
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    835,
-                    318,
-                    1,
-                    1
-                ]
-            }
-        },
-        "post_wait_freezes": 1000,
-        "next": [
-            "HT3_C_3_UP",
-            "HT3_C_3"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 332,
-                "y": 3454
-            }
-        }
-    },
-    "HT3_C_3_UP": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    644,
-                    81,
-                    184,
-                    615
-                ],
-                "template": [
-                    "basic/story_logo.png",
-                    "basic/battle_logo.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Swipe",
-            "param": {
-                "begin": [
-                    944,
-                    221,
-                    1,
-                    1
-                ],
-                "end": [
-                    [
-                        950,
-                        586,
-                        1,
-                        1
-                    ]
-                ]
-            }
-        },
-        "repeat": 3,
-        "next": [
-            "HT3_C_1_21",
-            "HT3_C_1_20",
-            "HT3_C_1_19",
-            "HT3_C_1_18",
-            "HT3_C_1_17"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 652,
-                "y": 3418
-            }
-        }
-    },
-    "HT3_C_4": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "EXimage/SS/HT3/HT3_4.png"
-                ],
-                "green_mask": true
-            }
-        },
-        "pre_wait_freezes": 1000,
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    1086,
-                    310,
-                    1,
-                    1
-                ]
-            }
-        },
-        "post_wait_freezes": 1000,
-        "next": [
-            "HT3_C_4_UP"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 326,
-                "y": 4246
-            }
-        }
-    },
-    "HT3_C_4_UP": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    644,
-                    81,
-                    184,
-                    615
-                ],
-                "template": [
-                    "basic/story_logo.png",
-                    "basic/battle_logo.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Swipe",
-            "param": {
-                "begin": [
-                    944,
-                    221,
-                    1,
-                    1
-                ],
-                "end": [
-                    [
-                        950,
-                        586,
-                        1,
-                        1
-                    ]
-                ]
-            }
-        },
-        "repeat": 3,
-        "next": [
-            "HT3_C_1_27",
-            "HT3_C_1_26",
-            "HT3_C_1_25",
-            "HT3_C_1_24",
-            "HT3_C_1_23",
-            "HT3_C_1_22"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 662,
-                "y": 4215
-            }
-        }
-    },
-    "HT3_CleanBackHome": {
-        "next": [
-            "HT3_CleanBackHomeConfirmNo",
-            "HT3_CleanBackHomeConfirmCancel",
-            "HT3_CleanBackHomeClick",
-            "HT3_CleanBackHomeEnd"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 82,
-                "y": 120
-            }
-        }
-    },
-    "HT3_CleanBackHomeClick": {
+    "EW_CleanBackHomeClick": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1327,27 +827,19 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    137,
-                    45,
-                    1,
-                    1
-                ]
-            }
+            "type": "Click"
         },
         "next": [
-            "HT3_CleanBackHomeEnd"
+            "EW_CleanBackHomeEnd"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1096,
-                "y": -425
+                "x": 954,
+                "y": 3961
             }
         }
     },
-    "HT3_CleanBackHomeConfirmCancel": {
+    "EW_CleanBackHomeConfirmCancel": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1360,17 +852,17 @@
             "type": "Click"
         },
         "next": [
-            "HT3_CleanBackHomeClick",
-            "HT3_CleanBackHomeEnd"
+            "EW_CleanBackHomeClick",
+            "EW_CleanBackHomeEnd"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 453,
-                "y": -447
+                "x": 585,
+                "y": 4479
             }
         }
     },
-    "HT3_CleanBackHomeConfirmNo": {
+    "EW_CleanBackHomeConfirmNo": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1383,17 +875,17 @@
             "type": "Click"
         },
         "next": [
-            "HT3_CleanBackHomeClick",
-            "HT3_CleanBackHomeEnd"
+            "EW_CleanBackHomeClick",
+            "EW_CleanBackHomeEnd"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 452,
-                "y": 366
+                "x": 458,
+                "y": 3899
             }
         }
     },
-    "HT3_CleanBackHomeEnd": {
+    "EW_CleanBackHomeEnd": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1404,16 +896,16 @@
             }
         },
         "next": [
-            "HT3_CleanFinish"
+            "EW_CleanFinish"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1301,
-                "y": -11
+                "x": 1185,
+                "y": 4385
             }
         }
     },
-    "HT3_CleanFinish": {
+    "EW_CleanFinish": {
         "action": {
             "type": "StopTask"
         },
@@ -1422,12 +914,12 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1701,
-                "y": -52
+                "x": 1485,
+                "y": 4385
             }
         }
     },
-    "HT3_Clean_find": {
+    "EW_Clean_find": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1438,43 +930,437 @@
                     527
                 ],
                 "template": [
-                    "EXimage/SS/HT3/banner.png"
-                ],
-                "green_mask": true
+                    "sidestory/EW/EW_BANNER_S.png"
+                ]
             }
         },
-        "pre_wait_freezes": 500,
         "action": {
             "type": "Click"
         },
         "next": [
-            "HT3_C_4",
-            "HT3_C_3",
-            "HT3_C_2",
-            "HT3_C_1"
+            "EW_Clean_find_1"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 69,
-                "y": 2175
+                "x": 931,
+                "y": 5980
             }
         }
     },
-    "TaskStart_HT3Clean": {
+    "EW_4_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
         "next": [
-            "TaskStart_HT3Clean_BackHomeConfirmNo",
-            "TaskStart_HT3Clean_BackHomeConfirmCancel",
-            "TaskStart_HT3Clean_BackHomeClick",
-            "TaskStart_HT3Clean_BackHomeEnd"
+            "EW_4_20"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -2095,
-                "y": 2110
+                "x": 2017,
+                "y": 6917
             }
         }
     },
-    "TaskStart_HT3Clean_BackHomeClick": {
+    "EW_5_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "EW_5_CH_2",
+            "EW_5_CH_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2017,
+                "y": 7362
+            }
+        }
+    },
+    "EW4": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1056,
+                    451,
+                    75,
+                    40
+                ],
+                "expected": [
+                    "尾聲"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1067,
+                    372,
+                    57,
+                    44
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "EW_4_UP"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1713,
+                "y": 6939
+            }
+        }
+    },
+    "EW_3_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "EW_3_19",
+            "EW_3_18",
+            "EW_3_17",
+            "EW_3_16",
+            "EW_3_15",
+            "EW_3_14",
+            "EW_3_13",
+            "EW_3_12"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2017,
+                "y": 6386
+            }
+        }
+    },
+    "EW3": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    849,
+                    335,
+                    71,
+                    41
+                ],
+                "expected": [
+                    "競技場"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    864,
+                    253,
+                    54,
+                    54
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "EW_3_UP"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1713,
+                "y": 6407
+            }
+        }
+    },
+    "EW_2_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "EW_2_11",
+            "EW_2_10",
+            "EW_2_9"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2017,
+                "y": 5824
+            }
+        }
+    },
+    "EW2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    439,
+                    339,
+                    78,
+                    35
+                ],
+                "expected": [
+                    "城郊"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    445,
+                    256,
+                    63,
+                    51
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "EW_2_UP"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1713,
+                "y": 5845
+            }
+        }
+    },
+    "EW_1_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "EW_1_8",
+            "EW_1_7",
+            "EW_1_6",
+            "EW_1_5",
+            "EW_1_4",
+            "EW_1_3",
+            "EW_1_2",
+            "EW_1_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2017,
+                "y": 5181
+            }
+        }
+    },
+    "EW1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    207,
+                    445,
+                    121,
+                    49
+                ],
+                "expected": [
+                    "聯邦的貧民街"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    237,
+                    361,
+                    60,
+                    62
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "EW_1_UP"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1713,
+                "y": 5202
+            }
+        }
+    },
+    "TaskStart_EWClean": {
+        "next": [
+            "TaskStart_EWClean_BackHomeConfirmNo",
+            "TaskStart_EWClean_BackHomeConfirmCancel",
+            "TaskStart_EWClean_BackHomeClick",
+            "TaskStart_EWClean_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1120,
+                "y": 5865
+            }
+        }
+    },
+    "TaskStart_EWClean_BackHomeClick": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1496,16 +1382,16 @@
         },
         "post_wait_freezes": 1000,
         "next": [
-            "TaskStart_HT3Clean_BackHomeEnd"
+            "TaskStart_EWClean_BackHomeEnd"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -820,
-                "y": 1710
+                "x": 155,
+                "y": 5465
             }
         }
     },
-    "TaskStart_HT3Clean_BackHomeConfirmCancel": {
+    "TaskStart_EWClean_BackHomeConfirmCancel": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1519,17 +1405,17 @@
         },
         "post_wait_freezes": 1000,
         "next": [
-            "TaskStart_HT3Clean_BackHomeClick",
-            "TaskStart_HT3Clean_BackHomeEnd"
+            "TaskStart_EWClean_BackHomeClick",
+            "TaskStart_EWClean_BackHomeEnd"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1400,
-                "y": 2465
+                "x": -425,
+                "y": 6220
             }
         }
     },
-    "TaskStart_HT3Clean_BackHomeConfirmNo": {
+    "TaskStart_EWClean_BackHomeConfirmNo": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1543,17 +1429,17 @@
         },
         "post_wait_freezes": 1000,
         "next": [
-            "TaskStart_HT3Clean_BackHomeClick",
-            "TaskStart_HT3Clean_BackHomeEnd"
+            "TaskStart_EWClean_BackHomeClick",
+            "TaskStart_EWClean_BackHomeEnd"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1350,
-                "y": 1680
+                "x": -375,
+                "y": 5435
             }
         }
     },
-    "TaskStart_HT3Clean_BackHomeEnd": {
+    "TaskStart_EWClean_BackHomeEnd": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1564,23 +1450,63 @@
             }
         },
         "next": [
-            "HT3_Clean_find"
+            "EW_Clean_find"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -360,
-                "y": 2225
+                "x": 615,
+                "y": 5980
             }
         }
     },
-    "TaskStart_LatastSSCleanEX": {
+    "EW_Clean_find_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": 2000,
         "next": [
-            "TaskStart_DFClean"
+            "EW4",
+            "EW3",
+            "EW2",
+            "EW1"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 0,
-                "y": 0
+                "x": 1193,
+                "y": 5967
+            }
+        }
+    },
+    "EW_Clean_find_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": 2000,
+        "next": [
+            "EW5"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1193,
+                "y": 6356
+            }
+        }
+    },
+    "$__mpe_external_EstimateBegin_EW_Clean": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4840,
+                "y": 6168
             }
         }
     }
