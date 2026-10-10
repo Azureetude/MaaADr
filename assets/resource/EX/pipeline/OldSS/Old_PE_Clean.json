@@ -1,0 +1,1255 @@
+{
+    "$__mpe_config_Old_PE_Clean": {
+        "$__mpe_code": {
+            "prefix": "",
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\OldSS\\Old_PE_Clean.json",
+            "lastSyncTime": 1791645915805,
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -917,
+                "y": -166,
+                "zoom": 0.35
+            },
+            "filename": "Old_PE_Clean",
+            "version": "v2.1.0"
+        }
+    },
+    "Old_PE_Clean_find": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1105,
+                    141,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "Old_PE_Clean_find_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1693,
+                "y": 1183
+            }
+        }
+    },
+    "Old_PE_Clean_find_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/oldss.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "Old_PE_Clean_find_swap"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2076,
+                "y": 1193
+            }
+        }
+    },
+    "Old_PE_Clean_find_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "EXimage/OldSS/PE/PE_banner.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "Old_PE_Clean_homepage"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2838,
+                "y": 1183
+            }
+        }
+    },
+    "Old_PE_Clean_find_swap": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    299,
+                    347,
+                    17,
+                    17
+                ],
+                "end": [
+                    [
+                        1101,
+                        356,
+                        30,
+                        25
+                    ]
+                ]
+            }
+        },
+        "repeat": 6,
+        "repeat_wait_freezes": 500,
+        "next": [
+            "Old_PE_Clean_find_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2482,
+                "y": 1168
+            }
+        }
+    },
+    "Old_PE_Clean_homepage": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    236,
+                    453,
+                    62,
+                    40
+                ],
+                "expected": [
+                    "岸邊"
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "PE4",
+            "PE3",
+            "PE2",
+            "PE1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3253,
+                "y": 1147
+            }
+        }
+    },
+    "TaskStart_Old_PE_Clean": {
+        "next": [
+            "TaskStart_Old_PE_Clean_BackHomeConfirmNo",
+            "TaskStart_Old_PE_Clean_BackHomeConfirmCancel",
+            "TaskStart_Old_PE_Clean_BackHomeClick",
+            "TaskStart_Old_PE_Clean_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -632,
+                "y": 1165
+            }
+        }
+    },
+    "TaskStart_Old_PE_Clean_BackHomeClick": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    137,
+                    45,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "TaskStart_Old_PE_Clean_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 676,
+                "y": 783
+            }
+        }
+    },
+    "TaskStart_Old_PE_Clean_BackHomeConfirmCancel": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/Cancel.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "TaskStart_Old_PE_Clean_BackHomeClick",
+            "TaskStart_Old_PE_Clean_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 21,
+                "y": 1511
+            }
+        }
+    },
+    "TaskStart_Old_PE_Clean_BackHomeConfirmNo": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/no.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "TaskStart_Old_PE_Clean_BackHomeClick",
+            "TaskStart_Old_PE_Clean_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 27,
+                "y": 769
+            }
+        }
+    },
+    "TaskStart_Old_PE_Clean_BackHomeEnd": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "next": [
+            "Old_PE_Clean_find"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1268,
+                "y": 1221
+            }
+        }
+    },
+    "PE1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    226,
+                    444,
+                    79,
+                    51
+                ],
+                "expected": [
+                    "岸邊"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    243,
+                    379,
+                    45,
+                    42
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "PE_1_UP",
+            "PE1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3749,
+                "y": 303
+            }
+        }
+    },
+    "PE_1_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "PE_1_4",
+            "PE_1_3",
+            "PE_1_2",
+            "PE_1_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4053,
+                "y": 282
+            }
+        }
+    },
+    "PE2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    440,
+                    341,
+                    65,
+                    43
+                ],
+                "expected": [
+                    "叢林"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    453,
+                    270,
+                    43,
+                    36
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "PE_2_UP",
+            "PE2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3749,
+                "y": 761
+            }
+        }
+    },
+    "PE_2_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "PE_2_8",
+            "PE_2_7",
+            "PE_2_6",
+            "PE_2_5"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4053,
+                "y": 740
+            }
+        }
+    },
+    "PE3": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    634,
+                    449,
+                    86,
+                    43
+                ],
+                "expected": [
+                    "遺跡"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    659,
+                    381,
+                    46,
+                    41
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "PE_3_UP",
+            "PE3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3749,
+                "y": 1282
+            }
+        }
+    },
+    "PE_3_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "PE_3_12",
+            "PE_3_11",
+            "PE_3_10",
+            "PE_3_9"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4053,
+                "y": 1261
+            }
+        }
+    },
+    "PE4": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    851,
+                    333,
+                    67,
+                    52
+                ],
+                "expected": [
+                    "海灣"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    867,
+                    270,
+                    51,
+                    38
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "PE_4_UP",
+            "PE4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3749,
+                "y": 1831
+            }
+        }
+    },
+    "PE_4_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "PE_4_15",
+            "PE_4_14",
+            "PE_4_13"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4053,
+                "y": 1810
+            }
+        }
+    },
+    "PE_1_1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "PE-1"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldPECleanBattleBridge"
+            }
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 PE-1 关卡"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4510,
+                "y": 228
+            }
+        }
+    },
+    "PE_1_2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "PE-2"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldPECleanBattleBridge"
+            }
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 PE-2 关卡"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4858,
+                "y": 228
+            }
+        }
+    },
+    "PE_1_3": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "PE-3"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldPECleanBattleBridge"
+            }
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 PE-3 关卡"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5213,
+                "y": 228
+            }
+        }
+    },
+    "PE_1_4": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "PE-4"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldPECleanBattleBridge"
+            }
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 PE-4 关卡"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5560,
+                "y": 228
+            }
+        }
+    },
+    "PE_2_5": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "PE-5"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldPECleanBattleBridge"
+            }
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 PE-5 关卡"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4510,
+                "y": 686
+            }
+        }
+    },
+    "PE_2_6": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "PE-6"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldPECleanBattleBridge"
+            }
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 PE-6 关卡"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4858,
+                "y": 686
+            }
+        }
+    },
+    "PE_2_7": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "PE-7"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldPECleanBattleBridge"
+            }
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 PE-7 关卡"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5213,
+                "y": 686
+            }
+        }
+    },
+    "PE_2_8": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "PE-8"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldPECleanBattleBridge"
+            }
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 PE-8 关卡"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5560,
+                "y": 686
+            }
+        }
+    },
+    "PE_3_9": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "PE-9"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldPECleanBattleBridge"
+            }
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 PE-9 关卡"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4510,
+                "y": 1160
+            }
+        }
+    },
+    "PE_3_10": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "PE-10"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldPECleanBattleBridge"
+            }
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 PE-10 关卡"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4858,
+                "y": 1160
+            }
+        }
+    },
+    "PE_3_11": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "PE-11"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldPECleanBattleBridge"
+            }
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 PE-11 关卡"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5213,
+                "y": 1160
+            }
+        }
+    },
+    "PE_3_12": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "PE-12"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldPECleanBattleBridge"
+            }
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 PE-12 关卡"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5560,
+                "y": 1160
+            }
+        }
+    },
+    "PE_4_13": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "PE-13"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldPECleanBattleBridge"
+            }
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 PE-13 关卡"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4510,
+                "y": 1693
+            }
+        }
+    },
+    "PE_4_14": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "PE-14"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldPECleanBattleBridge"
+            }
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 PE-14 关卡"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4858,
+                "y": 1693
+            }
+        }
+    },
+    "PE_4_15": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "PE-15"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldPECleanBattleBridge"
+            }
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 PE-15 关卡"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5213,
+                "y": 1693
+            }
+        }
+    },
+    "Old_PE_CleanBackHome": {
+        "next": [
+            "Old_PE_CleanBackHomeConfirmNo",
+            "Old_PE_CleanBackHomeConfirmCancel",
+            "Old_PE_CleanBackHomeClick",
+            "Old_PE_CleanBackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1397,
+                "y": 216
+            }
+        }
+    },
+    "Old_PE_CleanBackHomeClick": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "Old_PE_CleanBackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2310,
+                "y": -153
+            }
+        }
+    },
+    "Old_PE_CleanBackHomeConfirmCancel": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/Cancel.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "Old_PE_CleanBackHomeClick",
+            "Old_PE_CleanBackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2015,
+                "y": 414
+            }
+        }
+    },
+    "Old_PE_CleanBackHomeConfirmNo": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/no.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "Old_PE_CleanBackHomeClick",
+            "Old_PE_CleanBackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1848,
+                "y": -171
+            }
+        }
+    },
+    "Old_PE_CleanBackHomeEnd": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "next": [
+            "Old_PE_CleanFinish"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2615,
+                "y": 320
+            }
+        }
+    },
+    "Old_PE_CleanFinish": {
+        "action": {
+            "type": "StopTask"
+        },
+        "focus": {
+            "Node.Action.Succeeded": "**任务已全部完成**"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2915,
+                "y": 320
+            }
+        }
+    }
+}

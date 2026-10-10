@@ -1,4 +1,4 @@
-import json
+﻿import json
 import re
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -692,16 +692,69 @@ class STClean8BattleBridge(CustomAction):
     def run(self, context: Context, argv: CustomAction.RunArg) -> bool:
         if not _click_recognition_box(context, argv):
             return False
-        # Only STC_8_2_10 is the final stage; every other stage returns to
+        # Only STC_8_3_16 is the final stage; every other stage returns to
         # the chapter map for the next recognition pass.
         target = (
             "STClean_8BackHome"
-            if argv.node_name == "STC_8_2_10"
+            if argv.node_name == "STC_8_3_16"
             else "STClean_8_swipe_up"
         )
         global _battle_route_target
         _battle_route_target = target
         print(f"STClean8BattleBridge: {argv.node_name} -> {target}")
+        return context.override_next(argv.node_name, ["EstimateBegin"])
+
+
+@AgentServer.custom_action("OldPECleanBattleBridge")
+class OldPECleanBattleBridge(CustomAction):
+    """Run the shared battle module and return to the PE map or finish."""
+
+    def run(self, context: Context, argv: CustomAction.RunArg) -> bool:
+        if not _click_recognition_box(context, argv):
+            return False
+        target = (
+            "Old_PE_CleanBackHome"
+            if argv.node_name == "PE_4_15"
+            else "Old_PE_Clean_homepage"
+        )
+        global _battle_route_target
+        _battle_route_target = target
+        print(f"OldPECleanBattleBridge: {argv.node_name} -> {target}")
+        return context.override_next(argv.node_name, ["EstimateBegin"])
+
+
+@AgentServer.custom_action("OldPNCleanBattleBridge")
+class OldPNCleanBattleBridge(CustomAction):
+    """Run the shared battle module for Old PN stages independently."""
+
+    def run(self, context: Context, argv: CustomAction.RunArg) -> bool:
+        if not _click_recognition_box(context, argv):
+            return False
+        target = (
+            "Old_PN_CleanBackHome"
+            if argv.node_name == "Old_PN_C_5_2"
+            else "Old_PN_Clean_homepage"
+        )
+        global _battle_route_target
+        _battle_route_target = target
+        print(f"OldPNCleanBattleBridge: {argv.node_name} -> {target}")
+        return context.override_next(argv.node_name, ["EstimateBegin"])
+
+@AgentServer.custom_action("OldSFCleanBattleBridge")
+class OldSFCleanBattleBridge(CustomAction):
+    """Run the shared battle module for Old SF stages independently."""
+
+    def run(self, context: Context, argv: CustomAction.RunArg) -> bool:
+        if not _click_recognition_box(context, argv):
+            return False
+        target = (
+            "Old_SF_CleanBackHome"
+            if argv.node_name == "Old_SF_C_4_CH_2"
+            else "Old_SF_Clean_homepage"
+        )
+        global _battle_route_target
+        _battle_route_target = target
+        print(f"OldSFCleanBattleBridge: {argv.node_name} -> {target}")
         return context.override_next(argv.node_name, ["EstimateBegin"])
 
 
@@ -724,3 +777,4 @@ class EWCleanBattleBridge(CustomAction):
         _battle_route_target = target
         print(f"EWCleanBattleBridge: {argv.node_name} -> {target}")
         return context.override_next(argv.node_name, ["EstimateBegin"])
+
