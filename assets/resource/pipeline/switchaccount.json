@@ -2,18 +2,18 @@
     "$__mpe_config_switchaccount": {
         "$__mpe_code": {
             "prefix": "",
-            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\switchaccount.json",
-            "lastSyncTime": 1788482235028,
-            "isModifiedExternally": false,
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1791653034136,
+            "isModifiedExternally": false,
             "isDeleted": false,
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\switchaccount.json",
             "savedViewport": {
-                "x": -539,
-                "y": 2012,
-                "zoom": 1.84
+                "x": 621,
+                "y": 1451,
+                "zoom": 0.8
             },
             "filename": "switchaccount",
-            "version": "v1.9.2"
+            "version": "v2.1.0"
         }
     },
     "ReportSwitchAccountLogin": {
@@ -261,10 +261,10 @@
             "type": "OCR",
             "param": {
                 "roi": [
-                    332,
-                    288,
-                    263,
-                    35
+                    331,
+                    252,
+                    249,
+                    32
                 ],
                 "expected": [
                     "user@example.com"
@@ -307,8 +307,8 @@
             "param": {
                 "roi": [
                     331,
-                    388,
-                    190,
+                    331,
+                    167,
                     32
                 ],
                 "expected": [
@@ -337,12 +337,12 @@
             }
         },
         "next": [
-            "login"
+            "birthday_1"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 116,
-                "y": -976
+                "x": 69,
+                "y": -985
             }
         }
     },
@@ -534,6 +534,89 @@
             "position": {
                 "x": -1376,
                 "y": -1013
+            }
+        }
+    },
+    "birthday_1": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    350,
+                    422,
+                    68,
+                    10
+                ]
+            }
+        },
+        "next": [
+            "birthday_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 208,
+                "y": -1423
+            }
+        }
+    },
+    "birthday_2": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    367,
+                    595,
+                    43,
+                    14
+                ],
+                "end": [
+                    [
+                        356,
+                        468,
+                        52,
+                        17
+                    ]
+                ]
+            }
+        },
+        "repeat": 4,
+        "next": [
+            "birthday_3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 520,
+                "y": -1438
+            }
+        }
+    },
+    "birthday_3": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    353,
+                    550,
+                    60,
+                    35
+                ]
+            }
+        },
+        "next": [
+            "login"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 847,
+                "y": -1406
+            }
+        }
+    },
+    "$__mpe_external_startgame_switchaccount": {
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 0
             }
         }
     }
