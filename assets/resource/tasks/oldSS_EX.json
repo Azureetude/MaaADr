@@ -1,0 +1,46 @@
+{
+    "task": [
+        {
+            "name": "历史活动EX",
+            "description": "通过*进入战斗直接胜利*及关卡导航自动通关历史活动，自动使用体力药，无体力药可用时自动退出",
+            "entry": "ApplyRecognitionTimeout_OldSSCleanEX",
+            "resource": [
+                "EX"
+            ],
+            "option": [
+                "历史活动"
+            ]
+        }
+    ],
+    "option": {
+        "历史活动": {
+            "type": "select",
+            "cases": [
+                {
+                    "name": "总统万岁!(PE)",
+                    "pipeline_override": {
+                        "TaskStart_OldSSCleanEX": {
+                            "next": "TaskStart_Old_PE_Clean"
+                        }
+                    }
+                },
+                {
+                    "name": "帕斯・白朗的白晝與黑夜(PN)",
+                    "pipeline_override": {
+                        "TaskStart_OldSSCleanEX": {
+                            "next": "TaskStart_Old_PN_Clean"
+                        }
+                    }
+                },
+                {
+                    "name": "闪亮夏日祭典·昼(SF)",
+                    "pipeline_override": {
+                        "TaskStart_OldSSCleanEX": {
+                            "next": "TaskStart_Old_SF_Clean"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

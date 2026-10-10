@@ -7,6 +7,13 @@
         "action": { "type": "Custom", "param": { "custom_action": "ApplyRecognitionTimeout" } },
         "next": ["TaskStart_LatastSSCleanEX"]
     },
+    "ApplyRecognitionTimeout_OldSSCleanEX": {
+        "action": { "type": "Custom", "param": { "custom_action": "ApplyRecognitionTimeout" } },
+        "next": ["TaskStart_OldSSCleanEX"]
+    },
+    "TaskStart_OldSSCleanEX": {
+        "next": ["TaskStart_Old_PE_Clean"]
+    },
     "ApplyRecognitionTimeout_MainStory": {
         "action": { "type": "Custom", "param": { "custom_action": "ApplyRecognitionTimeout" } },
         "next": ["MainStoryChapterRouter"]
