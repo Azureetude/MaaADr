@@ -1,0 +1,1676 @@
+{
+    "$__mpe_config_Old_EW_Clean": {
+        "$__mpe_code": {
+            "prefix": "",
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\OldSS\\Old_EW_Clean.json",
+            "lastSyncTime": 1792164619432,
+            "isModifiedExternally": false,
+            "coordinateMode": "absolute-v1",
+            "isDeleted": false,
+            "savedViewport": {
+                "x": 161,
+                "y": 221,
+                "zoom": 0.2
+            },
+            "filename": "Old_EW_Clean",
+            "version": "v2.1.0"
+        }
+    },
+    "EW2_副本1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    439,
+                    339,
+                    78,
+                    35
+                ],
+                "expected": [
+                    "城郊"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    445,
+                    256,
+                    63,
+                    51
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "Old_EW_2_UP",
+            "EW2_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4648,
+                "y": 1175
+            }
+        }
+    },
+    "Old_EW1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    207,
+                    445,
+                    121,
+                    49
+                ],
+                "expected": [
+                    "聯邦的貧民街"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    237,
+                    361,
+                    60,
+                    62
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "Old_EW_1_UP",
+            "Old_EW1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4648,
+                "y": 532
+            }
+        }
+    },
+    "Old_EW3": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    849,
+                    335,
+                    71,
+                    41
+                ],
+                "expected": [
+                    "競技場"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    864,
+                    253,
+                    54,
+                    54
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "Old_EW_3_UP",
+            "Old_EW3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4648,
+                "y": 1737
+            }
+        }
+    },
+    "Old_EW4": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1056,
+                    451,
+                    75,
+                    40
+                ],
+                "expected": [
+                    "尾聲"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1067,
+                    372,
+                    57,
+                    44
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "Old_EW_4_UP",
+            "Old_EW4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4648,
+                "y": 2269
+            }
+        }
+    },
+    "Old_EW5": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    627,
+                    581,
+                    103,
+                    43
+                ],
+                "expected": [
+                    "表演賽會場"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    654,
+                    507,
+                    59,
+                    48
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "Old_EW_5_UP",
+            "Old_EW5"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4648,
+                "y": 2770
+            }
+        }
+    },
+    "Old_EW_1_1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "EW-1"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldEWCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 EW-1 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5351,
+                "y": 316
+            }
+        }
+    },
+    "Old_EW_1_2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "EW-2"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldEWCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 EW-2 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5699,
+                "y": 316
+            }
+        }
+    },
+    "Old_EW_1_3": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "EW-3"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldEWCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 EW-3 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6054,
+                "y": 316
+            }
+        }
+    },
+    "Old_EW_1_4": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "EW-4"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldEWCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 EW-4 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6401,
+                "y": 316
+            }
+        }
+    },
+    "Old_EW_1_5": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "EW-5"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldEWCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 EW-5 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5351,
+                "y": 706
+            }
+        }
+    },
+    "Old_EW_1_6": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "EW-6"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldEWCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 EW-6 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5699,
+                "y": 718
+            }
+        }
+    },
+    "Old_EW_1_7": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "EW-7"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldEWCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 EW-7 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6054,
+                "y": 736
+            }
+        }
+    },
+    "Old_EW_1_8": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "EW-8"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldEWCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 EW-8 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6407,
+                "y": 736
+            }
+        }
+    },
+    "Old_EW_1_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "Old_EW_1_8",
+            "Old_EW_1_7",
+            "Old_EW_1_6",
+            "Old_EW_1_5",
+            "Old_EW_1_4",
+            "Old_EW_1_3",
+            "Old_EW_1_2",
+            "Old_EW_1_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4952,
+                "y": 511
+            }
+        }
+    },
+    "Old_EW_2_10": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "EW-10"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldEWCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 EW-10 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5647,
+                "y": 1138
+            }
+        }
+    },
+    "Old_EW_2_11": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "EW-11"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldEWCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 EW-11 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5982,
+                "y": 1138
+            }
+        }
+    },
+    "Old_EW_2_9": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "EW-9"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldEWCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 EW-9 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5335,
+                "y": 1138
+            }
+        }
+    },
+    "Old_EW_2_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "Old_EW_2_11",
+            "Old_EW_2_10",
+            "Old_EW_2_9"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4952,
+                "y": 1154
+            }
+        }
+    },
+    "Old_EW_3_12": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "EW-12"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldEWCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 EW-12 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5308,
+                "y": 1519
+            }
+        }
+    },
+    "Old_EW_3_13": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "EW-13"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldEWCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 EW-13 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5620,
+                "y": 1519
+            }
+        }
+    },
+    "Old_EW_3_14": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "EW-14"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldEWCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 EW-14 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5955,
+                "y": 1519
+            }
+        }
+    },
+    "Old_EW_3_15": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "EW-15"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldEWCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 EW-15 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6322,
+                "y": 1519
+            }
+        }
+    },
+    "Old_EW_3_16": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "EW-16"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldEWCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 EW-16 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5308,
+                "y": 1893
+            }
+        }
+    },
+    "Old_EW_3_17": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "EW-17"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldEWCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 EW-17 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5620,
+                "y": 1893
+            }
+        }
+    },
+    "Old_EW_3_18": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "EW-18"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldEWCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 EW-18 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5955,
+                "y": 1893
+            }
+        }
+    },
+    "Old_EW_3_19": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "EW-19"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldEWCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 EW-19 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6322,
+                "y": 1893
+            }
+        }
+    },
+    "Old_EW_3_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "Old_EW_3_19",
+            "Old_EW_3_18",
+            "Old_EW_3_17",
+            "Old_EW_3_16",
+            "Old_EW_3_15",
+            "Old_EW_3_14",
+            "Old_EW_3_13",
+            "Old_EW_3_12"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4952,
+                "y": 1716
+            }
+        }
+    },
+    "Old_EW_4_20": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "EW-20"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldEWCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 EW-20 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5308,
+                "y": 2299
+            }
+        }
+    },
+    "Old_EW_4_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "Old_EW_4_20"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4952,
+                "y": 2247
+            }
+        }
+    },
+    "Old_EW_5_CH_1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "EW-CH-1"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldEWCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 EW-CH-1 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5308,
+                "y": 2692
+            }
+        }
+    },
+    "Old_EW_5_CH_2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "EW-CH-2"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldEWCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 EW-CH-2 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5645,
+                "y": 2692
+            }
+        }
+    },
+    "Old_EW_5_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "Old_EW_5_CH_2",
+            "Old_EW_5_CH_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4952,
+                "y": 2692
+            }
+        }
+    },
+    "Old_EW_CleanBackHome": {
+        "next": [
+            "Old_EW_CleanBackHomeConfirmNo",
+            "Old_EW_CleanBackHomeConfirmCancel",
+            "Old_EW_CleanBackHomeClick",
+            "Old_EW_CleanBackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1891,
+                "y": 175
+            }
+        }
+    },
+    "Old_EW_CleanBackHomeClick": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "Old_EW_CleanBackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2663,
+                "y": -176
+            }
+        }
+    },
+    "Old_EW_CleanBackHomeConfirmCancel": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/Cancel.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "Old_EW_CleanBackHomeClick",
+            "Old_EW_CleanBackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2272,
+                "y": 380
+            }
+        }
+    },
+    "Old_EW_CleanBackHomeConfirmNo": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/no.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "Old_EW_CleanBackHomeClick",
+            "Old_EW_CleanBackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2239,
+                "y": -184
+            }
+        }
+    },
+    "Old_EW_CleanBackHomeEnd": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "next": [
+            "Old_EW_CleanFinish"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3037,
+                "y": 158
+            }
+        }
+    },
+    "Old_EW_CleanFinish": {
+        "action": {
+            "type": "StopTask"
+        },
+        "focus": {
+            "Node.Action.Succeeded": "**任务已全部完成**"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3428,
+                "y": 195
+            }
+        }
+    },
+    "Old_EW_Clean_find": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1105,
+                    141,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "Old_EW_Clean_find_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1993,
+                "y": 1333
+            }
+        }
+    },
+    "Old_EW_Clean_find_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/oldss.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "Old_EW_Clean_find_swap"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2376,
+                "y": 1343
+            }
+        }
+    },
+    "Old_EW_Clean_find_1-1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": 2000,
+        "next": [
+            "Old_EW4",
+            "Old_EW3",
+            "EW2_副本1",
+            "Old_EW1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4128,
+                "y": 1297
+            }
+        }
+    },
+    "Old_EW_Clean_find_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "EXimage/OldSS/EW/EW_BANNER.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "Old_EW_Clean_homepage"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3488,
+                "y": 1318
+            }
+        }
+    },
+    "Old_EW_Clean_find_2-1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": 2000,
+        "next": [
+            "Old_EW5"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4128,
+                "y": 1686
+            }
+        }
+    },
+    "Old_EW_Clean_find_swap": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    299,
+                    347,
+                    17,
+                    17
+                ],
+                "end": [
+                    [
+                        1101,
+                        356,
+                        30,
+                        25
+                    ]
+                ]
+            }
+        },
+        "repeat": 6,
+        "repeat_wait_freezes": 500,
+        "next": [
+            "Old_EW_Clean_find_swap_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2782,
+                "y": 1318
+            }
+        }
+    },
+    "Old_EW_Clean_find_swap_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "EXimage/OldSS/PE/PE_banner.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    1095,
+                    355,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        892,
+                        339,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 2,
+        "post_delay": 2000,
+        "next": [
+            "Old_EW_Clean_find_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3148,
+                "y": 1248
+            }
+        }
+    },
+    "Old_EW_Clean_homepage": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    191,
+                    452,
+                    151,
+                    36
+                ],
+                "expected": [
+                    "聯邦的貧民街"
+                ]
+            }
+        },
+        "post_wait_freezes": 2000,
+        "next": [
+            "Old_EW_Clean_find_1-1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3843,
+                "y": 1318
+            }
+        }
+    },
+    "TaskStart_Old_EW_Clean": {
+        "next": [
+            "TaskStart_Old_EW_Clean_BackHomeConfirmNo",
+            "TaskStart_Old_EW_Clean_BackHomeConfirmCancel",
+            "TaskStart_Old_EW_Clean_BackHomeClick",
+            "TaskStart_Old_EW_Clean_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -332,
+                "y": 1315
+            }
+        }
+    },
+    "TaskStart_Old_EW_Clean_BackHomeClick": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    137,
+                    45,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "TaskStart_Old_EW_Clean_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 976,
+                "y": 933
+            }
+        }
+    },
+    "TaskStart_Old_EW_Clean_BackHomeConfirmCancel": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/Cancel.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "TaskStart_Old_EW_Clean_BackHomeClick",
+            "TaskStart_Old_EW_Clean_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 321,
+                "y": 1665
+            }
+        }
+    },
+    "TaskStart_Old_EW_Clean_BackHomeConfirmNo": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/no.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "TaskStart_Old_EW_Clean_BackHomeClick",
+            "TaskStart_Old_EW_Clean_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 327,
+                "y": 919
+            }
+        }
+    },
+    "TaskStart_Old_EW_Clean_BackHomeEnd": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "next": [
+            "Old_EW_Clean_find"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1568,
+                "y": 1371
+            }
+        }
+    },
+    "$__mpe_external_EstimateBegin_Old_EW_Clean": {
+        "$__mpe_code": {
+            "position": {
+                "x": 8060,
+                "y": 1429
+            }
+        }
+    }
+}
