@@ -3,17 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1788568908869,
+            "lastSyncTime": 1792807174465,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\mainstory\\STClean_6.json",
             "savedViewport": {
-                "x": -2356,
-                "y": -1560,
-                "zoom": 0.86
+                "x": 359,
+                "y": -593,
+                "zoom": 0.36
             },
             "filename": "STClean_6",
-            "version": "v1.9.3"
+            "version": "v2.1.0"
         }
     },
     "$__mpe_external_EstimateBegin_STClean_6": {
@@ -2216,7 +2216,9 @@
             }
         },
         "next": [
-            "STClean_6_find_1"
+            "STClean_6_find_1",
+            "Banner_Back_6",
+            "STClean_6_find"
         ],
         "$__mpe_code": {
             "position": {
@@ -2633,6 +2635,29 @@
             "position": {
                 "x": 79,
                 "y": 2390
+            }
+        }
+    },
+    "Banner_Back_6": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/back.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "STClean_6_find_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 897,
+                "y": 3115
             }
         }
     }

@@ -2,15 +2,15 @@
     "$__mpe_config_Old_PN_Clean": {
         "$__mpe_code": {
             "prefix": "",
-            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\OldSS\\Old_PN_Clean.json",
-            "lastSyncTime": 1791649260328,
-            "isModifiedExternally": false,
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1792807375949,
+            "isModifiedExternally": false,
             "isDeleted": false,
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\OldSS\\Old_PN_Clean.json",
             "savedViewport": {
-                "x": -96,
-                "y": 155,
-                "zoom": 0.2
+                "x": -488,
+                "y": -570,
+                "zoom": 0.61
             },
             "filename": "Old_PN_Clean",
             "version": "v2.1.0"
@@ -1323,7 +1323,9 @@
             }
         },
         "next": [
-            "Old_PN_Clean_find_1"
+            "Old_PN_Clean_find_1",
+            "Banner_Back_PN",
+            "Old_PN_Clean_find"
         ],
         "$__mpe_code": {
             "position": {
@@ -1559,6 +1561,29 @@
             "position": {
                 "x": 1368,
                 "y": 1271
+            }
+        }
+    },
+    "Banner_Back_PN": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/back.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "Old_PN_Clean_find_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2083,
+                "y": 1780
             }
         }
     }

@@ -2,18 +2,26 @@
     "$__mpe_config_Old_PE_Clean": {
         "$__mpe_code": {
             "prefix": "",
-            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\OldSS\\Old_PE_Clean.json",
-            "lastSyncTime": 1791654438408,
-            "isModifiedExternally": false,
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1792807416865,
+            "isModifiedExternally": false,
             "isDeleted": false,
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\OldSS\\Old_PE_Clean.json",
             "savedViewport": {
-                "x": -648,
-                "y": 153,
-                "zoom": 0.2
+                "x": -501,
+                "y": -574,
+                "zoom": 0.61
             },
             "filename": "Old_PE_Clean",
             "version": "v2.1.0"
+        }
+    },
+    "$__mpe_external_EstimateBegin_Old_PE_Clean": {
+        "$__mpe_code": {
+            "position": {
+                "x": 7150,
+                "y": 996
+            }
         }
     },
     "Old_PE_CleanBackHome": {
@@ -155,7 +163,9 @@
             }
         },
         "next": [
-            "Old_PE_Clean_find_1"
+            "Old_PE_Clean_find_1",
+            "Banner_Back_PE",
+            "Old_PE_Clean_find"
         ],
         "$__mpe_code": {
             "position": {
@@ -1254,11 +1264,26 @@
             }
         }
     },
-    "$__mpe_external_EstimateBegin_Old_PE_Clean": {
+    "Banner_Back_PE": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/back.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "Old_PE_Clean_find_1"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 7150,
-                "y": 996
+                "x": 2019,
+                "y": 1704
             }
         }
     }
