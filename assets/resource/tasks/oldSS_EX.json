@@ -71,6 +71,30 @@
                             "next": "TaskStart_Old_NY_Clean"
                         }
                     }
+                },
+                {
+                    "name": "工匠们的厨魂(HD)",
+                    "pipeline_override": {
+                        "TaskStart_OldSSCleanEX": {
+                            "next": "TaskStart_Old_HD_Clean"
+                        }
+                    }
+                },
+                {
+                    "name": "结婚热潮(WB)",
+                    "pipeline_override": {
+                        "TaskStart_OldSSCleanEX": {
+                            "next": "TaskStart_Old_WB_Clean"
+                        }
+                    }
+                },
+                {
+                    "name": "特派员在魔境总攻岛的密林里目睹了(BI)",
+                    "pipeline_override": {
+                        "TaskStart_OldSSCleanEX": {
+                            "next": "TaskStart_Old_BI_Clean"
+                        }
+                    }
                 }
             ]
         }

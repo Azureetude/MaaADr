@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1792168734513,
+            "lastSyncTime": 1792807795383,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\OldSS\\Old_MN_Clean.json",
             "savedViewport": {
-                "x": -2424,
-                "y": -1287,
-                "zoom": 1.06
+                "x": -154,
+                "y": 143,
+                "zoom": 0.2
             },
             "filename": "Old_MN_Clean",
             "version": "v2.1.0"
@@ -21,6 +21,29 @@
             "position": {
                 "x": 8015,
                 "y": 850
+            }
+        }
+    },
+    "Banner_Back_MN": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/back.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "Old_MN_Clean_find_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2197,
+                "y": 1793
             }
         }
     },
@@ -1068,7 +1091,8 @@
             }
         },
         "next": [
-            "Old_MN_Clean_find_1"
+            "Old_MN_Clean_find_1",
+            "Banner_Back_MN"
         ],
         "$__mpe_code": {
             "position": {

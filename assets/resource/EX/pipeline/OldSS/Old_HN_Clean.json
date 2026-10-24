@@ -3,17 +3,25 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1792166978209,
+            "lastSyncTime": 1792807798467,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\OldSS\\Old_HN_Clean.json",
             "savedViewport": {
-                "x": -3299,
-                "y": -1435,
-                "zoom": 1.21
+                "x": -509,
+                "y": -506,
+                "zoom": 0.61
             },
             "filename": "Old_HN_Clean",
             "version": "v2.1.0"
+        }
+    },
+    "$__mpe_external_EstimateBegin_Old_HN_Clean": {
+        "$__mpe_code": {
+            "position": {
+                "x": 8010,
+                "y": 787
+            }
         }
     },
     "Old_HN_C_1": {
@@ -1060,7 +1068,9 @@
             }
         },
         "next": [
-            "Old_HN_Clean_find_1"
+            "Old_HN_Clean_find_1",
+            "Banner_Back_HN",
+            "Old_HN_Clean_find"
         ],
         "$__mpe_code": {
             "position": {
@@ -1340,11 +1350,26 @@
             }
         }
     },
-    "$__mpe_external_EstimateBegin_Old_HN_Clean": {
+    "Banner_Back_HN": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/back.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "Old_HN_Clean_find_1"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 8010,
-                "y": 787
+                "x": 2180,
+                "y": 1791
             }
         }
     }
