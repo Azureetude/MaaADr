@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793431615737,
+            "lastSyncTime": 1793455295247,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\mainstory\\STClean_8.json",
             "savedViewport": {
-                "x": -2348,
-                "y": -1281,
+                "x": -1868,
+                "y": 349,
                 "zoom": 0.61
             },
             "filename": "STClean_8",
@@ -310,10 +310,10 @@
             "type": "OCR",
             "param": {
                 "roi": [
-                    478,
-                    530,
-                    157,
-                    29
+                    415,
+                    531,
+                    201,
+                    60
                 ],
                 "expected": [
                     "陽光灑落之日的渡橋"
@@ -324,10 +324,10 @@
             "type": "Click",
             "param": {
                 "target": [
-                    534,
-                    453,
-                    43,
-                    27
+                    493,
+                    466,
+                    40,
+                    38
                 ]
             }
         },
@@ -1119,10 +1119,10 @@
             "type": "OCR",
             "param": {
                 "roi": [
-                    851,
-                    504,
-                    138,
-                    46
+                    837,
+                    542,
+                    165,
+                    62
                 ],
                 "expected": [
                     "神秘儀式的祭壇"
@@ -1133,10 +1133,10 @@
             "type": "Click",
             "param": {
                 "target": [
-                    895,
-                    431,
-                    63,
-                    46
+                    900,
+                    481,
+                    52,
+                    41
                 ]
             }
         },
