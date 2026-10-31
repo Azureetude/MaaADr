@@ -95,6 +95,22 @@
                             "next": "TaskStart_Old_BI_Clean"
                         }
                     }
+                },
+                {
+                    "name": "魔法训练营(MB)",
+                    "pipeline_override": {
+                        "TaskStart_OldSSCleanEX": {
+                            "next": "TaskStart_Old_MB_Clean"
+                        }
+                    }
+                },
+                {
+                    "name": "辉煌的赌城(CT)",
+                    "pipeline_override": {
+                        "TaskStart_OldSSCleanEX": {
+                            "next": "TaskStart_Old_CT_Clean"
+                        }
+                    }
                 }
             ]
         }
