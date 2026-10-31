@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1792807220691,
+            "lastSyncTime": 1793431615737,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\mainstory\\STClean_8.json",
             "savedViewport": {
-                "x": -98,
-                "y": -368,
-                "zoom": 0.47
+                "x": -2348,
+                "y": -1281,
+                "zoom": 0.61
             },
             "filename": "STClean_8",
             "version": "v2.1.0"
@@ -21,6 +21,29 @@
             "position": {
                 "x": 8165,
                 "y": 1530
+            }
+        }
+    },
+    "Banner_Back_8": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/back.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "STClean_8_find_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1901,
+                "y": 1709
             }
         }
     },
@@ -1349,6 +1372,264 @@
             }
         }
     },
+    "STC_8_6": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    970,
+                    328,
+                    101,
+                    44
+                ],
+                "expected": [
+                    "黃金之床"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    997,
+                    254,
+                    54,
+                    38
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "STC_8_6_UP",
+            "STC_8_6"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3964,
+                "y": 2700
+            }
+        }
+    },
+    "STC_8_6_27": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "8-27"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean8BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 8-27 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4908,
+                "y": 2767
+            }
+        }
+    },
+    "STC_8_6_28": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "8-28"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean8BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 8-28 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5236,
+                "y": 2767
+            }
+        }
+    },
+    "STC_8_6_29": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "8-29"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean8BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 8-29 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5564,
+                "y": 2767
+            }
+        }
+    },
+    "STC_8_6_30": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "8-30"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean8BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 8-30 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5929,
+                "y": 2767
+            }
+        }
+    },
+    "STC_8_6_31": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    141,
+                    57,
+                    30
+                ],
+                "expected": [
+                    "8-31"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "STClean8BattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 8-31 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6279,
+                "y": 2767
+            }
+        }
+    },
+    "STC_8_6_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "STC_8_6_31",
+            "STC_8_6_30",
+            "STC_8_6_29",
+            "STC_8_6_28",
+            "STC_8_6_27"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4376,
+                "y": 2827
+            }
+        }
+    },
     "STClean_8BackHome": {
         "next": [
             "STClean_8BackHomeConfirmNo",
@@ -1672,6 +1953,7 @@
         "repeat": 2,
         "repeat_wait_freezes": 500,
         "next": [
+            "STC_8_6",
             "STC_8_5",
             "STC_8_4",
             "STC_8_3",
@@ -1795,29 +2077,6 @@
             "position": {
                 "x": 1168,
                 "y": 1171
-            }
-        }
-    },
-    "Banner_Back_8": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "basic/back.png"
-                ]
-            }
-        },
-        "pre_wait_freezes": 500,
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "STClean_8_find_1"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1901,
-                "y": 1709
             }
         }
     }

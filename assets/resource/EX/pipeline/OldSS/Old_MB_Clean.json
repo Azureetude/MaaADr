@@ -1,0 +1,2081 @@
+{
+    "$__mpe_config_Old_MB_Clean": {
+        "$__mpe_code": {
+            "prefix": "",
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\OldSS\\Old_MB_Clean.json",
+            "lastSyncTime": 1793435598247,
+            "isModifiedExternally": false,
+            "coordinateMode": "absolute-v1",
+            "isDeleted": false,
+            "savedViewport": {
+                "x": -2251,
+                "y": -1052,
+                "zoom": 0.8
+            },
+            "filename": "Old_MB_Clean",
+            "version": "v2.1.0"
+        }
+    },
+    "Banner_Back_MB": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/back.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "Old_MB_Clean_find_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2676,
+                "y": 1926
+            }
+        }
+    },
+    "Old_MB_C_1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    215,
+                    377,
+                    100,
+                    52
+                ],
+                "expected": [
+                    "安珀敦城"
+                ]
+            }
+        },
+        "pre_wait_freezes": 1000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    240,
+                    303,
+                    49,
+                    40
+                ]
+            }
+        },
+        "next": [
+            "Old_MB_C_1_UP",
+            "Old_MB_C_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4780,
+                "y": 655
+            }
+        }
+    },
+    "Old_MB_C_1_1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-1"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_1 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5521,
+                "y": 486
+            }
+        }
+    },
+    "Old_MB_C_1_10": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-10"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_10 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6379,
+                "y": 784
+            }
+        }
+    },
+    "Old_MB_C_1_11": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-11"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_11 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6666,
+                "y": 784
+            }
+        }
+    },
+    "Old_MB_C_1_12": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-12"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_12 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6961,
+                "y": 784
+            }
+        }
+    },
+    "Old_MB_C_1_2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-2"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_2 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5806,
+                "y": 486
+            }
+        }
+    },
+    "Old_MB_C_1_3": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-3"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_3 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6095,
+                "y": 486
+            }
+        }
+    },
+    "Old_MB_C_1_4": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-4"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_4 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6379,
+                "y": 486
+            }
+        }
+    },
+    "Old_MB_C_1_5": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-5"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_5 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6666,
+                "y": 486
+            }
+        }
+    },
+    "Old_MB_C_1_6": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-6"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_6 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6961,
+                "y": 486
+            }
+        }
+    },
+    "Old_MB_C_1_7": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-7"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_7 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5521,
+                "y": 784
+            }
+        }
+    },
+    "Old_MB_C_1_8": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-8"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_8 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5806,
+                "y": 784
+            }
+        }
+    },
+    "Old_MB_C_1_9": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-9"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_9 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6095,
+                "y": 784
+            }
+        }
+    },
+    "Old_MB_C_1_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "Old_MB_C_1_12",
+            "Old_MB_C_1_11",
+            "Old_MB_C_1_10",
+            "Old_MB_C_1_9",
+            "Old_MB_C_1_8",
+            "Old_MB_C_1_7",
+            "Old_MB_C_1_6",
+            "Old_MB_C_1_5",
+            "Old_MB_C_1_4",
+            "Old_MB_C_1_3",
+            "Old_MB_C_1_2",
+            "Old_MB_C_1_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5109,
+                "y": 430
+            }
+        }
+    },
+    "Old_MB_C_2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    464,
+                    252,
+                    151,
+                    40
+                ],
+                "expected": [
+                    "魔導學院新宿舍"
+                ]
+            }
+        },
+        "pre_wait_freezes": 1000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    507,
+                    184,
+                    62,
+                    32
+                ]
+            }
+        },
+        "next": [
+            "Old_MB_C_2_UP",
+            "Old_MB_C_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4780,
+                "y": 1213
+            }
+        }
+    },
+    "Old_MB_C_2_13": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-13"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_13 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5521,
+                "y": 1083
+            }
+        }
+    },
+    "Old_MB_C_2_14": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-14"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_14 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5806,
+                "y": 1083
+            }
+        }
+    },
+    "Old_MB_C_2_15": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-15"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_15 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6095,
+                "y": 1083
+            }
+        }
+    },
+    "Old_MB_C_2_16": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-16"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_16 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6379,
+                "y": 1083
+            }
+        }
+    },
+    "Old_MB_C_2_17": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-17"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_17 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6666,
+                "y": 1083
+            }
+        }
+    },
+    "Old_MB_C_2_18": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-18"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_18 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6961,
+                "y": 1083
+            }
+        }
+    },
+    "Old_MB_C_2_19": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-19"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_19 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5521,
+                "y": 1361
+            }
+        }
+    },
+    "Old_MB_C_2_20": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-20"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_20 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5806,
+                "y": 1361
+            }
+        }
+    },
+    "Old_MB_C_2_21": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-21"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_21 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6095,
+                "y": 1361
+            }
+        }
+    },
+    "Old_MB_C_2_22": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-22"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_22 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6379,
+                "y": 1361
+            }
+        }
+    },
+    "Old_MB_C_2_23": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-23"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_23 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6666,
+                "y": 1361
+            }
+        }
+    },
+    "Old_MB_C_2_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "Old_MB_C_2_23",
+            "Old_MB_C_2_22",
+            "Old_MB_C_2_21",
+            "Old_MB_C_2_20",
+            "Old_MB_C_2_19",
+            "Old_MB_C_2_18",
+            "Old_MB_C_2_17",
+            "Old_MB_C_2_16",
+            "Old_MB_C_2_15",
+            "Old_MB_C_2_14",
+            "Old_MB_C_2_13"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5109,
+                "y": 1035
+            }
+        }
+    },
+    "Old_MB_C_3": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    741,
+                    511,
+                    109,
+                    51
+                ],
+                "expected": [
+                    "魔窟"
+                ]
+            }
+        },
+        "pre_wait_freezes": 1000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    775,
+                    430,
+                    48,
+                    62
+                ]
+            }
+        },
+        "next": [
+            "Old_MB_C_3_UP",
+            "Old_MB_C_3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4780,
+                "y": 1739
+            }
+        }
+    },
+    "Old_MB_C_3_24": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-24"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_24 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5521,
+                "y": 1717
+            }
+        }
+    },
+    "Old_MB_C_3_25": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-25"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_25 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5806,
+                "y": 1718
+            }
+        }
+    },
+    "Old_MB_C_3_26": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-26"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_26 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6095,
+                "y": 1717
+            }
+        }
+    },
+    "Old_MB_C_3_27": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-27"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_27 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6379,
+                "y": 1717
+            }
+        }
+    },
+    "Old_MB_C_3_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "Old_MB_C_3_27",
+            "Old_MB_C_3_26",
+            "Old_MB_C_3_25",
+            "Old_MB_C_3_24"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5100,
+                "y": 1644
+            }
+        }
+    },
+    "Old_MB_C_4": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    987,
+                    512,
+                    154,
+                    49
+                ],
+                "expected": [
+                    "學院的迷宮"
+                ]
+            }
+        },
+        "pre_wait_freezes": 1000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1043,
+                    431,
+                    51,
+                    48
+                ]
+            }
+        },
+        "next": [
+            "Old_MB_C_4_UP",
+            "Old_MB_C_4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4780,
+                "y": 2350
+            }
+        }
+    },
+    "Old_MB_C_4_28": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-28"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_28 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5521,
+                "y": 2169
+            }
+        }
+    },
+    "Old_MB_C_4_29": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-29"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_29 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5812,
+                "y": 2169
+            }
+        }
+    },
+    "Old_MB_C_4_30": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-30"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_30 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6112,
+                "y": 2169
+            }
+        }
+    },
+    "Old_MB_C_4_31": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-31"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_31 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6418,
+                "y": 2169
+            }
+        }
+    },
+    "Old_MB_C_4_32": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-32"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_32 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6730,
+                "y": 2169
+            }
+        }
+    },
+    "Old_MB_C_4_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "Old_MB_C_4_32",
+            "Old_MB_C_4_31",
+            "Old_MB_C_4_30",
+            "Old_MB_C_4_29",
+            "Old_MB_C_4_28"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5100,
+                "y": 2255
+            }
+        }
+    },
+    "Old_MB_C_5": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    404,
+                    584,
+                    189,
+                    43
+                ],
+                "expected": [
+                    "放學後的運動場"
+                ]
+            }
+        },
+        "pre_wait_freezes": 1000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    472,
+                    528,
+                    60,
+                    22
+                ]
+            }
+        },
+        "next": [
+            "Old_MB_C_5_UP",
+            "Old_MB_C_5"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4780,
+                "y": 3035
+            }
+        }
+    },
+    "Old_MB_C_5_33": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "MB-CH-1"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldMBCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 MB_CH_1 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5521,
+                "y": 2790
+            }
+        }
+    },
+    "Old_MB_C_5_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "Old_MB_C_5_33"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5100,
+                "y": 2940
+            }
+        }
+    },
+    "Old_MB_CleanBackHome": {
+        "next": [
+            "Old_MB_CleanBackHomeConfirmNo",
+            "Old_MB_CleanBackHomeConfirmCancel",
+            "Old_MB_CleanBackHomeClick",
+            "Old_MB_CleanBackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2317,
+                "y": 645
+            }
+        }
+    },
+    "Old_MB_CleanBackHomeClick": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    137,
+                    45,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "Old_MB_CleanBackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2987,
+                "y": 320
+            }
+        }
+    },
+    "Old_MB_CleanBackHomeConfirmCancel": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/Cancel.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "Old_MB_CleanBackHomeClick",
+            "Old_MB_CleanBackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2696,
+                "y": 854
+            }
+        }
+    },
+    "Old_MB_CleanBackHomeConfirmNo": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/no.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "Old_MB_CleanBackHomeClick",
+            "Old_MB_CleanBackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2637,
+                "y": 317
+            }
+        }
+    },
+    "Old_MB_CleanBackHomeEnd": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "next": [
+            "Old_MB_CleanFinish"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3377,
+                "y": 612
+            }
+        }
+    },
+    "Old_MB_CleanFinish": {
+        "action": {
+            "type": "StopTask"
+        },
+        "focus": {
+            "Node.Action.Succeeded": "**任务已全部完成**"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3791,
+                "y": 640
+            }
+        }
+    },
+    "Old_MB_Clean_find": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1105,
+                    141,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "Old_MB_Clean_find_1",
+            "Banner_Back_MB",
+            "Old_MB_Clean_find"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2293,
+                "y": 1488
+            }
+        }
+    },
+    "Old_MB_Clean_find_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/oldss.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "Old_MB_Clean_find_swap"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2676,
+                "y": 1498
+            }
+        }
+    },
+    "Old_MB_Clean_find_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "EXimage/OldSS/MB/MB_BANNER.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "Old_MB_Clean_homepage"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3788,
+                "y": 1468
+            }
+        }
+    },
+    "Old_MB_Clean_find_swap": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    299,
+                    347,
+                    17,
+                    17
+                ],
+                "end": [
+                    [
+                        1101,
+                        356,
+                        30,
+                        25
+                    ]
+                ]
+            }
+        },
+        "repeat": 6,
+        "repeat_wait_freezes": 500,
+        "next": [
+            "Old_MB_Clean_find_swap_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3082,
+                "y": 1468
+            }
+        }
+    },
+    "Old_MB_Clean_find_swap_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "EXimage/OldSS/PE/PE_banner.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    1095,
+                    355,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        892,
+                        339,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 18,
+        "post_delay": 2000,
+        "next": [
+            "Old_MB_Clean_find_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3448,
+                "y": 1398
+            }
+        }
+    },
+    "Old_MB_Clean_homepage": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    210,
+                    381,
+                    106,
+                    48
+                ],
+                "expected": [
+                    "安珀敦城"
+                ]
+            }
+        },
+        "post_wait_freezes": 2000,
+        "next": [
+            "Old_MB_C_4",
+            "Old_MB_C_3",
+            "Old_MB_C_2",
+            "Old_MB_C_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4143,
+                "y": 1468
+            }
+        }
+    },
+    "Old_MB_Clean_homepage_1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    434,
+                    588,
+                    133,
+                    35
+                ],
+                "expected": [
+                    "放學後的運動場"
+                ]
+            }
+        },
+        "post_wait_freezes": 2000,
+        "next": [
+            "Old_MB_C_5"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4143,
+                "y": 1834
+            }
+        }
+    },
+    "TaskStart_Old_MB_Clean": {
+        "next": [
+            "TaskStart_Old_MB_Clean_BackHomeConfirmNo",
+            "TaskStart_Old_MB_Clean_BackHomeConfirmCancel",
+            "TaskStart_Old_MB_Clean_BackHomeClick",
+            "TaskStart_Old_MB_Clean_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -32,
+                "y": 1470
+            }
+        }
+    },
+    "TaskStart_Old_MB_Clean_BackHomeClick": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    137,
+                    45,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "TaskStart_Old_MB_Clean_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1276,
+                "y": 1088
+            }
+        }
+    },
+    "TaskStart_Old_MB_Clean_BackHomeConfirmCancel": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/Cancel.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "TaskStart_Old_MB_Clean_BackHomeClick",
+            "TaskStart_Old_MB_Clean_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 621,
+                "y": 1820
+            }
+        }
+    },
+    "TaskStart_Old_MB_Clean_BackHomeConfirmNo": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/no.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "TaskStart_Old_MB_Clean_BackHomeClick",
+            "TaskStart_Old_MB_Clean_BackHomeEnd"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 627,
+                "y": 1074
+            }
+        }
+    },
+    "TaskStart_Old_MB_Clean_BackHomeEnd": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/homepage_down.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "next": [
+            "Old_MB_Clean_find"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1868,
+                "y": 1526
+            }
+        }
+    },
+    "$__mpe_external_EstimateBegin_Old_MB_Clean": {
+        "$__mpe_code": {
+            "position": {
+                "x": 9425,
+                "y": 1569
+            }
+        }
+    }
+}
