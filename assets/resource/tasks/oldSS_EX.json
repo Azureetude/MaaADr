@@ -111,6 +111,22 @@
                             "next": "TaskStart_Old_CT_Clean"
                         }
                     }
+                },
+                {
+                    "name": "心痒难耐的温泉游记(OT)",
+                    "pipeline_override": {
+                        "TaskStart_OldSSCleanEX": {
+                            "next": "TaskStart_Old_OT_Clean"
+                        }
+                    }
+                },
+                {
+                    "name": "出租冒险者开张！(RA)",
+                    "pipeline_override": {
+                        "TaskStart_OldSSCleanEX": {
+                            "next": "TaskStart_Old_RA_Clean"
+                        }
+                    }
                 }
             ]
         }

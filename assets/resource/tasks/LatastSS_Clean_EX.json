@@ -39,6 +39,14 @@
                             "next": "TaskStart_EWClean"
                         }
                     }
+                },
+                {
+                    "name": "魔法训练营(Clean)",
+                    "pipeline_override": {
+                        "TaskStart_LatastSSCleanEX": {
+                            "next": "TaskStart_Old_MB_Clean"
+                        }
+                    }
                 }
             ]
         }

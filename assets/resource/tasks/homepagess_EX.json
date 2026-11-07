@@ -50,6 +50,17 @@
                             "next": "find_EW_EX" // 控制跳转到对应活动地图
                         }
                     }
+                },
+                {
+                    "name": "魔法训练营(MB)",
+                    "option": [ // 嵌套的子选项
+                        "关卡_MB(EX)"
+                    ],
+                    "pipeline_override": {
+                        "findmap": {
+                            "next": "find_MB_EX" // 控制跳转到对应活动地图
+                        }
+                    }
                 }
                 //    {
                 //        "name": "监狱迷宫瓦尔拉哈(EX)",
@@ -230,6 +241,43 @@
                     "pipeline_override": {
                         "EW_1_EX": {
                             "next": "EW_GIFT"
+                        }
+                    }
+                }
+            ]
+        },
+        "关卡_MB(EX)": {
+            "type": "select",
+            "cases": [
+                {
+                    "name": "MB_27(经验书)",
+                    "pipeline_override": {
+                        "MB_1_EX": {
+                            "next": "MB_EXP"
+                        }
+                    }
+                },
+                {
+                    "name": "MB_8(技能书)",
+                    "pipeline_override": {
+                        "MB_1_EX": {
+                            "next": "MB_SKILL"
+                        }
+                    }
+                },
+                {
+                    "name": "MB_30(龙币)",
+                    "pipeline_override": {
+                        "MB_1_EX": {
+                            "next": "MB_COIN"
+                        }
+                    }
+                },
+                {
+                    "name": "MB_29(礼物盒)",
+                    "pipeline_override": {
+                        "MB_1_EX": {
+                            "next": "MB_GIFT"
                         }
                     }
                 }
