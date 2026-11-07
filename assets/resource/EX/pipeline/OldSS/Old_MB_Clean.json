@@ -2,18 +2,26 @@
     "$__mpe_config_Old_MB_Clean": {
         "$__mpe_code": {
             "prefix": "",
-            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\OldSS\\Old_MB_Clean.json",
-            "lastSyncTime": 1793435598247,
-            "isModifiedExternally": false,
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1794016253449,
+            "isModifiedExternally": false,
             "isDeleted": false,
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\OldSS\\Old_MB_Clean.json",
             "savedViewport": {
-                "x": -2251,
-                "y": -1052,
+                "x": -1676,
+                "y": -804,
                 "zoom": 0.8
             },
             "filename": "Old_MB_Clean",
-            "version": "v2.1.0"
+            "version": "v2.1.1"
+        }
+    },
+    "$__mpe_external_EstimateBegin_Old_MB_Clean": {
+        "$__mpe_code": {
+            "position": {
+                "x": 9425,
+                "y": 1569
+            }
         }
     },
     "Banner_Back_MB": {
@@ -2061,6 +2069,7 @@
             }
         },
         "next": [
+            "MB_Clean_Homepage",
             "Old_MB_Clean_find"
         ],
         "$__mpe_code": {
@@ -2070,11 +2079,25 @@
             }
         }
     },
-    "$__mpe_external_EstimateBegin_Old_MB_Clean": {
+    "MB_Clean_Homepage": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "EXimage/OldSS/MB/MB_BANNER_HOMEPAGE.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "Old_MB_Clean_homepage"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 9425,
-                "y": 1569
+                "x": 2962,
+                "y": 1153
             }
         }
     }

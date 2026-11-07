@@ -692,11 +692,11 @@ class STClean8BattleBridge(CustomAction):
     def run(self, context: Context, argv: CustomAction.RunArg) -> bool:
         if not _click_recognition_box(context, argv):
             return False
-        # Only STC_8_6_31 is the final stage; every other stage returns to
+        # Only STC_8_7_36 is the final stage; every other stage returns to
         # the chapter map for the next recognition pass.
         target = (
             "STClean_8BackHome"
-            if argv.node_name == "STC_8_6_31"
+            if argv.node_name == "STC_8_7_36"
             else "STClean_8_swipe_up"
         )
         global _battle_route_target
@@ -720,6 +720,24 @@ class OldCTCleanBattleBridge(CustomAction):
         global _battle_route_target
         _battle_route_target = target
         print(f"OldCTCleanBattleBridge: {argv.node_name} -> {target}")
+        return context.override_next(argv.node_name, ["EstimateBegin"])
+
+
+@AgentServer.custom_action("OldRACleanBattleBridge")
+class OldRACleanBattleBridge(CustomAction):
+    """Run the shared battle module for Old RA stages independently."""
+
+    def run(self, context: Context, argv: CustomAction.RunArg) -> bool:
+        if not _click_recognition_box(context, argv):
+            return False
+        target = (
+            "Old_RA_CleanBackHome"
+            if argv.node_name == "Old_RA_C_3_29"
+            else "Old_RA_Clean_homepage"
+        )
+        global _battle_route_target
+        _battle_route_target = target
+        print(f"OldRACleanBattleBridge: {argv.node_name} -> {target}")
         return context.override_next(argv.node_name, ["EstimateBegin"])
 
 
@@ -774,6 +792,25 @@ class OldMBCleanBattleBridge(CustomAction):
         global _battle_route_target
         _battle_route_target = target
         print(f"OldMBCleanBattleBridge: {argv.node_name} -> {target}")
+        return context.override_next(argv.node_name, ["EstimateBegin"])
+
+
+@AgentServer.custom_action("OldOTCleanBattleBridge")
+class OldOTCleanBattleBridge(CustomAction):
+    """Run the shared battle module for Old OT stages independently."""
+
+    def run(self, context: Context, argv: CustomAction.RunArg) -> bool:
+        if not _click_recognition_box(context, argv):
+            return False
+        if argv.node_name == "Old_OT_C_4_31":
+            target = "Old_OT_Clean_homepage_1"
+        elif argv.node_name == "Old_OT_C_5_32":
+            target = "Old_OT_CleanBackHome"
+        else:
+            target = "Old_OT_Clean_homepage"
+        global _battle_route_target
+        _battle_route_target = target
+        print(f"OldOTCleanBattleBridge: {argv.node_name} -> {target}")
         return context.override_next(argv.node_name, ["EstimateBegin"])
 
 

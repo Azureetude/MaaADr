@@ -1,0 +1,785 @@
+{
+    "$__mpe_config_Story_MB": {
+        "$__mpe_code": {
+            "prefix": "",
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\sidestory\\MB\\Story_MB.json",
+            "lastSyncTime": 1794021224596,
+            "isModifiedExternally": false,
+            "coordinateMode": "absolute-v1",
+            "isDeleted": false,
+            "savedViewport": {
+                "x": -14,
+                "y": 524,
+                "zoom": 0.8
+            },
+            "filename": "Story_MB",
+            "version": "v2.1.1"
+        }
+    },
+    "MB_1_EX": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    998,
+                    516,
+                    133,
+                    41
+                ],
+                "expected": [
+                    "學院的迷宮"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "$__mpe_code": {
+            "position": {
+                "x": -282,
+                "y": -687
+            }
+        }
+    },
+    "MB_BACK_HOME": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    137,
+                    45,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "MB_END"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3151,
+                "y": 883
+            }
+        }
+    },
+    "MB_COIN": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1014,
+                    515,
+                    105,
+                    46
+                ],
+                "expected": [
+                    "學院的迷宮"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1038,
+                    448,
+                    57,
+                    29
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "MB_COIN_UP"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 250,
+                "y": -1493
+            }
+        }
+    },
+    "MB_COIN_1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    795,
+                    432,
+                    76,
+                    29
+                ],
+                "expected": [
+                    "MB-30"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    699,
+                    445,
+                    503,
+                    92
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "MB_EX_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1133,
+                "y": -1493
+            }
+        }
+    },
+    "MB_COIN_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "MB_COIN_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 669,
+                "y": -1504
+            }
+        }
+    },
+    "MB_END": {
+        "action": {
+            "type": "StopTask"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3566,
+                "y": 933
+            }
+        }
+    },
+    "MB_ERROR": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    378,
+                    124,
+                    530,
+                    481
+                ],
+                "template": [
+                    "basic/ERROR.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    640,
+                    522,
+                    1,
+                    1
+                ]
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "<span style=\"color:crimson;\">体力不足</span>"
+        },
+        "next": [
+            "SanityCurrent_1_MB"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1912,
+                "y": 852
+            }
+        }
+    },
+    "MB_EXP": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    740,
+                    511,
+                    121,
+                    49
+                ],
+                "expected": [
+                    "魔窟"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    772,
+                    432,
+                    54,
+                    59
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "MB_EXP_UP"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 250,
+                "y": -1072
+            }
+        }
+    },
+    "MB_EXP_1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    794,
+                    145,
+                    89,
+                    25
+                ],
+                "expected": [
+                    "MB-27"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    697,
+                    150,
+                    515,
+                    100
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "MB_EX_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1137,
+                "y": -1082
+            }
+        }
+    },
+    "MB_EXP_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "MB_EXP_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 669,
+                "y": -1097
+            }
+        }
+    },
+    "MB_EX_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/SKIP_START.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    326,
+                    630,
+                    1,
+                    1
+                ]
+            }
+        },
+        "timeout": -1,
+        "next": [
+            "MB_EX_2",
+            "MB_ERROR"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1590,
+                "y": -196
+            }
+        }
+    },
+    "MB_EX_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1043,
+                    352,
+                    236,
+                    357
+                ],
+                "template": [
+                    "basic/battle_blue.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "MB_EX_3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1995,
+                "y": -741
+            }
+        }
+    },
+    "MB_EX_3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/3star.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 5000,
+        "focus": {
+            "Node.Recognition.Succeeded": "<span style=\"color:green;\">战斗执行成功</span>"
+        },
+        "next": [
+            "[JumpBack]MB_1_EX"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2530,
+                "y": -1442
+            }
+        }
+    },
+    "MB_GIFT": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1002,
+                    510,
+                    132,
+                    54
+                ],
+                "expected": [
+                    "學院的迷宮"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1036,
+                    440,
+                    56,
+                    38
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "MB_GIFT_UP"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 250,
+                "y": -660
+            }
+        }
+    },
+    "MB_GIFT_1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    784,
+                    580,
+                    98,
+                    27
+                ],
+                "expected": [
+                    "MB-29"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    697,
+                    588,
+                    503,
+                    81
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "MB_EX_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1132,
+                "y": -677
+            }
+        }
+    },
+    "MB_GIFT_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "MB_GIFT_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 669,
+                "y": -687
+            }
+        }
+    },
+    "MB_SKILL": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    213,
+                    377,
+                    106,
+                    46
+                ],
+                "expected": [
+                    "安珀敦城"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    234,
+                    307,
+                    67,
+                    33
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "MB_SKILL_DOWN"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 250,
+                "y": -213
+            }
+        }
+    },
+    "MB_SKILL_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    638,
+                    187,
+                    638,
+                    257
+                ],
+                "template": [
+                    "EXimage/OldSS/MB/MB-8.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "next": [
+            "MB_EX_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1121,
+                "y": -218
+            }
+        }
+    },
+    "MB_SKILL_DOWN": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    973,
+                    510,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        998,
+                        310,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 1,
+        "post_wait_freezes": 1000,
+        "next": [
+            "MB_SKILL_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 669,
+                "y": -218
+            }
+        }
+    },
+    "SanityCurrent_1_MB": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/体力.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_delay": 1000,
+        "next": [
+            "SanityCurrent_2_MB"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2233,
+                "y": 852
+            }
+        }
+    },
+    "SanityCurrent_2_MB": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    883,
+                    30,
+                    107,
+                    31
+                ],
+                "expected": [
+                    ""
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "ReportSanityFullTime",
+                "custom_action_param": {
+                    "display_node": "SanityCurrent_3_MB"
+                }
+            }
+        },
+        "next": [
+            "SanityCurrent_3_MB"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2527,
+                "y": 872
+            }
+        }
+    },
+    "SanityCurrent_3_MB": {
+        "focus": {
+            "Node.Action.Succeeded": "体力回满时间计算中…"
+        },
+        "next": [
+            "MB_BACK_HOME"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2821,
+                "y": 872
+            }
+        }
+    },
+    "find_MB_EX": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    932,
+                    78,
+                    338,
+                    527
+                ],
+                "template": [
+                    "EXimage/OldSS/MB/MB_BANNER_HOMEPAGE.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "MB_1_EX"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -868,
+                "y": -712
+            }
+        }
+    }
+}
