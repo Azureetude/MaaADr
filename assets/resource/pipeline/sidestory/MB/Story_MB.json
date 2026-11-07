@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\sidestory\\MB\\Story_MB.json",
-            "lastSyncTime": 1794021218082,
+            "lastSyncTime": 1794021224596,
             "isModifiedExternally": false,
             "coordinateMode": "absolute-v1",
             "isDeleted": false,
             "savedViewport": {
-                "x": 76,
-                "y": 637,
-                "zoom": 0.7
+                "x": -14,
+                "y": 524,
+                "zoom": 0.8
             },
             "filename": "Story_MB",
             "version": "v2.1.1"
@@ -609,29 +609,21 @@
     },
     "MB_SKILL_1": {
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    794,
-                    231,
-                    76,
-                    33
+                    638,
+                    187,
+                    638,
+                    257
                 ],
-                "expected": [
-                    "MB-8"
+                "template": [
+                    "EXimage/OldSS/MB/MB-8.png"
                 ]
             }
         },
         "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    699,
-                    247,
-                    506,
-                    95
-                ]
-            }
+            "type": "Click"
         },
         "post_delay": 1000,
         "next": [
