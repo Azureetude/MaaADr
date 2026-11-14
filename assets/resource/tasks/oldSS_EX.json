@@ -127,6 +127,22 @@
                             "next": "TaskStart_Old_RA_Clean"
                         }
                     }
+                },
+                {
+                    "name": "梦境入侵者(DI)",
+                    "pipeline_override": {
+                        "TaskStart_OldSSCleanEX": {
+                            "next": "TaskStart_Old_DI_Clean"
+                        }
+                    }
+                },
+                {
+                    "name": "英雄时间EP.1(HT)",
+                    "pipeline_override": {
+                        "TaskStart_OldSSCleanEX": {
+                            "next": "TaskStart_Old_HT_Clean"
+                        }
+                    }
                 }
             ]
         }
