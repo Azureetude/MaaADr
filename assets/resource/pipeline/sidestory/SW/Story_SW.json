@@ -1,0 +1,435 @@
+{
+    "$__mpe_config_Story_SW": {
+        "$__mpe_code": {
+            "prefix": "",
+            "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\sidestory\\SW\\Story_SW.json",
+            "lastSyncTime": 1795229070020,
+            "isModifiedExternally": false,
+            "coordinateMode": "absolute-v1",
+            "isDeleted": false,
+            "savedViewport": {
+                "x": -1379,
+                "y": -618,
+                "zoom": 1.06
+            },
+            "filename": "Story_SW",
+            "version": "v2.1.3"
+        }
+    },
+    "SW_1_EX": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    47,
+                    381,
+                    189,
+                    56
+                ],
+                "expected": [
+                    "趕工中的聖诞物流中心"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "$__mpe_code": {
+            "position": {
+                "x": -182,
+                "y": -637
+            }
+        }
+    },
+    "SW_BACK_HOME": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/backhome.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    137,
+                    45,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "SW_END"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3251,
+                "y": 933
+            }
+        }
+    },
+    "SW_END": {
+        "action": {
+            "type": "StopTask"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3666,
+                "y": 983
+            }
+        }
+    },
+    "SW_ERROR": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    378,
+                    124,
+                    530,
+                    481
+                ],
+                "template": [
+                    "basic/ERROR.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    640,
+                    522,
+                    1,
+                    1
+                ]
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "<span style=\"color:crimson;\">体力不足</span>"
+        },
+        "next": [
+            "SanityCurrent_1_SW",
+            "SW_ERROR"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2012,
+                "y": 902
+            }
+        }
+    },
+    "SW_EXP": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    48,
+                    385,
+                    203,
+                    44
+                ],
+                "expected": [
+                    "趕工中的聖誕物流中心"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    121,
+                    295,
+                    48,
+                    51
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "SW_EXP_UP",
+            "SW_EXP"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 350,
+                "y": -1443
+            }
+        }
+    },
+    "SW_EXP_1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    797,
+                    582,
+                    67,
+                    24
+                ],
+                "expected": [
+                    "SW-5"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    708,
+                    592,
+                    482,
+                    71
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "SW_EX_1",
+            "SW_EXP_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1233,
+                "y": -1443
+            }
+        }
+    },
+    "SW_EXP_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "SW_EXP_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 769,
+                "y": -1454
+            }
+        }
+    },
+    "SW_EX_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/SKIP_START.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    326,
+                    630,
+                    1,
+                    1
+                ]
+            }
+        },
+        "timeout": -1,
+        "next": [
+            "SW_EX_2",
+            "SW_ERROR",
+            "SW_EX_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1690,
+                "y": -146
+            }
+        }
+    },
+    "SW_EX_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1043,
+                    352,
+                    236,
+                    357
+                ],
+                "template": [
+                    "basic/battle_blue.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "SW_EX_3",
+            "SW_EX_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2095,
+                "y": -691
+            }
+        }
+    },
+    "SW_EX_3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/3star.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 5000,
+        "focus": {
+            "Node.Recognition.Succeeded": "<span style=\"color:green;\">战斗执行成功</span>"
+        },
+        "next": [
+            "[JumpBack]SW_1_EX"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2630,
+                "y": -1392
+            }
+        }
+    },
+    "SanityCurrent_1_SW": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/体力.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_delay": 1000,
+        "next": [
+            "SanityCurrent_2_SW"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2333,
+                "y": 902
+            }
+        }
+    },
+    "SanityCurrent_2_SW": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    883,
+                    30,
+                    107,
+                    31
+                ],
+                "expected": [
+                    ""
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "ReportSanityFullTime",
+                "custom_action_param": {
+                    "display_node": "SanityCurrent_3_SW"
+                }
+            }
+        },
+        "next": [
+            "SanityCurrent_3_SW"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2627,
+                "y": 922
+            }
+        }
+    },
+    "SanityCurrent_3_SW": {
+        "focus": {
+            "Node.Action.Succeeded": "体力回满时间计算中…"
+        },
+        "next": [
+            "SW_BACK_HOME"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2921,
+                "y": 922
+            }
+        }
+    },
+    "find_SW_EX": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    932,
+                    78,
+                    338,
+                    527
+                ],
+                "template": [
+                    "EXimage/OldSS/SW/SW_BANNER_HOMEPAGE.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "SW_1_EX",
+            "find_SW_EX"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -768,
+                "y": -662
+            }
+        }
+    }
+}

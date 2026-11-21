@@ -32,11 +32,19 @@
                 //         }
                 //     }
                 // },
+                // {
+                //     "name": "燃燒吧！色情摔角大賽！(Clean)",
+                //     "pipeline_override": {
+                //         "TaskStart_LatastSSCleanEX": {
+                //             "next": "TaskStart_EWClean"
+                //         }
+                //     }
+                // },
                 {
-                    "name": "燃燒吧！色情摔角大賽！(Clean)",
+                    "name": "性夜的仓库管理员(Clean)",
                     "pipeline_override": {
                         "TaskStart_LatastSSCleanEX": {
-                            "next": "TaskStart_EWClean"
+                            "next": "TaskStart_Old_SW_Clean"
                         }
                     }
                 },

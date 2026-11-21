@@ -794,6 +794,24 @@ class OldPNCleanBattleBridge(CustomAction):
         print(f"OldPNCleanBattleBridge: {argv.node_name} -> {target}")
         return context.override_next(argv.node_name, ["EstimateBegin"])
 
+@AgentServer.custom_action("OldSWCleanBattleBridge")
+class OldSWCleanBattleBridge(CustomAction):
+    """Run the shared battle module for Old SW stages independently."""
+
+    def run(self, context: Context, argv: CustomAction.RunArg) -> bool:
+        if not _click_recognition_box(context, argv):
+            return False
+        target = (
+            "Old_SW_CleanBackHome"
+            if argv.node_name == "Old_SW_C_1_8"
+            else "Old_SW_Clean_homepage"
+        )
+        global _battle_route_target
+        _battle_route_target = target
+        print(f"OldSWCleanBattleBridge: {argv.node_name} -> {target}")
+        return context.override_next(argv.node_name, ["EstimateBegin"])
+
+
 @AgentServer.custom_action("OldMBCleanBattleBridge")
 class OldMBCleanBattleBridge(CustomAction):
     """Run the shared battle module for Old MB stages independently."""

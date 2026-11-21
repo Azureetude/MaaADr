@@ -61,6 +61,17 @@
                             "next": "find_MB_EX" // 控制跳转到对应活动地图
                         }
                     }
+                },
+                {
+                    "name": "性夜的仓库管理员(SW)",
+                    "option": [ // 嵌套的子选项
+                        "关卡_SW(EX)"
+                    ],
+                    "pipeline_override": {
+                        "findmap": {
+                            "next": "find_SW_EX" // 控制跳转到对应活动地图
+                        }
+                    }
                 }
                 //    {
                 //        "name": "监狱迷宫瓦尔拉哈(EX)",
@@ -98,6 +109,43 @@
         //     { "name": "JV_33" }
         //      ]
         // },
+        "关卡_SW(EX)": {
+            "type": "select",
+            "cases": [
+                {
+                    "name": "SW_5(经验书)",
+                    "pipeline_override": {
+                        "SW_1_EX": {
+                            "next": "SW_EXP"
+                        }
+                    }
+                },
+                // {
+                //     "name": "EW_11(技能书)",
+                //     "pipeline_override": {
+                //         "EW_1_EX": {
+                //             "next": "EW_SKILL"
+                //         }
+                //     }
+                // },
+                // {
+                //     "name": "EW_19(龙币)",
+                //     "pipeline_override": {
+                //         "EW_1_EX": {
+                //             "next": "EW_COIN"
+                //         }
+                //     }
+                // },
+                // {
+                //     "name": "EW_8(礼物盒)",
+                //     "pipeline_override": {
+                //         "EW_1_EX": {
+                //             "next": "EW_GIFT"
+                //         }
+                //     }
+                // }
+            ]
+        },
         "关卡_DF(EX)": {
             "type": "select",
             "cases": [
