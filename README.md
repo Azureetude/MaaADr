@@ -37,6 +37,8 @@
 >
 > 如有问题及建议，欢迎在github的issue板块提出
 >
+> [使用说明文档](https://docs.qq.com/doc/DTEdvT3JSc3F4Q09P)
+> 
 > 💬MaaADr交流QQ群：[1071729734](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=MJV7fd5huEugZClnAKoslskuPqRb2Xq9&authKey=p%2B4yQS2nFW8pB00oTCkpy%2Frh8X79sZwEUNR2BVpnvcfg44%2BMWImzM%2FP%2BrLDJ%2F04g&noverify=0&group_code=1071729734)  *使用问题🐛、功能建议💡、闲聊摸鱼🐟，欢迎加入~*
 
 > [!NOTE]  
