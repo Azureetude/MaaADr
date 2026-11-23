@@ -3,17 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1791249544673,
+            "lastSyncTime": 1795444275969,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\StartGame.json",
             "savedViewport": {
-                "x": -1168,
-                "y": -961,
-                "zoom": 0.92
+                "x": 883,
+                "y": 220,
+                "zoom": 0.37
             },
             "filename": "StartGame",
-            "version": "v2.0.7"
+            "version": "v2.1.3"
         }
     },
     "PassPort": {
@@ -26,13 +26,14 @@
                 "green_mask": true
             }
         },
+        "post_wait_freezes": 1000,
         "next": [
             "PassPort_1"
         ],
         "$__mpe_code": {
             "position": {
                 "x": 572,
-                "y": 55
+                "y": 50
             }
         }
     },
@@ -522,9 +523,10 @@
     "homepage_start": {
         "timeout": -1,
         "next": [
-            "checkdaily_1",
+            "Anniversary_1_副本1",
+            "PassPort_副本2",
             "dailyreward_1",
-            "PassPort_副本2"
+            "checkdaily_1"
         ],
         "$__mpe_code": {
             "position": {
@@ -535,9 +537,10 @@
     },
     "homepage_start_nomail": {
         "next": [
+            "Anniversary_1",
             "PassPort",
-            "checkdaily_nomail_1",
-            "dailyreward_2"
+            "dailyreward_2",
+            "checkdaily_nomail_1"
         ],
         "$__mpe_code": {
             "position": {
@@ -615,7 +618,8 @@
             "startgame_back2",
             "startgame_back1",
             "startgame_back4",
-            "TaskStart_STClean_2_BackHomeEnd_副本4"
+            "TaskStart_STClean_2_BackHomeEnd_副本4",
+            "startgame_back1_副本1"
         ],
         "$__mpe_code": {
             "position": {
@@ -731,6 +735,145 @@
             "position": {
                 "x": -956,
                 "y": 221
+            }
+        }
+    },
+    "Anniversary_1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    529,
+                    83,
+                    225,
+                    95
+                ],
+                "expected": [
+                    "獲得道具"
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "Anniversary_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 560,
+                "y": -283
+            }
+        }
+    },
+    "Anniversary_2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/dailyreward-s.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": {
+            "time": 3000,
+            "target": [
+                295,
+                246,
+                1092,
+                451
+            ]
+        },
+        "action": {
+            "type": "Click"
+        },
+        "focus": "周年奖励已领取",
+        "next": [
+            "[JumpBack]homepage_start_nomail"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 880,
+                "y": -326
+            }
+        }
+    },
+    "Anniversary_1_副本1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    515,
+                    74,
+                    270,
+                    125
+                ],
+                "expected": [
+                    "獲得道具"
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "Anniversary_2_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 643,
+                "y": 2247
+            }
+        }
+    },
+    "Anniversary_2_副本1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/dailyreward-s.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": {
+            "time": 3000,
+            "target": [
+                295,
+                246,
+                1092,
+                451
+            ]
+        },
+        "action": {
+            "type": "Click"
+        },
+        "focus": "周年奖励已领取",
+        "next": [
+            "[JumpBack]homepage_start"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 963,
+                "y": 2204
+            }
+        }
+    },
+    "startgame_back1_副本1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "basic/dailyreward-s.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "startgame_back4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1373,
+                "y": -253
             }
         }
     }
