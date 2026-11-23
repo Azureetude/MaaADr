@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\sidestory\\SW\\Story_SW.json",
-            "lastSyncTime": 1795229070020,
+            "lastSyncTime": 1795415069713,
             "isModifiedExternally": false,
             "coordinateMode": "absolute-v1",
             "isDeleted": false,
             "savedViewport": {
-                "x": -1379,
-                "y": -618,
+                "x": -65,
+                "y": 1630,
                 "zoom": 1.06
             },
             "filename": "Story_SW",
@@ -122,16 +122,16 @@
     },
     "SW_EXP": {
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    48,
-                    385,
-                    203,
-                    44
+                    17,
+                    180,
+                    287,
+                    330
                 ],
-                "expected": [
-                    "趕工中的聖誕物流中心"
+                "template": [
+                    "EXimage/OldSS/SW/SW-1.png"
                 ]
             }
         },
