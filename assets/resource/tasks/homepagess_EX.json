@@ -120,14 +120,14 @@
                         }
                     }
                 },
-                // {
-                //     "name": "EW_11(技能书)",
-                //     "pipeline_override": {
-                //         "EW_1_EX": {
-                //             "next": "EW_SKILL"
-                //         }
-                //     }
-                // },
+                {
+                    "name": "SW_13(技能书)",
+                    "pipeline_override": {
+                        "SW_1_EX": {
+                            "next": "SW_SKILL"
+                        }
+                    }
+                },
                 // {
                 //     "name": "EW_19(龙币)",
                 //     "pipeline_override": {
@@ -136,14 +136,14 @@
                 //         }
                 //     }
                 // },
-                // {
-                //     "name": "EW_8(礼物盒)",
-                //     "pipeline_override": {
-                //         "EW_1_EX": {
-                //             "next": "EW_GIFT"
-                //         }
-                //     }
-                // }
+                {
+                    "name": "SW_10(礼物盒)",
+                    "pipeline_override": {
+                        "SW_1_EX": {
+                            "next": "SW_GIFT"
+                        }
+                    }
+                }
             ]
         },
         "关卡_DF(EX)": {

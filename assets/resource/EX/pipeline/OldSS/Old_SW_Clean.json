@@ -3,17 +3,25 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1795228260035,
+            "lastSyncTime": 1795840511864,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\EX\\pipeline\\OldSS\\Old_SW_Clean.json",
             "savedViewport": {
-                "x": -202,
-                "y": 206,
-                "zoom": 0.2
+                "x": -487,
+                "y": 156,
+                "zoom": 0.23
             },
             "filename": "Old_SW_Clean",
             "version": "v2.1.3"
+        }
+    },
+    "$__mpe_external_EstimateBegin_Old_SW_Clean": {
+        "$__mpe_code": {
+            "position": {
+                "x": 8341,
+                "y": 1086
+            }
         }
     },
     "Banner_Back_SW": {
@@ -403,6 +411,335 @@
             }
         }
     },
+    "Old_SW_C_2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    288,
+                    379,
+                    152,
+                    54
+                ],
+                "expected": [
+                    "禮物存放區"
+                ]
+            }
+        },
+        "pre_wait_freezes": 1000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    328,
+                    308,
+                    56,
+                    44
+                ]
+            }
+        },
+        "next": [
+            "Old_SW_C_2_UP",
+            "Old_SW_C_2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4991,
+                "y": 1336
+            }
+        }
+    },
+    "Old_SW_C_2_10": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "SW-10"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldSWCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 SW_10 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5988,
+                "y": 1168
+            }
+        }
+    },
+    "Old_SW_C_2_11": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "SW-11"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldSWCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 SW_11 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6277,
+                "y": 1168
+            }
+        }
+    },
+    "Old_SW_C_2_12": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "SW-12"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldSWCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 SW_12 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6591,
+                "y": 1168
+            }
+        }
+    },
+    "Old_SW_C_2_13": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "SW-13"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldSWCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 SW_13 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5698,
+                "y": 1451
+            }
+        }
+    },
+    "Old_SW_C_2_14": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "SW-14"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldSWCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 SW_14 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5987,
+                "y": 1451
+            }
+        }
+    },
+    "Old_SW_C_2_15": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "SW-15"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldSWCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 SW_15 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6277,
+                "y": 1451
+            }
+        }
+    },
+    "Old_SW_C_2_9": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    791,
+                    139,
+                    95,
+                    34
+                ],
+                "expected": [
+                    "SW-9"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "OldSWCleanBattleBridge"
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "开始进行 SW_9 关卡"
+        },
+        "next": [
+            "EstimateBegin"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5698,
+                "y": 1168
+            }
+        }
+    },
+    "Old_SW_C_2_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "Old_SW_C_2_15",
+            "Old_SW_C_2_14",
+            "Old_SW_C_2_13",
+            "Old_SW_C_2_12",
+            "Old_SW_C_2_11",
+            "Old_SW_C_2_10",
+            "Old_SW_C_2_9"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5335,
+                "y": 1242
+            }
+        }
+    },
     "Old_SW_CleanBackHome": {
         "next": [
             "Old_SW_CleanBackHomeConfirmNo",
@@ -708,6 +1045,7 @@
         },
         "post_wait_freezes": 2000,
         "next": [
+            "Old_SW_C_2",
             "Old_SW_C_1"
         ],
         "$__mpe_code": {
@@ -850,14 +1188,6 @@
             "position": {
                 "x": 2068,
                 "y": 1624
-            }
-        }
-    },
-    "$__mpe_external_EstimateBegin_Old_SW_Clean": {
-        "$__mpe_code": {
-            "position": {
-                "x": 8590,
-                "y": 1283
             }
         }
     }

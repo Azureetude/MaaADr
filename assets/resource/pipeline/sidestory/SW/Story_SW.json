@@ -3,17 +3,263 @@
         "$__mpe_code": {
             "prefix": "",
             "filePath": "E:\\VSCode\\MAAADr\\assets\\resource\\pipeline\\sidestory\\SW\\Story_SW.json",
-            "lastSyncTime": 1795415069713,
+            "lastSyncTime": 1795840824826,
             "isModifiedExternally": false,
             "coordinateMode": "absolute-v1",
             "isDeleted": false,
             "savedViewport": {
-                "x": -65,
-                "y": 1630,
-                "zoom": 1.06
+                "x": 538,
+                "y": 609,
+                "zoom": 0.53
             },
             "filename": "Story_SW",
             "version": "v2.1.3"
+        }
+    },
+    "SW_SKILL": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    315,
+                    389,
+                    105,
+                    41
+                ],
+                "expected": [
+                    "禮物存放區"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    339,
+                    304,
+                    33,
+                    38
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "SW_SKILL_UP",
+            "SW_SKILL"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 350,
+                "y": -987
+            }
+        }
+    },
+    "SW_SKILL_1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    797,
+                    430,
+                    76,
+                    30
+                ],
+                "expected": [
+                    "SW-13"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    692,
+                    446,
+                    515,
+                    92
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "SW_EX_1",
+            "SW_SKILL_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1233,
+                "y": -987
+            }
+        }
+    },
+    "SW_SKILL_UP": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    944,
+                    221,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        950,
+                        586,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "SW_SKILL_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 769,
+                "y": -998
+            }
+        }
+    },
+    "MB_SKILL_DOWN_副本1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    644,
+                    81,
+                    184,
+                    615
+                ],
+                "template": [
+                    "basic/story_logo.png",
+                    "basic/battle_logo.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    973,
+                    510,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        998,
+                        310,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "repeat": 3,
+        "post_wait_freezes": 1000,
+        "next": [
+            "SW_GIFT_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 769,
+                "y": -506
+            }
+        }
+    },
+    "SW_GIFT": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    315,
+                    389,
+                    105,
+                    41
+                ],
+                "expected": [
+                    "禮物存放區"
+                ]
+            }
+        },
+        "pre_wait_freezes": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    339,
+                    304,
+                    33,
+                    38
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
+        "next": [
+            "MB_SKILL_DOWN_副本1",
+            "SW_GIFT"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 350,
+                "y": -485
+            }
+        }
+    },
+    "SW_GIFT_1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    787,
+                    382,
+                    90,
+                    30
+                ],
+                "expected": [
+                    "SW-10"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    691,
+                    385,
+                    517,
+                    100
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "SW_EX_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1233,
+                "y": -485
+            }
         }
     },
     "SW_1_EX": {
@@ -140,10 +386,10 @@
             "type": "Click",
             "param": {
                 "target": [
-                    121,
-                    295,
-                    48,
-                    51
+                    125,
+                    309,
+                    43,
+                    33
                 ]
             }
         },
