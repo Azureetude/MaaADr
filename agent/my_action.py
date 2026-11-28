@@ -803,7 +803,7 @@ class OldSWCleanBattleBridge(CustomAction):
             return False
         target = (
             "Old_SW_CleanBackHome"
-            if argv.node_name == "Old_SW_C_1_8"
+            if argv.node_name == "Old_SW_C_2_15"
             else "Old_SW_Clean_homepage"
         )
         global _battle_route_target
